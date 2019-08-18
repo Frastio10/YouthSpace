@@ -4,7 +4,8 @@
 		@include('layouts.head')
 		@!section('meta')
 		@!section('css')
-		<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+		@!section('title')
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	</head>
 	<body>
 		@!section('content')
