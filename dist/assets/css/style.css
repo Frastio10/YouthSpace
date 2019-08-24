@@ -848,6 +848,16 @@ footer .inner-footer .footer-list ul li a {
   margin-left: 100px;
 }
 
+.dots-mr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 100px;
+}
+
+.dots-mr .dots-sm:before {
+  right: 0;
+}
+
 .jumbotron {
   padding-top: 35px;
   padding-left: 38px;
@@ -857,7 +867,7 @@ footer .inner-footer .footer-list ul li a {
 }
 
 .btn-more {
-  margin: 40px auto 0 auto;
+  margin: 35px auto 0 auto;
 }
 
 .ml-auto {

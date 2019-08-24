@@ -148,6 +148,7 @@
 
 .row-3 .left-side {
   float: left;
+  width: 50%;
 }
 
 .row-3 .left-side p, .row-3 .left-side b {
@@ -164,6 +165,7 @@
 
 .row-3 .right-side {
   float: left;
+  width: 50%;
 }
 
 .diskusi-1 {
@@ -181,4 +183,39 @@
 .inspirasi-1,
 .inspirasi-2 {
   margin-right: 18px;
+}
+
+.inspirasi-1,
+.inspirasi-2,
+.inspirasi-3 {
+  padding: 30px;
+}
+
+.row-5 .title {
+  padding-bottom: 15px;
+}
+
+.row-5 .left-side {
+  width: 50% !important;
+}
+
+.row-5 .right-side {
+  width: 50% !important;
+  padding-left: 60px;
+}
+
+.row-5 .right-side p {
+  margin-bottom: 15px;
+}
+
+.row-6 {
+  margin-bottom: 50px;
+}
+
+.row-6 .box-3:first-child {
+  margin-right: 15px;
+}
+
+.row-6 .box-3:last-child {
+  margin-left: 15px;
 }
