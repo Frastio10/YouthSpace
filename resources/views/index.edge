@@ -3,7 +3,7 @@
 
 @section('title')
 
-<title>Contoh </title>
+<title>Beranda | YouthSpace</title>
 
 @endsection
 
@@ -18,26 +18,277 @@
 
 @section('js')
 
-	<script></script>
-
+	<script src="./assets/js/slick.min.js"></script>
+		<script>
+		$('.slick-row').slick({	
+		  infinite: false,
+		  speed: 300,
+		  slidesToShow: 4,
+		  slidesToScroll: 4,
+		  nextArrow:$('.slick-next'),
+		  prevArrow:$('.slick-prev'),
+		  
+		});
+	</script>
 @endsection
 
 
 
 @section('css')
 
-	<link rel="stylesheet" href="testetsztst">
+<link rel="stylesheet" href="./assets/css/home.css">
+<link rel="stylesheet" href="./assets/css/slick.css">
 
 @endsection
 
-
+@section('nav-list')
+<li><a href="news.html">Berita</a></li>
+<li><a href="diskusi.html">Diskusi</a></li>
+<li><a href="video.html">Video</a></li>
+<li><a href="inspirasi.html">Inspirasi</a></li>
+<li><a href="about.html">Tentang Kami</a></li>
+<li><a href="gallery.html">Galeri</a></li>
+@endsection
 
 @section('content')
 	
+	<div class="banner w-100 d-flex">
+		<div class=" banner-image banner-image-1 f-left">
+			<div class="container">
+				<div class="banner-right f-right">
+					<div class="">
+						<div class="bg-white py-50 px-30 box-shadow-thin">
+							<b class="f-25 f-playfair-bold">Diskusikan tantangan yang sedang kamu hadapi sekarang di YouthSpace!</b>
+							<div class="clearfix"></div>
+							<p class="f-15 f-grey f-lato">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla non proident, sunt in</p>
+							<a href="" class="btn btn-blue mt-30">Lihat Selanjutnya</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row row-1">
+		<div class="container">
+			<div class="inner-row pt-120">
+				
+				<b class="f-25 f-playfair-bold dots-sm">Berita</b>
+				<div class="clearfix"></div>
+				<p class="secondary-text f-15 f-grey f-lato">Loren ipsum dolor sit amet consectetur adipiscing elit adeuismood consectetur adipiscing elit adeuismood</p>
 
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nobis, numquam ab recusandae ipsam. Impedit quos quod id quia, qui, rem, eaque nulla dicta dolores, perspiciatis quibusdam inventore. Veritatis, magni.
-	</p>
+				<div class="slick-row">
+					<div class="outer-card">
+						<div class="card">
+							<div class="thumb-card d-flex">
+								<img src="./assets/images/card-1.png" alt="" class="lazy w-100">
+							</div>
+							<div class="text-card">
+								<b class="f-15 f-playfair-bold">Peluang kerja semakin sulit jika tidak dikerjakan</b>
+								<div class="clearfix"></div>
+								<div class="date-wrapper d-flex">
+									<img src="./assets/images/clock.svg" alt="">
+									<span class="f-lato f-12 f-grey">18 agustus 2019</span>
+								</div>
+								<p class="f-lato f-14 f-grey">concectetur adipiscing elit eismod is do amet consectetur adipsicisconcec tetur adipiscing elit eismod is do amet</p>
+								<a href="" class="btn btn-blue-sm">Baca Selengkapnya</a>
+							</div>
+						</div>
+					</div>
+					<div class="outer-card">
+						<div class="card">
+							<div class="thumb-card d-flex">
+								<img src="./assets/images/card-1.png" alt="" class="lazy w-100">
+							</div>
+							<div class="text-card">
+								<b class="f-15 f-playfair-bold">Peluang kerja semakin sulit jika tidak dikerjakan</b>
+								<div class="clearfix"></div>
+								<div class="date-wrapper d-flex">
+									<img src="./assets/images/clock.svg" alt="">
+									<span class="f-lato f-12 f-grey">18 agustus 2019</span>
+								</div>
+								<p class="f-lato f-14 f-grey">concectetur adipiscing elit eismod is do amet consectetur adipsicisconcec tetur adipiscing elit eismod is do amet</p>
+								<a href="" class="btn btn-blue-sm">Baca Selengkapnya</a>
+							</div>
+						</div>
+					</div>	
+					<div class="outer-card">
+						<div class="card">
+							<div class="thumb-card d-flex">
+								<img src="./assets/images/card-1.png" alt="" class="lazy w-100">
+							</div>
+							<div class="text-card">
+								<b class="f-15 f-playfair-bold">Peluang kerja semakin sulit jika tidak dikerjakan</b>
+								<div class="clearfix"></div>
+								<div class="date-wrapper d-flex">
+									<img src="./assets/images/clock.svg" alt="">
+									<span class="f-lato f-12 f-grey">18 agustus 2019</span>
+								</div>
+								<p class="f-lato f-14 f-grey">concectetur adipiscing elit eismod is do amet consectetur adipsicisconcec tetur adipiscing elit eismod is do amet</p>
+								<a href="" class="btn btn-blue-sm">Baca Selengkapnya</a>
+							</div>
+						</div>
+					</div>	
+					<div class="outer-card">
+						<div class="card">
+							<div class="thumb-card d-flex">
+								<img src="./assets/images/card-1.png" alt="" class="lazy w-100">
+							</div>
+							<div class="text-card">
+								<b class="f-15 f-playfair-bold">Peluang kerja semakin sulit jika tidak dikerjakan</b>
+								<div class="clearfix"></div>
+								<div class="date-wrapper d-flex">
+									<img src="./assets/images/clock.svg" alt="">
+									<span class="f-lato f-12 f-grey">18 agustus 2019</span>
+								</div>
+								<p class="f-lato f-14 f-grey">concectetur adipiscing elit eismod is do amet consectetur adipsicisconcec tetur adipiscing elit eismod is do amet</p>
+								<a href="" class="btn btn-blue-sm">Baca Selengkapnya</a>
+							</div>
+						</div>
+					</div>
+					<div class="outer-card">
+						<div class="card">
+							<div class="thumb-card d-flex">
+								<img src="./assets/images/card-1.png" alt="" class="lazy w-100">
+							</div>
+							<div class="text-card">
+								<b class="f-15 f-playfair-bold">Peluang kerja semakin sulit jika tidak dikerjakan</b>
+								<div class="clearfix"></div>
+								<div class="date-wrapper d-flex">
+									<img src="./assets/images/clock.svg" alt="">
+									<span class="f-lato f-12 f-grey">18 agustus 2019</span>
+								</div>
+								<p class="f-lato f-14 f-grey">concectetur adipiscing elit eismod is do amet consectetur adipsicisconcec tetur adipiscing elit eismod is do amet</p>
+								<a href="" class="btn btn-blue-sm">Baca Selengkapnya</a>
+							</div>
+						</div>
+					</div>
+					<div class="outer-card">
+						<div class="card">
+							<div class="thumb-card d-flex">
+								<img src="./assets/images/card-1.png" alt="" class="lazy w-100">
+							</div>
+							<div class="text-card">
+								<b class="f-15 f-playfair-bold">Peluang kerja semakin sulit jika tidak dikerjakan</b>
+								<div class="clearfix"></div>
+								<div class="date-wrapper d-flex">
+									<img src="./assets/images/clock.svg" alt="">
+									<span class="f-lato f-12 f-grey">18 agustus 2019</span>
+								</div>
+								<p class="f-lato f-14 f-grey">concectetur adipiscing elit eismod is do amet consectetur adipsicisconcec tetur adipiscing elit eismod is do amet</p>
+								<a href="" class="btn btn-blue-sm">Baca Selengkapnya</a>
+							</div>
+						</div>
+					</div>	
+					<div class="outer-card">
+						<div class="card">
+							<div class="thumb-card d-flex">
+								<img src="./assets/images/card-1.png" alt="" class="lazy w-100">
+							</div>
+							<div class="text-card">
+								<b class="f-15 f-playfair-bold">Peluang kerja semakin sulit jika tidak dikerjakan</b>
+								<div class="clearfix"></div>
+								<div class="date-wrapper d-flex">
+									<img src="./assets/images/clock.svg" alt="">
+									<span class="f-lato f-12 f-grey">18 agustus 2019</span>
+								</div>
+								<p class="f-lato f-14 f-grey">concectetur adipiscing elit eismod is do amet consectetur adipsicisconcec tetur adipiscing elit eismod is do amet</p>
+								<a href="" class="btn btn-blue-sm">Baca Selengkapnya</a>
+							</div>
+						</div>
+					</div>	
+					<div class="outer-card">
+						<div class="card">
+							<div class="thumb-card d-flex">
+								<img src="./assets/images/card-1.png" alt="" class="lazy w-100">
+							</div>
+							<div class="text-card">
+								<b class="f-15 f-playfair-bold">Peluang kerja semakin sulit jika tidak dikerjakan</b>
+								<div class="clearfix"></div>
+								<div class="date-wrapper d-flex">
+									<img src="./assets/images/clock.svg" alt="">
+									<span class="f-lato f-12 f-grey">18 agustus 2019</span>
+								</div>
+								<p class="f-lato f-14 f-grey">concectetur adipiscing elit eismod is do amet consectetur adipsicisconcec tetur adipiscing elit eismod is do amet</p>
+								<a href="" class="btn btn-blue-sm">Baca Selengkapnya</a>
+							</div>
+						</div>
+					</div>		
+				</div>
+				<div class="f-right">
+					<img src="./assets/images/arrow-right.svg" alt="" class="slick-prev" style="margin-right: 15px;">
+					<img src="./assets/images/arrow-left.svg" alt="" class="slick-next">
+				</div>
+				
+			</div>
 
+		</div>
+	</div>
 
+	<div class="row row-2 ov-h mt-60">
+			<div class="box-blue normal-box bring-back"></div>
+				<div class="container">
+					<div class="dots-ml">
+						<b class="f-20 f-playfair-bold dots-sm">Diskusi Popular</b>
+						<div class="clearfix"></div>
+						<p class="secondary-text f-15 f-grey f-lato">Loren ipsum dolor sit amet consectetur adipiscing elit adeuismood consectetur adipiscing elit adeuismood</p>
+					</div>
+
+					<div class="inner-row pt-0">
+						<div class="bg-white box-shadow-semibold jumbotron f-left ov-h pb-30 diskusi-1">
+							<div class="ov-h d-flex">
+								<img src="./assets/images/userprofile.svg" class="f-left" alt="">
+								
+								<div class="f-left user-detail">
+									<p class="f-playfair f-20 f-left f-darken-grey">Yumna Azahra</p>
+									<div class="clearfix"></div>
+									<div class="d-flex">
+										<img src="./assets/images/clock.svg" class="f-left" alt="">
+										<p class="f-left f-lato f-12 f-grey">17 Agustus 2019</p>
+									</div>
+								</div>
+							</div>
+							<div class="f-left f-grey f-lato f-15 text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
+							</div>
+						</div>
+						<div class="bg-white box-shadow-semibold jumbotron f-left ov-h pb-30 diskusi-2">
+							<div class="ov-h d-flex">
+								<img src="./assets/images/userprofile.svg" class="f-left" alt="">
+								
+								<div class="f-left user-detail">
+									<p class="f-playfair f-20 f-left f-darken-grey">Yumna Azahra</p>
+									<div class="clearfix"></div>
+									<div class="d-flex">
+										<img src="./assets/images/clock.svg" class="f-left" alt="">
+										<p class="f-left f-lato f-12 f-grey">17 Agustus 2019</p>
+									</div>
+								</div>
+							</div>
+							<div class="f-right f-grey f-lato f-15 text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
+							</div>
+						</div>
+						<div class="w-100 ov-h d-flex">
+							<a href="" class="btn btn-blue btn-more">Diskusi lainnya</a>
+						</div>
+					</div>
+				</div>
+	</div>
+
+	<div class="row row-3">
+		<div class="container">
+			<div class="left-side w-50 text-left">
+				<b class="f-playfair-bold f-20 title">Video</b>
+				<p class="f-lato f-15">
+					Loren ipsum dolor sit amet consectetur adipiscing elit adeuismood consectetur adipiscing elit adeuismood Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+				</p>
+				<a href="" class="btn btn-blue">Lihat selengkapnya</a>
+			</div>
+		</div>
+		<div class="right-side w-50">
+			
+		</div>
+		</div>
+	</div>
 @endsection

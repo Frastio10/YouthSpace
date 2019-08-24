@@ -8,10 +8,124 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	</head>
 	<body>
+		<header class="header " id="header">
+			<div class="container">
+				<a href="index.html" class="f-left">
+					<img src="./assets/images/logo.svg" alt="" class="f-left">
+				</a>
+				<ul class="nav f-left">
+					@!section('nav-list')
+				</ul>
+				<ul class="nav-right f-right">
+					<li class="popup-trigger">
+						<img src="./assets/images/indo-flag.svg" alt="">
+					</li>
+					<li class="popup-trigger pos-r">
+						<img src="./assets/images/chevron-right.svg" alt="">
+						<div class="popup-content d-none pos-a bring-front">
+							<div class="bg-white flags">
+								<a href="">
+									<img src="./assets/images/en.svg" alt="">
+									EN
+								</a>
+								<a href="">
+									<img src="./assets/images/indo-flag.svg" alt="">
+									ID
+								</a>
+								
+							</div>
+						</div>
+					</li>
+					<li class="popup-trigger" id="profile-picture">
+						<img src="./assets/images/userprofile.svg" alt="">
+						<div class="popup-content d-none pos-a bring-front popup-profile">
+							<div class="bg-white list">
+								<ul>
+									<li>
+										<a href="">Amanda Aprilia</a>
+									</li>
+									<li>
+										<a href="">Akun</a>
+									</li>
+									<li>
+										<a href="">Pesan</a>
+									</li>
+									<li>
+										<a href="">Pengaturan</a>
+									</li>
+									<li>
+										<a href="">Keluar</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
 		@!section('content')
+		<footer class="footer w-100">
+			<div class="box-blue last-box"></div>
+			<div class="container">
+				<div class="inner-footer">
+					<div class="f-left footer-desc">
+						<div class="logo">
+							<a href="index.html">
+								<img src="./assets/images/logo.svg" alt="">
+							</a>
+						</div>
+						<p>Untuk membantu menghadapi tantangan dengan cara berdiskusi dan juga mendapatkan inspirasi beserta berita berita terbaru seputar generasi milenial di masa kini</p>
+						<ul class="horizontal-list social-media">
+							<li><a href=""><img src="./assets/images/facebook.svg" alt=""></a></li>
+							<li><a href="https://instgram.com/frastio10"><img src="./assets/images/instagram.svg" alt=""></a></li>
+							<li><a href=""><img src="./assets/images/twitter.svg" alt=""></a></li>
+							<li><a href=""><img src="./assets/images/youtube.svg" alt=""></a></li>
+						</ul>
+					</div>
+					<div class="f-left footer-list">
+						<b class="f-lato">Navbar</b>
+						<ul class="no-decoration list-style-none">
+							
+							<li><a href="news.html">Berita</a></li>
+							<li><a href="diskusi.html">Diskusi</a></li>
+							<li><a href="video.html">Video</a></li>
+							<li><a href="inspirasi.html">Inspirasi</a></li>
+							<li><a href="gallery.html">Galeri</a></li>
+						</ul>
+					</div>
+					<div class="f-left footer-list">
+						<b class="f-lato">Lainnya</b>
+						<ul class="no-decoration list-style-none">
+							
+							<li><a href="account.html">Akun</a></li>
+							<li><a href="">Bahasa</a></li>
+							<li><a href="about.html">Tentang</a></li>
+							<li><a href="">App</a></li>
+							
+						</ul>
+					</div>
+					<div class="f-left footer-desc footer-desc-left">
+						
+							<span class="f-lato">Untuk tetap terhubung</span>
+							<p>Masuk untuk mendapatkan berita terbaru dan diskusikan mengenai tatangan </p>
+							<a href="#" class="btn btn-blue">Alamat email</a>
+					</div>
+					<span class="line"></span>
+					<span class="f-13 mt-40 f-lato f-left">&#169; 2019 Youthspace By Bernice Team</span>
+				</div>
+
+			</div>
+		</footer>
 	</body>
 	@!section('component')
 <script src="assets/js/jquery.js" type="text/javascript" ></script>
+<script src="assets/js/jquery.lazy.min.js"></script>
+<script>
+	 $(function() {
+        $('.lazy').Lazy();
+        placeholder : "data:image/assets/images/loader.svg"
+    });
+</script>
 @!section('js')
 <script src="assets/js/app.js" type="text/javascript" ></script>
 </html>

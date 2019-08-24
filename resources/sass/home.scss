@@ -1,0 +1,131 @@
+@import "./header";
+
+
+.banner{
+	
+
+
+	.banner-image-1{
+		width: 100%;
+		background-image: url('../images/bannerimg-1.png');
+		background-size: 57%;
+		background-repeat: no-repeat;
+	}
+
+	.banner-right{
+		padding-bottom: 150px;
+		padding-top: 190px;
+		width: 55%;
+
+	}
+
+}
+
+.inner-row{
+	@include padding-y(60px);
+	float: left;	
+	position: relative;	
+}
+
+.date-wrapper{
+	span{
+		padding-left: 5px;
+	}
+}
+
+.slick-list{
+	padding-bottom: 10px !important	;	
+}
+
+.slick-row{
+	@include padding-y(30px);
+	max-width: 1094px;		
+	float: left;
+
+	.outer-card{
+		width: 261px !important;
+		float: left;
+		transition: 0.3s ease;
+		position: relative;	
+		display: inline;			
+
+		&:hover{
+			margin-top: -10px;
+		}	
+
+		@include margin-x(7.25px);
+
+		&:first-child{
+			margin-left: 0 !important;	
+		}
+
+		&:last-child{
+			margin-right: 0 !important	;	
+		}
+
+		.card{
+			width: 100%;
+			background: #fff;
+			float: left;
+			box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
+			
+			.thumb-card{
+				height: 100%;
+			}
+			
+			.text-card{
+				padding: 15px;
+				
+			}
+		}
+	}
+}
+
+.jumbotron{
+	
+	
+	.user-detail{
+		margin-left: 10px;
+
+		img{
+			margin-right: 5px;
+		}
+	}
+
+	.text{
+		margin-top: 15px;
+	}
+}
+
+.row-3{
+
+	.left-side{
+		float: left;
+		
+		p, b{
+			padding:0 120px 0 0px;
+		}
+
+		p{
+			margin-top: 10px;
+		}
+
+		a{
+			margin-top: 20px;
+		}
+	}
+
+}
+
+.diskusi-1{
+	width: calc(50% - 8px);
+	margin-right: 8px;
+	padding-right: 30px;
+}
+
+.diskusi-2{
+	margin-left: 8px;
+	width: calc(50% - 8px);
+	padding-right: 30px;
+	
+}

@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #1592E6;
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #888888;
+  --darken-grey: #707070;
+}
+
+/*
+ Fonts Import
+*/
+@font-face {
+  font-family: lato-regular;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: lato-bold;
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: lato-light;
+  src: url("../fonts/Lato/Lato-light.ttf");
+}
+
+@font-face {
+  font-family: lato-italic;
+  src: url("../fonts/Lato/Lato-italic.ttf");
+}
+
+@font-face {
+  font-family: playfair-black;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Black.ttf");
+}
+
+@font-face {
+  font-family: playfair-blackitalic;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: playfair-bold;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+  font-family: playfair-BoldItalic;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: playfair-regular;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+}
+
+.banner .banner-image-1 {
+  width: 100%;
+  background-image: url("../images/bannerimg-1.png");
+  background-size: 57%;
+  background-repeat: no-repeat;
+}
+
+.banner .banner-right {
+  padding-bottom: 150px;
+  padding-top: 190px;
+  width: 55%;
+}
+
+.inner-row {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  float: left;
+  position: relative;
+}
+
+.date-wrapper span {
+  padding-left: 5px;
+}
+
+.slick-list {
+  padding-bottom: 10px !important;
+}
+
+.slick-row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 1094px;
+  float: left;
+}
+
+.slick-row .outer-card {
+  width: 261px !important;
+  float: left;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  position: relative;
+  display: inline;
+  margin-left: 7.25px;
+  margin-right: 7.25px;
+}
+
+.slick-row .outer-card:hover {
+  margin-top: -10px;
+}
+
+.slick-row .outer-card:first-child {
+  margin-left: 0 !important;
+}
+
+.slick-row .outer-card:last-child {
+  margin-right: 0 !important;
+}
+
+.slick-row .outer-card .card {
+  width: 100%;
+  background: #fff;
+  float: left;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
+}
+
+.slick-row .outer-card .card .thumb-card {
+  height: 100%;
+}
+
+.slick-row .outer-card .card .text-card {
+  padding: 15px;
+}
+
+.jumbotron .user-detail {
+  margin-left: 10px;
+}
+
+.jumbotron .user-detail img {
+  margin-right: 5px;
+}
+
+.jumbotron .text {
+  margin-top: 15px;
+}
+
+.row-3 .left-side {
+  float: left;
+}
+
+.row-3 .left-side p, .row-3 .left-side b {
+  padding: 0 120px 0 0px;
+}
+
+.row-3 .left-side p {
+  margin-top: 10px;
+}
+
+.row-3 .left-side a {
+  margin-top: 20px;
+}
+
+.diskusi-1 {
+  width: calc(50% - 8px);
+  margin-right: 8px;
+  padding-right: 30px;
+}
+
+.diskusi-2 {
+  margin-left: 8px;
+  width: calc(50% - 8px);
+  padding-right: 30px;
+}
