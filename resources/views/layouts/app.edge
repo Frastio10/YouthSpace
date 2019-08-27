@@ -10,7 +10,10 @@
 	<body>
 		<header class="header " id="header">
 			<div class="container">
-				<a href="index.html" class="f-left">
+			 	
+		       
+     
+				<a href="index.html" class="f-left logo-top logo">
 					<img src="./assets/images/logo.svg" alt="" class="f-left">
 				</a>
 				<ul class="nav f-left">
@@ -61,6 +64,11 @@
 						</div>
 					</li>
 				</ul>
+				 <div class="hamburger f-left" id="hamburger-11">
+		          <span class="line"></span>
+		          <span class="line"></span>
+		          <span class="line"></span>
+		        </div>
 			</div>
 		</header>
 		@!section('content')
@@ -110,7 +118,7 @@
 							<p>Masuk untuk mendapatkan berita terbaru dan diskusikan mengenai tatangan </p>
 							<a href="#" class="btn btn-blue">Alamat email</a>
 					</div>
-					<span class="line"></span>
+					<span class="line-h"></span>
 					<span class="f-13 mt-40 f-lato f-left">&#169; 2019 Youthspace By Bernice Team</span>
 				</div>
 
@@ -125,7 +133,15 @@
         $('.lazy').Lazy();
         placeholder : "data:image/assets/images/loader.svg"
     });
+
+	 $(document).ready(function(){
+		  $(".hamburger").click(function(){
+		    $(this).toggleClass("is-active");
+		  });
+		});
+
 </script>
 @!section('js')
 <script src="assets/js/app.js" type="text/javascript" ></script>
+
 </html>

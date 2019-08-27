@@ -41,7 +41,10 @@
 	<body>
 		<header class="header " id="header">
 			<div class="container">
-				<a href="index.html" class="f-left">
+			 	
+		       
+     
+				<a href="index.html" class="f-left logo-top logo">
 					<img src="./assets/images/logo.svg" alt="" class="f-left">
 				</a>
 				<ul class="nav f-left">
@@ -97,6 +100,11 @@
 						</div>
 					</li>
 				</ul>
+				 <div class="hamburger f-left" id="hamburger-11">
+		          <span class="line"></span>
+		          <span class="line"></span>
+		          <span class="line"></span>
+		        </div>
 			</div>
 		</header>
 	
@@ -332,7 +340,7 @@
   					<p class="f-lato f-15">
   						Loren ipsum dolor sit amet consectetur adipiscing elit adeuismood consectetur adipiscing elit adeuismood Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
   					</p>
-  					<a href="" class="btn btn-blue">Lihat selengkapnya</a>
+					
   				</div>
   				<div class="right-side pos-r">
   					<img src="./assets/images/playbutton.svg" class="pos-a" alt="">
@@ -400,7 +408,7 @@
   								</div>
   							</div>
   							<div class="f-right f-grey f-lato f-15 text">
-  								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+  								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut "</p>
   							</div>
   						</div>
   						<div class="w-100 ov-h d-flex">
@@ -497,7 +505,7 @@
 							<p>Masuk untuk mendapatkan berita terbaru dan diskusikan mengenai tatangan </p>
 							<a href="#" class="btn btn-blue">Alamat email</a>
 					</div>
-					<span class="line"></span>
+					<span class="line-h"></span>
 					<span class="f-13 mt-40 f-lato f-left">&#169; 2019 Youthspace By Bernice Team</span>
 				</div>
 
@@ -511,6 +519,13 @@
         $('.lazy').Lazy();
         placeholder : "data:image/assets/images/loader.svg"
     });
+
+	 $(document).ready(function(){
+		  $(".hamburger").click(function(){
+		    $(this).toggleClass("is-active");
+		  });
+		});
+
 </script>
 
   	<script src="./assets/js/slick.min.js"></script>
@@ -522,8 +537,16 @@
   		  slidesToScroll: 4,
   		  nextArrow:$('.slick-next'),
   		  prevArrow:$('.slick-prev'),
+  		  responsive: [{
+  		  	breakpoint: 768,
+  		  	setting: {
+  		  		slideToShow:2,
+  		  		arrow:false,
+  		  	}
+  		  }]
 		  
   		});
   	</script>
 <script src="assets/js/app.js" type="text/javascript" ></script>
+
 </html>

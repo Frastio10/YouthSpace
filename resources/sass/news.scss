@@ -1,0 +1,29 @@
+@import "./header";
+
+.card-text{
+	display: block;
+	@include padding-y(13px);
+	@include padding-x(15px);
+	margin-left:-15px;
+	display: inline-block;	
+	z-index: 3;
+
+	a{
+		margin-top: 5px;
+	} 
+
+	.pills{
+		margin-bottom: 5px;
+	}
+
+	.card-info{
+		@include margin-y(4px);
+
+		span{
+	
+			&:nth-child(3){
+				margin-left: 10px;
+			}
+		}
+	}
+}

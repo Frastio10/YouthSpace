@@ -1,0 +1,75 @@
+@layout('layouts.app')
+
+
+@section('title')
+
+<title>Berita | YouthSpace</title>
+
+@endsection
+
+@section('meta')
+
+
+@endsection
+
+@section('js')
+
+
+
+@endsection
+
+@section('css')
+
+<link rel="stylesheet" href="./assets/css/news.css">
+
+@endsection
+
+@section('nav-list')
+<li><a href="news.html" class="current-page">Berita</a></li>
+<li><a href="diskusi.html">Diskusi</a></li>
+<li><a href="video.html">Video</a></li>
+<li><a href="inspirasi.html">Inspirasi</a></li>
+<li><a href="about.html">Tentang Kami</a></li>
+<li><a href="gallery.html">Galeri</a></li>
+@endsection
+
+@section('content')
+<div class="row">
+	<div class="container">
+		<div class="inner-row row cf mt-60">
+			<b class="f-25 f-playfair-bold dots-sm">Berita terbaru</b>
+			<div class="clearfix mb-30"></div>
+			<div class="nine col ml-0">
+				<div class="card">
+					<div class="d-flex pos-r">
+						<img src="./assets/images/news-thumb.png" class="bring-back" alt="">
+						<div class="flex-center">
+							<div class="bg-white d-block card-text box-shadow-thin">
+								<span class="pills pills-sm bg-darkgreen f-lato f-15 text-white d-ib">
+									Alam
+								</span>
+								<div class="cf"></div>
+								<h3 class="f-playfair-bold f-18">Perogram kekinian yang membuat generasi milenial ikut bertani</h3>
+								<div class="d-flex f-lato f-grey card-info">
+									<img src="./assets/images/clock.svg" alt="">
+									<span class="f-12 d-ib">18 Agustus 2019</span>
+									<span class="f-12 d-ib">Oleh : Admin</span>
+								</div>
+								<div class="text-card">
+									<p class="f-lato f-16 f-grey">
+										Sektor pertanian adalah penyumbang terbesar kedua terhadap perekonomian Indonesia, tapi banyak petani lokal belum dapat menikmati hasil yang adil atas jerih payah mereka.
+									</p>
+								</div>
+								<a href="view-news.html" class="btn btn-blue">Baca selengkapnya</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="three col bg-black">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquam atque unde placeat! Magni perspiciatis nostrum ex fugiat nisi asperiores sapiente sint doloremque quisquam laboriosam, laborum officiis mollitia quia unde.
+			</div>
+		</div>
+	</div>
+</div>
+@endsection
