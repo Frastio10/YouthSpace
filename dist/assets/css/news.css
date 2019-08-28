@@ -89,3 +89,39 @@
 .card-text .card-info span:nth-child(3) {
   margin-left: 10px;
 }
+
+.search-box {
+  height: 40px;
+}
+
+.search-box input {
+  padding-left: 15px;
+  border: none;
+}
+
+.search-box .search-icon {
+  padding: 10px;
+}
+
+.category {
+  padding: 16px;
+}
+
+.category ul {
+  margin-top: 7.5px;
+}
+
+.category ul li {
+  list-style: none;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+.category ul li a {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+.category ul li .active {
+  color: var(--primary);
+}

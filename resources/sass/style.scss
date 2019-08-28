@@ -16,7 +16,7 @@ html , body {
 }
 
 .box-shadow-semibold{
-		box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
 }
 
 .box-shadow-thin{
@@ -398,6 +398,9 @@ ul.horizontal-list{
 	float: right;
 }
 
+.ol-none{
+	outline: none;
+}
 
 //Displays
 .d-ib{
@@ -1017,5 +1020,50 @@ footer{
 
 	.nav-right{
 		display: none !important;
+	}
+}
+
+.pagination{
+
+	ul{
+		list-style-type: none;
+		display: flex;	
+
+
+		li{
+			float: left;	
+
+			a{
+				text-decoration: none;
+					color: var(--grey);
+
+
+				.paginate-item{
+					background: #e4e4e4;
+					@include padding-x(16px);
+					@include padding-y(12px);
+					display: flex;	
+					justify-content: center;
+					align-items: center;
+					vertical-align: middle;
+					margin-right: 5px;	
+
+					img{
+						height: 19px;	
+					}
+
+				}
+			}
+
+			.paginate-active{
+				color: #fff;
+
+				.paginate-item{
+				background: var(--primary);
+
+				}
+			}
+
+		}
 	}
 }

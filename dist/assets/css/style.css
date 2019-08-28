@@ -78,8 +78,8 @@ html, body {
 }
 
 .box-shadow-semibold {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
 }
 
 .box-shadow-thin {
@@ -632,6 +632,10 @@ ul.horizontal-list li {
 
 .f-right {
   float: right;
+}
+
+.ol-none {
+  outline: none;
 }
 
 .d-ib {
@@ -1424,4 +1428,55 @@ footer .inner-footer .footer-list ul li a {
   .nav-right {
     display: none !important;
   }
+}
+
+.pagination ul {
+  list-style-type: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+}
+
+.pagination ul li {
+  float: left;
+}
+
+.pagination ul li a {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+.pagination ul li a .paginate-item {
+  background: #e4e4e4;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.pagination ul li a .paginate-item img {
+  height: 19px;
+}
+
+.pagination ul li .paginate-active {
+  color: #fff;
+}
+
+.pagination ul li .paginate-active .paginate-item {
+  background: var(--primary);
 }
