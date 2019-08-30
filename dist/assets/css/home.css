@@ -80,6 +80,7 @@
   padding-bottom: 60px;
   float: left;
   position: relative;
+  width: 100%;
 }
 
 .date-wrapper span {
@@ -221,4 +222,31 @@
 
 .row-6 .box-3:last-child {
   margin-left: 15px;
+}
+
+@media screen and (max-width: 360px) {
+  .banner .banner-image-1 {
+    background-image: url("../images/bannerimg-2.png");
+    background-size: 100%;
+  }
+  .banner .banner-right {
+    width: 100%;
+    padding-top: 120px !important;
+    padding-bottom: 0 !important;
+  }
+  .banner .banner-right .bg-white {
+    padding: 15px;
+  }
+  .banner .banner-right b {
+    font-size: 14px !important;
+  }
+  .banner .banner-right p {
+    font-size: 12px !important;
+  }
+  .banner .banner-right .btn-responsive {
+    margin-top: 15px;
+  }
+  .slick-row {
+    max-width: 265px;
+  }
 }

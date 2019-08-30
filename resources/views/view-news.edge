@@ -1,0 +1,90 @@
+@layout('layouts.app')
+
+
+@section('title')
+
+<title>Berita | YouthSpace</title>
+
+@endsection
+
+@section('meta')
+
+
+@endsection
+
+@section('js')
+
+<script src="./assets/js/main.js"></script>
+
+@endsection
+
+@section('css')
+
+<link rel="stylesheet" href="./assets/css/view-news.css">
+<link rel="stylesheet" href="./assets/css/news.css">
+
+@endsection
+
+@section('nav-list')
+<li><a href="news.html" class="current-page">Berita</a></li>
+<li><a href="diskusi.html">Diskusi</a></li>
+<li><a href="video.html">Video</a></li>
+<li><a href="inspirasi.html">Inspirasi</a></li>
+<li><a href="about.html">Tentang Kami</a></li>
+<li><a href="gallery.html">Galeri</a></li>
+@endsection
+
+@section('content')
+
+<div class="row">
+	<div class="container">
+		<div class="inner-row row cf mt-60" id="root">
+			<template id="templates">
+				<b class="f-25 f-playfair-bold dots-sm mt-60 d-ib seven" id="title">{title}</b>
+				<div class="clearfix mb-30"></div>	
+				<div class="nine col ml-0">
+					<div class="bg-white box-shadow-semibold news-wrapper">
+						{image}
+						<div class="news-text">
+							<div class="d-flex">
+								<img src="./assets/images/clock.svg" alt="">
+								<span class="f-14 f-lato f-grey" id="time">
+									{date}
+								</span>
+								<span id="writer" class="f-14 f-lato f-grey">
+									Oleh : {author}
+								</span>
+							</div>
+							<div class="cf"></div>
+							<p id="desc" class="f-lato f-15 f-grey mt-16">
+								{desc}
+							</p>
+							<div class="d-flex">
+								
+							</div>
+						</div>
+					</div>	
+				</div>
+			</template>
+			<div class="three col">
+				<div class="search-box box-shadow-semibold d-flex">
+					<input type="text" class="w-100 ol-none f-lato f-13" placeholder="Cari berita lainnya">
+					<div class="d-flex bg-primary search-icon">
+						<img src="./assets/images/search.svg" alt="">
+					</div>
+				</div>
+				<div class="bg-white box-shadow-semibold mt-10 category">
+					<h4 class="f-20 f-playfair-bold">Kategori</h4>
+					<ul>
+						<li><a href="#?category=all" class="f-lato f-14 active">Semua</a></li>
+						<li><a href="#?category=edu" class="f-lato f-14">Pendidikan</a></li>
+						<li><a href="#?category=tech" class="f-lato f-14">Teknologi</a></li>
+						<li><a href="#?category=nature" class="f-lato f-14">Alam</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+@endsection

@@ -25,6 +25,7 @@
 	@include padding-y(60px);
 	float: left;	
 	position: relative;	
+	width: 100%;
 }
 
 .date-wrapper{
@@ -187,3 +188,41 @@
 		}
 	}
 }
+
+@include breakpoint-down(xs){
+	.banner{
+
+		.banner-image-1{
+			background-image: url('../images/bannerimg-2.png');
+			background-size: 100%;
+		}
+
+		.banner-right{
+			width: 100%;
+			padding-top: 120px !important;
+			padding-bottom: 0 !important;
+			
+			.bg-white{
+			padding: 15px;
+
+			}
+
+			b{
+				font-size: 14px !important;
+			}
+
+			p{
+
+				font-size: 12px !important;
+			}
+
+			.btn-responsive{
+				margin-top: 15px;	
+			}
+		}
+	}
+
+	.slick-row{
+		max-width: 265px;
+	}
+};

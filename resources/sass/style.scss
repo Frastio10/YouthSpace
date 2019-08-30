@@ -11,6 +11,16 @@ html , body {
 
 }
 
+
+//Responsive styling
+.res-none{
+	display: none;
+}
+
+.logo-res{
+
+}
+
 .m-0-auto{
 	margin: 0 auto;
 }
@@ -494,7 +504,8 @@ ul.horizontal-list{
 }
 
 .row{
-	overflow: hidden;
+	//overflow: hidden;
+	width: 100%;
 }
 
 //Hamburger
@@ -826,7 +837,7 @@ footer{
 
 .last-box{
 	width:150px;
-	height: 350px;
+	height: 100%;
 }
 
 .normal-box{
@@ -1067,3 +1078,91 @@ footer{
 		}
 	}
 }
+
+@include breakpoint-down(xs){
+	
+	.row-1{
+
+		.inner-row{
+			padding-top: 50px;
+
+			.secondary-text{
+				font-size: 13px !important;
+			}
+		}
+	}
+
+	.dots-sm{
+		font-size: 15px;
+		
+		&:before{
+			top: -5px;
+			width: 25px;
+			height: 25px;
+			background-size: 100%;
+			background-image: url('../images/small-dots.svg');
+		}
+
+	}
+
+	.btn-responsive{
+
+		@include padding-x(9px);
+		@include padding-y(6px);
+		font-size: 12px;
+	}
+
+	.res-block{
+		display: none;
+	}
+
+	.res-none{
+		display: block;
+	}
+
+	.made-by{
+		margin-top: 6px;
+	}
+
+	footer{
+
+		.line-h{
+			margin-top: 20px;
+			display: inline-block;
+
+		}
+
+		.inner-footer{
+			padding: 25px 55px 14px 21px;
+
+			.footer-list{
+				width: 100%;
+				display: unset;
+				@include margin-y(8px);
+				ul{
+					margin-top: 8px;
+
+					li{
+
+						@include padding-y(5px);
+					}
+				}
+			}
+
+			.footer-desc{
+				margin-top: 13px;
+
+				p{
+					margin-top: 10px;
+				}
+			}
+		}
+
+
+		.last-box{
+			width: 36px;
+		}
+	}
+};
+
+
