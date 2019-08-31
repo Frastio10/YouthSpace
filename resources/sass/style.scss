@@ -196,7 +196,7 @@ a {
 @for $i from 5 through 40 {
 
 	  .f-#{$i} {
-	    font-size: #{$i}px !important;
+	    font-size: #{$i}px;
 	  }
 }
 
@@ -290,7 +290,7 @@ ul.horizontal-list{
 }
 
 .ml-0{
-	margin-left: 0;
+	margin-left: 0 !important;
 }
 
 .mr-0{
@@ -1080,6 +1080,9 @@ footer{
 }
 
 @include breakpoint-down(xs){
+	.normal-box{
+		width: 20%;
+	}
 	
 	.row-1{
 

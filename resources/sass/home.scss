@@ -223,6 +223,133 @@
 	}
 
 	.slick-row{
-		max-width: 265px;
+		max-width: calc(100% + 8px);
+
+		.outer-card{
+			width: 291px !important;
+			@include margin-x(15px);
+		}
 	}
+
+	.row-2{
+		
+
+		.dots-ml{
+			margin-bottom: 8px;
+		}
+
+		.inner-row{
+			z-index: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			vertical-align: middle;
+			align-items: center;
+		}
+
+		.diskusi-1{
+			@include margin-y(50px);
+			width: 100%;
+			z-index: 1;
+			
+			.text{
+				p{
+					font-size: 12px;
+				}
+			}
+
+		}
+	}
+
+	.btn-more{
+			margin-top: 0 !important	;
+		}
+
+	.row-3{
+
+		.inner-row{
+			flex-direction: row;
+		}
+	}
+
+	.row-4{
+
+		.inner-row{
+			
+			z-index: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			vertical-align: middle;
+			align-items: center;
+		}
+	}
+
+	.secondary-text{
+		font-size: 12px !important;
+	}
+
+	.dots-ml{
+		margin-left: 0 !important;	
+		margin-bottom: 8px !important	;	
+	}
+
+	.inspirasi-1{
+		width: calc(100%) !important;
+		@include margin-y(50px); 
+	}
+
+
+	.inspirasi-2,
+	.inspirasi-3{
+		display: none;	
+	}
+
+	.row-5{
+
+		.left-side{
+
+		}
+
+		.right-side{
+			padding-left: 10px;
+
+			.btn{
+				@include padding-y(8px);
+				@include padding-x(10px);
+			}
+		}
+	}
+
+	.row-6{
+
+		.inner-row{
+			@include padding-y(40px);
+			z-index: 1;
+		}
+
+		.dots-mr{
+			margin-right: 0;	
+		}
+
+		.box-3{
+				
+			img{
+				width: 100%;	
+			}
+
+			width: calc(100%);
+			margin-right: 0 !important	;	
+
+			&:last-child{
+				display: none;	
+			}
+
+			&:first-child{
+				margin-bottom: 15px;	
+			}
+		}
+	}
+
+
 };
