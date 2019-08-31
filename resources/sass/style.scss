@@ -34,6 +34,16 @@ html , body {
 
 }
 
+//Cursor
+.cs-p{
+	cursor: pointer;
+}
+
+//Border
+.bd-n{
+	border: none;
+}
+
 //Pills
 .pills{
 	border-radius: 50px;
@@ -1079,7 +1089,7 @@ footer{
 	}
 }
 
-@include breakpoint-down(xs){
+@include breakpoint-down(sm){
 	.normal-box{
 		width: 20%;
 	}

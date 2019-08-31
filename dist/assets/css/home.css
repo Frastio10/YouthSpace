@@ -224,7 +224,7 @@
   margin-left: 15px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
   .banner .banner-image-1 {
     background-image: url("../images/bannerimg-2.png");
     background-size: 100%;

@@ -111,107 +111,35 @@
   		<div class="inner-row row cf mt-60">
   			<b class="f-25 f-playfair-bold dots-sm mt-60 d-ib">Berita terbaru</b>
   			<div class="clearfix mb-30"></div>
-  			<div class="nine col ml-0">
-  				<div class="card mb-35">
-  					<div class="d-flex pos-r">
-  						<img src="./assets/images/news-thumb.png" class="bring-back" alt="">
-  						<div class="flex-center">
-  							<div class="bg-white d-block card-text box-shadow-thin">
-  								<span class="pills pills-sm bg-darkgreen f-lato f-15 text-white d-ib">
-  									Alam
-  								</span>
-  								<div class="cf"></div>
-  								<h3 class="f-playfair-bold f-18">Perogram kekinian yang membuat generasi milenial ikut bertani</h3>
-  								<div class="d-flex f-lato f-grey card-info">
-  									<img src="./assets/images/clock.svg" alt="">
-  									<span class="f-12 d-ib">18 Agustus 2019</span>
-  									<span class="f-12 d-ib">Oleh : Admin</span>
+  			<div class="nine col ml-0 " id="root">
+  				<template id="templates">
+  					<div class="card mb-35">
+  						<div class="d-flex pos-r">
+  							<img src="./assets/images/news-thumb.png" class="bring-back" alt="">
+  							<div class="flex-center">
+  								<div class="bg-white d-block card-text box-shadow-thin">
+  									<span class="pills pills-sm {pill-bg} f-lato f-15 text-white d-ib">
+  										{category}
+  									</span>
+  									<div class="cf"></div>
+  									<h3 class="f-playfair-bold f-18">{title}</h3>
+  									<div class="d-flex f-lato f-grey card-info">
+  										<img src="./assets/images/clock.svg" alt="">
+  										<span class="f-12 d-ib">{date}</span>
+  										<span class="f-12 d-ib">Oleh : {author}</span>
+  									</div>
+  									<div class="text-card">
+  										<p class="f-lato f-16 f-grey">
+  											{shortdesc1}
+  										</p>
+  									</div>
+  									{link}
   								</div>
-  								<div class="text-card">
-  									<p class="f-lato f-16 f-grey">
-  										Sektor pertanian adalah penyumbang terbesar kedua terhadap perekonomian Indonesia, tapi banyak petani lokal belum dapat menikmati hasil yang adil atas jerih payah mereka.
-  									</p>
-  								</div>
-  								<a href="view-news.html?news_id=0&category=nature" class="btn btn-blue">Baca selengkapnya</a>
   							</div>
   						</div>
   					</div>
-  				</div>
-  				<div class="card mb-35">
-  					<div class="d-flex pos-r">
-  						<img src="./assets/images/news-thumb.png" class="bring-back" alt="">
-  						<div class="flex-center">
-  							<div class="bg-white d-block card-text box-shadow-thin">
-  								<span class="pills pills-sm bg-darkyellow f-lato f-15 text-white d-ib">
-  									Pendidikan
-  								</span>
-  								<div class="cf"></div>
-  								<h3 class="f-playfair-bold f-18">Perogram kekinian yang membuat generasi milenial ikut bertani</h3>
-  								<div class="d-flex f-lato f-grey card-info">
-  									<img src="./assets/images/clock.svg" alt="">
-  									<span class="f-12 d-ib">18 Agustus 2019</span>
-  									<span class="f-12 d-ib">Oleh : Admin</span>
-  								</div>
-  								<div class="text-card">
-  									<p class="f-lato f-16 f-grey">
-  										Sektor pertanian adalah penyumbang terbesar kedua terhadap perekonomian Indonesia, tapi banyak petani lokal belum dapat menikmati hasil yang adil atas jerih payah mereka.
-  									</p>
-  								</div>
-  								<a href="view-news.html" class="btn btn-blue">Baca selengkapnya</a>
-  							</div>
-  						</div>
-  					</div>
-  				</div>
-  				<div class="card mb-35">
-  					<div class="d-flex pos-r">
-  						<img src="./assets/images/news-thumb.png" class="bring-back" alt="">
-  						<div class="flex-center">
-  							<div class="bg-white d-block card-text box-shadow-thin">
-  								<span class="pills pills-sm bg-darkblue f-lato f-15 text-white d-ib">
-  									Teknologi
-  								</span>
-  								<div class="cf"></div>
-  								<h3 class="f-playfair-bold f-18">Perogram kekinian yang membuat generasi milenial ikut bertani</h3>
-  								<div class="d-flex f-lato f-grey card-info">
-  									<img src="./assets/images/clock.svg" alt="">
-  									<span class="f-12 d-ib">18 Agustus 2019</span>
-  									<span class="f-12 d-ib">Oleh : Admin</span>
-  								</div>
-  								<div class="text-card">
-  									<p class="f-lato f-16 f-grey">
-  										Sektor pertanian adalah penyumbang terbesar kedua terhadap perekonomian Indonesia, tapi banyak petani lokal belum dapat menikmati hasil yang adil atas jerih payah mereka.
-  									</p>
-  								</div>
-  								<a href="view-news.html" class="btn btn-blue">Baca selengkapnya</a>
-  							</div>
-  						</div>
-  					</div>
-  				</div>
-  				<div class="card mb-35">
-  					<div class="d-flex pos-r">
-  						<img src="./assets/images/news-thumb.png" class="bring-back" alt="">
-  						<div class="flex-center">
-  							<div class="bg-white d-block card-text box-shadow-thin">
-  								<span class="pills pills-sm bg-darkyellow f-lato f-15 text-white d-ib">
-  									Pendidikan	
-  								</span>
-  								<div class="cf"></div>
-  								<h3 class="f-playfair-bold f-18">Perogram kekinian yang membuat generasi milenial ikut bertani</h3>
-  								<div class="d-flex f-lato f-grey card-info">
-  									<img src="./assets/images/clock.svg" alt="">
-  									<span class="f-12 d-ib">18 Agustus 2019</span>
-  									<span class="f-12 d-ib">Oleh : Admin</span>
-  								</div>
-  								<div class="text-card">
-  									<p class="f-lato f-16 f-grey">
-  										Sektor pertanian adalah penyumbang terbesar kedua terhadap perekonomian Indonesia, tapi banyak petani lokal belum dapat menikmati hasil yang adil atas jerih payah mereka.
-  									</p>
-  								</div>
-  								<a href="view-news.html" class="btn btn-blue">Baca selengkapnya</a>
-  							</div>
-  						</div>
-  					</div>
-  				</div>
+  				</template>
+				
   				<div class="pagination mt-60 mb-30 f-lato text-grey">
   					<ul class="">
   						<li>
@@ -247,18 +175,18 @@
   			</div>
   			<div class="three col">
   				<div class="search-box box-shadow-semibold d-flex">
-  					<input type="text" class="w-100 ol-none f-lato f-13" placeholder="Cari berita lainnya">
-  					<div class="d-flex bg-primary search-icon">
+  					<input type="text" class="w-100 ol-none f-lato f-13" placeholder="Cari berita lainnya" id="search_input">
+  					<button class="d-flex bg-primary search-icon bd-n cs-p" id="search_button">
   						<img src="./assets/images/search.svg" alt="">
-  					</div>
+  					</button>
   				</div>
   				<div class="bg-white box-shadow-semibold mt-10 category">
   					<h4 class="f-20 f-playfair-bold">Kategori</h4>
   					<ul>
-  						<li><a href="#?category=all" class="f-lato f-14 active">Semua</a></li>
-  						<li><a href="#?category=edu" class="f-lato f-14">Pendidikan</a></li>
-  						<li><a href="#?category=tech" class="f-lato f-14">Teknologi</a></li>
-  						<li><a href="#?category=nature" class="f-lato f-14">Alam</a></li>
+  						<li><a href="?category=all" class="f-lato f-14 category-list all">Semua</a></li>
+  						<li><a href="?category=education" class="f-lato f-14 category-list edu">Pendidikan</a></li>
+  						<li><a href="?category=technology" class="f-lato f-14 category-list tech">Teknologi</a></li>
+  						<li><a href="?category=nature" class="f-lato f-14 category-list nature">Alam</a></li>
   					</ul>
   				</div>
   			</div>
@@ -334,7 +262,7 @@
 
 </script>
 
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/news-list.js"></script>
   
 <script src="assets/js/app.js" type="text/javascript" ></script>
 

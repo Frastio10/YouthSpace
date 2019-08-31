@@ -91,6 +91,14 @@ html, body {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
 }
 
+.cs-p {
+  cursor: pointer;
+}
+
+.bd-n {
+  border: none;
+}
+
 .pills {
   border-radius: 50px;
 }
@@ -1485,7 +1493,7 @@ footer .inner-footer .footer-list ul li a {
   background: var(--primary);
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
   .normal-box {
     width: 20%;
   }
