@@ -27,12 +27,13 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="base_uri" content="./">
 
+
   
 
-  <link rel="stylesheet" href="./assets/css/news.css">
+  <link rel="stylesheet" href="./assets/css/about.css">
   
 
-  <title>Berita | YouthSpace</title>
+  <title>Tentang Kami | YouthSpace</title>
   
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	</head>
@@ -47,11 +48,11 @@
 					<img src="./assets/images/logo-only.svg" alt="" class="logo-res res-none">
 				</a>
 				<ul class="nav f-left">
-<li><a href="news.html" class="current-page">Berita</a></li>
+<li><a href="news.html">Berita</a></li>
   <li><a href="diskusi.html">Diskusi</a></li>
   <li><a href="video.html">Video</a></li>
   <li><a href="inspirasi.html">Inspirasi</a></li>
-  <li><a href="about.html">Tentang Kami</a></li>
+  <li><a href="about.html" class="current-page">Tentang Kami</a></li>
   <li><a href="gallery.html">Galeri</a></li>
 				</ul>
 				<ul class="nav-right f-right">
@@ -105,93 +106,43 @@
 		        </div>
 			</div>
 		</header>
-<div class="row">
+
+  <div class="row d-flex align-item-stretch pos-r row-1">
+  	<div class="w-50 bg-primary pos-a bring-back h-100"></div>
   	<div class="container">
-  		<div class="inner-row row cf mt-60">
-  			<b class="f-25 f-playfair-bold dots-sm mt-60 d-ib">Berita terbaru</b>
-  			<div class="clearfix mb-30"></div>
-  			<div class="nine col ml-0 " id="root">
-  				<template id="templates">
-  					<div class="card mb-35">
-  						<div class="d-flex pos-r">
-  							<img src="./assets/images/news-thumb.png" class="bring-back" alt="">
-  							<div class="flex-center">
-  								<div class="bg-white d-block card-text box-shadow-thin">
-  									<span class="pills pills-sm {pill-bg} f-lato f-15 text-white d-ib">
-  										{category}
-  									</span>
-  									<div class="cf"></div>
-  									<h3 class="f-playfair-bold f-18">{title}</h3>
-  									<div class="d-flex f-lato f-grey card-info">
-  										<img src="./assets/images/clock.svg" alt="">
-  										<span class="f-12 d-ib">{date}</span>
-  										<span class="f-12 d-ib">Oleh : {author}</span>
-  									</div>
-  									<div class="text-card">
-  										<p class="f-lato f-16 f-grey">
-  											{shortdesc1}
-  										</p>
-  									</div>
-  									{link}
-  								</div>
-  							</div>
-  						</div>
-  					</div>
-  				</template>
-				
-  				<div class="pagination mt-60 mb-30 f-lato text-grey">
-  					<ul class="">
-  						<li>
-  							<a href="#" class="">
-  								<div class="paginate-item">
-  									<img src="./assets/images/arr-left.svg" alt="">
-  								</div>
-  							</a>
-  						</li>
-  						<li>
-  							<a href="#?page=1" class="paginate-item paginate-number paginate-active">
-  								<div class="paginate-item">1</div>
-  							</a>
-  						</li>
-  						<li>
-  							<a href="#?page=2" class=" paginate-number">
-  								<div class="paginate-item">2</div>
-  							</a>
-  						</li>
-  						<li>
-  							<a href="#?page=3" class=" paginate-number">
-  								<div class="paginate-item">3</div>
-  							</a>
-  						</li>
-  						<li><a href="#" class=" ">
-  								<div class="paginate-item">
-  									<img src="./assets/images/arr-right.svg" alt="">
-  								</div>
-  							</a>
-  						</li>
-  					</ul>
+  		<div class="inner-row">
+  			<div class="five col d-flex about-desc">
+  				<div class="text">
+  					<h2 class="f-playfair f-25 text-white">Tujuan kami?</h2>
+  					<p class="f-lato f-14 text-white secondary">Membantu untuk menghadapi tantangan generasi milenial dengan cara berdiskusi, yaitu mendiskusikan tantangan apa yang sedang mereka hadapi  dan memberikan inspirasi melalui media bacaan yang di bagikan oleh user yang sudah berhasil menyelesaikan tantangan yang mereka hadapi dan video seminar yang membatu untuk menjelaskan seputar generasi milenial dan tips tips menghadapi tantangan</p>
   				</div>
   			</div>
-  			<div class="three col">
-  				<div class="search-box box-shadow-semibold d-flex">
-  					<input type="text" class="w-100 ol-none f-lato f-13" placeholder="Cari berita lainnya" id="search_input">
-  					<button class="d-flex bg-primary search-icon bd-n cs-p" id="search_button">
-  						<img src="./assets/images/search.svg" alt="">
-  					</button>
-  				</div>
-  				<div class="bg-white box-shadow-semibold mt-10 category">
-  					<h4 class="f-20 f-playfair-bold">Kategori</h4>
-  					<ul>
-  						<li><a href="?category=all" class="f-lato f-14 category-list all">Semua</a></li>
-  						<li><a href="?category=education" class="f-lato f-14 category-list edu">Pendidikan</a></li>
-  						<li><a href="?category=technology" class="f-lato f-14 category-list tech">Teknologi</a></li>
-  						<li><a href="?category=nature" class="f-lato f-14 category-list nature">Alam</a></li>
-  					</ul>
-  				</div>
+  			<div class="seven col d-flex flex-center thumb-1">
+  				<img src="./assets/images/about-1.png" alt="">
   			</div>
   		</div>
   	</div>
   </div>
+
+  <div class="row d-flex align-item-stretch pos-r row-2">
+  	<div class="w-50 pos-a bring-back h-100">
+  		<img src="./assets/images/about-2.png" class="w-100 h-100" alt="">
+  	</div>
+  	<div class="container">
+  		<div class="inner-row">
+  			<div class="six col d-flex flex-center thumb-1">
+  			</div>
+  			<div class="six col d-flex about-desc">
+  				<div class="text">
+  					<h2 class="f-playfair f-25 dots-sm">Diskusi populer</h2>
+  					<p class="f-lato f-14 secondary">Menyediakan ruang diskusi untuk para pemuda yang ingin mendapatkan solusi untuk menghadapi tantangan, dan Youthspace juga menyediakan ruang inspirasi di mana ada beberapa inspirasi yang di upload oleh orang yang sudah pernah berhasil menghadapi tantangan, kamijuga menyediakan video seperti video seminar yang membagi tips tips menghadapi suatu permasalahan generasi milenial, kami uga membagikan berita terkini seputar generasi atau kegiatan generaasi milenial</p>
+  				</div>
+  			</div>
+			
+  		</div>
+  	</div>
+  </div>
+  
 		<footer class="footer w-100 d-flex">
 			<div class="box-blue last-box"></div>
 			<div class="container">
@@ -261,7 +212,6 @@
 
 </script>
 
-  <script src="./assets/js/news-list.js"></script>
   
 <script src="assets/js/app.js" type="text/javascript" ></script>
 

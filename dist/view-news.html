@@ -56,14 +56,13 @@
   <li><a href="gallery.html">Galeri</a></li>
 				</ul>
 				<ul class="nav-right f-right">
-					<li class="popup-trigger">
-						<img src="./assets/images/indo-flag.svg" alt="">
-					</li>
+					
 					<li class="popup-trigger pos-r">
+						<img src="./assets/images/indo-flag.svg" class="flag-lang" alt="">
 						<img src="./assets/images/chevron-right.svg" alt="">
 						<div class="popup-content d-none pos-a bring-front">
 							<div class="bg-white flags">
-								<a href="">
+								<a href="/en/">
 									<img src="./assets/images/en.svg" alt="">
 									EN
 								</a>
@@ -110,38 +109,56 @@
 
   <div class="row">
   	<div class="container">
-  		<div class="inner-row row cf mt-60" id="root">
-  			<template id="templates">
-  				<b class="f-25 f-playfair-bold dots-sm mt-60 d-ib seven" id="title">{title}</b>
-  				<div class="clearfix mb-30"></div>	
-  				<div class="nine col ml-0">
-  					<div class="bg-white box-shadow-semibold news-wrapper">
-  						{image}
-  						<div class="news-text">
-  							<div class="d-flex">
-  								<img src="./assets/images/clock.svg" alt="">
-  								<span class="f-14 f-lato f-grey" id="time">
-  									{date}
-  								</span>
-  								<span id="writer" class="f-14 f-lato f-grey">
-  									Oleh : {author}
-  								</span>
+  		<div class="inner-row row cf mt-60" id="roots">
+			
+  				<template id="templates">
+
+  					<b class="f-25 f-playfair-bold dots-sm mt-60 d-ib seven" id="title">{title}</b>
+  					<div class="clearfix mb-30"></div>	
+
+  					<div class="nine col ml-0">
+  						<div class="bg-white box-shadow-semibold news-wrapper">
+  							{image}
+  							<div class="news-text">
+  								<div class="d-flex">
+  									<img src="./assets/images/clock.svg" alt="">
+  									<span class="f-14 f-lato f-grey" id="time">
+  										{date}
+  									</span>
+  									<span id="writer" class="f-14 f-lato f-grey">
+  										Oleh : {author}
+  									</span>
+  								</div>
+  								<div class="cf"></div>
+  								<p id="desc" class="f-lato f-15 f-grey mt-16">
+  									{desc}
+  								</p>
+  								<div class="d-flex mt-30">
+  									<div class="mr-20 f-left cs-p" id="share">
+  										<img src="./assets/images/share-2.svg" alt="">
+  									</div>
+									
+  										<button onclick="loveAdd()" class="mr-20 love-btn">
+  											<div class="f-left cs-p love" id="love">
+  												<svg xmlns="http://www.w3.org/2000/svg" width="28.496" height="25.11" viewBox="0 0 28.496 25.11">
+  												  <path id="heart_1_" data-name="heart (1)" d="M26,5.041a6.972,6.972,0,0,0-9.862,0L14.8,6.385,13.453,5.041A6.973,6.973,0,0,0,3.591,14.9l1.344,1.344L14.8,26.108l9.862-9.862L26,14.9a6.972,6.972,0,0,0,0-9.862Z" transform="translate(-0.549 -1.998)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  												</svg>
+  											</div>
+  										</button>
+									
+  									<div class="mr-20 f-left cs-p" id="comment">
+  										<img src="./assets/images/message-square.svg" alt="">
+  									</div>
+  								</div>
   							</div>
-  							<div class="cf"></div>
-  							<p id="desc" class="f-lato f-15 f-grey mt-16">
-  								{desc}
-  							</p>
-  							<div class="d-flex">
-								
-  							</div>
-  						</div>
-  					</div>	
-  				</div>
-  			</template>
+  						</div>	
+  					</div>
+  				</template>
+			
   			<div class="three col">
   				<div class="search-box box-shadow-semibold d-flex">
   					<input type="text" class="w-100 ol-none f-lato f-13" placeholder="Cari berita lainnya" id="search_input">
-  					<div class="d-flex bg-primary search-icon bd-n cs-p" id="search_	button">
+  					<div class="d-flex bg-primary search-icon bd-n cs-p" id="search_button">
   						<img src="./assets/images/search.svg" alt="">
   					</div>
   				</div>
@@ -229,6 +246,13 @@
 </script>
 
   <script src="./assets/js/main.js"></script>
+
+  <script>
+
+
+
+
+  </script>
   
 <script src="assets/js/app.js" type="text/javascript" ></script>
 

@@ -62,21 +62,20 @@
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 
-.news-text {
-  padding: 20px 30px;
+.about-desc {
+  padding: 150px 0 150px 0;
 }
 
-#writer {
-  margin-left: 20px;
+.thumb-1 {
+  padding: 30px 0 30px 0;
+}
+
+.row {
+  margin-top: 65px;
+  margin-bottom: 65px;
   display: inline-block;
 }
 
-.love-btn {
-  background: transparent;
-  border: none;
-  outline: none;
-}
-
-.love-btn .love.active svg path {
-  fill: var(--primary);
+.secondary {
+  margin-top: 15px;
 }

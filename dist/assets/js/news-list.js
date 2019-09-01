@@ -31,12 +31,12 @@ const getRandomValue = (arr, count)=>{
 search_input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
     event.preventDefault();
-	window.location.href = `?search_query=${search_input.value}`;
+	window.location.href = `news.html?search_query=${search_input.value}`;
   }
 });
 
 btn_search.addEventListener("click",()=>{
-	window.location.href = `?search_query=${search_input.value}`;
+	window.location.href = `news.html?search_query=${search_input.value}`;
 });
 
 
@@ -174,6 +174,7 @@ btn_search.addEventListener("click",()=>{
 
 		})
 		$(root).prepend(temp);
+
 	})
 })();
 

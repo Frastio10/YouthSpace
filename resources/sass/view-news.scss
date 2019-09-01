@@ -12,3 +12,20 @@
 	margin-left: 20px;
 	display: inline-block;
 }
+
+.love-btn{
+	background:transparent;
+	border: none;
+	outline: none;
+
+
+	.love.active{
+
+		svg{
+
+			path{
+				fill: var(--primary);
+			}
+		}
+	}
+}

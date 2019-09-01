@@ -1,0 +1,18 @@
+@import "./header";
+
+.about-desc{
+	padding:150px 0 150px 0;
+}
+
+.thumb-1{
+	padding: 30px 0 30px 0;
+}
+
+.row{
+	@include margin-y(65px);
+	display: inline-block;
+}
+
+.secondary{
+	margin-top: 15px;
+}

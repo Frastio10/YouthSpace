@@ -4,9 +4,19 @@ $('.popup-trigger').hover(function(event) {
 
 $('.flags').hover(function(event) {
 	$(this).children('.popup-content').toggleClass('d-none');
+
 });
 
 $('.paginate-number').click(function(event) {
 	$('.paginate-number').removeClass('paginate-active');
 	$(this).addClass('paginate-active');
+
 });
+
+
+const loveAdd = ()=>{
+	$(document).ready(function($) {
+		$('.love').toggleClass('active');
+	});
+}
+

@@ -1,0 +1,27 @@
+@import "./header";
+
+.row-1{
+	
+	margin-top: 120px;
+
+	.inner-row{
+		padding-top: 15px;
+	}
+	
+	.text-top{
+		@include padding-x(60px);
+
+		.text-1,
+		.text-2{
+			margin-top: 15px;
+		}
+
+		.btn{
+			margin-top: 15px;
+		}
+	}
+}
+
+.slick-row{
+	padding-bottom: 10px !important;
+}

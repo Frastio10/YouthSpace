@@ -307,6 +307,18 @@ ul.horizontal-list{
 	margin-right: 0;
 }
 
+.ml-30{
+	margin-left: 30px;
+}
+
+.mr-30{
+	margin-right: 30px;
+}
+
+.mr-20{
+	margin-right:20px;
+}
+
 .mt-30{
 	margin-top: 30px;
 }
@@ -404,6 +416,14 @@ ul.horizontal-list{
 
 .w-100{
 	width: 100%;
+}
+
+.h-50{
+	height: 50%;
+}
+
+.h-100{
+	height: 100%;
 }
 
 .clearfix{
@@ -531,6 +551,10 @@ ul.horizontal-list{
 
 .hamburger:hover{
   cursor: pointer;
+}
+
+.flag-lang{
+	margin-right: 5px;
 }
 
 #hamburger-11{
@@ -847,7 +871,7 @@ footer{
 
 .last-box{
 	width:150px;
-	height: 87%;
+	height: 50%;
 }
 
 .normal-box{
