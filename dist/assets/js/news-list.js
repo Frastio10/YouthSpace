@@ -1,3 +1,4 @@
+//Define elements
 const root = document.getElementById("root"); 
 let temp = "";
 const search = new URLSearchParams(window.location.search);
@@ -5,14 +6,12 @@ const template = document.getElementById("templates").innerHTML;
 // const templates = document.getElementById('templates').innerHTML;
 
 
-//Searchbox
+//Define Searchbox
 const search_input = document.getElementById('search_input');
 const btn_search = document.getElementById('search_button');
 
 
-
-
-
+//Generate random values
 const getRandomValue = (arr, count)=>{
   var result = [];
   var _tmp = arr.slice();
@@ -27,11 +26,12 @@ const getRandomValue = (arr, count)=>{
 // 	console.log(search_input.value);
 // });
 
+
+//Event triggers on search box
 search_input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
     event.preventDefault();
 	window.location.href = `?search_query=${search_input.value}`;
-   
   }
 });
 
@@ -41,21 +41,21 @@ btn_search.addEventListener("click",()=>{
 
 
 
+//Fetch JSON
 (async()=>{
 	fetch('article.json').then(async(result, key)=>{
 		var data = await result.json();	
 
-		
-		
-
-
+		//Get url values
 		const url = search.get("category") ? search.get("category") : "all";
 
+		//Filter data by it's category
 		var filtered_data = data.filter( element => element.category == url);
 		console.log(filtered_data);
 
 		var limit = 4;
 		
+		//Navigate category
 		if (url == "all") {
 			$('.catefory-list').removeClass('active');
 			$('.all').addClass('active');
@@ -70,12 +70,14 @@ btn_search.addEventListener("click",()=>{
 			$('.tech').addClass('active');
 		}
 
+		//Generate random values
 		var random = Math.ceil(Math.random() * data.length);
 
 		let pill_bg = "";
 
 		let category;
 
+		//Category
 		const categories = (data)=>{
 
 				if (data == "nature") {
@@ -94,9 +96,11 @@ btn_search.addEventListener("click",()=>{
 
 		}
 		
+		//Get search query values
 		const search_query = search.get("search_query") ? search.get("search_query") : null;
 		const regexp = new RegExp(search_query,"i");
 
+		//Find the data and shows it up
 		if (search_query != null) {
 			data.forEach(async(item,key)=>{
 				if ((item.title.search(regexp) != -1) || (item.desc.search(regexp) != -1) || (item.author.search(regexp) != -1) || (item.category.search(regexp) != -1)) {
@@ -119,6 +123,7 @@ btn_search.addEventListener("click",()=>{
 		}
 
 		
+		//Shows random article on category all and shows it up
 		if(url == "all" && search_query == null){
 			
 			let randomValue = getRandomValue(data, limit);
@@ -140,6 +145,7 @@ btn_search.addEventListener("click",()=>{
 			});
 		}
 		
+		//Show data that has been filtered by it's category
 		filtered_data.forEach(async(item,key)=>{
 			
 			if(url != null){
