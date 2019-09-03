@@ -1,0 +1,127 @@
+@layout('layouts.default')
+
+
+@section('title')
+
+<title>Daftar | YouthSpace</title>
+
+@endsection
+
+
+@section('meta')
+
+
+
+@endsection
+
+
+
+@section('js')
+
+
+@endsection
+
+
+
+@section('css')
+
+<link rel="stylesheet" href="./assets/css/register.css">
+
+@endsection
+
+
+@section('content')
+
+<div class="row d-flex align-items-end">
+	<div class="bg-primary pos-a bring-back bottom right blue-side b-box d-flex flex-center	text-center flex-column">
+		<div class="pos-r">
+			<a href="index.html">
+				<div class="d-flex flex-column bring-front">
+					<img src="./assets/images/logo-only-white.svg" alt="">
+					<span class="f-playfair f-33 f-white logo-text">YouthSpace</span>
+				</div>
+			</a>
+		</div>
+		<p class="f-lato f-20 f-white text-secondary">Bergabung Bersama kami<br>untuk berdikusi mengenai tantangan yang kamu gadapi</p>
+	</div>
+	<div class="container d-flex align-items-end">
+		<div class="bg-white form-box box-shadow-semibold b-box ">
+			<div class="w-100">
+				<a href="register.html">
+					<b class="f-25 f-playfair dots-sm bring-front login f-black">Daftar</b>
+				</a>
+				<a href="login.html">
+					<b class="f-25 f-playfair f-grey register">Masuk</b>
+				</a>
+			</div>
+			<form action="#">
+				<div class="w-100 f-left ov-h">
+					<div class="firstname-wrapper user-input name f-left">
+						<div class="firstname wrapper pos-r">
+							<input type="text" placeholder="Nama depan" class="input-fisrtname bd-n ol-none w-100" required="true">
+						</div>
+					</div>
+					<div class="lastname-wrapper user-input name f-right ov-h">
+						<div class="lastname wrapper pos-r">
+							<input type="text" placeholder="Nama belakang" class="input-lastname bd-n ol-none w-100" required="true">
+						</div>
+					</div>
+				</div>
+				<div class="username-wrapper user-input w-100 ov-h">
+					<div class="username wrapper pos-r">
+						<input type="text" placeholder="Email or username" class="input-username bd-n ol-none w-100" required="true">
+					</div>
+				</div>
+				<div class="phone-wrapper user-input w-100 ov-h">
+					<div class="username wrapper pos-r">
+						<input type="text" placeholder="Nomor Telepon" class="input-phone bd-n ol-none w-100" required="true">
+					</div>
+				</div>
+				<div class="password-wrapper user-input w-100 ov-h">
+					<div class="password wrapper pos-r">
+						<input type="password" placeholder="Password" class="input-password  bd-n ol-none w-100" required="true">
+					</div>
+				</div>
+				
+				<div class="w-100 ov-h forgot-wrapper">
+					<div class="d-flex">
+						<div class="f-left d-flex flex-center">
+							<span class="f-lato f-14 f-grey">Punya akun? <a href="login.html" class="f-primary">Masuk</a></span>
+						</div>
+						<div class="f-right ml-auto">
+							<a href="index.html" class="btn btn-blue d-ib btn-login">
+								Daftar
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="w-100 line-wrapper">
+					<div class="pos-r w-100 d-flex flex-center">
+						<div class="pos-a w-100">
+							<div class="line"></div>
+						</div>
+						<span class="f-lato f-14 f-grey">Masuk dengan</span>
+					</div>
+				</div>
+				<div class="w-100 ov-h login-with">
+					<div class="f-left box d-flex flex-center facebook b-box cs-p">
+						<img src="./assets/images/facebook-1.svg" alt="">
+						<span class="f-grey f-lato f-14">Facebook</span>
+					</div>
+					<div class="f-right box d-flex flex-center google b-box  cs-p">
+						<img src="./assets/images/google.svg" alt="">
+						<span class="f-grey f-lato f-14">Google</span>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+	</div>
+</div>
+
+@endsection
+
+
+@section('component')
+
+@endsection

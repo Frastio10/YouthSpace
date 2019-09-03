@@ -20,3 +20,6 @@ const loveAdd = ()=>{
 	});
 }
 
+$('.active-trigger').click(function(event) {
+	$(this).toggleClass('active');
+});

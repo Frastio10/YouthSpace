@@ -27,13 +27,14 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="base_uri" content="./">
 
+
   
 
-  <link rel="stylesheet" href="./assets/css/view-news.css">
-  <link rel="stylesheet" href="./assets/css/news.css">
+  <link rel="stylesheet" href="./assets/css/inspirasi.css">
+  <link rel="stylesheet" href="./assets/css/home.css">
   
 
-  <title>Berita | YouthSpace</title>
+  <title>Diskusi | YouthSpace</title>
   
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	</head>
@@ -48,8 +49,8 @@
 					<span class="f-17 f-playfair" id="logo-text">YouthSpace</span>
 				</a>
 				<ul class="nav f-left">
-<li><a href="news.html" class="current-page">Berita</a></li>
-  <li><a href="diskusi.html">Diskusi</a></li>
+<li><a href="news.html">Berita</a></li>
+  <li><a href="diskusi.html"  class="current-page">Diskusi</a></li>
   <li><a href="video.html">Video</a></li>
   <li><a href="inspirasi.html">Inspirasi</a></li>
   <li><a href="about.html">Tentang Kami</a></li>
@@ -107,91 +108,6 @@
 			</div>
 		</header>
 
-  <div class="row">
-  	<div class="container">
-  		<div class="inner-row row cf mt-60" id="roots">
-			
-  				<template id="templates">
-
-  					<b class="f-25 f-playfair-bold dots-sm mt-60 d-ib seven" id="title">{title}</b>
-  					<div class="clearfix mb-30"></div>	
-
-  					<div class="nine col ml-0">
-  						<div class="bg-white box-shadow-semibold news-wrapper">
-  							{image}
-  							<div class="news-text">
-  								<div class="d-flex">
-  									<img src="./assets/images/clock.svg" alt="">
-  									<span class="f-14 f-lato f-grey" id="time">
-  										{date}
-  									</span>
-  									<span id="writer" class="f-14 f-lato f-grey">
-  										Oleh : {author}
-  									</span>
-  								</div>
-  								<div class="cf"></div>
-  								<p id="desc" class="f-lato f-15 f-grey mt-16">
-  									{desc}
-  								</p>
-  								<div class="d-flex mt-30">
-  									<div class="mr-20 f-left cs-p" id="share">
-  										<img src="./assets/images/share-2.svg" alt="">
-  									</div>
-									
-  										<button onclick="loveAdd()" class="mr-20 love-btn">
-  											<div class="f-left cs-p love" id="love">
-  												<svg xmlns="http://www.w3.org/2000/svg" width="28.496" height="25.11" viewBox="0 0 28.496 25.11">
-  												  <path id="heart_1_" data-name="heart (1)" d="M26,5.041a6.972,6.972,0,0,0-9.862,0L14.8,6.385,13.453,5.041A6.973,6.973,0,0,0,3.591,14.9l1.344,1.344L14.8,26.108l9.862-9.862L26,14.9a6.972,6.972,0,0,0,0-9.862Z" transform="translate(-0.549 -1.998)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  												</svg>
-  											</div>
-  										</button>
-									
-  									<div class="mr-20 f-left cs-p" id="comment">
-  										<img src="./assets/images/message-square.svg" alt="">
-  									</div>
-  								</div>
-  							</div>
-  						</div>	
-  					</div>
-  				</template>
-			
-  			<div class="three col">
-  				<div class="search-box box-shadow-semibold d-flex">
-  					<input type="text" class="w-100 ol-none f-lato f-13" placeholder="Cari berita lainnya" id="search_input">
-  					<div class="d-flex bg-primary search-icon bd-n cs-p" id="search_button">
-  						<img src="./assets/images/search.svg" alt="">
-  					</div>
-  				</div>
-  				<div class="bg-white box-shadow-semibold mt-10 category">
-  					<h4 class="f-20 f-playfair-bold">Kategori</h4>
-  					<ul>
-  						<li><a href="news.html?category=all" class="f-lato f-14 active">Semua</a></li>
-  						<li><a href="news.html?category=education" class="f-lato f-14">Pendidikan</a></li>
-  						<li><a href="news.html?category=technology" class="f-lato f-14">Teknologi</a></li>
-  						<li><a href="news.html?category=nature" class="f-lato f-14">Alam</a></li>
-  					</ul>
-  				</div>
-  				<div class="bg-white box-shadow-semibold mt-10 random-news b-box">
-  					<h2 class="f-20 f-playfair-bold dots-sm bring-front">Berita terkait</h2>
-  					<div class="w-100 list-wrapper">
-  						<div class="list-item w-100 d-flex">
-  							<a href="" class=" text-decoration-n">
-  								<div class="item">
-  									<div class="d-flex align-items-center">
-  										<img src="./assets/images/news-thumb-sm-1.png" alt="">
-  										<span class="f-lato f-14 f-grey">Mengenal gaya traveling generasi milenial</span>
-  									</div>
-  								</div>
-  							</a>
-  							<div class="line"></div>
-  						</div>
-
-  					</div>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
-  </div>
   
 		<footer class="footer w-100 d-flex">
 			<div class="box-blue last-box"></div>
@@ -246,6 +162,9 @@
 			</div>
 		</footer>
 	</body>
+
+
+  
 <script src="assets/js/jquery.js" type="text/javascript" ></script>
 <script src="assets/js/jquery.lazy.min.js"></script>
 <script>
@@ -262,14 +181,6 @@
 
 </script>
 
-  <script src="./assets/js/main.js"></script>
-
-  <script>
-
-
-
-
-  </script>
   
 <script src="assets/js/app.js" type="text/javascript" ></script>
 

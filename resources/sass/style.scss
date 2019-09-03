@@ -34,6 +34,17 @@ html , body {
 
 }
 
+.text-decoration-n{
+	text-decoration: none;
+
+}
+
+#logo-text{
+	margin-top: 4%;
+	display: inline-block;
+	margin-left: 5px;
+}
+
 //Cursor
 .cs-p{
 	cursor: pointer;
@@ -166,6 +177,7 @@ a {
 }
 
 .container{
+	width: 100%;
 	max-width: 81%;
 	margin: 0 auto;
 	position: relative;
@@ -174,6 +186,10 @@ a {
 //Text color
 .text-white{
 	color: var(--white);
+}
+
+.text-primary{
+	color: var(--primary);
 }
 
 
@@ -406,6 +422,14 @@ ul.horizontal-list{
 	@include padding-y(50px);
 }
 
+.py-10{
+	@include padding-y(10px);
+}
+
+.py-15{
+	@include padding-y(15px);
+}
+
 .mt-40{
 	margin-top: 40px;	
 }
@@ -488,6 +512,10 @@ ul.horizontal-list{
 	z-index: 0;
 }
 
+.bring-back-1{
+	z-index: -1;
+}
+
 .f-playfair{
 	font-family: playfair-regular;
 }
@@ -517,6 +545,15 @@ ul.horizontal-list{
 	color: #fff;
 }
 
+.f-black{
+	color: #000;
+}
+
+.f-primary{
+	color: var(--primary);
+}
+
+
 .no-decoration{
 	text-decoration: none;
 }
@@ -537,6 +574,17 @@ ul.horizontal-list{
 	//overflow: hidden;
 	width: 100%;
 }
+
+.logo-top{
+
+		img{
+			
+		}
+		
+		a{
+
+		}
+	}
 
 //Hamburger
 .hamburger .line{
@@ -561,6 +609,7 @@ ul.horizontal-list{
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  transform: scale(0.7);
 }
 
 #hamburger-11.is-active{
@@ -569,10 +618,7 @@ ul.horizontal-list{
 
 @keyframes smallbig{
   0%, 100%{
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
+    transform: scale(0.7);
   }
 
   50%{
@@ -610,6 +656,9 @@ ul.horizontal-list{
 }
 
 header{
+
+
+	
 		
 		@include padding-y(3px);
 		width: 100%;
@@ -691,15 +740,21 @@ header{
 		list-style:none;
 		display: flex;
 		 
+		.language{
+			margin-right: 10px;
+		}
 		
 		li.popup-trigger{
 			float: left;
 			display: flex;
-			cursor: pointer;
 			// &:nth-child(1){
 			// 	@include padding-y(10px);
 			// }
-			
+			a{
+			cursor: pointer;
+				
+			}
+
 			&:nth-child(2){
 				margin-right: 15px;
 				margin-left: 5px;
@@ -1049,6 +1104,8 @@ footer{
 			margin-top: 4px;	
 			padding: 0;	
 		}
+
+
 	}
 
 	.header{
@@ -1118,6 +1175,10 @@ footer{
 		width: 20%;
 	}
 	
+	#logo-text{
+		margin-top: 0%;
+	}
+
 	.row-1{
 
 		.inner-row{

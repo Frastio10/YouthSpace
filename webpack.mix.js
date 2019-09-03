@@ -12,6 +12,8 @@ mix.sass('resources/sass/style.scss', 'dist/assets/css')
    .sass('resources/sass/view-news.scss', 'dist/assets/css')
    .sass('resources/sass/about.scss', 'dist/assets/css')
    .sass('resources/sass/inspirasi.scss', 'dist/assets/css')
+   .sass('resources/sass/sign-user.scss', 'dist/assets/css')
+   .sass('resources/sass/register.scss', 'dist/assets/css')
    .options({
     processCssUrls: false, 
     postCss: [

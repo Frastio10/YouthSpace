@@ -80,3 +80,13 @@
 .love-btn .love.active svg path {
   fill: var(--primary);
 }
+
+.random-news {
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 55px;
+}
+
+.random-news .list-wrapper .list-item .item span {
+  margin-left: 5px;
+}

@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #1592E6;
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #888888;
+  --darken-grey: #707070;
+  --darken-green: #0B8457;
+  --darken-yellow: #E2BA00;
+  --darken-blue: #10316B;
+}
+
+/*
+ Fonts Import
+*/
+@font-face {
+  font-family: lato-regular;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: lato-bold;
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: lato-light;
+  src: url("../fonts/Lato/Lato-light.ttf");
+}
+
+@font-face {
+  font-family: lato-italic;
+  src: url("../fonts/Lato/Lato-italic.ttf");
+}
+
+@font-face {
+  font-family: playfair-black;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Black.ttf");
+}
+
+@font-face {
+  font-family: playfair-blackitalic;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: playfair-bold;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+  font-family: playfair-BoldItalic;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: playfair-regular;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+}
+
+.blue-side {
+  width: 56%;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.blue-side .text-secondary {
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form-box {
+  width: 44%;
+  padding: 80px 60px 60px 60px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.form-box .w-100 a {
+  text-decoration: none;
+}
+
+.form-box .w-100 .login {
+  margin-right: 15px;
+}
+
+.form-box form {
+  margin-top: 10px;
+}
+
+.form-box form .name {
+  width: 46%;
+}
+
+.form-box form .user-input .wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.form-box form .user-input .wrapper:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  display: block;
+  background: #c5c5c5;
+}
+
+.form-box form .user-input .wrapper input {
+  padding-left: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.form-box form .user-input .wrapper input:focus ~ .wrapper:after {
+  background: #000 !important;
+}
+
+.form-box form .remember-me {
+  margin-top: 30px;
+}
+
+.form-box form .remember-me .checkbox-wrapper .checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--primary);
+}
+
+.form-box form .remember-me .checkbox-wrapper .checkbox.active {
+  background: var(--primary);
+}
+
+.form-box form .remember-me .checkbox-wrapper span {
+  margin-left: 8px;
+}
+
+.form-box form .forgot-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form-box form .forgot-wrapper .btn-blue {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.form-box form .line-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.form-box form .line-wrapper .pos-a {
+  z-index: 0;
+}
+
+.form-box form .line-wrapper .pos-a .line {
+  width: 100%;
+  height: 3px;
+  background: #c5c5c5;
+}
+
+.form-box form .line-wrapper span {
+  position: absolute;
+  background: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.form-box form .login-with .box {
+  width: 45%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 2px solid #c5c5c5;
+}
+
+.form-box form .login-with .box img {
+  margin-right: 10px;
+}
+
+.row {
+  height: 100vh;
+}

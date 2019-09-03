@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@include('layouts.head')
+		@!section('meta')
+		@!section('css')
+		@!section('title')
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	</head>
+	<body>
+
+		@!section('content')
+		
+	</body>
+	@!section('component')
+<script src="assets/js/jquery.js" type="text/javascript" ></script>
+<script src="assets/js/jquery.lazy.min.js"></script>
+<script>
+	 $(function() {
+        $('.lazy').Lazy();
+        placeholder : "data:image/assets/images/loader.svg"
+    });
+
+	 $(document).ready(function(){
+		  $(".hamburger").click(function(){
+		    $(this).toggleClass("is-active");
+		  });
+		});
+
+</script>
+@!section('js')
+<script src="assets/js/app.js" type="text/javascript" ></script>
+
+</html>

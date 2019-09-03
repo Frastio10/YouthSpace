@@ -91,6 +91,16 @@ html, body {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
 }
 
+.text-decoration-n {
+  text-decoration: none;
+}
+
+#logo-text {
+  margin-top: 4%;
+  display: inline-block;
+  margin-left: 5px;
+}
+
 .cs-p {
   cursor: pointer;
 }
@@ -256,6 +266,7 @@ a {
 }
 
 .container {
+  width: 100%;
   max-width: 81%;
   margin: 0 auto;
   position: relative;
@@ -263,6 +274,10 @@ a {
 
 .text-white {
   color: var(--white);
+}
+
+.text-primary {
+  color: var(--primary);
 }
 
 .bg-darkgreen {
@@ -634,6 +649,16 @@ ul.horizontal-list li {
   padding-bottom: 50px;
 }
 
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .mt-40 {
   margin-top: 40px;
 }
@@ -717,6 +742,10 @@ ul.horizontal-list li {
   z-index: 0;
 }
 
+.bring-back-1 {
+  z-index: -1;
+}
+
 .f-playfair {
   font-family: playfair-regular;
 }
@@ -743,6 +772,14 @@ ul.horizontal-list li {
 
 .f-white {
   color: #fff;
+}
+
+.f-black {
+  color: #000;
+}
+
+.f-primary {
+  color: var(--primary);
 }
 
 .no-decoration {
@@ -786,6 +823,9 @@ ul.horizontal-list li {
 #hamburger-11 {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
 }
 
 #hamburger-11.is-active {
@@ -795,9 +835,8 @@ ul.horizontal-list li {
 
 @-webkit-keyframes smallbig {
   0%, 100% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
   }
   50% {
     -webkit-transform: scale(0);
@@ -808,9 +847,8 @@ ul.horizontal-list li {
 
 @keyframes smallbig {
   0%, 100% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
   }
   50% {
     -webkit-transform: scale(0);
@@ -929,12 +967,19 @@ header .nav-right {
   display: flex;
 }
 
+header .nav-right .language {
+  margin-right: 10px;
+}
+
 header .nav-right li.popup-trigger {
   float: left;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
+}
+
+header .nav-right li.popup-trigger a {
   cursor: pointer;
 }
 
@@ -1520,6 +1565,9 @@ footer .inner-footer .footer-list ul li a {
 @media screen and (max-width: 420px) {
   .normal-box {
     width: 20%;
+  }
+  #logo-text {
+    margin-top: 0%;
   }
   .row-1 .inner-row {
     padding-top: 50px;

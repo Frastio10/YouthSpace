@@ -29,3 +29,32 @@
 		}
 	}
 }
+
+.random-news{
+	@include padding-x(26px);
+	padding-top: 55px;
+
+
+	.list-wrapper{
+
+
+		.list-item{
+
+
+			.item{
+
+				img{
+
+				}
+
+				span{
+					margin-left: 5px;
+				}
+			}
+
+			.line{
+
+			}
+		}
+	}
+}
