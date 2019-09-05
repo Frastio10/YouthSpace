@@ -11,6 +11,16 @@ html , body {
 
 }
 
+.love.active{
+
+	svg{
+
+		path{
+			fill: var(--primary);
+
+		}
+	}
+}
 
 //Responsive styling
 .res-none{
@@ -79,6 +89,13 @@ html , body {
 	}
 
 }
+
+
+//Border Radius
+.bd-r-100{
+	border-radius: 100%; 
+}
+
 
 //Grid
 
@@ -304,7 +321,7 @@ ul.horizontal-list{
 
 
 .mt-0{
-	margin-top: 0;
+	margin-top: 0 !important;
 }
 
 .mt-60{
@@ -346,6 +363,10 @@ ul.horizontal-list{
 
 .mb-30{
 	margin-bottom: 30px;
+}
+
+.mb-35{
+	margin-bottom: 35px;
 }
 
 .mx-30{
@@ -925,12 +946,12 @@ footer{
 }
 
 .last-box{
-	width:150px;
+	width:11%;
 	height: 50%;
 }
 
 .normal-box{
-	width:200px;
+	width:16%;
 	height: 400px;
 }
 
@@ -1078,53 +1099,6 @@ footer{
 
 }
 
-
-@include breakpoint-down(lg){
-	.banner{
-		margin-top: 50px;
-		display: flex;	
-		vertical-align: middle;
-		align-items: center;
-		justify-content: center;
-
-		.banner-right{
-			@include padding-y(50px);
-		}
-	}
-}
-
-@include breakpoint-down(md){
-	ul.nav{
-		display: none;
-	}
-		
-	.logo-top{
-		
-		img{
-			margin-top: 4px;	
-			padding: 0;	
-		}
-
-
-	}
-
-	.header{
-		
-		
-	}
-
-	.hamburger{
-		float: right;	
-		.line{
-			display: block;
-		}
-	}
-
-	.nav-right{
-		display: none !important;
-	}
-}
-
 .pagination{
 
 	ul{
@@ -1168,9 +1142,65 @@ footer{
 
 		}
 	}
+
+
 }
 
+
+@include breakpoint-down(lg){
+	.banner{
+		margin-top: 50px;
+		display: flex;	
+		vertical-align: middle;
+		align-items: center;
+		justify-content: center;
+
+		.banner-right{
+			@include padding-y(50px);
+		}
+	}
+
+	ul.nav{
+		display: none;
+	}
+		
+	.logo-top{
+		
+		img{
+			margin-top: 4px;	
+			padding: 0;	
+		}
+
+
+	}
+
+	.header{
+		
+		
+	}
+
+	.hamburger{
+		float: right;	
+		.line{
+			display: block;
+		}
+	}
+
+	.nav-right{
+		display: none !important;
+	}
+
+	.slick-row{
+		max-width: 820px ;
+	}
+}
+
+
 @include breakpoint-down(sm){
+	.title{
+		font-size: 16px;
+	}
+
 	.normal-box{
 		width: 20%;
 	}

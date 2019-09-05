@@ -1,0 +1,200 @@
+@layout('layouts.app')
+
+
+@section('title')
+
+<title>Diskusi | YouthSpace</title>
+
+@endsection
+
+
+@section('meta')
+
+
+
+@endsection
+
+
+
+@section('js')
+
+
+@endsection
+
+
+
+@section('css')
+
+<link rel="stylesheet" href="./assets/css/view-diskusi.css">
+
+@endsection
+
+
+
+@section('nav-list')
+<li><a href="news.html">Berita</a></li>
+<li><a href="diskusi.html"  class="current-page">Diskusi</a></li>
+<li><a href="video.html">Video</a></li>
+<li><a href="inspirasi.html">Inspirasi</a></li>
+<li><a href="about.html">Tentang Kami</a></li>
+<li><a href="gallery.html">Galeri</a></li>
+@endsection
+
+
+
+@section('component')
+
+
+
+@endsection
+
+
+
+@section('content')
+
+<div class="row mt-60 pt-60 w-100 f-left">
+	<div class="container">
+		<div class="inner-row py-30">
+			<div class="w-100 bg-white box-shadow-thin content-box b-box">
+				<div class="w-100 d-flex align-items-center sender">
+					<img src="./assets/images/woman-rounded-1.png" alt="">
+					<div class="user-detail d-flex flex-row">
+						<div class="d-flex flex-column name">
+							<span class="f-15 f-grey f-lato username">Yumna Azahra</span>
+							<span class="d-flex flex-center">
+								<img src="./assets/images/clock.svg" alt="" class="clock">
+								<span class="f-12 f-lato f-grey">17 Agustus 2019</span>
+							</span>
+						</div>
+						<span class="f-12 f-lato f-grey align-self-end author">Oleh : Admin</span>
+					</div>
+				</div>
+				<div class="content w-100 f-lato f-14 f-grey">
+					<p>
+						Perkembangan teknologi dari tahun ke tahun selalu mengalami peningkatan. Hal ini dibuktikan dengan mulai bermunculannya alat elektronik seperti smartphone, tablet, hingga music player. Di Indonesia sendiri perkembangan teknologi tidak dapat dibendung lagi karena mengalami perkembangan yang teramat sangat pesat. Namun dibalik perkembangan teknologi yang terjadi sekarang ini, terjadi beberapa pengaruh dan dampak yang dirasakan oleh banyak orang khususnya remaja. Contoh teknologi yang sekarang ini menjadi primadona di kalangan remaja adalah smartphone. Remaja umumnya menyukai smartphone karena penggunaanya yang praktis dan multifungsi, penggunaan smartphone juga dapat memudahkan aktivitas para remaja. Selain itu smartphone memiliki bentuk dan ukuran yang relatif kecil sehingga mudah dibawa kemana-mana.
+						<br>
+						<br>
+						Namun teknologi yang kita kenal dan tengah akrab di sekitar kita ternyata juga memiliki pengaruh positif dan pengaruh negatif.
+						<br>
+						Apa yang harus di lakukan untuk mengatasi pengaruh buruk dari kemajuan teknologi?
+					</p>
+					<img src="./assets/images/discuss-img.png" class="content-thumb w-100" alt="">
+				</div>
+				<div class="line w-100"></div>
+				<div class="w-100 misc">
+					<ul class="list-style-none">
+						<li class=""><img class="cs-p" src="./assets/images/share-2.svg" alt=""></li>
+						<li class="love active-trigger">
+							<svg xmlns="http://www.w3.org/2000/svg" class="cs-p" width="28.496" height="25.11" viewBox="0 0 28.496 25.11">
+							  <path id="heart_1_" data-name="heart (1)" d="M26,5.041a6.972,6.972,0,0,0-9.862,0L14.8,6.385,13.453,5.041A6.973,6.973,0,0,0,3.591,14.9l1.344,1.344L14.8,26.108l9.862-9.862L26,14.9a6.972,6.972,0,0,0,0-9.862Z" transform="translate(-0.549 -1.998)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+							</svg>
+						</li>
+						<li><img class="cs-p" src="./assets/images/message-square.svg" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row w-100 ov-h f-left">
+	<div class="container">
+		<div class="inner-row">
+			<div class="w-100 my-35 input-data b-box d-flex align-items-center">
+				<div class="camera">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20">
+					  <g id="camera" transform="translate(0 -2)">
+					    <path id="Path_58" data-name="Path 58" d="M23,19a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2V8A2,2,0,0,1,3,6H7L9,3h6l2,3h4a2,2,0,0,1,2,2Z" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+					    <circle id="Ellipse_24" data-name="Ellipse 24" cx="4" cy="4" r="4" transform="translate(8 9)" stroke-width="2" stroke="#333" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+					  </g>
+					</svg>
+				</div>
+				<div class="input-text w-100 d-flex align-self-stretch b-box">
+					<input type="text" class="w-100 bd-n ol-none b-box" placeholder="Ikut berdiskusi...">
+				</div>
+				<a href="" class="btn btn-blue">Kirim</a>
+			</div>
+			<div class="w-100 mb-35">
+				<span class="f-primary f-lato f-20">Tanggapan diskusi</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row w-100 f-left">
+	<div class="container">
+		<div class="inner-row">
+			<div class="discussion-item w-100 ov-h mb-30 bg-white box-shadow-semibold">
+				<div class="w-100 ov-h d-flex">
+					<img src="./assets/images/woman-rounded.png" alt="" class=" user-profile">
+					<div class="d-flex flex-center flex-column">
+						<span class="f-16 f-playfair f-grey">Yumna Azahra</span>
+						<span class="d-flex flex-center">
+							<img src="./assets/images/clock.svg" alt="" class="clock">
+							<span class="f-12 f-lato f-grey">17 Agustus 2019</span>
+						</span>
+					</div>
+				</div>
+				<div class="cf"></div>
+				<div class="w-100 text">
+					<p class="f-grey f-lato f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
+				</div>
+				<div class="w-100 ">
+					<div class="love active-trigger">
+						<svg xmlns="http://www.w3.org/2000/svg" class="cs-p" width="22.04" height="20" viewBox="0 0 28.496 25.11">
+							<path id="heart_1_" data-name="heart (1)" d="M26,5.041a6.972,6.972,0,0,0-9.862,0L14.8,6.385,13.453,5.041A6.973,6.973,0,0,0,3.591,14.9l1.344,1.344L14.8,26.108l9.862-9.862L26,14.9a6.972,6.972,0,0,0,0-9.862Z" transform="translate(-0.549 -1.998)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="discussion-item w-100 ov-h mb-30 bg-white box-shadow-semibold">
+				<div class="w-100 ov-h d-flex">
+					<img src="./assets/images/woman-rounded.png" alt="" class=" user-profile">
+					<div class="d-flex flex-center flex-column">
+						<span class="f-16 f-playfair f-grey">Yumna Azahra</span>
+						<span class="d-flex flex-center">
+							<img src="./assets/images/clock.svg" alt="" class="clock">
+							<span class="f-12 f-lato f-grey">17 Agustus 2019</span>
+						</span>
+					</div>
+				</div>
+				<div class="cf"></div>
+				<div class="w-100 text">
+					<p class="f-grey f-lato f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
+				</div>
+				<div class="w-100 ">
+					<div class="love active-trigger">
+						<svg xmlns="http://www.w3.org/2000/svg" class="cs-p" width="22.04" height="20" viewBox="0 0 28.496 25.11">
+							<path id="heart_1_" data-name="heart (1)" d="M26,5.041a6.972,6.972,0,0,0-9.862,0L14.8,6.385,13.453,5.041A6.973,6.973,0,0,0,3.591,14.9l1.344,1.344L14.8,26.108l9.862-9.862L26,14.9a6.972,6.972,0,0,0,0-9.862Z" transform="translate(-0.549 -1.998)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="discussion-item w-100 ov-h mb-30 bg-white box-shadow-semibold">
+				<div class="w-100 ov-h d-flex">
+					<img src="./assets/images/woman-rounded.png" alt="" class=" user-profile">
+					<div class="d-flex flex-center flex-column">
+						<span class="f-16 f-playfair f-grey">Yumna Azahra</span>
+						<span class="d-flex flex-center">
+							<img src="./assets/images/clock.svg" alt="" class="clock">
+							<span class="f-12 f-lato f-grey">17 Agustus 2019</span>
+						</span>
+					</div>
+				</div>
+				<div class="cf"></div>
+				<div class="w-100 text">
+					<p class="f-grey f-lato f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
+				</div>
+				<div class="w-100 ">
+					<div class="love active-trigger">
+						<svg xmlns="http://www.w3.org/2000/svg" class="cs-p" width="22.04" height="20" viewBox="0 0 28.496 25.11">
+							<path id="heart_1_" data-name="heart (1)" d="M26,5.041a6.972,6.972,0,0,0-9.862,0L14.8,6.385,13.453,5.041A6.973,6.973,0,0,0,3.591,14.9l1.344,1.344L14.8,26.108l9.862-9.862L26,14.9a6.972,6.972,0,0,0,0-9.862Z" transform="translate(-0.549 -1.998)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+@endsection

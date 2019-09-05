@@ -103,7 +103,7 @@ btn_search.addEventListener("click",()=>{
 		//Find the data and shows it up
 		if (search_query != null) {
 			data.forEach(async(item,key)=>{
-				if ((item.title.search(regexp) != -1) || (item.desc.search(regexp) != -1) || (item.author.search(regexp) != -1) || (item.category.search(regexp) != -1)) {
+				if ((key <= 4 && item.title.search(regexp) != -1) || (item.desc.search(regexp) != -1) || (item.author.search(regexp) != -1) || (item.category.search(regexp) != -1)) {
 					console.log(item.title);
 					categories(item.category);
 				
@@ -133,14 +133,16 @@ btn_search.addEventListener("click",()=>{
 				
 				categories(randomValue[key].category);
 
-				temp = temp + template
-				.replace('{pill-bg}',pill_bg)
-				.replace('{title}', randomValue[key].title)
-				.replace('{date}', randomValue[key].date)
-				.replace('{author}', randomValue[key].author)
-				.replace('{shortdesc1}', randomValue[key].short_desc_1)
-				.replace('{category}',category)
-				.replace('{link}', `<a href="view-news.html?news_id=${randomValue[key].id}&category=${randomValue[key].category}" class="btn btn-blue">Baca selengkapnya</a>`)
+				if(key <= 4){
+					temp = temp + template
+					.replace('{pill-bg}',pill_bg)
+					.replace('{title}', randomValue[key].title)
+					.replace('{date}', randomValue[key].date)
+					.replace('{author}', randomValue[key].author)
+					.replace('{shortdesc1}', randomValue[key].short_desc_1)
+					.replace('{category}',category)
+					.replace('{link}', `<a href="view-news.html?news_id=${randomValue[key].id}&category=${randomValue[key].category}" class="btn btn-blue">Baca selengkapnya</a>`)
+				}
 
 			});
 		}

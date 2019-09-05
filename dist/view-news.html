@@ -40,9 +40,6 @@
 	<body>
 		<header class="header " id="header">
 			<div class="container">
-			 	
-		       
-     
 				<a href="index.html" class="f-left logo-top logo d-flex flex-center text-decoration-n  text-primary">
 					<img src="./assets/images/logo-only.svg" alt="" class="f-left">
 					<span class="f-17 f-playfair" id="logo-text">YouthSpace</span>
@@ -172,20 +169,21 @@
   					</ul>
   				</div>
   				<div class="bg-white box-shadow-semibold mt-10 random-news b-box">
-  					<h2 class="f-20 f-playfair-bold dots-sm bring-front">Berita terkait</h2>
-  					<div class="w-100 list-wrapper">
-  						<div class="list-item w-100 d-flex">
-  							<a href="" class=" text-decoration-n">
-  								<div class="item">
-  									<div class="d-flex align-items-center">
-  										<img src="./assets/images/news-thumb-sm-1.png" alt="">
-  										<span class="f-lato f-14 f-grey">Mengenal gaya traveling generasi milenial</span>
+  					<h2 class="f-20 f-playfair-bold dots-sm">Berita terkait</h2>
+  					<div class="w-100 list-wrapper" id="root_2">
+  						<template id="random-news">
+  							<div class="list-item w-100 d-flex flex-column">
+  								<a href="{link}" class=" text-decoration-n f-grey">
+  									<div class="item">
+  										<div class="d-flex align-items-center">
+  											{image}
+  											<span class="f-lato f-14">{title}</span>
+  										</div>
   									</div>
-  								</div>
-  							</a>
-  							<div class="line"></div>
-  						</div>
-
+  								</a>
+  								<div class="line"></div>
+  							</div>
+  						</template>
   					</div>
   				</div>
   			</div>
@@ -199,8 +197,11 @@
 				<div class="inner-footer">
 					<div class="f-left footer-desc">
 						<div class="logo">
-							<a href="index.html">
-								<img src="./assets/images/logo.svg" alt="">
+							<a href="index.html" class="text-decoration-n d-flex">
+								<div class="d-flex flex-center">
+									<img src="./assets/images/logo-only.svg" alt="">
+									<span class="f-17 f-playfair mt-0 text-primary" id="logo-text">YouthSpace</span>
+								</div>
 							</a>
 						</div>
 						<p>Untuk membantu menghadapi tantangan dengan cara berdiskusi dan juga mendapatkan inspirasi beserta berita berita terbaru seputar generasi milenial di masa kini</p>

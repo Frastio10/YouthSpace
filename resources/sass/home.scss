@@ -190,6 +190,14 @@
 	}
 }
 
+@include breakpoint-down(lg){
+
+};
+
+@include breakpoint-down(md){
+	
+};
+
 @include breakpoint-down(sm){
 	.banner{
 
@@ -224,7 +232,7 @@
 	}
 
 	.slick-row{
-		max-width: calc(100% + 8px);
+		max-width: 300px !important;
 
 		.outer-card{
 			width: 291px !important;
@@ -238,7 +246,7 @@
 		.dots-ml{
 			margin-bottom: 8px;
 		}
-
+ 
 		.inner-row{
 			z-index: 1;
 			display: flex;
@@ -352,5 +360,9 @@
 		}
 	}
 
+};
+
+@include breakpoint-down(xs){
+	
 
 };

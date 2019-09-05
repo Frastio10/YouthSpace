@@ -27,6 +27,8 @@
 
 <link rel="stylesheet" href="./assets/css/inspirasi.css">
 <link rel="stylesheet" href="./assets/css/home.css">
+<link rel="stylesheet" href="./assets/css/view-news.css">
+<link rel="stylesheet" href="./assets/css/news.css">
 
 @endsection
 
@@ -52,7 +54,126 @@
 
 
 @section('content')
+<div class="row">
+	<div class="container">
+		<div class="inner-row row cf mt-60 pt-0" id="roots">
+			
+	
 
+					<b class="f-25 f-playfair-bold dots-sm mt-60 d-ib seven" id="title">Kisah Robert Rowling dari ladang migas hingga juragan hotel</b>
+					<div class="clearfix mb-30"></div>	
+
+					<div class="nine col ml-0">
+						<div class="bg-white box-shadow-semibold news-wrapper">
+							<img src="./assets/images/thumb-1.png" class="w-100" alt="">
+							<div class="news-text">
+								<div class="d-flex">
+									<img src="./assets/images/clock.svg" alt="">
+									<span class="f-14 f-lato f-grey" id="time">
+										3 Septermber 2019
+									</span>
+									<span id="writer" class="f-14 f-lato f-grey">
+										Oleh : Admin
+									</span>
+								</div>
+								<div class="cf"></div>
+								<p id="desc" class="f-lato f-15 f-grey mt-16">
+									Sektor pertanian adalah penyumbang terbesar kedua terhadap perekonomian Indonesia, tapi banyak petani lokal belum dapat menikmati hasil yang adil atas jerih payah mereka. Indonesia adalah negara agraris, tapi tingkat kesejahteraan petani masih rendah karena berbagai permasalahan. Menurut data yang diolah TaniGroup (TaniHub & TaniFund) dari berbagai sumber, mayoritas dari total 35 juta petani di Indonesia adalah smallholder farmers, yaitu petani yang memiliki ukuran lahan tidak lebih dari 0,3 hektar.\n<br><br>Pada umumnya, petani lokal masih menggunakan teknologi sederhana dalam bekerja dan 61 persen dari mereka berusia di atas 45 tahun. Mereka juga seringkesulitan dalam memasarkan hasil pertaniannya, sehingga harus bergantung pada middlemen atau perantara.Ketergantungan pada middlemen ini membuat rantai pasok (supply chain) di pertanian sangat panjang, yang mengakibatkan harga yang diterima petani dari penjualan hasil panennya sangat jauh berbeda dengan harga yang dibayar konsumen (end user).<br><br>TaniHub melihat berbagai permasalahan tersebut dapat dipecahkan dengan cara menyederhanakan rantai pasok (supply chain) di pertanian melalui inovasi dalam teknologi informasi. Didirikan pada pertengahan 2016, usaha rintisan ini memantapkan konsepnya sebagai e-commerce dan melakukan transaksi untuk pertama kalinya di November pada tahun yang sama.Mereka kemudian menemukan permasalahan lainnya yang dihadapi oleh para petani Indonesia: akses keuangan. Karena itulah program kekinian TaniFund lahir untuk menjawab kebutuhan petani untuk pendanaan usaha taninya.<br><br>Dengan visi 'Agriculture for Everyone' (Pertanian untuk Semua Orang), TaniGroup berupaya menciptakan sebuah ekosistem di mana petani dan masyarakat umum dapat saling mendukung dan berkontribusi untuk membangun sektor pertanian. TaniGroup mengajak para petani Indonesia untuk memaksimalkan hasil panen mereka dan memasarkannya dengan leluasa, baik kepada pembeli individu, modern channel, maupun usaha mikro, kecil dan menengah (UMKM).<br><br>\"Sampai saat ini sudah 25 ribu petani tergabung dengan TaniGroup. Dana yang tersalurkan sudah lebih dari Rp 75 miliar kepada 2.100 petani dalam 83 proyek budidaya melalui TaniFund,\" jelas Ivan Arie Sustiawan.<br>\"Dengan gudang dan cabang yang tersebar di lima kota; Jakarta, Bogor, Bandung, Yogyakarta, dan Surabaya, ke depannya kami sudah membuat sejumlah program untuk menjangkau petani di luar pulau Jawa,\" pungkasnya."
+
+								</p>
+								<div class="d-flex mt-30">
+									<div class="mr-20 f-left cs-p" id="share">
+										<img src="./assets/images/share-2.svg" alt="">
+									</div>
+									
+										<button onclick="loveAdd()" class="mr-20 love-btn">
+											<div class="f-left cs-p love" id="love">
+												<svg xmlns="http://www.w3.org/2000/svg" width="28.496" height="25.11" viewBox="0 0 28.496 25.11">
+												  <path id="heart_1_" data-name="heart (1)" d="M26,5.041a6.972,6.972,0,0,0-9.862,0L14.8,6.385,13.453,5.041A6.973,6.973,0,0,0,3.591,14.9l1.344,1.344L14.8,26.108l9.862-9.862L26,14.9a6.972,6.972,0,0,0,0-9.862Z" transform="translate(-0.549 -1.998)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+												</svg>
+											</div>
+										</button>
+									
+									<div class="mr-20 f-left cs-p" id="comment">
+										<img src="./assets/images/message-square.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				
+			
+			<div class="three col">
+				<div class="search-box box-shadow-semibold d-flex">
+					<input type="text" class="w-100 ol-none f-lato f-13" placeholder="Cari berita lainnya" id="search_input">
+					<div class="d-flex bg-primary search-icon bd-n cs-p" id="search_button">
+						<img src="./assets/images/search.svg" alt="">
+					</div>
+				</div>
+				<div class="bg-white box-shadow-semibold mt-10 category">
+					<h4 class="f-20 f-playfair-bold">Kategori</h4>
+					<ul>
+						<li><a href="news.html?category=all" class="f-lato f-14 active">Semua</a></li>
+						<li><a href="news.html?category=education" class="f-lato f-14">Pendidikan</a></li>
+						<li><a href="news.html?category=technology" class="f-lato f-14">Teknologi</a></li>
+						<li><a href="news.html?category=nature" class="f-lato f-14">Alam</a></li>
+					</ul>
+				</div>
+				<div class="bg-white box-shadow-semibold mt-10 random-news b-box">
+					<h2 class="f-20 f-playfair-bold dots-sm">Berita terkait</h2>
+					<div class="w-100 list-wrapper" id="root_2">
+						{{-- <template id="random-news"> --}}
+							<div class="list-item w-100 d-flex flex-column">
+								<a href="view-inspirasi.html" class=" text-decoration-n f-grey">
+									<div class="item">
+										<div class="d-flex align-items-center">
+											<img src="./assets/images/news-thumb-sm-1.png" alt="">
+											<span class="f-lato f-14">Kisah haru, sang penjual roti</span>
+										</div>
+									</div>
+								</a>
+								<div class="line"></div>
+							</div>
+							<div class="list-item w-100 d-flex flex-column">
+								<a href="view-inspirasi.html" class=" text-decoration-n f-grey">
+									<div class="item">
+										<div class="d-flex align-items-center">
+											<img src="./assets/images/news-thumb-sm-1.png" alt="">
+											<span class="f-lato f-14">Kisah haru, sang penjual roti</span>
+										</div>
+									</div>
+								</a>
+								<div class="line"></div>
+							</div>
+							<div class="list-item w-100 d-flex flex-column">
+								<a href="view-inspirasi.html" class=" text-decoration-n f-grey">
+									<div class="item">
+										<div class="d-flex align-items-center">
+											<img src="./assets/images/news-thumb-sm-1.png" alt="">
+											<span class="f-lato f-14">Kisah haru, sang penjual roti</span>
+										</div>
+									</div>
+								</a>
+								<div class="line"></div>
+							</div>
+							<div class="list-item w-100 d-flex flex-column">
+								<a href="view-inspirasi.html" class=" text-decoration-n f-grey">
+									<div class="item">
+										<div class="d-flex align-items-center">
+											<img src="./assets/images/news-thumb-sm-1.png" alt="">
+											<span class="f-lato f-14">Kisah haru, sang penjual roti</span>
+										</div>
+									</div>
+								</a>
+								<div class="line"></div>
+							</div>
+						{{-- </template> --}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 @endsection
 

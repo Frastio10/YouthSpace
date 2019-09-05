@@ -248,7 +248,7 @@
     margin-top: 15px;
   }
   .slick-row {
-    max-width: calc(100% + 8px);
+    max-width: 300px !important;
   }
   .slick-row .outer-card {
     width: 291px !important;

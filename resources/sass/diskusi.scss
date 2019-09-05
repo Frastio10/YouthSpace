@@ -1,0 +1,87 @@
+@import "./header";
+
+.list-box{
+
+	.list{
+		
+		.first-list{
+
+		}
+
+		li{
+			@include padding-y(12px);
+			@include padding-x(20px);
+			box-sizing: border-box;
+			border-bottom: 3px solid #fafafa;
+
+			span{
+				margin-left: 8px;
+			}
+			
+		}
+
+	}
+}
+
+.create-discuss{
+		background: #f2f2f2;
+
+
+	.textarea-input{
+
+		textarea{
+			outline: none;
+			padding-left: 18px;
+			padding-top: 18px;
+			width: 100%;
+			resize: none;
+			box-sizing: border-box;
+
+		}
+	}
+
+	.media-input{
+		@include padding-y(8px);
+		@include padding-x(15px);
+
+		ul{
+
+			li{
+				float: left;
+				margin-right: 15px;
+				
+				label{
+					cursor: pointer;
+
+					img{
+
+
+					}
+				}
+			}
+		}
+	}
+}
+
+.discussion-item{
+	box-sizing: border-box;
+	@include padding-x(20px);
+	@include padding-y(14px);
+
+	.pills{
+		@include padding-y(4px);
+		@include padding-x(10px);
+		margin-right: 10px;
+	}
+
+	img.user-profile{
+
+	}
+
+	.clock{
+		margin-right: 5px;
+	}
+	
+
+
+}
