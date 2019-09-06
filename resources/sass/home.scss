@@ -191,6 +191,53 @@
 }
 
 @include breakpoint-down(lg){
+	.box-3{
+		width: calc(100% / 2 - 15px) !important;
+
+		&:last-child{
+			display: none !important;
+			margin-right: 0;	
+		}
+
+		&:nth-child(2){
+			margin-right: 0;
+		}
+	}
+
+	.inspirasi-3{
+		display: none;	
+	}
+		
+	.row-2{
+
+		.btn-more{
+			margin-top: 16px;
+		}
+	}
+
+	.row-6{
+
+		.box-3{
+
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+	footer{
+
+		.inner-footer{
+
+			.footer-desc{
+				max-width: 295px !important;
+			}
+
+			.footer-list{
+				max-width: 112px;
+			}
+		}
+	}
 
 };
 
@@ -359,7 +406,7 @@
 			}
 		}
 	}
-
+ 
 };
 
 @include breakpoint-down(xs){

@@ -12,7 +12,6 @@
 			@include padding-y(12px);
 			@include padding-x(20px);
 			box-sizing: border-box;
-			border-bottom: 3px solid #fafafa;
 
 			span{
 				margin-left: 8px;
@@ -82,6 +81,9 @@
 		margin-right: 5px;
 	}
 	
+}
 
 
+.current-category{
+	border-left: 4px solid var(--primary);
 }

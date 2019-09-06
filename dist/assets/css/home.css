@@ -225,6 +225,34 @@
   margin-left: 15px;
 }
 
+@media screen and (max-width: 1020px) {
+  .box-3 {
+    width: calc(100% / 2 - 15px) !important;
+  }
+  .box-3:last-child {
+    display: none !important;
+    margin-right: 0;
+  }
+  .box-3:nth-child(2) {
+    margin-right: 0;
+  }
+  .inspirasi-3 {
+    display: none;
+  }
+  .row-2 .btn-more {
+    margin-top: 16px;
+  }
+  .row-6 .box-3 img {
+    width: 100%;
+  }
+  footer .inner-footer .footer-desc {
+    max-width: 295px !important;
+  }
+  footer .inner-footer .footer-list {
+    max-width: 112px;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .banner .banner-image-1 {
     background-image: url("../images/bannerimg-2.png");
