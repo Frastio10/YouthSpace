@@ -5,6 +5,14 @@
 	.list{
 		
 		.first-list{
+			@include padding-y(12px);
+			@include padding-x(20px);
+			box-sizing: border-box;
+			transition: .3s ease;	
+
+			span{
+				margin-left: 8px;
+			}
 
 		}
 
@@ -12,9 +20,29 @@
 			@include padding-y(12px);
 			@include padding-x(20px);
 			box-sizing: border-box;
+			transition: .3s ease;	
 
 			span{
 				margin-left: 8px;
+			}
+
+			&:hover{
+				border-left: 4px solid var(--primary);
+				background: #f4f4f4;
+
+				span{
+					color: var(--primary);
+				}
+
+				svg{
+
+					path,
+					line,
+					rect,
+					circle{
+						stroke: var(--primary);
+					}
+				}
 			}
 			
 		}
@@ -86,4 +114,27 @@
 
 .current-category{
 	border-left: 4px solid var(--primary);
+	background: #f4f4f4;
+
+	span{
+		color: var(--primary);
+	}
+
+	svg{
+
+		path,
+		line,
+		rect,
+		circle{
+			stroke: var(--primary);
+		}
+	}
+}
+
+.discussion{
+	transition: .3s ease;
+
+	&:hover{
+		border-left: 10px solid var(--primary);
+	}
 }

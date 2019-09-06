@@ -115,6 +115,7 @@ btn_search.addEventListener("click",()=>{
 						.replace('{author}', item.author)
 						.replace('{shortdesc1}', item.short_desc_1)
 						.replace('{category}',category) 
+						.replace('{image}',item.image)
 				} //else{
 					//temp = `<h3 class="f-lato">404 NOT FOUND :(</h3>`;
 				//}
@@ -140,6 +141,7 @@ btn_search.addEventListener("click",()=>{
 					.replace('{date}', randomValue[key].date)
 					.replace('{author}', randomValue[key].author)
 					.replace('{shortdesc1}', randomValue[key].short_desc_1)
+						.replace('{image}',randomValue[key].image)
 					.replace('{category}',category)
 					.replace('{link}', `<a href="view-news.html?news_id=${randomValue[key].id}&category=${randomValue[key].category}" class="btn btn-blue">Baca selengkapnya</a>`)
 				}
@@ -164,6 +166,8 @@ btn_search.addEventListener("click",()=>{
 					.replace('{author}', item.author)
 					.replace('{shortdesc1}', item.short_desc_1)
 					.replace('{category}',category) 
+					.replace('{image}',item.image)
+
 				}
 
 				if(url >= data.length){

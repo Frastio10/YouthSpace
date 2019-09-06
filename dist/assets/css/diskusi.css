@@ -62,6 +62,21 @@
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 
+.list-box .list .first-list {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.list-box .list .first-list span {
+  margin-left: 8px;
+}
+
 .list-box .list li {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -69,10 +84,28 @@
   padding-right: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 .list-box .list li span {
   margin-left: 8px;
+}
+
+.list-box .list li:hover {
+  border-left: 4px solid var(--primary);
+  background: #f4f4f4;
+}
+
+.list-box .list li:hover span {
+  color: var(--primary);
+}
+
+.list-box .list li:hover svg path,
+.list-box .list li:hover svg line,
+.list-box .list li:hover svg rect,
+.list-box .list li:hover svg circle {
+  stroke: var(--primary);
 }
 
 .create-discuss {
@@ -128,4 +161,25 @@
 
 .current-category {
   border-left: 4px solid var(--primary);
+  background: #f4f4f4;
+}
+
+.current-category span {
+  color: var(--primary);
+}
+
+.current-category svg path,
+.current-category svg line,
+.current-category svg rect,
+.current-category svg circle {
+  stroke: var(--primary);
+}
+
+.discussion {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.discussion:hover {
+  border-left: 10px solid var(--primary);
 }

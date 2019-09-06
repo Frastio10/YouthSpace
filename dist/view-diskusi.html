@@ -47,7 +47,6 @@
 				<ul class="nav f-left">
 <li><a href="news.html">Berita</a></li>
   <li><a href="diskusi.html"  class="current-page">Diskusi</a></li>
-  <li><a href="video.html">Video</a></li>
   <li><a href="inspirasi.html">Inspirasi</a></li>
   <li><a href="about.html">Tentang Kami</a></li>
   <li><a href="gallery.html">Galeri</a></li>
@@ -106,31 +105,26 @@
 
   <div class="row mt-60 pt-60 w-100 f-left">
   	<div class="container">
-  		<div class="inner-row py-30">
-  			<div class="w-100 bg-white box-shadow-thin content-box b-box">
+  		<div class="inner-row py-30" id="roots">
+  			<template id="templates">
+  				<div class="w-100 bg-white box-shadow-thin content-box b-box">
   				<div class="w-100 d-flex align-items-center sender">
   					<img src="./assets/images/woman-rounded-1.png" alt="">
   					<div class="user-detail d-flex flex-row">
   						<div class="d-flex flex-column name">
-  							<span class="f-15 f-grey f-lato username">Yumna Azahra</span>
+  							<span class="f-15 f-grey f-lato username">{author}</span>
   							<span class="d-flex flex-center">
   								<img src="./assets/images/clock.svg" alt="" class="clock">
-  								<span class="f-12 f-lato f-grey">17 Agustus 2019</span>
+  								<span class="f-12 f-lato f-grey">{date}</span>
   							</span>
   						</div>
-  						<span class="f-12 f-lato f-grey align-self-end author">Oleh : Admin</span>
   					</div>
   				</div>
   				<div class="content w-100 f-lato f-14 f-grey">
   					<p>
-  						Perkembangan teknologi dari tahun ke tahun selalu mengalami peningkatan. Hal ini dibuktikan dengan mulai bermunculannya alat elektronik seperti smartphone, tablet, hingga music player. Di Indonesia sendiri perkembangan teknologi tidak dapat dibendung lagi karena mengalami perkembangan yang teramat sangat pesat. Namun dibalik perkembangan teknologi yang terjadi sekarang ini, terjadi beberapa pengaruh dan dampak yang dirasakan oleh banyak orang khususnya remaja. Contoh teknologi yang sekarang ini menjadi primadona di kalangan remaja adalah smartphone. Remaja umumnya menyukai smartphone karena penggunaanya yang praktis dan multifungsi, penggunaan smartphone juga dapat memudahkan aktivitas para remaja. Selain itu smartphone memiliki bentuk dan ukuran yang relatif kecil sehingga mudah dibawa kemana-mana.
-  						<br>
-  						<br>
-  						Namun teknologi yang kita kenal dan tengah akrab di sekitar kita ternyata juga memiliki pengaruh positif dan pengaruh negatif.
-  						<br>
-  						Apa yang harus di lakukan untuk mengatasi pengaruh buruk dari kemajuan teknologi?
+  						{desc}
   					</p>
-  					<img src="./assets/images/discuss-img.png" class="content-thumb w-100" alt="">
+  					<img src="./assets/images/{image}" class="content-thumb w-100" alt="">
   				</div>
   				<div class="line w-100"></div>
   				<div class="w-100 misc">
@@ -145,6 +139,7 @@
   					</ul>
   				</div>
   			</div>
+  			</template>
   		</div>
   	</div>
   </div>
@@ -276,7 +271,6 @@
 							
 							<li><a href="news.html">Berita</a></li>
 							<li><a href="diskusi.html">Diskusi</a></li>
-							<li><a href="video.html">Video</a></li>
 							<li><a href="inspirasi.html">Inspirasi</a></li>
 							<li><a href="gallery.html">Galeri</a></li>
 						</ul>
@@ -324,6 +318,7 @@
 
 </script>
 
+  <script src="./assets/js/view-discuss.js"></script>
   
 <script src="assets/js/app.js" type="text/javascript" ></script>
 

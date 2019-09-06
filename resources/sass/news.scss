@@ -1,5 +1,15 @@
 @import "./header";
 
+
+.card{
+
+	img.bring-back{
+		width: 44%;
+		height: 265px;
+		object-fit: cover;
+	}
+}
+
 .card-text{
 	display: block;
 	@include padding-y(13px);

@@ -30,26 +30,26 @@ const getRandomValue = (arr, count)=>{
 
 
 //Event triggers on search box
-search_input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-	window.location.href = `news.html?search_query=${search_input.value}`;
-  }
-});
+// search_input.addEventListener("keyup", function(event) {
+//   if (event.keyCode === 13) {
+//     event.preventDefault();
+// 	window.location.href = `news.html?search_query=${search_input.value}`;
+//   }
+// });
 
-btn_search.addEventListener("click",()=>{
-	window.location.href = `news.html?search_query=${search_input.value}`;
-});
+// btn_search.addEventListener("click",()=>{
+// 	window.location.href = `news.html?search_query=${search_input.value}`;
+// });
 
 
 
 //Fetch JSON
 (async()=>{
-	fetch('article.json').then(async(result, key)=>{
+	fetch('discussion.json').then(async(result, key)=>{
 		var data = await result.json();	
 
 		//Get url values
-		const url = search.get("category") ? search.get("category") : "all";
+		const url = search.get("category") ? search.get("category") : null;
 
 		//Filter data by it's category
 		var filtered_data = data.filter( element => element.category == url);
@@ -97,6 +97,22 @@ btn_search.addEventListener("click",()=>{
 				}
 
 		}
+
+		if(url == "all"){
+			$(".category-all").addClass('current-category');
+		} else if(url == "liked"){
+			$(".category-liked").addClass('current-category');
+		} else if(url == "education"){
+			$(".category-education").addClass('current-category');
+		} else if(url == "technology"){
+			$(".category-technology").addClass('current-category');
+		} else if(url == "nature"){
+			$(".category-nature").addClass('current-category');
+		}
+
+		if(url != null){
+			$('.create-discuss').addClass('d-none')
+		}
 		
 		//Get search query values
 		const search_query = search.get("search_query") ? search.get("search_query") : null;
@@ -111,7 +127,7 @@ btn_search.addEventListener("click",()=>{
 				
 					temp = temp + template
 						.replace('{pill-bg}',pill_bg)
-						.replace('{link}', `<a href="view-news.html?news_id=${item.id}&category=${item.category}" class="btn btn-blue">Baca selengkapnya</a>`)
+						.replace('{link}', `discuss_id=${item.id}&category=${item.category}"`)
 						.replace('{title}', item.title)
 						.replace('{date}', item.date)
 						.replace('{author}', item.author)
@@ -126,10 +142,10 @@ btn_search.addEventListener("click",()=>{
 
 		
 		//Shows random article on category all and shows it up
-		if(url == "all" && search_query == null){
+		if(url == "all" && search_query == null || url == null){
 			
 			let randomValue = getRandomValue(data, limit);
-
+			console.log(randomValue);
 			randomValue.forEach(async(item,key)=>{
 				console.log(randomValue[key].title);
 				
@@ -143,7 +159,7 @@ btn_search.addEventListener("click",()=>{
 					.replace('{author}', randomValue[key].author)
 					.replace('{shortdesc1}', randomValue[key].short_desc_1)
 					.replace('{category}',category)
-					.replace('{link}', `<a href="view-news.html?news_id=${randomValue[key].id}&category=${randomValue[key].category}" class="btn btn-blue">Baca selengkapnya</a>`)
+					.replace('{link}', `discuss_id=${randomValue[key].id}&category=${randomValue[key].category}"`)
 				}
 
 			});
@@ -160,7 +176,7 @@ btn_search.addEventListener("click",()=>{
 
 					temp = temp + template
 					.replace('{pill-bg}',pill_bg)
-					.replace('{link}', `<a href="view-news.html?news_id=${item.id}&category=${item.category}" class="btn btn-blue">Baca selengkapnya</a>`)
+					.replace('{link}', `discuss_id=${item.id}&category=${item.category}"`)
 					.replace('{title}', item.title)
 					.replace('{date}', item.date)
 					.replace('{author}', item.author)
@@ -177,6 +193,8 @@ btn_search.addEventListener("click",()=>{
 			}
 
 		})
+
+
 		$(root).prepend(temp);
 
 	})

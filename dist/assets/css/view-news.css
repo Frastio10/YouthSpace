@@ -97,7 +97,7 @@
 
 .random-news .list-wrapper .list-item .item img {
   width: 50px !important;
-  height: 50px;
+  height: 51px !important;
 }
 
 .random-news .list-wrapper .list-item .item span {
