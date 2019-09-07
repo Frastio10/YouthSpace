@@ -103,6 +103,27 @@
 		        </div>
 			</div>
 		</header>
+		<div class="navbar-dropdown pos-f bring-front bg-white">
+			<ul class="f-lato list-style-none">
+				<li class="first-item">
+					<a href="" class=" d-flex align-items-center">
+						<img src="./assets/images/user-profile-1.png" alt="">
+						<span>Amanda Aprilia</span>
+					</a>
+				</li>
+				<li class="list-item"><a href="">Akun</a></li>
+				<li class="list-item"><a href="">Notifikasi</a></li>
+				<li class="list-item"><a href="">Pesan</a></li>
+				<li class="list-item"><a href="news.html">Berita</a></li>
+				<li class="list-item"><a href="diskusi.html">Diskusi</a></li>
+				<li class="list-item"><a href="inspirasi.html">Inspirasi</a></li>
+				<li class="list-item"><a href="about.html">Tentang kami</a></li>
+				<li class="list-item"><a href="gallery.html">Galeri</a></li>
+				<li class="list-item"><a href="">Pengaturan</a></li>
+				<li class="list-item"><a href="">Ini bendera</a></li>
+				<li class="list-item"><a href="login.html">Keluar</a></li>
+			</ul>
+		</div>
 <div class="row	row-1">
   	<div class="container">
   			<h2 class="f-25 f-playfair dots-sm">Young On Top</h2>
@@ -493,6 +514,7 @@
 	 $(document).ready(function(){
 		  $(".hamburger").click(function(){
 		    $(this).toggleClass("is-active");
+		    $(".navbar-dropdown").toggleClass('actived');
 		  });
 		});
 

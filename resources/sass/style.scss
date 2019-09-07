@@ -1099,6 +1099,66 @@ footer{
 
 }
 
+//Navbar
+
+.navbar-dropdown.actived{
+	left: 0;	
+	transition: .5s ease;
+}
+
+.navbar-dropdown{
+	top: 53px;
+	left:-100%;
+	transition: .5s ease;
+
+	.flags{
+		
+	}
+
+	ul{
+
+		li{
+			padding-left: 15px;
+
+			a{
+				text-decoration: none;
+			}
+
+		}
+
+		.first-item{
+			background: var(--primary) ;
+
+			@include padding-y(7px);
+			padding-right: 65px;
+
+			img{
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				object-fit: cover;
+			}
+
+			span{
+				color: 	var(--darken-grey);
+				margin-left: 8px;
+			}
+		}
+
+		.list-item{
+			box-sizing: border-box;
+			padding-left: 15px;
+			@include padding-y(10px);
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+
+			a{
+				color: var(--grey);
+
+			}
+		}
+	}
+}
+
 .pagination{
 
 	ul{

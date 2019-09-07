@@ -1481,6 +1481,60 @@ footer .inner-footer .footer-list ul li a {
   width: calc(100% / 3 - 15px);
 }
 
+.navbar-dropdown.actived {
+  left: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.navbar-dropdown {
+  top: 53px;
+  left: -100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.navbar-dropdown ul li {
+  padding-left: 15px;
+}
+
+.navbar-dropdown ul li a {
+  text-decoration: none;
+}
+
+.navbar-dropdown ul .first-item {
+  background: var(--primary);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 65px;
+}
+
+.navbar-dropdown ul .first-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.navbar-dropdown ul .first-item span {
+  color: var(--darken-grey);
+  margin-left: 8px;
+}
+
+.navbar-dropdown ul .list-item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar-dropdown ul .list-item a {
+  color: var(--grey);
+}
+
 .pagination ul {
   list-style-type: none;
   display: -webkit-flex;
