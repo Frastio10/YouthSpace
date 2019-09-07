@@ -30,6 +30,7 @@
   
 
   <link rel="stylesheet" href="./assets/css/news.css">
+  <link rel="stylesheet" href="./assets/css/view-news.css">
   
 
   <title>Berita | YouthSpace</title>
@@ -102,13 +103,13 @@
 			</div>
 		</header>
 		<div class="navbar-dropdown pos-f bring-front bg-white">
-			<ul class="f-lato list-style-none">
-				<li class="first-item">
+			<div class="first-item f-lato ">
 					<a href="" class=" d-flex align-items-center">
 						<img src="./assets/images/user-profile-1.png" alt="">
 						<span>Amanda Aprilia</span>
 					</a>
-				</li>
+				</div>
+			<ul class="f-lato list-style-none nicescroll">
 				<li class="list-item"><a href="">Akun</a></li>
 				<li class="list-item"><a href="">Notifikasi</a></li>
 				<li class="list-item"><a href="">Pesan</a></li>
@@ -142,7 +143,7 @@
   					</ul>
   				</div>
   			</div>
-  			<b class="f-25 f-playfair-bold dots-sm mt-60 d-ib">Berita terbaru</b>
+  			<b class="f-25 f-playfair-bold dots-sm mt-60 d-ib" id="category-name">Berita terbaru</b>
   			<div class="clearfix mb-30"></div>
   			<div class="nine col ml-0 " id="root">
   				<template id="templates">
@@ -208,8 +209,8 @@
   			</div>
   			<div class="three col res-block">
   				<div class="search-box box-shadow-semibold d-flex">
-  					<input type="text" class="w-100 ol-none f-lato f-13" placeholder="Cari berita lainnya" id="search_input">
-  					<button class="d-flex bg-primary search-icon bd-n cs-p" id="search_button">
+  					<input type="text" class="w-100 ol-none f-lato f-13" placeholder="Cari berita lainnya" id="search_input_2">
+  					<button class="d-flex bg-primary search-icon bd-n cs-p" id="search_button_2">
   						<img src="./assets/images/search.svg" alt="">
   					</button>
   				</div>
@@ -221,6 +222,24 @@
   						<li><a href="?category=technology" class="f-lato f-14 category-list tech">Teknologi</a></li>
   						<li><a href="?category=nature" class="f-lato f-14 category-list nature">Alam</a></li>
   					</ul>
+  				</div>
+  				<div class="bg-white box-shadow-semibold mt-10 random-news b-box">
+  					<h2 class="f-20 f-playfair-bold dots-sm">Berita terkait</h2>
+  					<div class="w-100 list-wrapper" id="root_2">
+  						<template id="random-news">
+  							<div class="list-item w-100 d-flex flex-column">
+  								<a href="{link}" class=" text-decoration-n f-grey">
+  									<div class="item">
+  										<div class="d-flex align-items-center">
+  											{image}
+  											<span class="f-lato f-14">{title}</span>
+  										</div>
+  									</div>
+  								</a>
+  								<div class="line"></div>
+  							</div>
+  						</template>
+  					</div>
   				</div>
   			</div>
   		</div>
@@ -296,9 +315,11 @@
 		  });
 		});
 
+
 </script>
 
   <script src="./assets/js/news-list.js"></script>
+  <script src="./assets/js/news-list-1.js"></script>
   
 <script src="assets/js/app.js" type="text/javascript" ></script>
 

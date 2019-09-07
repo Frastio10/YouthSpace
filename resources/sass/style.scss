@@ -1120,8 +1120,33 @@ footer{
 	.flags{
 
 	}
+	.first-item{
+		padding-left: 15px;
+			background: var(--primary) ;
+
+			@include padding-y(7px);
+			padding-right: 80px;
+
+			a{
+				text-decoration: none;
+			}
+
+			img{
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				object-fit: cover;
+			}
+
+			span{
+				color: 	#000;
+				margin-left: 8px;
+			}
+		}
 
 	ul{
+		height: 200vh;
+		overflow: auto;
 
 		li{
 			padding-left: 15px;
@@ -1132,29 +1157,12 @@ footer{
 
 		}
 
-		.first-item{
-			background: var(--primary) ;
-
-			@include padding-y(7px);
-			padding-right: 65px;
-
-			img{
-				width: 40px;
-				height: 40px;
-				border-radius: 100%;
-				object-fit: cover;
-			}
-
-			span{
-				color: 	var(--darken-grey);
-				margin-left: 8px;
-			}
-		}
+		
 
 		.list-item{
 			box-sizing: border-box;
 			padding-left: 15px;
-			@include padding-y(10px);
+			@include padding-y(15px);
 			border-bottom: 1px solid rgba(0,0,0,0.1);
 
 			a{

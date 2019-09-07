@@ -9,6 +9,8 @@ const template = document.getElementById("templates").innerHTML;
 //Define Searchbox
 const search_input = document.getElementById('search_input');
 const btn_search = document.getElementById('search_button');
+const search_input_2 = document.getElementById('search_input_2');
+const btn_search_2 = document.getElementById('search_button_2');
 
 
 //Generate random values
@@ -29,8 +31,8 @@ const getRandomValue = (arr, count)=>{
 
 //Event triggers on search box
 search_input.addEventListener("keyup", function(event) {
+	
   if (event.keyCode === 13) {
-    event.preventDefault();
 	window.location.href = `news.html?search_query=${search_input.value}`;
   }
 });
@@ -39,6 +41,16 @@ btn_search.addEventListener("click",()=>{
 	window.location.href = `news.html?search_query=${search_input.value}`;
 });
 
+search_input_2.addEventListener("keyup", function(event) {
+	
+  if (event.keyCode === 13) {
+	window.location.href = `news.html?search_query=${search_input_2.value}`;
+  }
+});
+
+btn_search_2.addEventListener("click",()=>{
+	window.location.href = `news.html?search_query=${search_input_2.value}`;
+});
 
 
 //Fetch JSON
@@ -58,16 +70,22 @@ btn_search.addEventListener("click",()=>{
 		//Navigate category
 		if (url == "all") {
 			$('.catefory-list').removeClass('active');
-			$('.all').addClass('active');
+			$('.all').addClass('active'); 
+			// $('#category-name').text('Semua berita');
 		} else if (url == "education") {
 			$('.catefory-list').removeClass('active');
 			$('.edu').addClass('active');
+			$('#category-name').text('Pendidikan');
 		} else if (url == "nature") {
 			$('.catefory-list').removeClass('active');
 			$('.nature').addClass('active');
+			$('#category-name').text('Alam');
+
 		} else if (url == "technology") {
 			$('.catefory-list').removeClass('active');
 			$('.tech').addClass('active');
+			$('#category-name').text('Teknologi');
+
 		}
 
 		//Generate random values

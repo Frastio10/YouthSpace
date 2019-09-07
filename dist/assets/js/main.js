@@ -61,7 +61,7 @@ const getRandomValue = (arr, count)=>{
 						if(key <= 4){
 							temp_2 = temp_2 + templates_2
 							.replace('{title}', randomValue[key].short_title)
-							.replace('{image}',`<img src="./assets/images/${randomValue[key].image}" class="w-100" alt="">`)
+							.replace('{image}',`<img src="./assets/images/${randomValue[key].image}" class="w-100 random-thumb" alt="">`)
 							.replace('{link}', `view-news.html?news_id=${randomValue[key].id}&category=${randomValue[key].category}`)
 							console.log(randomValue[key].id);
 						}
