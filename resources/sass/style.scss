@@ -1102,8 +1102,14 @@ footer{
 //Navbar
 
 .navbar-dropdown.actived{
-	left: 0;	
+	left: 0;
+	
+	bottom: 0;	
 	transition: .5s ease;
+
+	ul{
+		height: 100vh;
+	}
 }
 
 .navbar-dropdown{
@@ -1112,7 +1118,7 @@ footer{
 	transition: .5s ease;
 
 	.flags{
-		
+
 	}
 
 	ul{

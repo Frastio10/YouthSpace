@@ -1483,8 +1483,13 @@ footer .inner-footer .footer-list ul li a {
 
 .navbar-dropdown.actived {
   left: 0;
+  bottom: 0;
   -webkit-transition: .5s ease;
   transition: .5s ease;
+}
+
+.navbar-dropdown.actived ul {
+  height: 100vh;
 }
 
 .navbar-dropdown {
