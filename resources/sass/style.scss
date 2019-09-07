@@ -1147,6 +1147,20 @@ footer{
 }
 
 
+@include breakpoint-down(md){
+	footer{
+
+		.inner-footer{
+			padding-right: 0 !important;
+			padding-left: 30px !important;
+
+			.footer-desc{
+				max-width: 184px !important;
+			}
+		}
+	};
+}
+
 @include breakpoint-down(lg){
 	.banner{
 		margin-top: 50px;
@@ -1193,10 +1207,28 @@ footer{
 	.slick-row{
 		max-width: 820px ;
 	}
+
+	.footer{
+
+		.inner-footer{
+
+			.footer-desc{
+				max-width: 295px;
+			}
+
+			.footer-list{
+				max-width: 112px;
+			}
+		}
+	}
 }
 
 
 @include breakpoint-down(sm){
+	.pagination{
+		margin-top: 15px;
+	}
+
 	.title{
 		font-size: 16px;
 	}
@@ -1264,7 +1296,7 @@ footer{
 			padding: 25px 55px 14px 21px;
 
 			.footer-list{
-				width: 100%;
+				max-width: 100% !important;
 				display: unset;
 				@include margin-y(8px);
 				ul{

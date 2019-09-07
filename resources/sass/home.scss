@@ -46,7 +46,7 @@
 	float: left;
 
 	.outer-card{
-		width: 261px !important;
+		width: 261px;
 		float: left;
 		transition: 0.3s ease;
 		position: relative;	
@@ -230,7 +230,7 @@
 		.inner-footer{
 
 			.footer-desc{
-				max-width: 295px !important;
+				max-width: 295px;
 			}
 
 			.footer-list{
@@ -242,10 +242,101 @@
 };
 
 @include breakpoint-down(md){
+	.banner{
+		
+		.banner-image-1{
+				background-size: 70%;
+		}
+	}
 	
+
+	.res-none{
+		display: block !important;
+	}
+
+	.res-block{
+		display: none;
+	}
+
+	.slick-row{
+		max-width: 620px !important;
+
+		.outer-card{
+			width: 298px ;
+
+		}
+	}
+	
+	.diskusi-2{
+	 display: block;
+	}
+
+	.dots-ml{
+		margin-left: 0 !important;
+	}
+
+	.dots-mr{
+		margin-right: 0 !important;
+	}
+
+	.normal-box{
+		z-index: 0;
+		width: 16% !important;
+		height: 320px !important;
+	}
+
+	.inner-row{
+		z-index: 2;
+		padding-top: 40px;
+		}
+	
+	.row-2{
+		
+
+	}
+
+	.row-4{
+
+		.inner-row{
+			padding-top: 20px;
+		}
+	}
+
+	.row-6{
+		overflow: hidden;
+
+		.inner-row{
+		padding-top: 60px;
+
+		}
+	}
+
+	footer{
+
+		.inner-footer{
+			padding-right: 0 !important;
+			padding-left: 30px !important;
+
+			.footer-desc{
+				max-width: 184px !important;
+			}
+		}
+	}
+
 };
 
 @include breakpoint-down(sm){
+	.normal-box{
+		height: 400px !important;
+	}
+
+	.row-6{
+
+		.normal-box{
+			height: 180px !important;
+		}
+	}
+
 	.banner{
 
 		.banner-image-1{
@@ -291,7 +382,7 @@
 		
 
 		.dots-ml{
-			margin-bottom: 8px;
+			margin-bottom: 8px !important;
 		}
  
 		.inner-row{

@@ -98,3 +98,19 @@
 
 
 }
+
+@include breakpoint-down(lg){
+
+};
+
+@include breakpoint-down(md){
+
+};
+
+@include breakpoint-down(sm){
+
+	.content-box{
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+}

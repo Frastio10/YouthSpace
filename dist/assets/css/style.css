@@ -1532,6 +1532,16 @@ footer .inner-footer .footer-list ul li a {
   background: var(--primary);
 }
 
+@media screen and (max-width: 768px) {
+  footer .inner-footer {
+    padding-right: 0 !important;
+    padding-left: 30px !important;
+  }
+  footer .inner-footer .footer-desc {
+    max-width: 184px !important;
+  }
+}
+
 @media screen and (max-width: 1020px) {
   .banner {
     margin-top: 50px;
@@ -1572,9 +1582,18 @@ footer .inner-footer .footer-list ul li a {
   .slick-row {
     max-width: 820px;
   }
+  .footer .inner-footer .footer-desc {
+    max-width: 295px;
+  }
+  .footer .inner-footer .footer-list {
+    max-width: 112px;
+  }
 }
 
 @media screen and (max-width: 420px) {
+  .pagination {
+    margin-top: 15px;
+  }
   .title {
     font-size: 16px;
   }
@@ -1624,7 +1643,7 @@ footer .inner-footer .footer-list ul li a {
     padding: 25px 55px 14px 21px;
   }
   footer .inner-footer .footer-list {
-    width: 100%;
+    max-width: 100% !important;
     display: unset;
     margin-top: 8px;
     margin-bottom: 8px;

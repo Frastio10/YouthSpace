@@ -138,3 +138,29 @@
 		border-left: 10px solid var(--primary);
 	}
 }
+
+@include breakpoint-down(lg){
+
+};
+
+@include breakpoint-down(md){
+
+};
+
+@include breakpoint-down(sm){
+
+	.three{
+		width: 100% !important;
+		margin-bottom: 25px !important;
+	}
+
+	.col{
+		margin-left: 0 !important;
+	}
+
+	.nine{
+		width: 100% !important;
+		margin-bottom: 25px !important;
+	}
+
+};

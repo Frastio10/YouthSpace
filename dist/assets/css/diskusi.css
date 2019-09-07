@@ -183,3 +183,17 @@
 .discussion:hover {
   border-left: 10px solid var(--primary);
 }
+
+@media screen and (max-width: 420px) {
+  .three {
+    width: 100% !important;
+    margin-bottom: 25px !important;
+  }
+  .col {
+    margin-left: 0 !important;
+  }
+  .nine {
+    width: 100% !important;
+    margin-bottom: 25px !important;
+  }
+}

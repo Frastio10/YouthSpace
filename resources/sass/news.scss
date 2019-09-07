@@ -73,3 +73,104 @@
 		}
 	}
 }
+
+.res-none{
+	display: none !important	;	
+}
+
+.res-block{
+	display: block !important;	
+}
+
+
+
+@include breakpoint-down(md){
+
+	.res-none{
+		display: block !important	;	
+	}
+
+	.res-block{
+		display: none !important;	
+	}
+
+	.three{
+		width: 100% !important;
+	}
+
+	.nine{
+		width: 100% !important;
+	}
+
+	.card{
+
+
+	}
+};
+
+@include breakpoint-down(sm){
+
+	.pagination{
+
+		ul{
+
+			li{
+
+				a{
+
+					.paginate-item{
+						padding: 9px 11px 9px 11px !important;
+					}
+				}
+			}
+		}
+	}
+	
+	.dots-sm{
+			margin-top: 35px !important;
+		}
+
+	.clearfix{
+		margin-bottom: 10px !important;
+	}
+
+	.card{
+
+		.card-inside{
+			flex-direction: column;
+			
+			.card-text{
+				width: 85%;
+				margin: -80px auto 0 auto;
+
+				.pills{
+					font-size: 11px;
+				}
+
+				.f-18{
+					font-size: 15px;
+				}
+
+				.f-12{
+					font-size: 10px;
+				}
+
+				.text-card{
+					p{
+						font-size: 14px;
+					}
+				}
+
+				.btn{
+					font-size: 11px;
+					margin-top: 15px;
+				}
+			}
+
+			.news-thumb{	
+
+				width: 100%;
+			}
+		}
+	}
+};

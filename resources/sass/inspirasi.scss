@@ -24,4 +24,72 @@
 
 .slick-row{
 	padding-bottom: 10px !important;
+
+	.outer-card{
+		width: calc(100% / 4 - 14px) !important ;
+	}
 }
+
+.click-row{
+	max-width: 100% !important;
+}
+
+@include breakpoint-down(lg){
+	
+
+
+};
+
+@include breakpoint-down(md){
+	
+
+	.card-row-4,
+	.card-row-3,
+	.card-row-2 .outer-card:nth-child(3),
+	.card-row-2 .outer-card:last-child,
+	{
+		display: none !important;
+	}
+
+	.slick-row .outer-card{
+		width: calc(100% / 2 - 20px) !important;
+		margin-bottom: 30px;
+
+		&:nth-child(3){
+			margin-left: 0;
+		}
+	}
+
+	.inner-row{
+		.six{
+			width: 100%;
+
+			img{
+				box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+			}
+		}
+
+		.col{
+		margin-left: 0;
+		}
+
+		.text-left{
+			@include padding-x(0px);
+		}
+	}
+
+
+
+	.first-row{
+		flex-direction: column;
+	}
+	
+};
+
+@include breakpoint-down(sm){
+	
+};
+
+@include breakpoint-down(xs){
+	
+};

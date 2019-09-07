@@ -111,3 +111,41 @@
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
+@media screen and (max-width: 768px) {
+  .col {
+    margin-left: 0 !important;
+  }
+  .search-box {
+    margin-top: 30px !important;
+  }
+  .category {
+    margin-top: 30px !important;
+  }
+  .random-news {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #title {
+    font-size: 16px;
+  }
+  .seven {
+    width: 100% !important;
+  }
+  #time,
+  #writer {
+    font-size: 12px;
+  }
+  #desc {
+    font-size: 14px;
+  }
+  .dots-sm {
+    font-size: 20px !important;
+  }
+  .random-news {
+    padding-top: 1px !important;
+  }
+}

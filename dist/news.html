@@ -104,13 +104,30 @@
 <div class="row">
   	<div class="container">
   		<div class="inner-row row cf mt-60">
+  			<div class="three col res-none">
+  				<div class="search-box box-shadow-semibold d-flex">
+  					<input type="text" class="w-100 ol-none f-lato f-13" placeholder="Cari berita lainnya" id="search_input">
+  					<button class="d-flex bg-primary search-icon bd-n cs-p" id="search_button">
+  						<img src="./assets/images/search.svg" alt="">
+  					</button>
+  				</div>
+  				<div class="bg-white box-shadow-semibold mt-10 category">
+  					<h4 class="f-20 f-playfair-bold">Kategori</h4>
+  					<ul>
+  						<li><a href="?category=all" class="f-lato f-14 category-list all">Semua</a></li>
+  						<li><a href="?category=education" class="f-lato f-14 category-list edu">Pendidikan</a></li>
+  						<li><a href="?category=technology" class="f-lato f-14 category-list tech">Teknologi</a></li>
+  						<li><a href="?category=nature" class="f-lato f-14 category-list nature">Alam</a></li>
+  					</ul>
+  				</div>
+  			</div>
   			<b class="f-25 f-playfair-bold dots-sm mt-60 d-ib">Berita terbaru</b>
   			<div class="clearfix mb-30"></div>
   			<div class="nine col ml-0 " id="root">
   				<template id="templates">
   					<div class="card mb-35">
-  						<div class="d-flex pos-r">
-  							<img src="./assets/images/{image}" class="bring-back" alt="">
+  						<div class="d-flex pos-r card-inside">
+  							<img src="./assets/images/{image}" class="bring-back news-thumb" alt="">
   							<div class="flex-center">
   								<div class="bg-white d-block card-text box-shadow-thin">
   									<span class="pills pills-sm {pill-bg} f-lato f-15 text-white d-ib">
@@ -138,28 +155,28 @@
   				<div class="pagination mt-60 mb-30 f-lato text-grey">
   					<ul class="">
   						<li>
-  							<a href="#" class="">
+  							<a href="?page=1" class="">
   								<div class="paginate-item">
   									<img src="./assets/images/arr-left.svg" alt="">
   								</div>
   							</a>
   						</li>
   						<li>
-  							<a href="#?page=1" class="paginate-item paginate-number paginate-active">
+  							<a href="?page=1" class="paginate-item paginate-number paginate-active">
   								<div class="paginate-item">1</div>
   							</a>
   						</li>
   						<li>
-  							<a href="#?page=2" class=" paginate-number">
+  							<a href="?page=2" class=" paginate-number">
   								<div class="paginate-item">2</div>
   							</a>
   						</li>
   						<li>
-  							<a href="#?page=3" class=" paginate-number">
+  							<a href="?page=3" class=" paginate-number">
   								<div class="paginate-item">3</div>
   							</a>
   						</li>
-  						<li><a href="#" class=" ">
+  						<li><a href="?page=10" class=" ">
   								<div class="paginate-item">
   									<img src="./assets/images/arr-right.svg" alt="">
   								</div>
@@ -168,7 +185,7 @@
   					</ul>
   				</div>
   			</div>
-  			<div class="three col">
+  			<div class="three col res-block">
   				<div class="search-box box-shadow-semibold d-flex">
   					<input type="text" class="w-100 ol-none f-lato f-13" placeholder="Cari berita lainnya" id="search_input">
   					<button class="d-flex bg-primary search-icon bd-n cs-p" id="search_button">
