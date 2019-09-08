@@ -1,5 +1,11 @@
 @import "./header";
 
+.playbutton{
+	top: 35%;
+	left: -20px;
+	cursor: pointer;
+}
+
 
 .banner{
 	
@@ -73,7 +79,8 @@
 			box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0px;
 			
 			.thumb-card{
-				height: 100%;
+				height: 138px;
+				object-fit: cover;
 			}
 			
 			.text-card{
