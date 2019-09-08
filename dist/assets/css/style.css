@@ -83,7 +83,7 @@ html, body {
 }
 
 .love.active svg path {
-  fill: var(--primary);
+  fill: var(--primary) !important;
 }
 
 .res-none {
@@ -295,6 +295,10 @@ a {
 
 .text-primary {
   color: var(--primary);
+}
+
+.bg-none {
+  background: none;
 }
 
 .bg-darkgreen {

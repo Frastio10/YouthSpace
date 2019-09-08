@@ -27,7 +27,7 @@ html , body {
 	svg{
 
 		path{
-			fill: var(--primary);
+			fill: var(--primary) !important;
 
 		}
 	}
@@ -222,6 +222,10 @@ a {
 
 
 //Background color
+.bg-none{
+	background: none;
+}
+
 .bg-darkgreen{
 	background: var(--darken-green);
 }
