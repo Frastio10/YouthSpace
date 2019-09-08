@@ -24,3 +24,9 @@ $('.active-trigger').click(function(event) {
 	$(this).toggleClass('active');
 });
 
+
+
+const slideToggle = ()=>{
+		$('.slide-content').slideToggle();
+	
+}
