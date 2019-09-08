@@ -16,3 +16,120 @@
 .secondary{
 	margin-top: 15px;
 }
+
+.text{
+		padding-left: 20px ;
+	}
+
+.res-block{
+	display: block;
+}
+
+.res-none{
+	display: none;
+}
+
+@include breakpoint-down(lg){
+
+
+	.inner-row{
+		float: left;
+		display: flex;
+
+		img{
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+
+	.about-desc{
+
+
+		
+	}
+};
+
+@include breakpoint-down(sm){
+	.res-block{
+		display: none;
+	}
+
+	.res-none{
+		display: block;
+	}
+
+	.row{
+		margin-top: 50px;
+	}
+
+	.row-1{
+		margin-bottom: 30px;
+		flex-direction: column;
+
+		.w-50{
+			display: block;	
+			width: 100%;
+			background: url('../images/about-1.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 80%;
+			background-position: 100% 100%;
+		}
+		
+		.five{
+			width: 100%;
+		}
+
+		.thumb-1{
+			display: none;
+		}
+
+		.about-desc{
+			padding-bottom: 0;
+			padding-top: 100px;
+
+		}	
+	}
+
+	.text{
+		background: var(--primary);
+		box-sizing: border-box;
+		@include padding-x(23px);
+		@include padding-y(13px);
+
+		.f-25{
+			font-size: 15px;
+		}
+
+		.secondary{
+			margin-top: 8px;
+		}
+	}
+	
+	.col{
+		margin: 0 !important;
+	}
+
+
+	.row-2{
+		margin-top: 0;
+
+		.about-desc{
+			padding-top: 0;
+			padding-bottom: 0;
+
+		}	
+
+		.w-50,
+		.thumb-1{
+			display: none;
+		}
+
+		.six{
+			width: 100%;
+
+			color: #fff;
+		}
+	}
+	
+};

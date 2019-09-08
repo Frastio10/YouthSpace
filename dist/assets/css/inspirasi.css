@@ -96,19 +96,88 @@
   max-width: 100% !important;
 }
 
+.bg-row {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("../images/bannerimg-3.png");
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.bg-row:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bg-row .desc-1 {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.bg-row .desc-1 p {
+  line-height: 20px;
+  margin-top: 15px;
+}
+
+.bg-row .desc-1 .btn {
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 768px) {
+  .card-row-2 {
+    padding-top: 0 !important;
+  }
   .card-row-4,
   .card-row-3,
   .card-row-2 .outer-card:nth-child(3),
   .card-row-2 .outer-card:last-child {
     display: none !important;
   }
-  .slick-row .outer-card {
-    width: calc(100% / 2 - 20px) !important;
+  .card-row-2 .outer-card:nth-child(1),
+  .card-row-2 .outer-card:nth-child(2) {
+    margin-bottom: 20px !important;
+  }
+  .card-row-1 .outer-card:nth-child(3), .card-row-1 .outer-card:nth-child(4) {
+    margin-bottom: 20px !important;
+  }
+  .row-2 .inner-row {
+    display: block !important;
+  }
+  .row-2 .slick-row {
+    max-width: 100% !important;
+  }
+  .row-2 .slick-row .outer-card {
+    width: calc(100% / 2 - 10px) !important;
     margin-bottom: 30px;
   }
-  .slick-row .outer-card:nth-child(3) {
+  .row-2 .slick-row .outer-card .text-card {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+  }
+  .row-2 .slick-row .outer-card:nth-child(3) {
     margin-left: 0;
+  }
+  .row-2 .slick-row .outer-card:nth-child(even) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .row-2 .slick-row .outer-card .date-wrapper span {
+    font-size: 9px;
+  }
+  .row-2 .slick-row .outer-card b {
+    font-size: 11px;
+  }
+  .row-2 .slick-row .outer-card p {
+    font-size: 11px;
+  }
+  .row-2 .slick-row .outer-card a {
+    font-size: 7px;
   }
   .inner-row .six {
     width: 100%;
@@ -130,5 +199,20 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .row-1 .dots-sm {
+    font-size: 20px;
+  }
+  .row-1 .first-row {
+    padding-top: 10px !important;
+  }
+  .row-1 .text-top h2 {
+    font-size: 20px;
+  }
+  .row-1 .text-top p {
+    font-size: 13px;
   }
 }

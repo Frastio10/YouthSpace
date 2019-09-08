@@ -1,4 +1,5 @@
 const root_2 = document.getElementById("root_2"); 
+const root_3 = document.getElementById("root_3"); 
 const templates_2 = document.getElementById('random-news').innerHTML;
 let temp_2 = "";
 
@@ -36,5 +37,6 @@ let temp_2 = "";
 
 					});
 		$(root_2).prepend(temp_2);
+		$(root_3).prepend(temp_2);
 	})
 })();

@@ -1108,7 +1108,8 @@ footer{
 	transition: .5s ease;
 
 	ul{
-		height: 100vh;
+		overflow-y: auto;
+		height: 75vh;
 	}
 }
 
@@ -1118,6 +1119,8 @@ footer{
 	transition: .5s ease;
 
 	.flags{
+		top: 10px;
+		right: unset;
 
 	}
 	.first-item{

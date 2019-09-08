@@ -1489,7 +1489,8 @@ footer .inner-footer .footer-list ul li a {
 }
 
 .navbar-dropdown.actived ul {
-  height: 100vh;
+  overflow-y: auto;
+  height: 75vh;
 }
 
 .navbar-dropdown {
@@ -1497,6 +1498,11 @@ footer .inner-footer .footer-list ul li a {
   left: -100%;
   -webkit-transition: .5s ease;
   transition: .5s ease;
+}
+
+.navbar-dropdown .flags {
+  top: 10px;
+  right: unset;
 }
 
 .navbar-dropdown .first-item {

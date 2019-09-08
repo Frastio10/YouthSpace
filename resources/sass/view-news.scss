@@ -58,10 +58,10 @@
 			.item{
 
 				img{
-					width: 49px;
+					width: 50px;
 					height: 50px;
 					animation-name: fixing-size;
-  					animation-duration: .1s;
+  					animation-duration: .2s;
 				}
 
 
@@ -115,6 +115,10 @@
 	#time,
 	#writer{
 		font-size: 12px;
+	}
+
+	#writer{
+		margin-left: auto;
 	}
 
 	#desc{
