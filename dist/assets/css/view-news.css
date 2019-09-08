@@ -83,7 +83,7 @@
 
 @-webkit-keyframes fixing-size {
   from {
-    width: 49px;
+    width: 49.9px;
   }
   to {
     width: 50px;
@@ -92,7 +92,7 @@
 
 @keyframes fixing-size {
   from {
-    width: 49px;
+    width: 49.9px;
   }
   to {
     width: 50px;
@@ -118,8 +118,8 @@
   height: 50px;
   -webkit-animation-name: fixing-size;
   animation-name: fixing-size;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 2000s;
+  animation-duration: 2000s;
 }
 
 .random-news .list-wrapper .list-item .item span {
