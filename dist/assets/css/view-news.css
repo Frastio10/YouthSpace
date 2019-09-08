@@ -118,8 +118,8 @@
   height: 50px;
   -webkit-animation-name: fixing-size;
   animation-name: fixing-size;
-  -webkit-animation-duration: .2s;
-  animation-duration: .2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 .random-news .list-wrapper .list-item .item span {
