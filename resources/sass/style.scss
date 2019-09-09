@@ -20,6 +20,32 @@ html , body {
     background-position: 50% 50%;
 }
 
+.slide-trigger{
+
+	button{
+		outline: none;
+		background: none;
+	}
+}
+
+.input-data{
+	background: #f2f2f2;
+	@include padding-y(8px);
+	@include padding-x(15px);
+
+	.camera{
+
+	}
+
+	.input-text{
+
+		input{
+			background: none;
+			padding-left:5px;
+			padding-right: 5px;
+		}
+	}
+}
 
 
 .love.active{

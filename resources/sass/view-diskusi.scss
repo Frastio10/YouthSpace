@@ -1,12 +1,6 @@
 @import "./header";
 
-.slide-trigger{
 
-	button{
-		outline: none;
-		background: none;
-	}
-}
 
 .slide-content{
 	
@@ -63,24 +57,7 @@
 	}
 }
 
-.input-data{
-	background: #f2f2f2;
-	@include padding-y(8px);
-	@include padding-x(15px);
 
-	.camera{
-
-	}
-
-	.input-text{
-
-		input{
-			background: none;
-			padding-left:5px;
-			padding-right: 5px;
-		}
-	}
-}
 
 .discussion-item{
 	box-sizing: border-box;

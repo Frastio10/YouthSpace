@@ -29,6 +29,10 @@ $('.active-trigger').click(function(event) {
 
 
 const slideToggle = ()=>{
-		$('.slide-content').slideToggle();
-	
+	$('.slide-content').slideToggle();
+
+    // $([document.documentElement, document.body]).animate({
+    //     scrollTop: $("#scroll-target").offset().top
+    // }, 2000);
 }
+
