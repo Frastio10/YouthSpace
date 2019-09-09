@@ -1171,7 +1171,7 @@ footer .inner-footer .footer-list ul li a {
   position: absolute;
   min-width: 60px;
   top: 40px;
-  right: 0px;
+  right: -22px;
   -webkit-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   z-index: 99999;
@@ -1709,6 +1709,9 @@ footer .inner-footer .footer-list ul li a {
   }
   #logo-text {
     margin-top: 0%;
+  }
+  .logo-top img {
+    width: 30px;
   }
   .row-1 .inner-row {
     padding-top: 50px;
