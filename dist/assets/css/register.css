@@ -121,6 +121,7 @@ a {
   padding-left: 6px;
   padding-top: 5px;
   padding-bottom: 5px;
+  font-size: 15px;
 }
 
 .form-box form .user-input .wrapper input:focus ~ .wrapper:after {

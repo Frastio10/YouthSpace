@@ -111,6 +111,7 @@ a {
 
 .form-box form .user-input .wrapper input {
   padding-left: 6px;
+  font-size: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
