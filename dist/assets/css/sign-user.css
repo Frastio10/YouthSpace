@@ -62,6 +62,10 @@
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 
+.wrappers {
+  position: unset !important;
+}
+
 .blue-side {
   width: 56%;
   padding-left: 140px;
@@ -79,6 +83,8 @@ a {
 }
 
 .form-box {
+  z-index: 1;
+  position: relative;
   width: 44%;
   padding: 110px 60px 98px 60px;
   -webkit-align-self: flex-end;

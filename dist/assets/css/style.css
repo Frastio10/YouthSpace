@@ -1088,7 +1088,6 @@ footer .inner-footer {
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 50px;
-  padding-bottom: 50px;
   float: left;
 }
 
@@ -1558,7 +1557,7 @@ footer .inner-footer .footer-list ul li a {
 }
 
 .navbar-dropdown .first-item span {
-  color: #000;
+  color: #333333;
   margin-left: 8px;
 }
 

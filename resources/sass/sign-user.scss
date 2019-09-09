@@ -1,4 +1,8 @@
-@import "./header";
+ @import "./header";
+
+ .wrappers{
+ 	position: unset !important;
+ }
 
 .blue-side{
 
@@ -16,6 +20,8 @@ a{
 }
 
 .form-box{
+	z-index: 1;
+	position: relative;
 	width: 44%;
 	padding: 110px 60px 98px 60px;
 	align-self: flex-end;

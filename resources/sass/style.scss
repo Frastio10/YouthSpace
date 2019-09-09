@@ -878,7 +878,7 @@ footer{
 
 	.inner-footer{
 		@include padding-x(47px);
-		@include padding-y(50px);
+		padding-top: 50px;	
 		float: left;
 
 		.footer-desc{
@@ -1184,7 +1184,7 @@ footer{
 			}
 
 			span{
-				color: 	#000;
+				color: 	#333333;
 				margin-left: 8px;
 			}
 		}

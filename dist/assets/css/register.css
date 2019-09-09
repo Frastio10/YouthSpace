@@ -62,6 +62,10 @@
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 
+.wrappers {
+  position: unset !important;
+}
+
 .blue-side {
   width: 56%;
   padding-left: 140px;
