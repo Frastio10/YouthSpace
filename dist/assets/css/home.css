@@ -81,6 +81,11 @@
   width: 55%;
 }
 
+.banner .banner-right p {
+  margin-top: 15px;
+  line-height: 20px;
+}
+
 .inner-row {
   padding-top: 60px;
   padding-bottom: 60px;
