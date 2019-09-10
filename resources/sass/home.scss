@@ -6,7 +6,6 @@
 	cursor: pointer;
 }
 
-
 .banner{
 	
 
@@ -56,7 +55,7 @@
 	@include padding-y(20px);
 	max-width: 1094px;		
 	float: left;
-	@include padding-x(10px);
+	@include padding-x(10px); 
 
 	.outer-card{
 		width: 261px;
