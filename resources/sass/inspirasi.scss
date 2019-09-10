@@ -9,8 +9,9 @@
 	}
 	
 	.text-top{
-		@include padding-x(60px);
-
+		padding-left: 25px;	
+		padding-right: 60px;	
+	
 		.text-1,
 		.text-2{
 			margin-top: 15px;
