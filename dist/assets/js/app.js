@@ -41,3 +41,15 @@ $('.lazy').slick({
   slidesToShow: 3,
   slidesToScroll: 1
 });
+
+ $(function() {
+        $('.lazy').Lazy();
+        placeholder : "data:image/assets/images/loader.svg"
+    });
+
+	 $(document).ready(function(){
+		  $(".hamburger").click(function(){
+		    $(this).toggleClass("is-active");
+		    $(".navbar-dropdown").toggleClass('actived');
+		  });
+		});

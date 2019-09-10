@@ -101,7 +101,7 @@
 
 .slick-list {
   padding-bottom: 10px !important;
-  padding-top: 10px !important;
+  padding-top: 15px !important;
 }
 
 .slick-row {
@@ -109,6 +109,8 @@
   padding-bottom: 20px;
   max-width: 1094px;
   float: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .slick-row .outer-card {
