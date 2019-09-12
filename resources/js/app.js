@@ -47,9 +47,18 @@ $('.lazy').slick({
         placeholder : "data:image/assets/images/loader.svg"
     });
 
-	 $(document).ready(function(){
-		  $(".hamburger").click(function(){
-		    $(this).toggleClass("is-active");
-		    $(".navbar-dropdown").toggleClass('actived');
-		  });
-		});
+ $(document).ready(function(){
+	$(".hamburger").click(function(){
+		$(this).toggleClass("is-active");
+		$(".navbar-dropdown").toggleClass('actived');
+		$(".backdrop").toggleClass('active');
+	});
+
+	$(".backdrop").click(function(){
+		$(".hamburger").toggleClass("is-active");
+
+		$(".navbar-dropdown").removeClass('actived');
+		$(this).removeClass('active');
+
+	})
+});

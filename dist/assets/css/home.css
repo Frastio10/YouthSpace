@@ -484,7 +484,7 @@
     margin-right: 0;
   }
   .row-6 .box-3 {
-    width: calc(100%);
+    width: 100%;
     margin-right: 10px !important;
   }
   .row-6 .box-3 img {

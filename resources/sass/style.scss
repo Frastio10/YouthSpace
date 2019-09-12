@@ -1,5 +1,20 @@
 @import "./header";
 
+.backdrop{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	transition: .2s ease;
+
+}
+
+.backdrop.active{
+	background: rgba(0,0,0,.5);
+	transition: .2s ease;
+}
+
 html , body {
 	padding:0;
 	margin: 0;
@@ -1175,11 +1190,11 @@ footer{
 
 	}
 	.first-item{
-		padding-left: 15px;
+		padding-left: 25px;
 			background: var(--primary) ;
 
 			@include padding-y(7px);
-			padding-right: 80px;
+			padding-right: 135px;
 
 			a{
 				text-decoration: none;
@@ -1215,7 +1230,7 @@ footer{
 
 		.list-item{
 			box-sizing: border-box;
-			padding-left: 15px;
+			padding-left: 25px;
 			@include padding-y(15px);
 			border-bottom: 1px solid rgba(0,0,0,0.1);
 
