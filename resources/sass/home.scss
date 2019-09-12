@@ -1,5 +1,13 @@
 @import "./header";
 
+.res-none{
+	display: none;
+}
+
+.res-block{
+	display: block;
+}
+
 .playbutton{
 	top: 35%;
 	left: -20px;
@@ -339,6 +347,14 @@
 };
 
 @include breakpoint-down(sm){
+	.res-none{
+		display: block;
+	}
+
+	.res-block{
+		display: none;
+	}
+
 	.normal-box{
 		height: 400px !important;
 	}
@@ -422,7 +438,7 @@
 	}
 
 	.btn-more{
-			margin-top: 0 !important	;
+			margin-top: 0 !important;
 		}
 
 	.row-3{
@@ -430,6 +446,25 @@
 		.inner-row{
 			flex-direction: row;
 		}
+
+		.left-side{
+			width: 100%;
+
+			.video-player{
+
+				@include margin-y(20px);
+
+				.pos-a{
+					top: 50%;
+					left: 50%;
+					cursor: pointer;
+					transform: translate(-50%, -50%);
+				}
+
+			}
+		}
+
+
 	}
 
 	.row-4{
@@ -473,6 +508,7 @@
 
 		.right-side{
 			padding-left: 10px;
+			width: 100% !important;
 
 			.btn{
 				@include padding-y(8px);

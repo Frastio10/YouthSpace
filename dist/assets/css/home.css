@@ -62,6 +62,14 @@
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 
+.res-none {
+  display: none;
+}
+
+.res-block {
+  display: block;
+}
+
 .playbutton {
   top: 35%;
   left: -20px;
@@ -321,6 +329,12 @@
 }
 
 @media screen and (max-width: 420px) {
+  .res-none {
+    display: block;
+  }
+  .res-block {
+    display: none;
+  }
   .normal-box {
     height: 400px !important;
   }
@@ -399,6 +413,21 @@
     -webkit-box-direction: normal;
             flex-direction: row;
   }
+  .row-3 .left-side {
+    width: 100%;
+  }
+  .row-3 .left-side .video-player {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .row-3 .left-side .video-player .pos-a {
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
   .row-4 .inner-row {
     z-index: 1;
     display: -webkit-flex;
@@ -438,6 +467,7 @@
   }
   .row-5 .right-side {
     padding-left: 10px;
+    width: 100% !important;
   }
   .row-5 .right-side .btn {
     padding-top: 8px;
