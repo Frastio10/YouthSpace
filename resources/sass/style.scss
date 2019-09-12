@@ -738,6 +738,11 @@ header{
 		padding-top: 8px;
 	}
 
+	.user-image{
+		border-radius: 100%;
+		width: 45px;
+	}
+
 	.nav{
 
 		@include padding-y(20px);	

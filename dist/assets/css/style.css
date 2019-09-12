@@ -946,6 +946,11 @@ header img {
   padding-top: 8px;
 }
 
+header .user-image {
+  border-radius: 100%;
+  width: 45px;
+}
+
 header .nav {
   padding-top: 20px;
   padding-bottom: 20px;
