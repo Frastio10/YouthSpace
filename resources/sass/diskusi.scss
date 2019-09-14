@@ -92,7 +92,27 @@
 	}
 }
 
+.reply{
+	width: 95%;
+	margin-top: 20px;	
+	float: right;
+}
+
+.reply-wrapper{
+	display: none;
+}
+
+.discussion-first{
+	transition: .3s ease;
+	//border-left: 10px solid transparent;
+	
+	&:hover{
+		border-left: 10px solid var(--primary);
+	}
+}
+
 .discussion-item{
+		
 	box-sizing: border-box;
 	@include padding-x(20px);
 	@include padding-y(14px);
@@ -104,7 +124,8 @@
 	}
 
 	img.user-profile{
-
+		width: 50px;	
+		border-radius: 100%;
 	}
 
 	.clock{
@@ -134,12 +155,7 @@
 }
 
 .discussion{
-	transition: .3s ease;
-	//border-left: 10px solid transparent;
-	
-	&:hover{
-		border-left: 10px solid var(--primary);
-	}
+
 }
 
 @include breakpoint-down(lg){

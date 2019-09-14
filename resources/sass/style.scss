@@ -1,19 +1,22 @@
-@import "./header";
+ @import "./header";
 
 .backdrop{
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	z-index: 99;
+	z-index: -1;
 	transition: .2s ease;
 
 }
 
 .backdrop.active{
+	z-index: 99;
 	background: rgba(0,0,0,.5);
 	transition: .2s ease;
 }
+
+
 
 html , body {
 	padding:0;
@@ -202,6 +205,12 @@ a {
 
 .right{
 	right: 0;
+}
+
+@for $i from 1 through 50 {
+	.z-#{$i}{
+		z-index: #{$i};
+	}
 }
 
 .btn-blue{

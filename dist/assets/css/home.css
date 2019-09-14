@@ -76,6 +76,21 @@
   cursor: pointer;
 }
 
+.img-hover {
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+.img-hover:hover {
+  opacity: 1;
+}
+
 .banner .banner-image-1 {
   width: 100%;
   background-image: url("../images/bannerimg-1.png");

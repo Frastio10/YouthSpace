@@ -127,6 +127,11 @@
   margin-right: 10px;
 }
 
+.discussion-item img.user-profile {
+  width: 50px;
+  border-radius: 100%;
+}
+
 .discussion-item .clock {
   margin-right: 5px;
 }

@@ -139,6 +139,25 @@
   cursor: pointer;
 }
 
+.reply {
+  width: 95%;
+  margin-top: 20px;
+  float: right;
+}
+
+.reply-wrapper {
+  display: none;
+}
+
+.discussion-first {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.discussion-first:hover {
+  border-left: 10px solid var(--primary);
+}
+
 .discussion-item {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -154,6 +173,11 @@
   padding-left: 10px;
   padding-right: 10px;
   margin-right: 10px;
+}
+
+.discussion-item img.user-profile {
+  width: 50px;
+  border-radius: 100%;
 }
 
 .discussion-item .clock {
@@ -174,15 +198,6 @@
 .current-category svg rect,
 .current-category svg circle {
   stroke: var(--primary);
-}
-
-.discussion {
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-}
-
-.discussion:hover {
-  border-left: 10px solid var(--primary);
 }
 
 @media screen and (max-width: 420px) {

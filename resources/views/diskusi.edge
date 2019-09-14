@@ -58,7 +58,7 @@
 			<div class="col three">
 				<div class="list-box w-100 b-box bg-white box-shadow-semibold">
 					<ul class="list list-style-none f-lato f-14">
-						<div class="bg-primary w-100 d-flex flex-center first-list">
+						<div class="bg-primary w-100 d-flex flex-center first-list btn-blue">
 							<a href="?" class="w-100 text-center text-decoration-n">
 								<span class="text-white f-14 f-lato">Mulai diskusi</span>
 							</a>
@@ -150,39 +150,69 @@
 				
 				<div id="root">
 					<template id="templates">
-						<a href="view-diskusi.html?{link}" class="text-decoration-n discussion  mb-35 b-box">
-							<div class="discussion-item w-100 ov-h bg-white box-shadow-semibold">
-								<div class="w-100 ov-h d-flex">
-									<img src="./assets/images/woman-rounded.png" alt="" class=" user-profile">
-									<div class="d-flex flex-center flex-column">
-										<span class="f-16 f-playfair f-grey">{author}</span>
-										<span class="d-flex flex-center">
-											<img src="./assets/images/clock.svg" alt="" class="clock">
-											<span class="f-12 f-lato f-grey">{date}</span>
-										</span>
+						<div class="discussion-card  discussion b-box mb-35">
+							<div class="discussion-item discussion-first w-100 ov-h bg-white box-shadow-semibold">
+								<a href="view-diskusi.html?{link}" class="text-decoration-n">
+									<div class="w-100 ov-h d-flex">
+										<img src="./assets/images/userprofile-2.jpg" alt="" class=" user-profile">
+										<div class="d-flex flex-center flex-column">
+											<span class="f-16 f-playfair f-grey">{author}</span>
+											<span class="d-flex flex-center">
+												<img src="./assets/images/clock.svg" alt="" class="clock">
+												<span class="f-12 f-lato f-grey">{date}</span>
+											</span>
+										</div>
 									</div>
-								</div>
-								<div class="cf"></div>
-								<div class="w-100 text">
-									<p class="f-grey f-lato f-14">{shortdesc1}</p>
-								</div>
+									<div class="cf"></div>
+									<div class="w-100 text">
+										<p class="f-grey f-lato f-14">{shortdesc1}</p>
+									</div>
+								</a>
 								<div class="w-100 ">
 								
-									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" class="f-right">
+									<button class="f-right bg-none bd-n ol-none" onclick="showReplies()">
+										<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" class="f-right cs-p reply-button">
 									  <path id="message-square" d="M3,16.333a2.222,2.222,0,0,0,2.222,2.222H18.556L23,23V5.222A2.222,2.222,0,0,0,20.778,3H5.222A2.222,2.222,0,0,0,3,5.222Z" transform="translate(-2 -2)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
 									</svg>
+									</button>
 									<span class="pills {pill-bg} f-lato f-11 text-white f-right">{category}</span>
 
 									
 								</div>
 							</div>
-						</a>
+							<div class="reply-wrapper	">
+								<div class="reply">	
+									<div class="discussion-item w-100 ov-h mb-30 bg-white box-shadow-semibold">
+										<div class="w-100 ov-h d-flex">
+											<img src="./assets/images/userprofile-2.jpg" alt="" class=" user-profile">
+											<div class="d-flex flex-center flex-column">
+												<span class="f-16 f-playfair f-grey">Yumna Azahra</span>
+												<span class="d-flex flex-center">
+													<img src="./assets/images/clock.svg" alt="" class="clock">
+													<span class="f-12 f-lato f-grey">17 Agustus 2019</span>
+												</span>
+											</div>
+										</div>
+										<div class="cf"></div>
+										<div class="w-100 text">
+											<p class="f-grey f-lato f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
+										</div>
+										<div class="w-100 ">
+											<div class="love active-trigger">
+												<svg xmlns="http://www.w3.org/2000/svg" class="cs-p" width="22.04" height="20" viewBox="0 0 28.496 25.11">
+													<path id="heart_1_" data-name="heart (1)" d="M26,5.041a6.972,6.972,0,0,0-9.862,0L14.8,6.385,13.453,5.041A6.973,6.973,0,0,0,3.591,14.9l1.344,1.344L14.8,26.108l9.862-9.862L26,14.9a6.972,6.972,0,0,0,0-9.862Z" transform="translate(-0.549 -1.998)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</template>
 				</div>
 					
 				<div class="w-100 d-flex flex-center">
 					<a href="" class="btn btn-blue text-center">Lihat lebih banyak diskusi</a>
-					
 				</div>
 			</div>
 		</div>

@@ -30,6 +30,7 @@ const getRandomValue = (arr, count)=>{
 					if(url != null){
 
 						if(url == data[key].id){
+							document.title = data[url].title;
 							console.log(data[url].author);
 							temp = temp + templates
 							.replace('{title}',data[url].title)

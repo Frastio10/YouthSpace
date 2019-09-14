@@ -1,4 +1,4 @@
-"use strict"
+ "use strict"
 
 //Define elements
 const root = document.getElementById("root"); 
@@ -24,6 +24,13 @@ const getRandomValue = (arr, count)=>{
   return result;
 };
 
+const showReplies = (e)=>{
+	$(this).click(function(event) {
+	
+	$(this).closest('.discussion-card').children('.reply-wrapper').slideToggle();
+});
+
+}
 // btn_search.addEventListener("click",()=>{
 // 	console.log(search_input.value);
 // });

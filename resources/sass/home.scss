@@ -14,6 +14,20 @@
 	cursor: pointer;
 }
 
+.img-hover{
+	background: rgba(#000, 0.3);
+	opacity: 0;
+	transition: .3s ease;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+
+	&:hover{
+		opacity: 1;
+	}
+}
+
 .banner{
 	
 

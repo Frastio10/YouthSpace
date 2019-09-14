@@ -1,4 +1,4 @@
-document.addEventListener('touchstart', {passive: true});
+ document.addEventListener('touchstart', {passive: true});
 
 $('.popup-trigger').hover(function(event) {
 	$(this).children('.popup-content').toggleClass('d-none');
@@ -15,7 +15,7 @@ $('.paginate-number').click(function(event) {
 
 });
 
-
+ 
 const loveAdd = ()=>{
 	$(document).ready(function($) {
 		$('.love').toggleClass('active');

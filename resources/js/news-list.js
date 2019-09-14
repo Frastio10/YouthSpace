@@ -86,6 +86,11 @@ btn_search_2.addEventListener("click",()=>{
 			$('.tech').addClass('active');
 			$('#category-name').text('Teknologi');
 
+		} else if (url == "lifestyle") {
+			$('.catefory-list').removeClass('active');
+			$('.lifestyle').addClass('active');
+			$('#category-name').text('Gaya hidup');
+
 		}
 
 		//Generate random values
