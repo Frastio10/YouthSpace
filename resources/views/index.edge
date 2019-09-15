@@ -17,7 +17,7 @@
 
 
 @section('js')
-
+	
 		<script>
 		$('.slick-row').slick({	
 		  infinite: false,
@@ -70,6 +70,8 @@
 		  ]
 		  
 		});
+
+		
 	</script>
 @endsection
 
@@ -79,6 +81,7 @@
 
 <link rel="stylesheet" href="./assets/css/home.css">
 <link rel="stylesheet" href="./assets/css/slick.css">
+<link rel="stylesheet" href="./assets/css/3dslider.css">
 
 @endsection
 
@@ -91,6 +94,12 @@
 @endsection
 
 @section('content')
+	
+	<div class="image-modalview-backdrop pos-f d-flex flex-center">
+		<div class="image-modalview bg-white">
+			<img src="" alt="" class="w-100" id="image-modal">
+		</div>
+	</div>
 	
 	<div class="banner w-100 d-flex">
 		<div class=" banner-image banner-image-1 f-left">
@@ -453,19 +462,19 @@
 							<div class="img-hover pos-a  d-flex flex-center text-center f-lato f-20 text-white z-20">
 								Gambar 1
 							</div>
-							<img src="./assets/images/girl-1.png" class="pos-r" alt="">
+							<img src="./assets/images/girl-1.png" class="pos-r img-data" alt="">
 						</div>
 						<div class="box-3 f-left small-gallery pos-r">
 							<div class="img-hover pos-a d-flex flex-center text-center f-lato f-20 text-white z-20">
 								Gambar 2
 							</div>
-							<img src="./assets/images/girl-2.png" alt="">
+							<img src="./assets/images/girl-2.png" class="pos-r img-data" alt="">
 						</div>
 						<div class="box-3 f-left small-gallery pos-r">
 							<div class="img-hover pos-a w-100  d-flex flex-center text-center f-lato f-20 text-white z-20">
 								Gambar 3
 							</div>
-							<img src="./assets/images/girl-3.png" alt="">
+							<img src="./assets/images/girl-3.png" class="pos-r img-data" alt="">
 						</div>
 					</div>
 				</div>

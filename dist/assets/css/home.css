@@ -62,6 +62,32 @@
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 
+.image-modalview-backdrop.active {
+  opacity: 1;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  z-index: 99999999;
+}
+
+.image-modalview-backdrop {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -999;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.image-modalview-backdrop .image-modalview {
+  width: 60%;
+  z-index: 999999999999999;
+  cursor: auto;
+}
+
 .res-none {
   display: none;
 }
@@ -85,6 +111,7 @@
   bottom: 0;
   right: 0;
   top: 0;
+  cursor: pointer;
 }
 
 .img-hover:hover {
@@ -372,6 +399,8 @@
     font-size: 14px !important;
   }
   .banner .banner-right p {
+    margin-top: 10px;
+    line-height: 15px;
     font-size: 12px !important;
   }
   .banner .banner-right .btn-responsive {

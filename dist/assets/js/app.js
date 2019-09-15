@@ -62,3 +62,24 @@ $('.lazy').slick({
 
 	})
 });
+// $('#vid-1').click(function(e){
+//   $('.popup-area').addClass('activex');
+//   var data = $(this).data('url');
+//   $('.vids-1').attr('src',data);
+// });
+
+ $('.img-hover').click(function(event) {
+ 	let source  = $(this).closest('.box-3').children('.img-data').attr('src');
+ 	$('.image-modalview-backdrop').addClass('active');
+ 	$('#image-modal').attr('src', source);
+ 	//console.log(source);
+ 	//alert(source);
+ });
+
+ $('.image-modalview-backdrop').click(function(event) {
+ 	$('.image-modalview-backdrop').removeClass('active');
+ });
+
+$('.image-modalview').click(function(event) {
+	event.stopPropagation();
+});;
