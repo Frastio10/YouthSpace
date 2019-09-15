@@ -19,6 +19,7 @@
 
 
 	.image-modalview{
+		display: flex;
 		width: 60%;
 		z-index: 999999999999999;
 		cursor: auto;
@@ -52,6 +53,10 @@
 	&:hover{
 		opacity: 1;
 	}
+}
+
+.small-gallery{
+	display: flex;
 }
 
 .banner{
@@ -211,8 +216,20 @@
 	padding: 30px;
 }
 
+.slider-wrapper{
+			width: 100%;
+			float: left;
+			height: 100%;
+			display: flex;
+		}
+
 .row-5{
 	
+	.inner-row{
+		padding-top: 100px;
+		padding-bottom: 130px;
+	}
+
 	.title{
 		padding-bottom: 15px;
 	}
@@ -221,6 +238,14 @@
 
 	.left-side{
 		width: 50% !important;
+		position: relative;
+		
+		height: 100%;
+	   float: left;
+
+
+
+		
 	}
 
 	.right-side{

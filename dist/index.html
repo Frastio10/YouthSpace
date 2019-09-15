@@ -145,7 +145,7 @@
 		</div>
 	
   	<div class="image-modalview-backdrop pos-f d-flex flex-center">
-  		<div class="image-modalview bg-white">
+  		<div class="image-modalview">
   			<img src="" alt="" class="w-100" id="image-modal">
   		</div>
   	</div>
@@ -474,11 +474,33 @@
   	</div>	
   	<div class="row row-5">
   		<div class="container">
-  			<div class="inner-row d-flex flex-center">
+  			<div class="inner-row d-block w-100 f-left">
   				<div class="left-side w-50 pos-r res-block">
-  					<img src="./assets/images/Group 95.png" class="w-100" alt="">
+  					<div class="slide-wrapper">
+  						<div id="slider w-100">
+  						    <div class="dp-wrap">
+  							    <div id="dp-slider">
+  								      <div class="dp_item" data-class="1" data-position="1"> 
+  									        <div class="dp-img">
+  									          <img class="img-fluid" src="./assets/images/thumb-1.png" alt="investing">
+  									        </div>
+  								      </div>
+  								      <div class="dp_item" data-class="2" data-position="2">
+  									        <div class="dp-img">
+  									          <img class="img-fluid" src="./assets/images/thumb-2.png" alt="investing">
+  									        </div>
+  								      </div>
+  								      <div class="dp_item" data-class="3" data-position="3">
+  									        <div class="dp-img">
+  									          <img class="img-fluid" src="./assets/images/thumb-3.png" alt="investing">
+  									        </div>
+  								      </div>					     
+  							    </div>				   
+  							</div>
+  						</div>
+  					</div>
   				</div>
-  				<div class="right-side w-50 text-left">
+  				<div class="right-side w-50 text-left f-right">
   					<b class="f-playfair-bold f-25 title f-left dots-sm">Tentang kami</b>
   					<div class="clearfix"></div>
   					<img src="./assets/images/Group 95.png" class="w-100 res-none" alt="">
@@ -594,7 +616,8 @@
 
 
 </script>
-	
+
+  		<script src="./assets/js/3dslider.js"></script>
   		<script>
   		$('.slick-row').slick({	
   		  infinite: false,

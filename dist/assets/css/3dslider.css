@@ -1,12 +1,26 @@
+		#slider{
+			width: 100%;
+			position: relative;
+			float: left;
+			height: 100%;
+			display: block;
+			
+			
+			
+		
+		}
+
 	.dp-wrap {
-		    margin: 0 auto;
+
+		    width: 100%;
+
 		    position: relative;
 		    perspective: 1000px;
-		    height: 100%;
+		    
 		}
 		.dp-slider {
 		    height: 100%;
-		    width: 100%;
+		   
 		    position: absolute;
 		    transform-style: preserve-3d;
 		}
@@ -18,11 +32,13 @@
 		    position: absolute;
 		    text-align: center;
 		    color: #FFF;
-		    border-radius: 10px;
+		   
 		    transition: transform 1.2s;
 		}
 		.dp-img img {
-		    border-left: 1px solid #fff;
+			width: 100%;
+		 /*   border-left: 1px solid #fff;*/
+		 height: 100%;
 		}
 		#dp-slider .dp_item:first-child {
 		    z-index: 10 !important;
@@ -88,9 +104,9 @@
 			display: flex;
 			align-items: center;
 			background: #fff;
-			border-radius: 10px;
+			
 			overflow: hidden;
-			border-top: 5px solid #FA8C8C;
+			
 		}
 		.dp-content {
 		    padding-left: 100px;
@@ -118,21 +134,21 @@
 		   padding: 19px 40px;
 		}
 		.dp-img:before {
-		    background: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
+		   /* background: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
 		    background: -o-linear-gradient(-90deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
 		    background: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
-		    background: linear-gradient(-90deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+		    background: linear-gradient(-90deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));*/
 		    content: "";
-		    position: absolute;
+		    /*position: absolute;*/
 		    height: 100%;
 		    width: 25%;
 		    z-index: 1;
 		    top: 0;
 		    pointer-events: none;
-		    background: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75));
+		   /* background: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75));
 		    background: -o-linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75));
 		    background: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75));
-		    background: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+		    background: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgb(255, 255, 255));*/
 		}
 		.dp-img img {
 		    object-fit: cover;
@@ -140,7 +156,7 @@
 		}
 		#dp-slider,
 		.dp-img img {
-		    height: 738px;
+		   width: 100%;
 		}
 		#dp-slider .dp_item:hover:not(:first-child) {
 		    cursor: pointer;

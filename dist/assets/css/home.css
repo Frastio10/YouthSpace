@@ -83,6 +83,10 @@
 }
 
 .image-modalview-backdrop .image-modalview {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
   width: 60%;
   z-index: 999999999999999;
   cursor: auto;
@@ -116,6 +120,13 @@
 
 .img-hover:hover {
   opacity: 1;
+}
+
+.small-gallery {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
 }
 
 .banner .banner-image-1 {
@@ -261,12 +272,30 @@
   padding: 30px;
 }
 
+.slider-wrapper {
+  width: 100%;
+  float: left;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+}
+
+.row-5 .inner-row {
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
 .row-5 .title {
   padding-bottom: 15px;
 }
 
 .row-5 .left-side {
   width: 50% !important;
+  position: relative;
+  height: 100%;
+  float: left;
 }
 
 .row-5 .right-side {

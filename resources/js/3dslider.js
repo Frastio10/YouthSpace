@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){
+	jQuery(document).ready(function(){
 			function detect_active(){
 	  			// get active
 	  			var get_active = $("#dp-slider .dp_item:first-child").data("class");
@@ -47,4 +47,15 @@ jQuery(document).ready(function(){
 
 	  			detect_active();
 	  		});
+
+	  		const changeImage = ()=>{
+
+	  			var total = $(".dp_item").length;
+	  			$("#dp-slider .dp_item:first-child").hide().appendTo("#dp-slider").fadeIn();
+	  			$.each($('.dp_item'), function (index, dp_item) {
+	  				$(dp_item).attr('data-position', index + 1);
+	  			});
+	  			detect_active();
+	  		}
+	  		setInterval(changeImage, 4000);
 	  	});
