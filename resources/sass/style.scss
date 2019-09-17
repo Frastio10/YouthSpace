@@ -10,6 +10,71 @@
 
 }
 
+.small-gallery{
+	display: flex;
+
+	img{
+		width: 100%;
+	}
+}
+
+.image-modalview-backdrop.active{
+	opacity: 1;
+	transition: .3s ease;
+	z-index: 99999999;
+}
+
+
+.img-hover{
+	background: rgba(#000, 0.3);
+	opacity: 0;
+	transition: .3s ease;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+
+	&:hover{
+		opacity: 1;
+	}
+}
+.close-popup{
+	background: #fff;
+	width: 15px;
+	height: 15px;
+	padding: 5px;
+	border-radius: 100%;
+
+	top: -10px;
+	right: -10px;	
+	cursor: pointer;
+
+	img{
+		width: 100%;
+	}
+}
+
+.image-modalview-backdrop{
+	transition: .3s ease;
+	opacity: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -999;
+	cursor: pointer;
+	background: rgba(#000, 0.5);
+
+
+	.image-modalview{
+		display: flex;
+		width: 60%;
+		z-index: 999999999999999;
+		cursor: auto;
+	}
+}
+
 .backdrop.active{
 	z-index: 99;
 	background: rgba(0,0,0,.5);
@@ -1455,7 +1520,7 @@ footer{
 			padding: 25px 55px 14px 21px;
 
 			.footer-list{
-				max-width: 100% !important;
+				max-width: 50% !important;
 				display: unset;
 				@include margin-y(8px);
 				ul{
@@ -1470,7 +1535,7 @@ footer{
 
 			.footer-desc{
 				margin-top: 13px;
-
+				max-width: 100%;
 				p{
 					margin-top: 10px;
 				}

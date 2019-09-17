@@ -1,30 +1,6 @@
-@import "./header";
-
-.image-modalview-backdrop.active{
-	opacity: 1;
-	transition: .3s ease;
-	z-index: 99999999;
-}
-
-.image-modalview-backdrop{
-	transition: .3s ease;
-	opacity: 0;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: -999;
-	cursor: pointer;
-	background: rgba(#000, 0.5);
+ @import "./header";
 
 
-	.image-modalview{
-		display: flex;
-		width: 60%;
-		z-index: 999999999999999;
-		cursor: auto;
-	}
-}
 
 .res-none{
 	display: none;
@@ -40,24 +16,8 @@
 	cursor: pointer;
 }
 
-.img-hover{
-	background: rgba(#000, 0.3);
-	opacity: 0;
-	transition: .3s ease;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	top: 0;
-	cursor: pointer;
 
-	&:hover{
-		opacity: 1;
-	}
-}
 
-.small-gallery{
-	display: flex;
-}
 
 .banner{
 	
@@ -570,6 +530,11 @@
 
 		.left-side{
 
+		}
+
+		.inner-row{
+			padding-top: 60px;
+			padding-bottom: 60px;
 		}
 
 		.right-side{

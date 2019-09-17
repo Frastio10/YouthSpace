@@ -210,6 +210,46 @@
 		}
 	}
 	
+	.slick-row{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+
+		.outer-card{
+
+			.card{
+
+				.thumb-card{
+					height: 118px !important;
+
+					img{
+						object-fit: cover;
+					}
+				}
+
+				.text-card{
+					b{
+						line-height: 15px !important;
+						margin-bottom: 5px;	
+						float: left;	
+					}
+
+					p{
+						text-overflow: ellipsis;
+					}
+
+					.date-wrapper{
+						margin-bottom: 5px;	
+						float: left;	
+					}
+
+					a{
+						margin-top: 10px;	
+					}
+				}
+			}
+		}
+	}
+
 };
 
 @include breakpoint-down(xs){

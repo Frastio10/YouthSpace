@@ -201,6 +201,10 @@
 }
 
 @media screen and (max-width: 420px) {
+  .category-wrapper {
+    margin-top: 10px;
+    float: left;
+  }
   .three {
     width: 100% !important;
     margin-bottom: 25px !important;

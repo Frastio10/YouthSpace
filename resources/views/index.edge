@@ -1,4 +1,4 @@
- @layout('layouts.app')
+  @layout('layouts.app')
 
 
 @section('title')
@@ -97,7 +97,10 @@
 @section('content')
 	
 	<div class="image-modalview-backdrop pos-f d-flex flex-center">
-		<div class="image-modalview">
+		<div class="image-modalview pos-r">
+			<div class="close-popup d-flex flex-center pos-a">
+				<img src="./assets/images/close.png" alt="">
+			</div>
 			<img src="" alt="" class="w-100" id="image-modal">
 		</div>
 	</div>

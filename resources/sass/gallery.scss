@@ -46,3 +46,78 @@
 
 	}
 }
+
+@include breakpoint-down(lg){
+	.slick-row,
+	.slick-row-2
+	{
+		max-width: 825px !important;
+	}
+	
+	.box-3{
+		width: 400px !important;
+	}
+};
+
+@include breakpoint-down(md){
+	.slick-row,
+	.slick-row-2
+	{
+		max-width: 625px !important;
+	}
+	
+	.box-3{
+		width: 300px !important;
+	}	
+};
+
+@include breakpoint-down(sm){
+	.normal-box{
+
+	}
+
+	.row-1{
+		margin-bottom: 0px !important;
+		z-index: 999;
+
+		.container{
+			padding-top: 0;
+
+			.inner-row{
+				padding-top: 0;
+			}
+		}
+	}
+	
+	.row-2{
+		position: relative;
+	}
+
+	.inner-row{
+		z-index: 999;
+	}
+
+	.box-blue.res-none{
+		top: 0;
+		z-index:1;
+		right: 0;
+	}
+
+	.dots-sm{
+		z-index: 9999;
+		float: left;
+		margin-bottom: 10px;
+	}
+
+	.slick-row,
+	.slick-row-2{
+		position: relative;
+		z-index: 99;
+		max-width: 100% !important;
+	}
+
+	
+	.box-3{
+		width: 330px !important;
+	}
+};

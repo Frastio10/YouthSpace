@@ -80,6 +80,10 @@ $('.lazy').slick({
  	$('.image-modalview-backdrop').removeClass('active');
  });
 
+ $('.close-popup').click(function(event) {
+ 	$('.image-modalview-backdrop').removeClass('active');
+ });
+
 $('.image-modalview').click(function(event) {
 	event.stopPropagation();
 });;

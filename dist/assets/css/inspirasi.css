@@ -215,4 +215,30 @@
   .row-1 .text-top p {
     font-size: 13px;
   }
+  .slick-row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .slick-row .outer-card .card .thumb-card {
+    height: 118px !important;
+  }
+  .slick-row .outer-card .card .thumb-card img {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .slick-row .outer-card .card .text-card b {
+    line-height: 15px !important;
+    margin-bottom: 5px;
+    float: left;
+  }
+  .slick-row .outer-card .card .text-card p {
+    text-overflow: ellipsis;
+  }
+  .slick-row .outer-card .card .text-card .date-wrapper {
+    margin-bottom: 5px;
+    float: left;
+  }
+  .slick-row .outer-card .card .text-card a {
+    margin-top: 10px;
+  }
 }

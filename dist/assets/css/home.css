@@ -62,36 +62,6 @@
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 
-.image-modalview-backdrop.active {
-  opacity: 1;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-  z-index: 99999999;
-}
-
-.image-modalview-backdrop {
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-  opacity: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -999;
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.image-modalview-backdrop .image-modalview {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  width: 60%;
-  z-index: 999999999999999;
-  cursor: auto;
-}
-
 .res-none {
   display: none;
 }
@@ -104,29 +74,6 @@
   top: 35%;
   left: -20px;
   cursor: pointer;
-}
-
-.img-hover {
-  background: rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-}
-
-.img-hover:hover {
-  opacity: 1;
-}
-
-.small-gallery {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
 }
 
 .banner .banner-image-1 {
@@ -537,6 +484,10 @@
   .inspirasi-2,
   .inspirasi-3 {
     display: none;
+  }
+  .row-5 .inner-row {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .row-5 .right-side {
     padding-left: 10px;
