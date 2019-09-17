@@ -68,6 +68,9 @@ $('.lazy').slick({
 //   $('.vids-1').attr('src',data);
 // });
 
+// $(".stay-bottom").animate({ scrollTop: $(this).height() }, "slow");
+//   return false;
+
  $('.img-hover').click(function(event) {
  	let source  = $(this).closest('.box-3').children('.img-data').attr('src');
  	$('.image-modalview-backdrop').addClass('active');
@@ -86,4 +89,25 @@ $('.lazy').slick({
 
 $('.image-modalview').click(function(event) {
 	event.stopPropagation();
-});;
+});
+
+	$(".active-target").toggleClass('active');
+
+const upImage = (()=>{
+    $(":file").change(function () {
+		if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = loadImage;
+            reader.readAsDataURL(this.files[0]);
+        }
+
+		// setTimeout(function(){
+		// 	fetchData();
+		// }, 1000)
+
+    });
+})();
+
+const loadImage = (e)=>{
+    $('#img_target').attr('src', e.target.result);
+};

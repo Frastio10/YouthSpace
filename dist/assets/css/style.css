@@ -159,6 +159,7 @@ html, body {
   overflow-x: hidden;
   background-image: url("../images/pr.png");
   background-repeat: repeat-y;
+  background-color: #FAFAFA;
   background-position: center;
 }
 
