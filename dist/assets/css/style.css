@@ -12,6 +12,7 @@
   --darken-green: #0B8457;
   --darken-yellow: #E2BA00;
   --darken-blue: #10316B;
+  --darken-white:#f2f2f2;
 }
 
 /*
@@ -325,6 +326,26 @@ a {
   overflow: hidden;
 }
 
+.ov-a {
+  overflow: auto;
+}
+
+.ov-x-a {
+  overflow-x: auto;
+}
+
+.ov-x-h {
+  overflow-x: hidden;
+}
+
+.ov-y-h {
+  overflow-y: hidden;
+}
+
+.ov-y-a {
+  overflow-y: auto;
+}
+
 .b-box {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -620,6 +641,10 @@ a {
 
 .bg-darkblue {
   background: var(--darken-blue);
+}
+
+.bg-darkwhite {
+  background: var(--darken-white);
 }
 
 .bg-white {

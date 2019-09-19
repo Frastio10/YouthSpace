@@ -15,6 +15,7 @@ $('.paginate-number').click(function(event) {
 
 });
 
+$('.nicescroll').niceScroll();
  
 const loveAdd = ()=>{
 	$(document).ready(function($) {
@@ -41,6 +42,11 @@ $('.lazy').slick({
   slidesToShow: 3,
   slidesToScroll: 1
 });
+
+const scrollBottom = (e)=>{
+    var element = document.getElementById(e);
+    element.scrollTop = element.scrollHeight;
+}
 
  $(function() {
         $('.lazy').Lazy();

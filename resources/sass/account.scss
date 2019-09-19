@@ -1,4 +1,4 @@
-@import "./header";
+ @import "./header";
 
 .current-list{
 	border-left: 4px solid var(--primary) !important;
@@ -167,9 +167,123 @@
 
 
 .chat-wrapper{
+	max-height: 500px;
+	min-height: 500px;
+	
+
+	.chat-right{
+
+		.input-message{
+			@include padding-y(8px);
+			@include padding-x(15px);
+			box-sizing: border-box;
+
+			.inputtext{
+				box-sizing: border-box;
+				@include padding-x(10px);
+
+				input{
+					@include padding-y(8px);
+				}
+			}
+
+			.send-message{
+				@include padding-x(20px);
+				@include padding-y(10px);
+			}
+		}
+		.chat-scroll{
+			@include padding-x(16px);
+			box-sizing: border-box;
+			height: 400px;
+
+
+			.message-item{
+				@include padding-y(5px);
+				margin-top: 10px;
+
+
+				.message-parent{
+					float: left;
+					box-shadow: 0 2px 10px 0 rgba(0,0,0,.05);
+					max-width: 280px;
+					background: #fff;
+					box-sizing: border-box;
+					padding-top: 15px;
+					@include padding-x(10px);
+					padding-bottom: 10px;
+					border-top-left-radius:15px;
+					border-top-right-radius:15px;
+					border-bottom-right-radius:15px;
+					color: #888;
+
+					.message-text{
+						font-size: 14px;
+						font-family: lato;
+
+					}
+
+					.message-time{
+						margin-top: 7px;
+						float: right;
+						font-size: 12px;
+						font-family: lato;
+					}
+				}
+			}
+
+			.message-item.sent{
+
+				@include padding-y(5px);
+				margin-top: 10px;
+
+
+				.message-parent{
+					float: right;
+					max-width: 280px;
+					background: var(--primary);
+					box-sizing: border-box;
+					padding-top: 15px;
+					@include padding-x(10px);
+					padding-bottom: 10px;
+					border-top-left-radius:15px;
+					border-top-right-radius:15px;
+					border-bottom-left-radius:15px;
+					border-bottom-right-radius:0;
+					color: #fff;
+
+					.message-text{
+						font-size: 14px;
+						font-family: lato;
+
+					}
+
+					.message-time{
+						margin-top: 7px;
+						float: right;
+						font-size: 12px;
+						font-family: lato;
+					}
+				}
+			}
+		}
+
+		.name-bar{
+			padding: 15px;
+			z-index: 9;
+
+			.send-bar{
+
+				span{
+					margin-left: 8px;
+				}
+			}
+		}
+	}
 
 	.chat-left{
-		width: 280px;
+		min-width: 280px;
+		max-width: 280px;
 		box-sizing: border-box;
 
 		.chat-list{

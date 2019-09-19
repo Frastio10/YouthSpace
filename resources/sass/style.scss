@@ -249,8 +249,29 @@ a {
 	display: inline-block;
 }
 
+
 .ov-h{
 	overflow: hidden;
+}
+
+.ov-a{
+	overflow: auto;
+}
+
+.ov-x-a{
+	overflow-x: auto;
+}
+
+.ov-x-h{
+	overflow-x: hidden;
+}
+
+.ov-y-h{
+	overflow-y: hidden;
+}
+
+.ov-y-a{
+	overflow-y: auto;
 }
 
 .b-box{
@@ -352,6 +373,10 @@ a {
 
 .bg-darkblue{
 	background: var(--darken-blue);
+}
+
+.bg-darkwhite{
+	background: var(--darken-white);
 }
 
 .bg-white{
