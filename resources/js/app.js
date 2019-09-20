@@ -48,6 +48,8 @@ const scrollBottom = (e)=>{
     element.scrollTop = element.scrollHeight;
 }
 
+
+
  $(function() {
         $('.lazy').Lazy();
         placeholder : "data:image/assets/images/loader.svg"

@@ -1,5 +1,9 @@
  @import "./header";
 
+ .scrollcustom{
+ 	@include scrollbar-custom;
+ }
+
 .backdrop{
 	top: 0;
 	bottom: 0;
@@ -348,6 +352,17 @@ a {
 	position: relative;
 }
 
+//Nicescroll customization
+.nicescroll-rails {
+    background-color: #f6f6f6;
+}
+
+ .nicescroll-cursors{
+ 	border: none !important	;
+ 	border-radius: 0 !important	;
+ 	background-color: #e3e3e3  !important; 
+ }
+
 //Text color
 .text-white{
 	color: var(--white);
@@ -361,6 +376,10 @@ a {
 //Background color
 .bg-none{
 	background: none;
+}
+
+.bg-pink-1{
+	background: var(--pink-1);
 }
 
 .bg-darkgreen{
@@ -410,10 +429,14 @@ ul.horizontal-list{
 .dots-sm{
 	position: relative;	
 	
+
+		z-index:2;
+	
+	
 	&:before{
 		content: '';
 		top: -25px;
-		z-index: -1;
+		z-index: 0;
 		position: absolute;
 		width: 38px;	
 		height: 38px;

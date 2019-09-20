@@ -115,7 +115,7 @@ btn_search_2.addEventListener("click",()=>{
 					pill_bg = "bg-darkyellow";
 					category = "Pendidikan";
 				} else if(data == "lifestyle"){
-					pill_bg = "bg-darkyellow";
+					pill_bg = "bg-pink-1";
 					category = "Gaya Hidup";
 				}
 

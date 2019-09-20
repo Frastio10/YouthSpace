@@ -13,6 +13,7 @@
   --darken-yellow: #E2BA00;
   --darken-blue: #10316B;
   --darken-white:#f2f2f2;
+  --pink-1:#EF1762;
 }
 
 /*
@@ -200,13 +201,26 @@
 .diskusi-1 {
   width: calc(50% - 8px);
   margin-right: 8px;
-  padding-right: 30px;
+  padding-left: 15px !important;
+  padding-right: 30px !important;
 }
 
 .diskusi-2 {
   margin-left: 8px;
   width: calc(50% - 8px);
-  padding-right: 30px;
+  padding-left: 15px !important;
+  padding-right: 30px !important;
+}
+
+.diskusi-1,
+.diskusi-2 {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.diskusi-1:hover,
+.diskusi-2:hover {
+  border-left: 15px solid var(--primary);
 }
 
 .inspirasi-1,

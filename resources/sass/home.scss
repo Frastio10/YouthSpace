@@ -155,14 +155,27 @@
 .diskusi-1{
 	width: calc(50% - 8px);
 	margin-right: 8px;
-	padding-right: 30px;
+	padding-left: 15px !important;
+	padding-right: 30px !important;
 }
 
 .diskusi-2{
 	margin-left: 8px;
 	width: calc(50% - 8px);
-	padding-right: 30px;
+	padding-left: 15px !important;
+	padding-right: 30px !important;
 	
+}
+
+.diskusi-1,
+.diskusi-2{
+	//border-left: 15px solid transparent;
+	transition: .3s ease;
+
+	&:hover{
+		border-left:15px solid var(--primary);
+	}
+
 }
 
 .inspirasi-1,
