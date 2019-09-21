@@ -65,6 +65,10 @@
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 
+#roots {
+  float: left;
+}
+
 .row-1 {
   margin-top: 120px;
 }
