@@ -3,7 +3,7 @@ const root_2 = document.getElementById("root_2");
 let temp = "";
 const search = new URLSearchParams(window.location.search);
 const templates = document.getElementById('templates').innerHTML;
-const templates_2 = document.getElementById('random-news').innerHTML;
+const templates_2 = document.getElementById('random-news').innerHTML; 
 let temp_2 = "";
 
 const getRandomValue = (arr, count)=>{

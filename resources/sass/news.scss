@@ -17,10 +17,11 @@
 	margin-left:-15px;
 	display: inline-block;	
 	z-index: 3;
-	min-height: 220px;
+	box-sizing: border-box;
+	min-height: 246px;
 
 	a{
-		margin-top: 5px;
+		margin-top: 20px;
 	} 
 
 	.pills{

@@ -7,8 +7,9 @@
   --primary: #1592E6;
   --white: #ffffff;
   --black: #000000;
+  --black-3:#333333;
   --grey: #888888;
-  --darken-grey: #707070;
+  --darken-grey: #777777;
   --darken-green: #0B8457;
   --darken-yellow: #E2BA00;
   --darken-blue: #10316B;
@@ -1168,6 +1169,10 @@ ul.horizontal-list li {
   color: #000000;
 }
 
+.f-black-3 {
+  color: #333333;
+}
+
 .f-darken-grey {
   color: var(--darken-grey);
 }
@@ -1605,7 +1610,7 @@ footer .inner-footer .footer-list ul li a {
   padding-left: 38px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 
 .btn-more {
