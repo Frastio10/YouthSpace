@@ -122,6 +122,8 @@
   animation-name: fixing-size;
   -webkit-animation-duration: 2000s;
   animation-duration: 2000s;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .random-news .list-wrapper .list-item .item span {
