@@ -1,5 +1,18 @@
  @import "./header";
 
+.box-3-1{
+	margin-right: 15px;
+	width: 350px !important;
+}
+
+
+.slick-row-2{
+	max-width: 1080px;
+	float: left;
+	overflow-x: hidden;
+	margin-bottom: 30px;
+
+}
 
 .profileadmin{
 	width: 50px;
@@ -104,6 +117,11 @@
 			.thumb-card{
 				height: 138px;
 				object-fit: cover;
+
+				img{
+					object-fit: cover;
+					object-position: top;
+				}
 			}
 			
 			.text-card{
@@ -175,13 +193,18 @@
 	
 }
 
+
+
 .diskusi-1,
 .diskusi-2{
 	//border-left: 15px solid transparent;
 	transition: .3s ease;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.05);
+
 
 	&:hover{
-		border-left:15px solid var(--primary);
+	box-shadow: 0 8px 20px 8px rgba(0,0,0,.08);
+		 
 	}
 
 }

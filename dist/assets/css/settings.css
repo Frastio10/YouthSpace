@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #1592E6;
+  --white: #ffffff;
+  --black: #000000;
+  --black-3:#333333;
+  --grey: #888888;
+  --darken-grey: #777777;
+  --darken-green: #0B8457;
+  --darken-yellow: #E2BA00;
+  --darken-blue: #10316B;
+  --darken-white:#f2f2f2;
+  --pink-1:#EF1762;
+}
+
+/*
+ Fonts Import
+*/
+@font-face {
+  font-family: lato-regular;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: lato-bold;
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: lato-light;
+  src: url("../fonts/Lato/Lato-light.ttf");
+}
+
+@font-face {
+  font-family: lato-italic;
+  src: url("../fonts/Lato/Lato-italic.ttf");
+}
+
+@font-face {
+  font-family: playfair-black;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Black.ttf");
+}
+
+@font-face {
+  font-family: playfair-blackitalic;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: playfair-bold;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+  font-family: playfair-BoldItalic;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: playfair-regular;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+}
+
+.change-pass {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #f2f2f2;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.change-pass:hover {
+  background: #e3e3e3;
+}
+
+.list-bg {
+  width: 100%;
+  background: #f2f2f2;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  vertical-align: middle;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fff;
+}
+
+.list-first {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+}
+
+.list-item .list-title {
+  color: #555555;
+}
+
+.list-item .list-icon {
+  margin-right: 25px;
+}
+
+.list-item .check-toggle {
+  cursor: pointer;
+}
+
+.list-item .check-right {
+  float: left;
+  margin-right: 6px;
+}
+
+.list-item .check-right img {
+  height: 14px;
+  width: 14px;
+}
+
+.list-item .check-left {
+  float: left;
+  margin-right: 40px;
+}
+
+.list-item .check-left img {
+  height: 14px;
+  width: 14px;
+}
+
+.list-icon img {
+  width: 22px;
+  height: 22px;
+}
+
+.notify-to {
+  float: left;
+  margin-left: 25px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.notify-to img {
+  margin-bottom: 5px;
+}
+
+.notify-to:nth-child(2) img {
+  margin-bottom: 10px;
+}

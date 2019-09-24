@@ -1,5 +1,18 @@
  document.addEventListener('touchstart', {passive: true});
 
+const scrollBottom = ()=>{
+    $(".customscrollbar").scrollTop($(".customscrollbar").height() ** 2 );
+};
+
+$('.check-toggle').click(function(e) {
+	if ($(this).attr('src').includes('x')) {
+		$(this).attr('src', './assets/images/check.svg');
+	} else if($(this).attr('src').includes('check')){
+		$(this).attr('src', './assets/images/x.svg');
+	}
+}); 
+
+
 $('.popup-trigger').hover(function(event) {
 	$(this).children('.popup-content').toggleClass('d-none');
 });
@@ -43,10 +56,10 @@ $('.lazy').slick({
   slidesToScroll: 1
 });
 
-const scrollBottom = (e)=>{
-    var element = document.getElementById(e);
-    element.scrollTop = element.scrollHeight;
-}
+// const scrollBottom = (e)=>{
+//     var element = document.getElementById(e);
+//     element.scrollTop = element.scrollHeight;
+// }
 
 
 
@@ -81,6 +94,14 @@ const scrollBottom = (e)=>{
 
  $('.img-hover').click(function(event) {
  	let source  = $(this).closest('.box-3').children('.img-data').attr('src');
+ 	$('.image-modalview-backdrop').addClass('active');
+ 	$('#image-modal').attr('src', source);
+ 	//console.log(source);
+ 	//alert(source);
+ });
+
+ $('.img-hover').click(function(event) {
+ 	let source  = $(this).closest('.box-3-1').children('.img-data').attr('src');
  	$('.image-modalview-backdrop').addClass('active');
  	$('#image-modal').attr('src', source);
  	//console.log(source);

@@ -1,8 +1,39 @@
  @import "./header";
 
+//Tabs
+.tab-content {
+  display: none;
+}
+
+.tab-content.current {
+  display: inherit;
+}
+
+.tab-changer:hover {
+  
+}
+
+.tab-changer {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
  .scrollcustom{
  	@include scrollbar-custom;
  }
+
+.customscrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.customscrollbar::-webkit-scrollbar-thumb {
+    background: #dbdbdb;
+}
+
+.customscrollbar::-webkit-scrollbar-track {
+    background: var(--secondary);
+}
+
 
 .backdrop{
 	top: 0;
@@ -169,9 +200,23 @@ html , body {
 
 }
 
+.box-shadow-hover{
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.05);
+
+
+	&:hover{
+	box-shadow: 0 8px 20px 8px rgba(0,0,0,.08);
+		 
+	}
+}
+
+.box-shadow{
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.05);
+}
+
 .text-decoration-n{
 	text-decoration: none;
-
+ 
 }
 
 #logo-text{
@@ -312,13 +357,19 @@ a {
 	color: var(--white);
 	@include padding-x(31px);
 	@include padding-y(11px);
+	transition: .3s ease;
 
 	&:hover{
 		background: #5C95C4;
+
+	box-shadow: 0 8px 20px 8px rgba(0,0,0,.08);
+			 
+		
 	}
 }
 
 .btn-blue-sm{
+	transition: .3s ease;
 	background-color: var(--primary);
 	text-decoration: none;
 	font-family: lato;
@@ -464,6 +515,31 @@ ul.horizontal-list{
 
 .mt-10{
 	margin-top: 10px;
+}
+
+.mt-15{
+	margin-top: 15px;
+}
+
+.mb-15{
+	margin-bottom: 15px;
+}
+
+.my-15{
+	@include margin-y(15px);
+}
+
+.ml-15{
+	margin-left: 15px;
+
+}
+
+.mr-15{
+	margin-right: 15px;
+}
+
+.mx-15{
+	@include margin-x(15px);
 }
 
 .mb-10{
@@ -973,10 +1049,10 @@ header{
 	left: -150px;
 	.list{
 
-		border-right: 1px solid #eaeaea;
+		
 		border-top: 1px solid #eaeaea;
-		border-left: 1px solid #eaeaea;
-		@include box-shadow( 0px 5px 10px 0 #eaeaea);
+		
+		@include box-shadow( 0px 5px 10px 0 rgba(0,0,0,0.1));
 
 		ul{
 			list-style-type: none;
@@ -1156,7 +1232,9 @@ footer{
 }
 
 .btn-more{
-	margin: 35px auto 0 auto;
+	margin: 35px auto 30px auto;
+	transition: .3s ease;
+
 }
 
 //Margin auto
@@ -1527,6 +1605,8 @@ footer{
 		@include padding-x(9px);
 		@include padding-y(6px);
 		font-size: 12px;
+	transition: .3s ease;
+		
 	}
 
 	.res-block{
