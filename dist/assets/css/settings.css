@@ -65,6 +65,84 @@
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 
+.checklist {
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+.checklist span {
+  margin-left: 13px;
+}
+
+.checklist-1 {
+  padding-top: 15px;
+}
+
+.checkbox-2 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.checkbox-2 span {
+  color: #555555;
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  float: left;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+  background: #e8e8e8;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  background: #fff;
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: var(--primary);
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 20px;
+}
+
+.checkbox-1 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.checkbox-1 span {
+  color: #555555;
+  margin-left: 13px;
+}
+
 .change-pass {
   padding-top: 9px;
   padding-bottom: 9px;
