@@ -121,7 +121,7 @@
 
 .list-item .check-right {
   float: left;
-  margin-right: 6px;
+  padding-right: 6px;
 }
 
 .list-item .check-right img {
@@ -131,7 +131,7 @@
 
 .list-item .check-left {
   float: left;
-  margin-right: 40px;
+  padding-right: 40px;
 }
 
 .list-item .check-left img {

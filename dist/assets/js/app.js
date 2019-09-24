@@ -6,9 +6,16 @@ const scrollBottom = ()=>{
 
 $('.check-toggle').click(function(e) {
 	if ($(this).attr('src').includes('x')) {
-		$(this).attr('src', './assets/images/check.svg');
+		setTimeout(()=>{
+			$(this).attr('src', './assets/images/check.svg');
+		},200)
+			$(this).attr('src', './assets/images/loads.gif');
+
 	} else if($(this).attr('src').includes('check')){
-		$(this).attr('src', './assets/images/x.svg');
+		setTimeout(()=>{
+			$(this).attr('src', './assets/images/x.svg');
+		},200)
+		$(this).attr('src', './assets/images/loads.gif');
 	}
 }); 
 
