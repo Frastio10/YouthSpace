@@ -1513,6 +1513,7 @@ header .nav-right li.popup-trigger:nth-child(2) {
   font-family: lato;
   text-decoration: none;
   color: #333;
+  width: 100%;
 }
 
 footer {
