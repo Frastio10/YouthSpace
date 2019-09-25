@@ -187,10 +187,6 @@
   padding: 15px;
 }
 
-.jumbotron .user-detail {
-  margin-left: 10px;
-}
-
 .jumbotron .user-detail img {
   margin-right: 5px;
 }
@@ -262,6 +258,15 @@
 .inspirasi-2,
 .inspirasi-3 {
   padding: 30px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.inspirasi-1:hover,
+.inspirasi-2:hover,
+.inspirasi-3:hover {
+  -webkit-box-shadow: 0 8px 20px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 20px 8px rgba(0, 0, 0, 0.08);
 }
 
 .slider-wrapper {
