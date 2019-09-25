@@ -1,4 +1,4 @@
-@layout('layouts.app')
+ @layout('layouts.app')
 
 
 @section('title')
@@ -13,6 +13,7 @@
 @endsection
 
 @section('js')
+		<script src="./assets/js/3dslider.js"></script>
 
 <script>
 	$('.slick-row').slick({	
@@ -127,6 +128,8 @@
 @section('css')
 
 <link rel="stylesheet" href="./assets/css/gallery.css">
+
+
 
 @endsection
 
@@ -262,10 +265,30 @@
 
 <div class="row row-3 w-100 mb-40">
 	<div class="container">
-		<div class="inner-row">
+		<div class="inner-row pos-r">
 			<span class="dots-sm f-25 f-playfair-bold">Video</span>
 			<div class="w-100">
-				<img src="./assets/images/video-layer.png" class="w-100" alt="">
+				<div id="slider" class="w-100">
+						    <div class="dp-wrap">
+							    <div id="dp-slider">
+								      <div class="dp_item" data-class="1" data-position="1"> 
+									        <div class="dp-img">
+									          <img class="img-fluid" src="./assets/images/thumb-1.png" alt="investing">
+									        </div>
+								      </div>
+								      <div class="dp_item" data-class="2" data-position="2">
+									        <div class="dp-img">
+									          <img class="img-fluid" src="./assets/images/thumb-2.png" alt="investing">
+									        </div>
+								      </div>
+								      <div class="dp_item" data-class="3" data-position="3">
+									        <div class="dp-img">
+									          <img class="img-fluid" src="./assets/images/thumb-3.png" alt="investing">
+									        </div>
+								      </div>					     
+							    </div>				   
+							</div>
+						</div>
 			</div>
 		</div>
 	</div>

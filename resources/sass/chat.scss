@@ -29,7 +29,7 @@
 		.chat-scroll{
 			@include padding-x(16px);
 			box-sizing: border-box;
-			height: 400px;
+			height: 382px;
 
 
 			.message-item{
@@ -180,3 +180,31 @@
 
 	}
 }
+
+
+@include breakpoint-down(lg){
+
+};
+
+@include breakpoint-down(md){
+	.three{
+		display: none !important;
+	}
+
+	.nine{
+		width: 100% !important;
+	}
+};
+
+@include breakpoint-down(sm){
+	.chat-right{
+		display: none !important;
+	}
+
+	
+	.chat-left{
+		width: 100%;
+		min-width: unset !important;
+		max-width: unset !important;
+	}
+};

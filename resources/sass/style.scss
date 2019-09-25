@@ -1,4 +1,4 @@
- @import "./header";
+  @import "./header";
 
 //Tabs
 .tab-content {
@@ -1636,12 +1636,21 @@ footer{
 				max-width: 50% !important;
 				display: unset;
 				@include margin-y(8px);
+
+				b{
+					font-size: 12px;
+				}
+
 				ul{
 					margin-top: 8px;
 
 					li{
 
-						@include padding-y(5px);
+						@include padding-y(3px);
+
+						a{
+							font-size: 12px;
+						}
 					}
 				}
 			}
@@ -1651,6 +1660,17 @@ footer{
 				max-width: 100%;
 				p{
 					margin-top: 10px;
+					font-size: 12px;
+				}
+			}
+
+			.footer-desc-left{
+				span{
+					font-size: 12px;
+				}
+
+				p{
+					font-size:11px;
 				}
 			}
 		}

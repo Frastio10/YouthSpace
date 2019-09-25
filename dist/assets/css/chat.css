@@ -103,7 +103,7 @@
   padding-right: 16px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  height: 400px;
+  height: 382px;
 }
 
 .chat-wrapper .chat-right .chat-scroll .message-item {
@@ -242,4 +242,24 @@
   padding-right: 8px;
   width: 100%;
   background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  .three {
+    display: none !important;
+  }
+  .nine {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .chat-right {
+    display: none !important;
+  }
+  .chat-left {
+    width: 100%;
+    min-width: unset !important;
+    max-width: unset !important;
+  }
 }

@@ -2199,12 +2199,18 @@ footer .inner-footer .footer-list ul li a {
     margin-top: 8px;
     margin-bottom: 8px;
   }
+  footer .inner-footer .footer-list b {
+    font-size: 12px;
+  }
   footer .inner-footer .footer-list ul {
     margin-top: 8px;
   }
   footer .inner-footer .footer-list ul li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  footer .inner-footer .footer-list ul li a {
+    font-size: 12px;
   }
   footer .inner-footer .footer-desc {
     margin-top: 13px;
@@ -2212,6 +2218,13 @@ footer .inner-footer .footer-list ul li a {
   }
   footer .inner-footer .footer-desc p {
     margin-top: 10px;
+    font-size: 12px;
+  }
+  footer .inner-footer .footer-desc-left span {
+    font-size: 12px;
+  }
+  footer .inner-footer .footer-desc-left p {
+    font-size: 11px;
   }
   footer .last-box {
     width: 36px;

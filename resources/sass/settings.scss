@@ -30,7 +30,7 @@ input[type=checkbox]{
 	visibility: hidden;
 }
 
-label {
+label.label-switch {
 	float: left;
 	cursor: pointer;
 	text-indent: -9999px;
@@ -42,7 +42,7 @@ label {
 	position: relative;
 }
 
-label:after {
+label.label-switch:after {
 	content: '';
 	position: absolute;
 	top: 3px;
@@ -54,16 +54,16 @@ label:after {
 	transition: 0.3s;
 }
 
-input:checked + label {
+input:checked + label.label-switch {
 	background: var(--primary);
 }
 
-input:checked + label:after {
+input:checked + label.label-switch:after {
 	left: calc(100% - 5px);
 	transform: translateX(-100%);
 }
 
-label:active:after {
+label.label-switch:active:after {
 	width: 20px;
 }
 
@@ -167,3 +167,144 @@ label:active:after {
 	}
 
 }
+
+@include breakpoint-down(md){
+
+
+
+	.three{
+		display: none !important;
+	}
+
+	.nine{
+		width: 100% !important;
+		padding-top: 15px;
+	}
+
+	.bio{
+		text-align: center;
+	}
+
+	.user-info{
+		flex-direction: column;
+		width: 100% !important;
+
+		.detail{
+			width: 100%;
+
+			text-align: center;
+
+			.registered{
+				justify-content: center;
+			}
+		}
+	}
+};
+
+@include breakpoint-down(sm){
+	.row-1{
+
+		.rounded{
+			width: 80px !important;
+			height: 80px !important;
+		}
+
+		.inner-row{
+			padding-top: 75px !important;
+		}
+	}
+
+	.change-pass{
+		font-size: 10px;
+	}
+
+	.title-small{
+		font-size: 12px !important;
+	}
+
+	.list-first{
+
+		.permission{
+			font-size: 12px;
+		}
+
+		.notify-to{
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			margin-left: 17px;
+
+			img{
+				width: 15px;
+
+			}
+
+			span{
+				font-size: 11px;
+			}
+
+			&:nth-child(2){
+
+				img{
+					margin-bottom: 9px;
+				}
+			}
+		}
+	}
+
+	.list-item{
+
+			.list-title{
+				font-size: 12px;
+			}
+
+			.check-wrapper{
+				display: flex;
+
+				.check-left{
+					float: left;
+				    padding-right: 26px;
+				    margin-left: 11px;
+				}
+
+				.check-right{
+					padding-right: 4px;	
+				}
+			}
+
+			.list-icon{
+				margin-right: 10px;
+
+				img{
+					width: 16px;
+					height: 16px;
+				}
+			}
+		}
+
+	.checklist{
+
+
+
+		label{
+			
+			width: 50px;	
+			height: 25px;	
+			float: right;	
+		}
+
+		span{
+			font-size: 13px !important;
+
+		}
+	}
+
+	.checkbox-1{
+
+		span{
+			font-size: 12px;
+			max-width: 70%;
+		}
+	}
+
+};

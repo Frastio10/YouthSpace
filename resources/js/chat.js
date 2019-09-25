@@ -43,3 +43,29 @@ $("#search_chat").keyup(function(event) {
  (()=>{
     $(".customscrollbar").scrollTop($(".customscrollbar").height() ** 2 );
 })();
+
+
+$(".tab-changer").click(function(event) {
+    let data_url = $(this).data('url');
+    let target = `?message_id=${data_url}`;
+    let title = "Pesan";
+    let url = `?test=${data_url}`;
+
+    $(".tab-content").removeClass('active-tab');
+    window.history.pushState(target, title, url);
+
+    let tab = $(this).data('tab');
+
+    $("#"+tab).addClass('active-tab');
+
+    const element = $("#"+tab).innerHTML;
+    const elem = ($("#"+tab).html());
+
+    const root = $('#root-scroll');
+
+    root.innerHTML = elem;
+    root.innerHTML = root.textContent;
+
+    console.log(elem);
+
+});

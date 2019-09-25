@@ -88,7 +88,7 @@
 			</div>
 			<div class="chat-list">
 				<ul class="list-style-none" id="user_chat_list">
-					<li class="current-chat tab-changer" data-tab="tab-1">
+					<li class="current-chat tab-changer" data-tab="tab-1" data-url="0">
 						<div class="chat-item d-flex align-items-center w-100">
 							<img src="./assets/images/ys-icon.svg" class="sender-image" alt="">
 							<div class="message-sender">
@@ -99,7 +99,7 @@
 											<span class="time f-8 f-lato f-grey ml-auto">12.00</span>
 										</div>
 									</li>
-									<li class="tab-changer" data-tab="tab-2">
+									<li class="tab-changer" data-tab="tab-2" data-url="1">
 										<div class="chat-item d-flex align-items-center w-100">
 											<img src="./assets/images/chat-2.png" class="sender-image" alt="">
 											<div class="message-sender">
@@ -110,7 +110,7 @@
 											<span class="time f-8 f-lato f-grey ml-auto">12.00</span>
 										</div>
 									</li>
-									<li  class="tab-changer" data-tab="tab-3">
+									<li  class="tab-changer" data-tab="tab-3" data-url="3">
 										<div class="chat-item d-flex align-items-center w-100">
 											<img src="./assets/images/chat-4.jpg" class="sender-image" alt="">
 											<div class="message-sender">
@@ -121,7 +121,7 @@
 											<span class="time f-8 f-lato f-grey ml-auto">12.00</span>
 										</div>
 									</li>
-									<li class="tab-changer" data-tab="tab-4">
+									<li class="tab-changer" data-tab="tab-4" data-url="4">
 										<div class="chat-item d-flex align-items-center w-100">
 											<img src="./assets/images/chat-3.jpg" class="sender-image" alt="">
 											<div class="message-sender">
@@ -135,7 +135,8 @@
 								</ul>
 							</div>
 						</div>
-						<div class="chat-right w-100 f-left pos-r flex-column tab-1-content tab-content current"  id="tab-1">
+						<div class="f-left" id="root-scroll">
+							<div class="chat-right w-100 f-left pos-r flex-column tab-1-content tab-content current"  id="tab-1">
 							<div class="name-bar b-box bg-primary w-100 d-flex align-items-center text-white f-playfair f-13">
 								 	<div class="send-bar d-flex align-items-center">
 										<img src="./assets/images/ys-icon.svg" class="sender-image" alt="">
@@ -247,7 +248,7 @@
 							<div class="name-bar b-box bg-primary w-100 d-flex align-items-center text-white f-playfair f-13">
 								 	<div class="send-bar d-flex align-items-center">
 										<img src="./assets/images/chat-4.jpg" class="sender-image" alt="">
-										<span>YouthSpace admin</span>
+										<span>Inspirasi anak muda</span>
 								 	</div>
 								 </div>
 							<div class=" f-left w-100 chat-scroll pos-r ov-y-a customscrollbar">
@@ -350,6 +351,7 @@
 										<span>Kirim</span>
 									</div>
 							</div>
+						</div>
 						</div>
 					</div>
 @endsection
