@@ -65,6 +65,28 @@
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 
+.tab-content {
+  display: none;
+}
+
+.tab-content.current {
+  display: block;
+}
+
+.left-arrow-chat {
+  cursor: pointer;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: none;
+}
+
+.tab-changer {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .chat-wrapper {
   max-height: 500px;
   min-height: 500px;
@@ -245,6 +267,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .row-2 {
+    padding-top: 75px;
+  }
   .three {
     display: none !important;
   }
@@ -254,12 +279,27 @@
 }
 
 @media screen and (max-width: 420px) {
-  .chat-right {
-    display: none !important;
+  .left-arrow-chat {
+    display: block !important;
+  }
+  .chat-wrapper {
+    margin-bottom: 22px;
+  }
+  .row-1 {
+    display: none;
+  }
+  .message-parent {
+    max-width: 207px !important;
   }
   .chat-left {
     width: 100%;
     min-width: unset !important;
     max-width: unset !important;
+  }
+  .tab-content {
+    display: none;
+  }
+  .tab-content.current {
+    display: none;
   }
 }

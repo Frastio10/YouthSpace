@@ -154,7 +154,8 @@ label.label-switch:active:after {
 }
 
 .change-pass:hover {
-  background: #e3e3e3;
+  background: var(--primary);
+  color: #fff;
 }
 
 .list-bg {

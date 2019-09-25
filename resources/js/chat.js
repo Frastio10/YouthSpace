@@ -45,27 +45,30 @@ $("#search_chat").keyup(function(event) {
 })();
 
 
-$(".tab-changer").click(function(event) {
-    let data_url = $(this).data('url');
-    let target = `?message_id=${data_url}`;
-    let title = "Pesan";
-    let url = `?test=${data_url}`;
 
-    $(".tab-content").removeClass('active-tab');
-    window.history.pushState(target, title, url);
+var windowWidth = $(window).width();
 
-    let tab = $(this).data('tab');
+console.log(windowWidth);
 
-    $("#"+tab).addClass('active-tab');
+if(windowWidth <= 420){
+    $(".tab-changer").click(function(event) {
+        let data_url = $(this).data('url');
+        let target = `?message_id=${data_url}`;
+        let title = "Pesan";
+        let url = `?test=${data_url}`;
 
-    const element = $("#"+tab).innerHTML;
-    const elem = ($("#"+tab).html());
+        $(".tab-content").removeClass('active-tab');
+        window.history.pushState(target, title, url);
 
-    const root = $('#root-scroll');
+        let tab = $(this).data('tab');
+        $('.chat-left').css('display', 'none');
 
-    root.innerHTML = elem;
-    root.innerHTML = root.textContent;
+        $("#"+tab).css('display', 'flex');
+    });
+}
 
-    console.log(elem);
+$('.left-arrow-chat').click(function(event) {
+    $('.chat-left').css('display', 'block');
 
+        $(".tab-content").css('display', 'none');
 });

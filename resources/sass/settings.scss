@@ -85,7 +85,8 @@ label.label-switch:active:after {
 	transition: .2s ease;
 
 	&:hover{
-		background: #e3e3e3;
+		background: var(--primary);
+		color: #fff;
 
 	}
 }

@@ -1,22 +1,7 @@
   @import "./header";
 
 //Tabs
-.tab-content {
-  display: none;
-}
 
-.tab-content.current {
-  display: inherit;
-}
-
-.tab-changer:hover {
-  
-}
-
-.tab-changer {
-  -webkit-transition: .5s;
-  transition: .5s;
-}
 
  .scrollcustom{
  	@include scrollbar-custom;
@@ -415,6 +400,10 @@ a {
  }
 
 //Text color
+.text-white-i{
+	color: var(--white) !important;
+}
+
 .text-white{
 	color: var(--white);
 }

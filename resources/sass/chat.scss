@@ -1,4 +1,29 @@
-@import "./header";
+ @import "./header";
+
+ .tab-content {
+  display: none;
+}
+
+.tab-content.current {
+  display: block;
+}
+
+.left-arrow-chat{
+	cursor: pointer;
+	@include padding-x(8px);
+	@include padding-y(3px);
+	display: none;
+
+}
+
+.tab-changer:hover {
+  
+}
+
+.tab-changer {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
 
 .chat-wrapper{
 	max-height: 500px;
@@ -187,6 +212,11 @@
 };
 
 @include breakpoint-down(md){
+	
+	.row-2{
+		padding-top: 75px;
+	}
+
 	.three{
 		display: none !important;
 	}
@@ -197,14 +227,37 @@
 };
 
 @include breakpoint-down(sm){
-	.chat-right{
-		display: none !important;
+	.left-arrow-chat{
+		display: block !important;
 	}
 
+	// .chat-right{
+	// 	display: none;
+	// }
+
+	.chat-wrapper{
+		margin-bottom: 22px;
+	}
+
+	.row-1{
+		display: none;
+	}
+	
+	.message-parent{
+		max-width: 207px !important;
+	}
 	
 	.chat-left{
 		width: 100%;
 		min-width: unset !important;
 		max-width: unset !important;
+	}
+
+	.tab-content{
+		display: none;
+	}
+
+	.tab-content.current {
+  		display: none;
 	}
 };
