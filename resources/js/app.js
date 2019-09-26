@@ -24,13 +24,13 @@ $('.check-toggle').click(function(e) {
 	if ($(this).attr('src').includes('x')) {
 		setTimeout(()=>{
 			$(this).attr('src', './assets/images/check.svg');
-		},200)
+		},300)
 			$(this).attr('src', './assets/images/loads.gif');
 
 	} else if($(this).attr('src').includes('check')){
 		setTimeout(()=>{
 			$(this).attr('src', './assets/images/x.svg');
-		},200)
+		},300)
 		$(this).attr('src', './assets/images/loads.gif');
 	}
 }); 

@@ -1,6 +1,8 @@
 @import "./header";
 
 
+
+
 @include breakpoint-down(md){
 	.row-1{
 		display: none !important;

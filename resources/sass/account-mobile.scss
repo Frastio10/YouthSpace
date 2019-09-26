@@ -3,3 +3,50 @@
 
 
 
+
+
+@include breakpoint-down(sm){
+	.seven{
+	width: 100% !important;
+}
+
+.nine{
+	display: none !important;
+}
+
+.three{
+	width: 100% !important;
+	margin-bottom: 30px !important;
+}
+
+	.row-1{
+
+		.rounded{
+			width: 80px !important;
+			height: 80px !important;
+		}
+
+		.inner-row{
+			padding-top: 75px !important;
+		}
+	}
+
+	.bio{
+		text-align: center;
+	}
+
+	.user-info{
+		flex-direction: column;
+		width: 100% !important;
+
+		.detail{
+			width: 100%;
+
+			text-align: center;
+
+			.registered{
+				justify-content: center;
+			}
+		}
+	}
+};

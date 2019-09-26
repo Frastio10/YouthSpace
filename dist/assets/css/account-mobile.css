@@ -64,3 +64,44 @@
   font-family: playfair-regular;
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
+
+@media screen and (max-width: 420px) {
+  .seven {
+    width: 100% !important;
+  }
+  .nine {
+    display: none !important;
+  }
+  .three {
+    width: 100% !important;
+    margin-bottom: 30px !important;
+  }
+  .row-1 .rounded {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .row-1 .inner-row {
+    padding-top: 75px !important;
+  }
+  .bio {
+    text-align: center;
+  }
+  .user-info {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    width: 100% !important;
+  }
+  .user-info .detail {
+    width: 100%;
+    text-align: center;
+  }
+  .user-info .detail .registered {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+}

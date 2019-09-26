@@ -65,6 +65,11 @@
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 
+.reply-button {
+  float: right;
+  cursor: pointer;
+}
+
 .list-box .list .first-list {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -97,7 +102,6 @@
 }
 
 .list-box .list li:hover {
-  border-left: 4px solid var(--primary);
   background: #f4f4f4;
 }
 
@@ -185,6 +189,12 @@
 
 .discussion-item .clock {
   margin-right: 5px;
+}
+
+.discussion-item .category-wrapper button:hover svg path {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  stroke: var(--primary);
 }
 
 .current-category {

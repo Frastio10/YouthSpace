@@ -1,6 +1,9 @@
  @import "./header";
 
-
+.reply-button{
+	float: right;
+	cursor: pointer;
+}
 
 .list-box{
 
@@ -31,7 +34,7 @@
 			}
 
 			&:hover{
-				border-left: 4px solid var(--primary);
+				// border-left: 4px solid var(--primary);
 				background: #f4f4f4;
 
 				span{
@@ -134,6 +137,23 @@
 		margin-right: 5px;
 	}
 	
+
+	.category-wrapper{
+
+		button{
+
+			&:hover{
+
+				svg{
+
+					path{
+						transition: .3s ease;
+						stroke: var(--primary) ;
+					}
+				}
+			}
+		}
+	}
 }
 
 

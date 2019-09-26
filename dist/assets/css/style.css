@@ -685,8 +685,8 @@ a {
 
 .btn-blue:hover {
   background: #5C95C4;
-  -webkit-box-shadow: 0 8px 20px 8px rgba(0, 0, 0, 0.08);
-  box-shadow: 0 8px 20px 8px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0px 8px 8px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 0px 8px 8px rgba(0, 0, 0, 0.02);
 }
 
 .btn-blue-sm {
@@ -1530,6 +1530,8 @@ header .nav-right li.popup-trigger:nth-child(2) {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 .popup-profile .list ul li:nth-child(1) {
@@ -1542,6 +1544,10 @@ header .nav-right li.popup-trigger:nth-child(2) {
   text-decoration: none;
   color: #333;
   width: 100%;
+}
+
+.popup-profile .list ul li:hover {
+  background: #f4f4f4;
 }
 
 footer {

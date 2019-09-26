@@ -369,7 +369,7 @@ a {
 	&:hover{
 		background: #5C95C4;
 
-	box-shadow: 0 8px 20px 8px rgba(0,0,0,.08);
+	box-shadow: 0 0px 8px 8px rgba(0,0,0,.02);
 			 
 		
 	}
@@ -482,6 +482,7 @@ a {
 
 ul.horizontal-list{
 	list-style-type: none;
+
 	li{
 		float: left;
 		
@@ -1077,6 +1078,7 @@ header{
 				border-bottom: 1px #eaeaea solid;
 				@include padding-x(20px);
 				@include padding-y(10px);	
+				transition: .3s ease;
 				
 				&:nth-child(1){
 					background-color: var(--primary) !important;
@@ -1088,6 +1090,10 @@ header{
 					text-decoration: none;
 					color: #333;	
 					width: 100%;
+				}
+
+				&:hover{
+					background: #f4f4f4;
 				}
 			}
 		}
@@ -1473,6 +1479,8 @@ footer{
 						height: 19px;	
 					}
 
+					
+
 				}
 			}
 
@@ -1480,7 +1488,7 @@ footer{
 				color: #fff;
 
 				.paginate-item{
-				background: var(--primary);
+					background: var(--primary);
 
 				}
 			}

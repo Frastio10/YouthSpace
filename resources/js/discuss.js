@@ -5,6 +5,7 @@ const root = document.getElementById("root");
 let temp = "";
 const search = new URLSearchParams(window.location.search);
 const template = document.getElementById("templates").innerHTML;
+const template_not_inner = document.getElementById("templates");
 const liked_template = document.getElementById("liked_template").innerHTML;
 // const templates = document.getElementById('templates').innerHTML;
 
@@ -30,8 +31,14 @@ const showReplies = (e)=>{
 	
 	$(this).closest('.discussion-card').children('.reply-wrapper').slideToggle();
 });
-
 }
+
+
+const btn = root.querySelector('.btn_slider');
+
+$(btn).click(function(event) {
+	alert("lol")
+});
 // btn_search.addEventListener("click",()=>{
 // 	console.log(search_input.value);
 // });
@@ -61,7 +68,7 @@ const showReplies = (e)=>{
 
 		//Filter data by it's category
 		var filtered_data = data.filter( element => element.category == url);
-		console.log(filtered_data);
+		
 
 		var limit = 4;
 		
