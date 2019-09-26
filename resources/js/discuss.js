@@ -1,10 +1,11 @@
- "use strict"
+  "use strict"
 
 //Define elements
 const root = document.getElementById("root"); 
 let temp = "";
 const search = new URLSearchParams(window.location.search);
 const template = document.getElementById("templates").innerHTML;
+const liked_template = document.getElementById("liked_template").innerHTML;
 // const templates = document.getElementById('templates').innerHTML;
 
 
@@ -202,7 +203,12 @@ const showReplies = (e)=>{
 		})
 
 
-		$(root).prepend(temp);
+		if(url != "liked"){
+			$(root).append(temp);
+		} else{
+			$(root).append(liked_template);
+			$('.btn-loadmore').css('display', 'none');
+		}
 
 	})
 })();

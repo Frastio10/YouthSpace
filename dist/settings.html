@@ -42,6 +42,7 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	</head>
 	<body>
+
 		<header class="header " id="header">
 			<div class="container">
 				<a href="index.html" class="f-left logo-top logo d-flex flex-center text-decoration-n  text-primary">
@@ -106,6 +107,46 @@
 		        </div>
 			</div>
 		</header>
+
+		<div class="backdrop-blue password-popup">
+			<div class="popup-content-pass">
+				<div class="title bg-white">
+					<span class="f-lato f-19 ">
+						Ubah password
+					</span>
+					<img src="./assets/images/x-black.svg" class="ml-auto close-popup" alt="">
+				</div>
+				<div class="popup-text">
+					<span class="f-lato f-17">
+						Klik tombol di bawah dan periksa email Anda. klik link di email anda untuk mengubah kata sandi!
+					</span>
+				</div>
+				<div class="w-100 btn-change text-center">
+					<a href="" class="btn-blue btn w-100 b-box f-13">Kirim email pengaturan ulang kata sandi</a>
+				</div>
+			</div>
+		</div>
+		<div class="backdrop-blue email-popup">
+			<div class="popup-content-pass">
+				<div class="title bg-white">
+					<span class="f-lato f-19 ">
+						Ubah email
+					</span>
+					<img src="./assets/images/x-black.svg" class="ml-auto close-popup" alt="">
+				</div>
+				<form action="">
+					<div class="item-wrapper">
+						<input type="text" class="w-100 ol-none" value="amanda.2003apr@gmail.com">
+					</div>
+					<div class="item-wrapper">
+						<input type="password" class="w-100 ol-none" value="frastio10">
+					</div>
+				</form>
+				<div class="w-100 btn-change text-center">
+					<a href="" class="btn-blue btn w-100 b-box f-13">Simpan perubahan</a>
+				</div>
+			</div>
+		</div>
 		<div class="backdrop pos-f ">
 			<div class="navbar-dropdown pos-f bring-front bg-white">
 			<div class="first-item f-lato ">
@@ -115,15 +156,15 @@
 					</a>
 				</div>
 			<ul class="f-lato list-style-none">
-				<li class="list-item"><a href="">Akun</a></li>
-				<li class="list-item"><a href="">Notifikasi</a></li>
-				<li class="list-item"><a href="">Pesan</a></li>
+				<li class="list-item"><a href="account.html">Akun</a></li>
+				<li class="list-item"><a href="notification.html">Notifikasi</a></li>
+				<li class="list-item"><a href="chat.html">Pesan</a></li>
 				<li class="list-item"><a href="news.html">Berita</a></li>
 				<li class="list-item"><a href="diskusi.html">Diskusi</a></li>
 				<li class="list-item"><a href="inspirasi.html">Inspirasi</a></li>
 				<li class="list-item"><a href="about.html">Tentang kami</a></li>
 				<li class="list-item"><a href="gallery.html">Galeri</a></li>
-				<li class="list-item"><a href="">Pengaturan</a></li>
+				<li class="list-item"><a href="settings.html">Pengaturan</a></li>
 				<li class="list-item d-flex align-items-center popup-trigger pos-r language">
 						<img src="./assets/images/indo-flag.svg" class="flag-lang" alt="">
 						<img src="./assets/images/chevron-right.svg" alt="">
@@ -231,8 +272,8 @@
   			<div class="col nine">
 <span class="f-14 f-lato title-small">Akun</span>
   <div class="w-100 my-15">
-  	<button class="change-pass f-black-3 cs-p ol-none f-lato bd-n">Ubah password</button>
-  	<button class="change-pass f-black-3 cs-p ol-none f-lato bd-n">Ubah email </button>
+  	<button class="change-pass f-black-3 cs-p ol-none f-lato bd-n" id="change_pass">Ubah password</button>
+  	<button class="change-pass f-black-3 cs-p ol-none f-lato bd-n" id="change_email">Ubah email </button>
   </div>
   <span class="f-lato f-14 w-100 mb-15 f-left title-small">Notifikasi</span>
   <div class="w-100 f-left ov-h notify-wrapper">

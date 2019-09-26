@@ -1,4 +1,4 @@
-@layout('layouts.account')
+ @layout('layouts.account')
 
 @section('title')
 
@@ -76,11 +76,12 @@
 	  						</li>
 @endsection
 
+
 @section('content')
 <span class="f-14 f-lato title-small">Akun</span>
 <div class="w-100 my-15">
-	<button class="change-pass f-black-3 cs-p ol-none f-lato bd-n">Ubah password</button>
-	<button class="change-pass f-black-3 cs-p ol-none f-lato bd-n">Ubah email </button>
+	<button class="change-pass f-black-3 cs-p ol-none f-lato bd-n" id="change_pass">Ubah password</button>
+	<button class="change-pass f-black-3 cs-p ol-none f-lato bd-n" id="change_email">Ubah email </button>
 </div>
 <span class="f-lato f-14 w-100 mb-15 f-left title-small">Notifikasi</span>
 <div class="w-100 f-left ov-h notify-wrapper">

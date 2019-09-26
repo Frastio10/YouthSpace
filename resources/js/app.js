@@ -1,8 +1,24 @@
- document.addEventListener('touchstart', {passive: true});
+  document.addEventListener('touchstart', {passive: true});
 
 const scrollBottom = ()=>{
     $(".customscrollbar").scrollTop($(".customscrollbar").height() ** 2 );
 };
+
+$('#change_pass').click(function(event) {
+	$('.password-popup').addClass('active');
+});
+
+$('#change_email').click(function(event) {
+	$('.email-popup').addClass('active');
+});
+
+$('.password-popup, .close-popup, .email-popup').click(function(event) {
+	$(this).closest('.backdrop-blue').removeClass('active');
+});
+
+$('.popup-content-pass').click(function(event) {
+	event.stopPropagation();
+});
 
 $('.check-toggle').click(function(e) {
 	if ($(this).attr('src').includes('x')) {
@@ -90,6 +106,9 @@ $('.lazy').slick({
 
 	})
 });
+
+
+
 // $('#vid-1').click(function(e){
 //   $('.popup-area').addClass('activex');
 //   var data = $(this).data('url');
@@ -98,6 +117,7 @@ $('.lazy').slick({
 
 // $(".stay-bottom").animate({ scrollTop: $(this).height() }, "slow");
 //   return false;
+
 
  $('.img-hover').click(function(event) {
  	let source  = $(this).closest('.box-3').children('.img-data').attr('src');

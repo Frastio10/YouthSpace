@@ -20,6 +20,8 @@ mix.sass('resources/sass/style.scss', 'dist/assets/css')
    .sass('resources/sass/account.scss', 'dist/assets/css')
    .sass('resources/sass/chat.scss', 'dist/assets/css')
    .sass('resources/sass/settings.scss', 'dist/assets/css')
+   .sass('resources/sass/liked.scss', 'dist/assets/css')
+   .sass('resources/sass/account-mobile.scss', 'dist/assets/css')
    .options({
     processCssUrls: false, 
     postCss: [

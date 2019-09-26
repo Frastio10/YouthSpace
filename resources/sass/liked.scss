@@ -1,0 +1,21 @@
+@import "./header";
+
+
+@include breakpoint-down(md){
+	.row-1{
+		display: none !important;
+	}
+
+	.three{
+		display: none !important;
+	}
+
+	.nine{
+		width: 100% !important;
+	}
+
+	.row-2{
+		margin-top: 75px;
+		margin-bottom: 20px;
+	}
+};

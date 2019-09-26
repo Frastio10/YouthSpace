@@ -1,8 +1,15 @@
   @import "./header";
 
+.no-liked{
+	min-height: 550px;
+	background: #F4F4F4;
+
+	img{
+		margin-bottom: 20px;
+	}
+}
+
 //Tabs
-
-
  .scrollcustom{
  	@include scrollbar-custom;
  }
@@ -27,7 +34,22 @@
 	right: 0;
 	z-index: -1;
 	transition: .2s ease;
+}
 
+.backdrop-blue{
+	background: rgba(11, 112, 180, 0.5);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	// z-index: 9999999;
+	transition: .2s ease;
+	// opacity: 1;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .small-gallery{
@@ -84,7 +106,7 @@
 	right: 0;
 	z-index: -999;
 	cursor: pointer;
-	background: rgba(#000, 0.5);
+	background: rgba(11, 112, 180, 0.5);
 
 
 	.image-modalview{
@@ -548,6 +570,7 @@ ul.horizontal-list{
 }
 
 
+
 .mt-0{
 	margin-top: 0 !important;
 }
@@ -788,6 +811,10 @@ ul.horizontal-list{
 
 .f-black-3{
 	color: #333333;
+}
+
+.f-black-5{
+	color: #555555;
 }
 
 .f-darken-grey{
