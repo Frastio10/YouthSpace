@@ -21,6 +21,20 @@ $('.rounded-category').click(function(event) {
 	$(this).toggleClass('active');
 });
 
+
+document.addEventListener('click', event=> {
+	let elem = event.path[0];
+
+
+
+	if (elem.classList.contains('btn-slider')) {
+		let parent = elem.closest('.discussion');
+		
+	}
+});
+
+
+
 //Define elements
 const root = document.getElementById("root"); 
 let temp = "";

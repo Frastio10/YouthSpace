@@ -32,11 +32,15 @@
 }
 
 
+.box-img{
+
+}
+
 
 .rounded-back{
 	border-radius: 100%;
 	@include padding-y(150px);
-	@include padding-x(125px);
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -48,3 +52,34 @@
 	display: block;
 	margin-bottom: 40px;
 }
+
+@include breakpoint-down(lg){
+
+}
+@include breakpoint-down(md){
+	
+	.container{
+		flex-direction: column;
+	}
+
+	.six{
+		width: 100% !important;
+	}
+
+	.title{
+		font-size: 55px !important;
+	}
+
+	.text{
+		font-size: 10px !important;
+	}
+
+	.r{
+		clear: both;
+		display: block;
+
+		img{
+			width: 80%;
+		}
+	}
+};
