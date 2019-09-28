@@ -33,7 +33,61 @@
 	cursor: pointer;
 }
 
+.video-backdrop{
+	display: none;
+	z-index: -9999;
+	opacity: 0;
+	cursor: pointer;
+}
 
+.video-backdrop.active{
+	display: block;
+	opacity: 1;
+	transition: .3s ease;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 9999999;
+	background: rgba(0,0,0,0.4);
+
+	.video-close{
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		padding: 10px;
+		display: flex;
+		top: -15px;
+		cursor: pointer;
+		right: -15px;
+		background: #fff;
+		border-radius: 100%;
+
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.video-popup{
+		cursor: auto;
+		position: relative;
+		width: 60%;
+		background: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+
+		video{
+			width: 100%;
+		}
+	}
+}
 
 
 .banner{

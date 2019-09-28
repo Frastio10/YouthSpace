@@ -1,5 +1,15 @@
   "use strict"
 
+$('.search-box-discuss').click(function(event) {
+
+	$('.popup-search').addClass('active')
+});
+
+$('.close-popup-wrapper').click(function(event) {
+
+	$('.popup-search').removeClass('active')
+});
+
 $('.notification-box-discuss').hover(function() {
 
 	$('.popup-notification').toggleClass('active');
@@ -22,17 +32,11 @@ $('.rounded-category').click(function(event) {
 });
 
 
-document.addEventListener('click', event=> {
-	let elem = event.path[0];
-
-
-
-	if (elem.classList.contains('btn-slider')) {
-		let parent = elem.closest('.discussion');
-		
-	}
+$(document).on('click', '.btn-slider', function(event) {
+	event.preventDefault();
+	$('.slide-content').slideUp();
+	$(this).closest('.discussion').find('.slide-content').slideToggle();
 });
-
 
 
 //Define elements
@@ -61,12 +65,12 @@ const getRandomValue = (arr, count)=>{
   return result;
 };
 
-const showReplies = (e)=>{
-	$(this).click(function(event) {
+// const showReplies = (e)=>{
+// 	$(this).click(function(event) {
 	
-	$(this).closest('.discussion-card').children('.reply-wrapper').slideToggle();
-});
-}
+// 	$(this).closest('.discussion-card').children('.reply-wrapper').slideToggle();
+// });
+// }
 
 
 const btn = root.querySelector('.btn_slider');

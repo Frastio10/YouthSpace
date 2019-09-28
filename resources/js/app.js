@@ -1,8 +1,30 @@
-  document.addEventListener('touchstart', {passive: true});
+document.addEventListener('touchstart', {passive: true});
+
+const showShare = ()=>{
+	$('#roots').hide()
+}
 
 const scrollBottom = ()=>{
     $(".customscrollbar").scrollTop($(".customscrollbar").height() ** 2 );
 };
+
+$('.playbutton').click(function(event) {
+	$('.video-backdrop').addClass('active');	
+	let data = $('.video-close').data('target');
+	$('.video-target').attr('src',data);
+});
+
+$('.video-popup').click(function(event) {
+	/* Act on the event */
+	event.stopPropagation();
+});
+
+$('.video-close, .video-backdrop').click(function(event) {
+	$('.video-backdrop').removeClass('active')
+	$('.video-target').attr('src','');
+
+	
+});
 
 $('#change_pass').click(function(event) {
 	$('.password-popup').addClass('active');
@@ -50,6 +72,23 @@ $('.paginate-number').click(function(event) {
 	$(this).addClass('paginate-active');
 
 });
+
+$(document).on('click', '#share', function(event) {
+	$('.share-wrapper').addClass('active');
+})
+
+$('body').click(function(event) {
+	/* Act on the event */
+	$('.share-wrapper').removeClass('active');
+
+});
+
+// $(document).not($(".share-wrapper, #share")).click(function(event) {
+// 	console.log("ahsjda");
+// 	$('.share-wrapper').removeClass('active');
+
+
+// });
 
 $('.nicescroll').niceScroll();
  
@@ -167,3 +206,40 @@ const upImage = (()=>{
 const loadImage = (e)=>{
     $('#img_target').attr('src', e.target.result);
 };
+
+    	// console.log(window.location.href.select());
+
+	 $('.url-handle').attr('value', window.location.href);
+
+console.log(window.location.href);
+document.querySelectorAll('.btn-sharer').forEach((item)=>{
+	
+  item.addEventListener('click',(event)=>{
+  	console.log('test');
+    let url = window.location.href;
+    let target  = item.getAttribute('data-share');
+    let title = document.title;
+    let windowHeight = 350;
+    let windowWidth = 520;
+    let alignTop = (screen.height / 2) - (windowHeight / 2);
+    let alignLeft = (screen.width / 2) - (windowWidth / 2);
+    if (target == "facebook") {
+        var targeturl = 'https://www.facebook.com/sharer/sharer.php?u='+url
+        window.open(targeturl, "facebook-share-dialog", "top=" + alignTop + ",left=" + alignLeft + ",width=" + windowWidth + ",height=" + windowHeight);
+    } else if (target == "twitter") {
+        var targeturl = 'https://twitter.com/share?url=' + url;
+        window.open(targeturl, "", "top=" + alignTop + ",left=" + alignLeft + ",width=" + windowWidth + ",height=" + windowHeight);
+    } else if (target == 'copy') {
+      
+      document.querySelector('.url-handle').select();
+      document.execCommand('copy');
+      $('.url-notify').addClass('active')
+      setTimeout(()=>{
+      	$('.url-notify').removeClass('active')
+      }, 2000);
+      // alert('Url Coppied');
+    }
+
+  })
+
+})

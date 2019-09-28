@@ -72,7 +72,61 @@
 
 @section('content')
 
-
+<div class="popup-search pos-f flex-center">
+	<div class="close-popup-wrapper">
+		<img src="./assets/images/close-white.png" alt="">
+	</div>
+	<div class="search-wrapper">
+		<form action="">
+			<div class="input-wrapper ov-h">
+				<input type="text" class="w-100 bg-none bd-n ol-none f-18" placeholder="Cari diskusi...">
+				<a href="">
+					<svg xmlns="http://www.w3.org/2000/svg" width="22.414" height="22.414" viewBox="0 0 22.414 22.414">
+					  <g id="Group_336" data-name="Group 336" transform="translate(1 1)">
+					    <g id="search" transform="translate(0)">
+					      <circle id="Ellipse_22" data-name="Ellipse 22" cx="9" cy="9" r="9" transform="translate(0)" stroke-width="2" stroke="#1592E6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+					      <line id="Line_32" data-name="Line 32" x1="4.35" y1="4.35" transform="translate(15.65 15.65)" fill="none" stroke=#1592E6 stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+					    </g>
+					  </g>
+					</svg>
+				</a>
+			</div>
+			<div class="filter-wrapper ov-h">
+				<span class="cf f-16 f-lato f-black-3">Kategori</span>
+				<ul>
+					<li>
+						<input type="radio" name="radio" id="radio01">
+						<label for="radio01">
+							<span class="rounded-checkbox"></span>
+							<span class="f-14 f-lato f-black-3">Semua</span>
+						</label>
+					</li>
+					<li>
+						<input type="radio" name="radio" id="radio02">
+						<label for="radio02">
+							<span class="rounded-checkbox"></span>
+							<span class="f-14 f-lato f-black-3">Teknologi</span>
+						</label>
+					</li>
+					<li>
+						<input type="radio" name="radio" id="radio03">
+						<label for="radio03">
+							<span class="rounded-checkbox"></span>
+							<span class="f-14 f-lato f-black-3">Pendidikan</span>
+						</label>
+					</li>
+					<li>
+						<input type="radio" name="radio" id="radio04">
+						<label for="radio04">
+							<span class="rounded-checkbox"></span>
+							<span class="f-14 f-lato f-black-3">Alam</span>
+						</label>
+					</li>
+				</ul>
+			</div>
+		</form>
+	</div>
+</div>
 
 <div class="row mt-60 pt-60">
 	<div class="container">
@@ -172,22 +226,20 @@
 												<span class="rounded-category"></span>
 												<span class="f-14 f-black-5 f-lato">Alam</span>
 											</li>
-											<li>
-												<span class="rounded-category"></span>
-												<span class="f-14 f-black-5 f-lato">Gaya hidup</span>
-											</li>
-
+											
 										</ul>
 									</div>
 								</div>
 							</li>
 							<li>
-								<label for="">
+								<input type="file" id="paperclip" class="d-none">
+								<label for="paperclip">
 									<img src="./assets/images/paperclip.svg" alt="">
 								</label>
 							</li>
 							<li>
-								<label for="">
+								<input type="file" id="camera" class="d-none" accept="*/images">
+								<label for="camera">
 									<img src="./assets/images/camera.svg" alt="">
 								</label>
 							</li>
@@ -224,9 +276,9 @@
 								</a>
 								<div class="w-100 category-wrapper">
 								
-									<button class="f-right bg-none bd-n ol-none btn-slider" onclick="showReplies()">
-										<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" class="reply-button btn-slider">
-									  <path id="message-square" class="btn-slider" d="M3,16.333a2.222,2.222,0,0,0,2.222,2.222H18.556L23,23V5.222A2.222,2.222,0,0,0,20.778,3H5.222A2.222,2.222,0,0,0,3,5.222Z" transform="translate(-2 -2)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+									<button class="f-right bg-none bd-n ol-none btn-slider" onclick="">
+										<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" class="reply-button ">
+									  <path id="message-square" class="" d="M3,16.333a2.222,2.222,0,0,0,2.222,2.222H18.556L23,23V5.222A2.222,2.222,0,0,0,20.778,3H5.222A2.222,2.222,0,0,0,3,5.222Z" transform="translate(-2 -2)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
 									</svg>
 									</button>
 									<span class="pills {pill-bg} f-lato f-11 text-white f-right">{category}</span>
@@ -234,32 +286,23 @@
 									
 								</div>
 							</div>
-							<div class="reply-wrapper">
-								<div class="reply">	
-									<div class="discussion-item w-100 ov-h mb-30 bg-white box-shadow-semibold">
-										<div class="w-100 ov-h d-flex">
-											<img src="./assets/images/userprofile-2.jpg" alt="" class=" user-profile">
-											<div class="d-flex flex-center flex-column">
-												<span class="f-16 f-playfair f-grey">Yumna Azahra</span>
-												<span class="d-flex flex-center">
-													<img src="./assets/images/clock.svg" alt="" class="clock">
-													<span class="f-12 f-lato f-grey">17 Agustus 2019</span>
-												</span>
-											</div>
-										</div>
-										<div class="cf"></div>
-										<div class="w-100 text">
-											<p class="f-grey f-lato f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat.</p>
-										</div>
-										<div class="w-100 ">
-											<div class="love active-trigger">
-												<svg xmlns="http://www.w3.org/2000/svg" class="cs-p" width="22.04" height="20" viewBox="0 0 28.496 25.11">
-													<path id="heart_1_" data-name="heart (1)" d="M26,5.041a6.972,6.972,0,0,0-9.862,0L14.8,6.385,13.453,5.041A6.973,6.973,0,0,0,3.591,14.9l1.344,1.344L14.8,26.108l9.862-9.862L26,14.9a6.972,6.972,0,0,0,0-9.862Z" transform="translate(-0.549 -1.998)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-												</svg>
-											</div>
-										</div>
-									</div>
+							<div class="slide-content w-100 d-none">
+								<div class="w-100 mt-25 mb-30 input-data b-box d-flex align-items-center  ov-h">
+								<div class="camera">
+									<input type="file" class="d-none" id="media-reply">
+									<label for="media-reply cs-p">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20">
+									  <g id="camera" transform="translate(0 -2)">
+									    <path id="Path_58" data-name="Path 58" d="M23,19a2,2,0,0,1-2,2H3a2,2,0,0,1-2-2V8A2,2,0,0,1,3,6H7L9,3h6l2,3h4a2,2,0,0,1,2,2Z" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+									    <circle id="Ellipse_24" data-name="Ellipse 24" cx="4" cy="4" r="4" transform="translate(8 9)" stroke-width="2" stroke="#333" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+									  </g>
+									</svg>
+									</label>
 								</div>
+								<div class="input-text w-100 d-flex align-self-stretch b-box">
+									<input type="text" class="w-100 bd-n ol-none b-box" placeholder="Tulis komentar...">
+								</div>
+								<a href="" class="btn btn-blue">Kirim</a>
 							</div>
 						</div>
 					</template>

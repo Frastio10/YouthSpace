@@ -4,7 +4,7 @@
 }
 
 :root {
-  --primary: #1592E6;
+  --primary:  #1592E6;
   --white: #ffffff;
   --black: #000000;
   --black-3:#333333;
@@ -94,6 +94,83 @@
   top: 35%;
   left: -20px;
   cursor: pointer;
+}
+
+.video-backdrop {
+  display: none;
+  z-index: -9999;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.video-backdrop.active {
+  display: block;
+  opacity: 1;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  position: fixed;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999999;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.video-backdrop.active .video-close {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  top: -15px;
+  cursor: pointer;
+  right: -15px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+.video-backdrop.active .video-close img {
+  width: 100%;
+}
+
+.video-backdrop.active .video-popup {
+  cursor: auto;
+  position: relative;
+  width: 60%;
+  background: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.video-backdrop.active .video-popup video {
+  width: 100%;
 }
 
 .banner .banner-image-1 {

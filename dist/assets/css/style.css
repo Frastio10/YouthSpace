@@ -4,7 +4,7 @@
 }
 
 :root {
-  --primary: #1592E6;
+  --primary:  #1592E6;
   --white: #ffffff;
   --black: #000000;
   --black-3:#333333;
@@ -63,6 +63,95 @@
 @font-face {
   font-family: playfair-regular;
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+}
+
+.share-wrapper {
+  display: none;
+}
+
+.url-notify {
+  display: none;
+  z-index: 999;
+}
+
+.url-notify.active {
+  display: block;
+  opacity: 1;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+  width: 30%;
+  position: fixed;
+  z-index: 9999;
+  top: 80px;
+  right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #fff;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.url-notify.active span {
+  font-family: lato;
+  font-size: 16px;
+}
+
+.url-notify.active img {
+  width: 10px;
+  height: 10px;
+  margin-left: auto;
+}
+
+.share-wrapper.active {
+  background: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  bottom: 30px;
+  border: 1px solid #e4e4e4;
+}
+
+.share-wrapper.active ul {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.share-wrapper.active ul li {
+  margin-bottom: 20px;
+}
+
+.share-wrapper.active ul li:last-child {
+  margin-bottom: 0;
 }
 
 .no-liked {

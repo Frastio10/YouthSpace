@@ -4,7 +4,7 @@
 }
 
 :root {
-  --primary: #1592E6;
+  --primary:  #1592E6;
   --white: #ffffff;
   --black: #000000;
   --black-3:#333333;
@@ -146,9 +146,11 @@
   }
   .title {
     font-size: 55px !important;
+    margin-bottom: 15px;
   }
   .text {
     font-size: 14px !important;
+    margin-bottom: 20px;
   }
   .r {
     clear: both;
