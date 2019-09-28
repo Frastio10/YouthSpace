@@ -211,6 +211,11 @@ const loadImage = (e)=>{
 
 	 $('.url-handle').attr('value', window.location.href);
 
+$('.close-url').click(function(event) {
+	/* Act on the event */
+      	$('.url-notify').removeClass('active')
+	
+});
 console.log(window.location.href);
 document.querySelectorAll('.btn-sharer').forEach((item)=>{
 	

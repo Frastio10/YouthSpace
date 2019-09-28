@@ -74,6 +74,10 @@
   z-index: 999;
 }
 
+.btn-sharer {
+  cursor: pointer;
+}
+
 .url-notify.active {
   display: block;
   opacity: 1;
@@ -88,8 +92,8 @@
   right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   background: #fff;
   display: -webkit-flex;
   display: -moz-flex;
@@ -110,8 +114,8 @@
 }
 
 .url-notify.active img {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin-left: auto;
 }
 
