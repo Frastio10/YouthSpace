@@ -4,6 +4,14 @@
 	display: none;
 }
 
+.whatsapp{
+	display: none;
+
+	img{
+		width: 24px;
+	}
+}
+
 .url-notify{
 	display: none;
 	z-index: 999;
@@ -1664,6 +1672,8 @@ footer{
 		font-size: 16px;
 	}
 
+
+
 	.normal-box{
 		width: 20%;
 	}
@@ -1768,6 +1778,9 @@ footer{
 			}
 
 			.footer-desc-left{
+				margin-left: 0;
+				width: 100%;
+				max-width: 100% !important;
 				span{
 					font-size: 12px;
 				}

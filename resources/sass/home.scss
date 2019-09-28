@@ -475,22 +475,26 @@
 };
 
 @include breakpoint-down(sm){
+	.slick-row-2{
+		width: 100%;
+	}
+
 	.res-none{
 		display: block;
 	}
-
+ 
 	.res-block{
 		display: none;
 	}
 
 	.normal-box{
-		height: 400px !important;
+		height: 380px !important;
 	}
 
 	.row-6{
 
 		.normal-box{
-			height: 180px !important;
+			height: 300px !important;
 		}
 	}
 
@@ -503,7 +507,7 @@
 
 		.banner-right{
 			width: 100%;
-			padding-top: 120px !important;
+			padding-top: 80px !important;
 			padding-bottom: 0 !important;
 			
 			.bg-white{
@@ -618,9 +622,24 @@
 		margin-bottom: 8px !important	;	
 	}
 
-	.inspirasi-1{
+	.inspirasi-1,
+	.diskusi-1{
 		width: calc(100%) !important;
-		@include margin-y(50px); 
+		margin-top: 10px;
+  		margin-bottom: 45px;
+
+  		.f-20{
+  			font-size: 15px ; 
+  		}
+
+  		.f-18{
+  			font-size: 13px;
+  		}
+
+  		.text{
+  			margin-top: 8px;
+  			font-size: 13px;
+  		}
 	}
 
 

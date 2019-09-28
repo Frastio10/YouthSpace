@@ -69,6 +69,14 @@
   display: none;
 }
 
+.whatsapp {
+  display: none;
+}
+
+.whatsapp img {
+  width: 24px;
+}
+
 .url-notify {
   display: none;
   z-index: 999;
@@ -2354,6 +2362,11 @@ footer .inner-footer .footer-list ul li a {
   footer .inner-footer .footer-desc p {
     margin-top: 10px;
     font-size: 12px;
+  }
+  footer .inner-footer .footer-desc-left {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100% !important;
   }
   footer .inner-footer .footer-desc-left span {
     font-size: 12px;
