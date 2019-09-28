@@ -154,4 +154,7 @@
   .r img {
     width: 80%;
   }
+  .btn-home {
+    font-size: 12px !important;
+  }
 }
