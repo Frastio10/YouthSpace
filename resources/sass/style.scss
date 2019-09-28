@@ -37,7 +37,7 @@
 }
 
 .backdrop-blue{
-	background: rgba(11, 112, 180, 0.5);
+	background: rgba(0, 0, 0, 0.6);
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -106,7 +106,7 @@
 	right: 0;
 	z-index: -999;
 	cursor: pointer;
-	background: rgba(11, 112, 180, 0.5);
+	background: rgba(0, 0, 0, 0.6);
 
 
 	.image-modalview{
@@ -1107,7 +1107,7 @@ footer{
 	float: left;
 
 	.inner-footer{
-		@include padding-x(47px);
+		padding-left: 47px;
 		padding-top: 50px;	
 		float: left;
 
@@ -1126,6 +1126,7 @@ footer{
 		}
 	
 		.footer-desc-left{
+			margin-left: 100px;
 			p{
 				margin-top: 35px;
 				max-width: 206px;
@@ -1134,7 +1135,7 @@ footer{
 		}
 	
 		.footer-list{
-			width: 197px;
+			width: 200px;
 			display: flex;
 			align-items: center;
 			justify-content: center;

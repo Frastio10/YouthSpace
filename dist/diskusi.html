@@ -52,7 +52,24 @@
   <li><a href="gallery.html">Galeri</a></li>
 				</ul>
 				<ul class="nav-right f-right">
-					
+
+  <div class="search-box-discuss discuss-only flex-center">
+  	<img src="./assets/images/search-icon.svg" alt="">
+  </div>
+
+
+  <div class="notification-box-discuss discuss-only flex-center pos-r">
+  	<img src="./assets/images/bell-2.svg" class="notification-trigger" alt="">
+  	<div class="popup-notification">
+  		<div class="popup-title ">
+  			<span class="f-lato f-13">Notifikasi</span>
+  		</div>
+  		<div class="notification-content">
+  			<span class="f-16 f-lato f-black-3">Tidak ada notifikasi</span>
+  		</div>
+  	</div>
+  </div>
+  
 					<li class="popup-trigger pos-r language">
 						<img src="./assets/images/indo-flag.svg" class="flag-lang" alt="">
 						<img src="./assets/images/chevron-right.svg" alt="">
@@ -142,6 +159,8 @@
 		</div>
 		</div>
 
+
+
   <div class="row mt-60 pt-60">
   	<div class="container">
   		<div class="inner-row py-30">
@@ -188,7 +207,7 @@
   								    <line id="Line_33" data-name="Line 33" x2="8" transform="translate(7.5 21)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   								    <line id="Line_34" data-name="Line 34" y2="4" transform="translate(11.5 17)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   								  </g>
-  								</svg>
+  			 					</svg>
   								<span>Teknologi</span>
   							</a>
   						</li>
@@ -213,16 +232,41 @@
   			</div>
   			<div class="col nine">
   				<div class="sort"></div>
-  				<div class="create-discuss w-100 box-shadow-semibold ov-h mb-35">
+  				<div class="create-discuss w-100 box-shadow-semibold  mb-35">
   					<div class="textarea-input w-100">
   						<textarea name="" id="" rows="5" placeholder="Apa yang ingin kamu diskusikan?" class="f-lato f-14 w-100 bd-n"></textarea>
   					</div>
-  					<div class="media-input w-100 ov-h d-flex align-items-center b-box">
+  					<div class="media-input w-100 d-flex align-items-center b-box">
   						<ul class="list-style-none">
-  							<li>
-  								<label for="">
-  									<img src="./assets/images/Ellipse.svg" alt="">
-  								</label>
+  							<li class="pos-r">
+  								<img src="./assets/images/Ellipse.svg" class="category-trigger cs-p" alt="">
+  								<div class="category-popup pos-a">
+  									<div class="category-title">
+  										<span class="f-lato f-14 f-bold">Kategori</span>
+  										<img src="./assets/images/x-black.svg" class="close-trigger" alt="">
+  									</div>
+  									<div class="category-list">
+  										<ul class="list-style-none">
+  											<li>
+  												<span class="rounded-category"></span>
+  												<span class="f-14 f-black-5 f-lato">Pendidikan</span>
+  											</li>
+  											<li>
+  												<span class="rounded-category"></span>
+  												<span class="f-14 f-black-5 f-lato">Teknologi</span>
+  											</li>
+  											<li>
+  												<span class="rounded-category"></span>
+  												<span class="f-14 f-black-5 f-lato">Alam</span>
+  											</li>
+  											<li>
+  												<span class="rounded-category"></span>
+  												<span class="f-14 f-black-5 f-lato">Gaya hidup</span>
+  											</li>
+
+  										</ul>
+  									</div>
+  								</div>
   							</li>
   							<li>
   								<label for="">

@@ -1,0 +1,50 @@
+@import "./header";
+
+
+.wrapper{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.title{
+	font-size: 116px;
+	color: var(--primary);
+	margin-bottom: 20px;
+	display: block;
+}
+
+.btn-home{
+	@include padding-x(40px);
+	@include padding-y(8px);
+	border: 2px solid var(--primary);
+	font-size: 16px;
+	font-family: lato;
+	text-decoration: none;
+	transition: .3s ease;
+	color: var(--primary);
+	
+	&:hover{
+		background: var(--primary);
+		color: #fff;
+	}
+}
+
+
+
+.rounded-back{
+	border-radius: 100%;
+	@include padding-y(150px);
+	@include padding-x(125px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f2f2f2;
+	float: left;
+}
+
+.text{
+	display: block;
+	margin-bottom: 40px;
+}

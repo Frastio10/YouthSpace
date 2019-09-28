@@ -31,7 +31,7 @@ let temp_2 = "";
 							temp_2 = temp_2 + templates_2
 							.replace('{title}', randomValue[key].short_title)
 							.replace('{image}',`<img src="./assets/images/${randomValue[key].image}" class="w-100 random-thumb" alt="">`)
-							.replace('{link}', `view-inspirasi.html?inspirasi_id=${randomValue[key].id}}`)
+							.replace('{link}', `view-inspirasi.html?inspirasi_id=${randomValue[key].id}`)
 							console.log(randomValue[key].id);
 						}
 

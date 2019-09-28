@@ -1,5 +1,26 @@
   "use strict"
 
+$('.notification-box-discuss').hover(function() {
+
+	$('.popup-notification').toggleClass('active');
+});
+
+$('.category-trigger').click(function(event) {
+
+	$('.category-popup').addClass('active');
+});
+
+$('.close-trigger').click(function(event) {
+
+	$('.category-popup').removeClass('active');
+});
+
+
+$('.rounded-category').click(function(event) {
+	$('.rounded-category').removeClass('active')
+	$(this).toggleClass('active');
+});
+
 //Define elements
 const root = document.getElementById("root"); 
 let temp = "";
