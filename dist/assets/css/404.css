@@ -131,6 +131,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .wrap {
+    margin-top: -27px;
+  }
   .container {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -145,7 +148,7 @@
     font-size: 55px !important;
   }
   .text {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   .r {
     clear: both;
@@ -155,6 +158,6 @@
     width: 80%;
   }
   .btn-home {
-    font-size: 12px !important;
+    font-size: 13px !important;
   }
 }

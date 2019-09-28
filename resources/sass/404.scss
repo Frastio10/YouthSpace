@@ -57,6 +57,9 @@
 
 }
 @include breakpoint-down(md){
+	.wrap{
+		margin-top: -27px;
+	}
 	
 	.container{
 		flex-direction: column;
@@ -71,7 +74,7 @@
 	}
 
 	.text{
-		font-size: 12px !important;
+		font-size: 14px !important;
 	}
 
 	.r{
@@ -84,6 +87,6 @@
 	}
 
 	.btn-home{
-		font-size: 12px !important;
+		font-size: 13px !important;
 	}
 };
