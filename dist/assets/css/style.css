@@ -168,7 +168,11 @@
 }
 
 .small-gallery img {
+  min-height: 186px;
+  max-height: 186px;
   width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .image-modalview-backdrop.active {

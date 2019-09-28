@@ -53,10 +53,13 @@
 }
 
 .small-gallery{
-	display: flex;
+	display: flex; 
 
 	img{
+		min-height: 186px;
+		max-height: 186px;
 		width: 100%;
+		object-fit: cover;
 	}
 }
 
