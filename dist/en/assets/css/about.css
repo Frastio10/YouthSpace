@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary:  #1592E6;
+  --white: #ffffff;
+  --black: #000000;
+  --black-3:#333333;
+  --grey: #888888;
+  --darken-grey: #777777;
+  --darken-green: #0B8457;
+  --darken-yellow: #E2BA00;
+  --darken-blue: #10316B;
+  --darken-white:#f2f2f2;
+  --pink-1:#EF1762;
+}
+
+/*
+ Fonts Import
+*/
+@font-face {
+  font-family: lato-regular;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: lato-bold;
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: lato-light;
+  src: url("../fonts/Lato/Lato-light.ttf");
+}
+
+@font-face {
+  font-family: lato-italic;
+  src: url("../fonts/Lato/Lato-italic.ttf");
+}
+
+@font-face {
+  font-family: playfair-black;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Black.ttf");
+}
+
+@font-face {
+  font-family: playfair-blackitalic;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: playfair-bold;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+  font-family: playfair-BoldItalic;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: playfair-regular;
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+}
+
+.about-desc {
+  padding: 150px 0 150px 0;
+}
+
+.thumb-1 {
+  padding: 30px 0 30px 0;
+}
+
+.row {
+  margin-top: 65px;
+  margin-bottom: 65px;
+  display: inline-block;
+}
+
+.secondary {
+  margin-top: 15px;
+}
+
+.text {
+  padding-left: 20px;
+}
+
+.res-block {
+  display: block;
+}
+
+.res-none {
+  display: none;
+}
+
+@media screen and (max-width: 1020px) {
+  .inner-row {
+    float: left;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+  }
+  .inner-row img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .res-block {
+    display: none;
+  }
+  .res-none {
+    display: block;
+  }
+  .row {
+    margin-top: 50px;
+  }
+  .row-1 {
+    margin-bottom: 30px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .row-1 .w-50 {
+    display: block;
+    width: 100%;
+    background: url("../images/about-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    background-position: 100% 100%;
+  }
+  .row-1 .five {
+    width: 100%;
+  }
+  .row-1 .thumb-1 {
+    display: none;
+  }
+  .row-1 .about-desc {
+    padding-bottom: 0;
+    padding-top: 100px;
+  }
+  .text {
+    background: var(--primary);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  .text .f-25 {
+    font-size: 15px;
+  }
+  .text .secondary {
+    margin-top: 8px;
+  }
+  .col {
+    margin: 0 !important;
+  }
+  .row-2 {
+    margin-top: 0;
+  }
+  .row-2 .about-desc {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .row-2 .w-50,
+  .row-2 .thumb-1 {
+    display: none;
+  }
+  .row-2 .six {
+    width: 100%;
+    color: #fff;
+  }
+}

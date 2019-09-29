@@ -84,10 +84,11 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   min-height: 246px;
+  max-height: 246px;
 }
 
 .card-text a {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .card-text .pills {

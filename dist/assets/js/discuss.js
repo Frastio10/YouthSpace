@@ -34,7 +34,7 @@ $('.rounded-category').click(function(event) {
 
 $(document).on('click', '.btn-slider', function(event) {
 	event.preventDefault();
-	$('.slide-content').slideUp();
+	
 	$(this).closest('.discussion').find('.slide-content').slideToggle();
 });
 

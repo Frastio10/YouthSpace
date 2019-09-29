@@ -2154,6 +2154,7 @@ footer .inner-footer .footer-list ul li a {
 }
 
 .navbar-dropdown ul li a {
+  width: 100%;
   text-decoration: none;
 }
 
