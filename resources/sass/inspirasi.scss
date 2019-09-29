@@ -4,6 +4,10 @@
 	float: left;	
 }
 
+.date-wrapper{
+	width: 100%;
+}
+
 .row-1{
 	
 	margin-top: 120px;
@@ -192,6 +196,13 @@
 
 @include breakpoint-down(sm){
 
+	.bg-row{
+
+		.desc-1{
+			max-width: 100%;
+		}
+	}
+
 	.row-1{
 
 		.dots-sm{
@@ -214,11 +225,13 @@
 		}
 	}
 	
-	.slick-row{
+	.row-2{
+		.slick-row{
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 
 		.outer-card{
+			width: 100% !important;
 
 			.card{
 
@@ -226,7 +239,7 @@
 					height: 118px !important;
 
 					img{
-						object-fit: cover;
+						object-fit: cover; 
 					}
 				}
 
@@ -252,6 +265,7 @@
 				}
 			}
 		}
+	}
 	}
 
 };

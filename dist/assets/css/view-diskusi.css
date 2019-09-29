@@ -70,6 +70,14 @@
   right: 265px;
 }
 
+.user-profile {
+  width: 50px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .content-box {
   padding-top: 35px;
   padding-bottom: 28px;

@@ -30,7 +30,7 @@ const getRandomValue = (arr, count)=>{
 					if(url != null){
 
 						if(url == data[key].id){
-							document.title = data[url].title;
+							document.title = data[url].short_desc_1;
 							
 							console.log(data[url].author);
 							temp = temp + templates
@@ -38,7 +38,9 @@ const getRandomValue = (arr, count)=>{
 							.replace('{desc}', data[url].desc)
 							.replace('{author}', data[url].author)
 							.replace('{date}', data[url].date)
-							.replace('{image}',data[url].image);
+							.replace('{shortdesc}', data[url].short_desc_1)
+							.replace('{image}',data[url].image)
+							.replace('{userprofile}',data[url].author_photo);
 							// root.innerHTML = temp;
 
 						} 

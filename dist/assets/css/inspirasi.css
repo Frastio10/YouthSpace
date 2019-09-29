@@ -69,6 +69,10 @@
   float: left;
 }
 
+.date-wrapper {
+  width: 100%;
+}
+
 .row-1 {
   margin-top: 120px;
 }
@@ -210,6 +214,9 @@
 }
 
 @media screen and (max-width: 420px) {
+  .bg-row .desc-1 {
+    max-width: 100%;
+  }
   .row-1 .dots-sm {
     font-size: 20px;
   }
@@ -222,30 +229,33 @@
   .row-1 .text-top p {
     font-size: 13px;
   }
-  .slick-row {
+  .row-2 .slick-row {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .slick-row .outer-card .card .thumb-card {
+  .row-2 .slick-row .outer-card {
+    width: 100% !important;
+  }
+  .row-2 .slick-row .outer-card .card .thumb-card {
     height: 118px !important;
   }
-  .slick-row .outer-card .card .thumb-card img {
+  .row-2 .slick-row .outer-card .card .thumb-card img {
     -o-object-fit: cover;
     object-fit: cover;
   }
-  .slick-row .outer-card .card .text-card b {
+  .row-2 .slick-row .outer-card .card .text-card b {
     line-height: 15px !important;
     margin-bottom: 5px;
     float: left;
   }
-  .slick-row .outer-card .card .text-card p {
+  .row-2 .slick-row .outer-card .card .text-card p {
     text-overflow: ellipsis;
   }
-  .slick-row .outer-card .card .text-card .date-wrapper {
+  .row-2 .slick-row .outer-card .card .text-card .date-wrapper {
     margin-bottom: 5px;
     float: left;
   }
-  .slick-row .outer-card .card .text-card a {
+  .row-2 .slick-row .outer-card .card .text-card a {
     margin-top: 10px;
   }
 }

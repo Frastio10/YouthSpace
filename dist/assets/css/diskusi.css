@@ -419,6 +419,10 @@
   padding-bottom: 14px;
 }
 
+.discussion-item a {
+  width: 100%;
+}
+
 .discussion-item .pills {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -428,8 +432,12 @@
 }
 
 .discussion-item img.user-profile {
-  width: 50px;
+  width: 40px;
+  margin-right: 8px;
+  margin-bottom: 3px;
   border-radius: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .discussion-item .clock {

@@ -187,6 +187,7 @@ $(btn).click(function(event) {
 						.replace('{author}', item.author)
 						.replace('{shortdesc1}', item.short_desc_1)
 						.replace('{category}',category) 
+						.replace('{userprofile}',item.author_photo) 
 				} //else{
 					//temp = `<h3 class="f-lato">404 NOT FOUND :(</h3>`;
 				//}
@@ -211,6 +212,7 @@ $(btn).click(function(event) {
 					.replace('{title}', randomValue[key].title)
 					.replace('{date}', randomValue[key].date)
 					.replace('{author}', randomValue[key].author)
+					.replace('{userprofile}', randomValue[key].author_photo)
 					.replace('{shortdesc1}', randomValue[key].short_desc_1)
 					.replace('{category}',category)
 					.replace('{link}', `discuss_id=${randomValue[key].id}&category=${randomValue[key].category}"`)
@@ -234,6 +236,7 @@ $(btn).click(function(event) {
 					.replace('{title}', item.title)
 					.replace('{date}', item.date)
 					.replace('{author}', item.author)
+					.replace('{userprofile}', item.author_photo)
 					.replace('{shortdesc1}', item.short_desc_1)
 					.replace('{category}',category) 
 				}

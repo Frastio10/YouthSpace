@@ -137,6 +137,10 @@ $('.lazy').slick({
 		$(".backdrop").toggleClass('active');
 	});
 
+	$(".navbar-dropdown").click(function(event) {
+		event.stopPropagation();
+	});
+
 	$(".backdrop").click(function(){
 		$(".hamburger").toggleClass("is-active");
 

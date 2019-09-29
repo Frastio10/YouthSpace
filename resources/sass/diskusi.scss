@@ -6,6 +6,8 @@
 
 }
 
+
+
 .popup-search.active{
 	opacity: 1;
 	transition: .3s;
@@ -353,6 +355,10 @@
 	@include padding-x(20px);
 	@include padding-y(14px);
 
+	a{
+		width: 100%;
+	}
+
 	.pills{
 		@include padding-y(4px);
 		@include padding-x(10px);
@@ -360,8 +366,11 @@
 	}
 
 	img.user-profile{
-		width: 50px;	
+		width: 40px;	
+		margin-right: 8px;
+		margin-bottom: 3px;
 		border-radius: 100%;
+		object-fit: cover;
 	}
 
 	.clock{
