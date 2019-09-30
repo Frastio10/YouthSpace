@@ -3,6 +3,7 @@ package-lock.json
 node_modules
 proto
 proto/*
+dist/*
 *proto/*
 preview/*
 preview

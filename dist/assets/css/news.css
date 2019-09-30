@@ -100,6 +100,10 @@
   margin-bottom: 4px;
 }
 
+.card-text .card-info img {
+  margin-right: 5px;
+}
+
 .card-text .card-info span:nth-child(3) {
   margin-left: 10px;
 }
@@ -181,8 +185,9 @@
             flex-direction: column;
   }
   .card .card-inside .card-text {
-    width: 85%;
-    margin: -80px auto 0 auto;
+    width: 95%;
+    max-height: unset;
+    margin: -120px auto 0 auto;
   }
   .card .card-inside .card-text .pills {
     font-size: 11px;

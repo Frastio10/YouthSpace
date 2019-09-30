@@ -32,6 +32,11 @@
 	.card-info{
 		@include margin-y(4px);
 
+
+		img{
+			margin-right: 5px;
+		}
+
 		span{
 	
 			&:nth-child(3){
@@ -143,8 +148,9 @@
 			flex-direction: column;
 			
 			.card-text{
-				width: 85%;
-				margin: -80px auto 0 auto;
+				width: 95%;
+				max-height: unset;
+				margin: -120px auto 0 auto;
 
 				.pills{
 					font-size: 11px;
