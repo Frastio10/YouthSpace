@@ -352,3 +352,18 @@
   cursor: pointer;
   opacity: 1;
 }
+
+@media screen and (max-width: 420px) {
+  .password-popup .popup-content-pass {
+    width: 90%;
+  }
+  .password-popup .popup-content-pass .title span {
+    margin-left: 30px;
+  }
+  .email-popup .popup-content-pass {
+    width: 90%;
+  }
+  .email-popup .popup-content-pass .title span {
+    margin-left: 25px;
+  }
+}

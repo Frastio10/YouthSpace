@@ -296,4 +296,36 @@
 
 @include breakpoint-down(sm){
 
+	.password-popup{
+
+		.popup-content-pass{
+			
+			width: 90%;
+
+			.title{
+
+				span{
+					margin-left: 30px;
+				}
+			}
+		}
+
+
+	}
+
+	.email-popup{
+
+		.popup-content-pass{
+			width: 90% ;
+			
+			.title{
+
+				span{
+					margin-left: 60px;
+				}
+
+			}
+		}
+	}
+
 };
