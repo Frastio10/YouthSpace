@@ -69,12 +69,15 @@
   z-index: 99;
 }
 
+.slide-wrapper {
+  height: 287px;
+}
+
 .slide-wrapper #slider {
   width: 100%;
   position: relative;
   float: left;
-  height: 100%;
-  display: block;
+  display: none;
 }
 
 .slide-wrapper .dp-wrap {
@@ -292,6 +295,8 @@
 
 .slide-wrapper-2 {
   height: 287px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .slide-wrapper-2 #slider-2 {
@@ -300,6 +305,8 @@
   float: left;
   height: 100%;
   display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .slide-wrapper-2 .dp-wrap {
@@ -527,6 +534,24 @@
   margin-bottom: 30px;
 }
 
+.dots-mc {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.slick-row-3 .video-wrapper {
+  width: calc(535px);
+  margin-left: 20px;
+}
+
+.slick-row-3 .video-wrapper .video-thumb {
+  width: 100%;
+}
+
+.video-arr {
+  margin-top: 20px;
+}
+
 .profileadmin {
   width: 50px;
   height: 50px;
@@ -540,9 +565,14 @@
   display: block;
 }
 
+.res-flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+}
+
 .playbutton {
-  top: 35%;
-  left: -20px;
   cursor: pointer;
 }
 
@@ -647,6 +677,10 @@
   float: left;
   position: relative;
   width: 100%;
+}
+
+.date-wrapper {
+  margin-bottom: 5px;
 }
 
 .date-wrapper span {
@@ -791,6 +825,8 @@
   padding: 30px;
   -webkit-transition: .3s ease;
   transition: .3s ease;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
 }
 
 .inspirasi-1:hover,
@@ -812,7 +848,7 @@
 
 .row-5 .inner-row {
   padding-top: 100px;
-  padding-bottom: 130px;
+  padding-bottom: 120px;
 }
 
 .row-5 .title {
@@ -827,8 +863,7 @@
 }
 
 .row-5 .right-side {
-  width: 50% !important;
-  padding-left: 25px;
+  width: 40% !important;
 }
 
 .row-5 .right-side p {
@@ -853,6 +888,9 @@
   }
   .slick-row-2 {
     max-width: 826px;
+  }
+  .slick-row-3 .video-wrapper {
+    width: 400px;
   }
   .box-3 {
     width: calc(100% / 2 - 20px) !important;
@@ -891,11 +929,11 @@
   .banner .banner-image-1 {
     background-size: 70%;
   }
-  .res-none {
-    display: block !important;
+  .banner .banner-right {
+    width: 70%;
   }
-  .res-block {
-    display: none;
+  .slick-row-3 .video-wrapper {
+    width: 305px;
   }
   .slick-row {
     max-width: 620px !important;
@@ -930,18 +968,18 @@
   .row-6 .inner-row {
     padding-top: 60px;
   }
-  footer .inner-footer {
-    padding-right: 0 !important;
-    padding-left: 30px !important;
-  }
-  footer .inner-footer .footer-desc {
-    max-width: 184px !important;
-  }
 }
 
 @media screen and (max-width: 420px) {
   .image-modalview-backdrop .image-modalview {
     width: 80% !important;
+  }
+  .res-none {
+    display: block !important;
+  }
+  .res-block,
+  .res-flex {
+    display: none !important;
   }
   .box-3-1 {
     width: 291px;
@@ -986,14 +1024,19 @@
   }
   .slick-row {
     max-width: 300px !important;
+    padding-top: 5px;
   }
   .slick-row .outer-card {
     width: 291px !important;
     margin-left: 15px;
     margin-right: 15px;
   }
+  .row-1 .inner-row {
+    padding-top: 60px !important;
+    padding-bottom: 60px;
+  }
   .row-2 .dots-ml {
-    margin-bottom: 8px !important;
+    margin-bottom: 20px !important;
   }
   .row-2 .inner-row {
     z-index: 1;
@@ -1017,8 +1060,8 @@
             align-items: center;
   }
   .row-2 .diskusi-1 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     width: 100%;
     z-index: 1;
   }
@@ -1027,6 +1070,9 @@
   }
   .btn-more {
     margin-top: 0 !important;
+  }
+  .row-3 .dots-mc {
+    margin-bottom: 5px;
   }
   .row-3 .inner-row {
     -webkit-flex-direction: row;
@@ -1053,6 +1099,7 @@
     transform: translate(-50%, -50%);
   }
   .row-4 .inner-row {
+    padding-top: 30px;
     z-index: 1;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1108,7 +1155,7 @@
     padding-bottom: 60px;
   }
   .row-5 .right-side {
-    padding-left: 10px;
+    padding-left: 0px;
     width: 100% !important;
   }
   .row-5 .right-side .btn {
@@ -1118,12 +1165,13 @@
     padding-right: 10px;
   }
   .row-6 .inner-row {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     z-index: 1;
   }
   .row-6 .dots-mr {
     margin-right: 0;
+    margin-bottom: 10px;
   }
   .row-6 .box-3 {
     width: 100%;

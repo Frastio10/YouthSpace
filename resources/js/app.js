@@ -98,7 +98,19 @@ const loveAdd = ()=>{
 	});
 }
 
-$('.active-trigger').click(function(event) {
+const loveAdd_2 = ()=>{
+	$(document).ready(function($) {
+		$('.lovess').toggleClass('active');
+	});
+}
+
+
+$('.active-trigger-2 ').click(function(event) {
+	$(this).toggleClass('active');
+});
+
+
+$('.active-trigger ').click(function(event) {
 	$(this).toggleClass('active');
 });
 

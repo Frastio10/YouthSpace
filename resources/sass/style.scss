@@ -2,7 +2,7 @@
 
    .user-profile{
    	width: 50px;
-   	height: 50px;
+   	height: auto !important;
    	margin-right: 5px;
    	border-radius: 100%;
    }
@@ -17,6 +17,11 @@
 	img{
 		width: 24px;
 	}
+}
+
+.made-by{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .url-notify{
@@ -200,8 +205,8 @@
 	display: flex; 
 
 	img{
-		min-height: 186px;
-		max-height: 186px;
+		min-height: 200px;
+		max-height: 200px;
 		width: 100%;
 		object-fit: cover;
 	}
@@ -321,7 +326,8 @@ html , body {
 }
 
 
-.love.active{
+.love.active,
+.lovess.active{
 
 	svg{
 
@@ -531,7 +537,7 @@ a {
 	color: var(--white);
 	@include padding-x(13px);
 	@include padding-y(9px);
-	margin-top: 20px;
+	margin-top: 10px;
 
 	&:hover{
 		background: #5C95C4;
@@ -1390,18 +1396,18 @@ footer{
 
 .last-box{
 	width:11%;
-	height: 50%;
+	height: 44%;
 }
 
 .normal-box{
 	width:16%;
-	height: 400px;
+	height: 428px;
 }
 
 .dots-ml{
 	margin-top: 30px;
 	margin-bottom: 30px;
-	margin-left: 100px;
+	margin-left: 115px;
 }
 
 .dots-mr{
@@ -1427,7 +1433,7 @@ footer{
 }
 
 .btn-more{
-	margin: 35px auto 30px auto;
+	margin: 35px auto 0 auto;
 	transition: .3s ease;
 
 }
@@ -1554,7 +1560,7 @@ footer{
 
 	ul{
 		overflow-y: auto;
-  height: 80vh;
+ 	 	height: 100vh;
 		
 	}
 }
@@ -1675,17 +1681,33 @@ footer{
 
 
 @include breakpoint-down(md){
+	// footer{
+
+	// 	.inner-footer{
+	// 		padding-right: 0 !important;
+	// 		padding-left: 30px !important;
+
+	// 		.footer-desc{
+	// 			max-width: 184px !important;
+	// 		}
+	// 	}
+	// };
 	footer{
 
 		.inner-footer{
 			padding-right: 0 !important;
 			padding-left: 30px !important;
 
-			.footer-desc{
+			.footer-desc,
+			.footer-desc-left{
 				max-width: 184px !important;
 			}
+
+			.footer-desc-left{
+				margin-left: 0 !important;
+			}
 		}
-	};
+	}
 }
 
 @include breakpoint-down(lg){
@@ -1817,9 +1839,10 @@ footer{
 	.res-none{
 		display: block;
 	}
-
+ 
 	.made-by{
-		margin-top: 6px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 	footer{

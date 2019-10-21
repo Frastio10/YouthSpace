@@ -4,7 +4,7 @@ let temp = "";
 const search = new URLSearchParams(window.location.search);
 const template = document.getElementById("templates").innerHTML;
 // const templates = document.getElementById('templates').innerHTML;
-
+ 
 
 //Define Searchbox
 const search_input = document.getElementById('search_input');
@@ -60,6 +60,12 @@ btn_search_2.addEventListener("click",()=>{
 
 		//Get url values
 		const url = search.get("category") ? search.get("category") : "all";
+		const page = search.get("page") ? search.get("page") : 1;
+
+		//Fake pagination
+		var nav = document.querySelectorAll(`.page-${page}`);
+		console.log(nav);
+		nav[0].classList.add('paginate-active');
 
 		//Filter data by it's category
 		var filtered_data = data.filter( element => element.category == url);

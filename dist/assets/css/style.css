@@ -67,7 +67,7 @@
 
 .user-profile {
   width: 50px;
-  height: 50px;
+  height: auto !important;
   margin-right: 5px;
   border-radius: 100%;
 }
@@ -82,6 +82,11 @@
 
 .whatsapp img {
   width: 24px;
+}
+
+.made-by {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .url-notify {
@@ -353,8 +358,8 @@
 }
 
 .small-gallery img {
-  min-height: 186px;
-  max-height: 186px;
+  min-height: 200px;
+  max-height: 200px;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -468,7 +473,8 @@ html, body {
   padding-right: 5px;
 }
 
-.love.active svg path {
+.love.active svg path,
+.lovess.active svg path {
   fill: var(--primary) !important;
 }
 
@@ -890,7 +896,7 @@ a {
   padding-right: 13px;
   padding-top: 9px;
   padding-bottom: 9px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .btn-blue-sm:hover {
@@ -1902,18 +1908,18 @@ footer .inner-footer .footer-list ul li a {
 
 .last-box {
   width: 11%;
-  height: 50%;
+  height: 44%;
 }
 
 .normal-box {
   width: 16%;
-  height: 400px;
+  height: 428px;
 }
 
 .dots-ml {
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 100px;
+  margin-left: 115px;
 }
 
 .dots-mr {
@@ -1935,7 +1941,7 @@ footer .inner-footer .footer-list ul li a {
 }
 
 .btn-more {
-  margin: 35px auto 30px auto;
+  margin: 35px auto 0 auto;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -2212,7 +2218,7 @@ footer .inner-footer .footer-list ul li a {
 
 .navbar-dropdown.actived ul {
   overflow-y: auto;
-  height: 80vh;
+  height: 100vh;
 }
 
 .navbar-dropdown {
@@ -2336,8 +2342,12 @@ footer .inner-footer .footer-list ul li a {
     padding-right: 0 !important;
     padding-left: 30px !important;
   }
-  footer .inner-footer .footer-desc {
+  footer .inner-footer .footer-desc,
+  footer .inner-footer .footer-desc-left {
     max-width: 184px !important;
+  }
+  footer .inner-footer .footer-desc-left {
+    margin-left: 0 !important;
   }
 }
 
@@ -2437,7 +2447,8 @@ footer .inner-footer .footer-list ul li a {
     display: block;
   }
   .made-by {
-    margin-top: 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   footer .line-h {
     margin-top: 20px;

@@ -108,8 +108,21 @@ $(btn).click(function(event) {
 		//Filter data by it's category
 		var filtered_data = data.filter( element => element.category == url);
 		
+		const seeRoot = document.querySelectorAll(".see-root");
+		let seeButton = document.getElementById("btnLoadMore").innerHTML;
+		let temp_btn = '';
+		const seeNumber = search.get("see") ? search.get("see") : 0;
+		let see = parseInt(seeNumber) + 4;
 
-		var limit = 4;
+		console.log(typeof see)
+		temp_btn = temp_btn + seeButton
+				   .replace('{num}',see);
+
+		seeRoot[0].innerHTML = temp_btn;
+		console.log(seeRoot);
+
+
+		var limit = see;
 		
 		//Navigate category
 		if (url == "all") {
@@ -148,6 +161,10 @@ $(btn).click(function(event) {
 					pill_bg = "bg-darkyellow";
 					category = "Pendidikan";
 
+				} else if(data == "offtopic"){
+					pill_bg = "bg-";
+					category = "Off-Topic";
+
 				}
 
 		}
@@ -162,11 +179,15 @@ $(btn).click(function(event) {
 			$(".category-technology").addClass('current-category');
 		} else if(url == "nature"){
 			$(".category-nature").addClass('current-category');
+		} else if(url == "offtopic"){
+			$(".category-offtopic").addClass('current-category');
 		}
 
 		if(url != null){
 			$('.create-discuss').addClass('d-none')
 		}
+
+		
 		
 		//Get search query values
 		const search_query = search.get("search_query") ? search.get("search_query") : null;
@@ -206,7 +227,7 @@ $(btn).click(function(event) {
 				
 				categories(randomValue[key].category);
 
-				if(key <= 4){
+				if(key <= limit - 1){
 					temp = temp + template
 					.replace('{pill-bg}',pill_bg)
 					.replace('{title}', randomValue[key].title)

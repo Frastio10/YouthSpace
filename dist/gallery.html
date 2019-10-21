@@ -57,7 +57,7 @@
 						<img src="./assets/images/chevron-right.svg" alt="">
 						<div class="popup-content d-none pos-a bring-front">
 							<div class="bg-white flags">
-								<a href="/en/">
+								<a href="en/">
 									<img src="./assets/images/en.svg" alt="">
 									EN
 								</a>
@@ -271,11 +271,12 @@
   	<div class="box-blue normal-box bring-back  left res-none"></div>
   </div>
 
-  <div class="row row-3 w-100 mb-40">
+  <div class="row row-3 w-100 pb-60">
   	<div class="container">
   		<div class="inner-row pos-r">
   			<span class="dots-sm f-25 f-playfair-bold">Video</span>
-  			<div class="w-100 slider-wrapper">
+  			<div class="cf"></div>
+  			<!--<div class="w-100 slider-wrapper">
   				<div id="slider" class="w-100 d-flex pos-r">
   					<svg xmlns="http://www.w3.org/2000/svg" class="playbutton pos-a" width="50" height="40" viewBox="0 0 50 40">
   					  <g id="Group_288" data-name="Group 288" transform="translate(-1260 -1877)">
@@ -304,7 +305,41 @@
   						</div>				   
   					</div>
   				</div>
-  			</div>
+  			</div>-->
+  			<!--<div class="inner-row pt-0-i pb-60">-->
+  				<div class="slick-row-3 d-flex">
+  					<div class="pos-r flex-center video-wrapper">
+  						<div class="d-flex w-100 flex-center">
+  							<img src="./assets/images/bg_teks.png" class="video-thumb" alt="">
+  							<img src="./assets/images/playbutton.svg" class="pos-a playbutton" alt="">
+  						</div>
+  					</div>
+  					<div class="pos-r flex-center video-wrapper">
+  						<div class="d-flex w-100 flex-center">
+  							<img src="./assets/images/bg_teks.png" class="video-thumb" alt="">
+  							<img src="./assets/images/playbutton.svg" class="pos-a playbutton" alt="">
+  						</div>
+  					</div>
+  					<div class="pos-r flex-center video-wrapper">
+  						<div class="d-flex w-100 flex-center">
+  							<img src="./assets/images/bg_teks.png" class="video-thumb" alt="">
+  							<img src="./assets/images/playbutton.svg" class="pos-a playbutton" alt="">
+  						</div>
+  					</div>
+  					<div class="pos-r flex-center video-wrapper">
+  						<div class="d-flex w-100 flex-center">
+  							<img src="./assets/images/bg_teks.png" class="video-thumb" alt="">
+  							<img src="./assets/images/playbutton.svg" class="pos-a playbutton" alt="">
+  						</div>
+  					</div>
+  				</div>
+  				<div class="cf"></div>
+  						<div class="f-left video-arr">
+  							<img src="./assets/images/arrow-right.svg" alt="" class="slick-prev-3 cs-p" style="margin-right: 15px;">
+  							<img src="./assets/images/arrow-left.svg" alt="" class="slick-next-3 cs-p">
+  						</div>
+  				</div>
+  			<!--</div>-->
   		</div>
   	</div>
   </div>
@@ -358,7 +393,7 @@
 							<a href="mailto:frastio.agustiyan@gmail.com" class="btn btn-blue">Alamat email</a>
 					</div>
 					<span class="line-h"></span>
-					<span class="f-13 mt-40 f-lato f-left made-by">&#169; 2019 Youthspace By Bernice Team</span>
+					<span class="f-13 f-lato f-left made-by">&#169; 2019 Youthspace By Bernice Team</span>
 				</div>
 
 			</div>
@@ -441,6 +476,58 @@
   		  infinite:true,
   		  autoplay:true,
   		  rtl:true,
+
+  		  responsive: [
+  		    {
+  		      breakpoint: 1024,
+  		      settings: {
+  		        slidesToShow: 2,
+  		        slidesToScroll: 2,
+  		        infinite:true,
+  		        autoplay:true
+  		      }
+  		    },{
+  		      breakpoint: 768,
+  		      settings: {
+  		        slidesToShow: 2,
+  		        slidesToScroll: 2,
+  		        infinite: true,
+		        
+  		      }
+  		    },
+  		    {
+  		      breakpoint: 600,
+  		      settings: {
+  		        slidesToShow: 2,
+  		        slidesToScroll: 2,
+  		        infinite: true,
+		        
+  		      }
+  		    },
+
+  		    {
+  		      breakpoint: 480,
+  		      settings: {
+  		        slidesToShow: 1,
+  		        slidesToScroll: 1,
+  		        infinite:true,
+  		        autoplay: true,
+  		      }
+  		    }
+  		  ]
+		  
+  		});
+
+  		$('.slick-row-3').slick({	
+  		  infinite: false,
+  		  speed: 300,
+  		  slidesToShow: 2,
+  		  slidesToScroll: 2,
+  		  nextArrow:$('.slick-next-3'),
+  		  prevArrow:$('.slick-prev-3'),
+  		  variableWidth:true,
+  		  infinite:true,
+  		  autoplay:true,
 
   		  responsive: [
   		    {
