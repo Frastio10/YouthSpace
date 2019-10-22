@@ -1789,9 +1789,9 @@ footer .inner-footer .footer-desc-left {
 }
 
 footer .inner-footer .footer-desc-left p {
-  margin-top: 35px;
+  margin-top: 10px;
   max-width: 206px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 footer .inner-footer .footer-list {
@@ -1817,7 +1817,7 @@ footer .inner-footer .footer-list {
 }
 
 footer .inner-footer .footer-list b {
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 }
 
 footer .inner-footer .footer-list ul li a {
