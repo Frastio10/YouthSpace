@@ -535,12 +535,12 @@
 
 .slick-row{
 	@include padding-y(20px);
-	max-width: 1094px;		
+	max-width: 100%;		
 	float: left;
 	
 
 	.outer-card{
-		width: 261px;
+		//width: 261px;
 		float: left;
 		transition: 0.3s ease;
 		position: relative;	
@@ -737,9 +737,44 @@
 	}
 }
 
+@include breakpoint(xl){
+	.slick-row-3{
+
+		.video-wrapper{
+			    width: calc(570px);
+    margin-left: 20px;
+		}
+	}
+
+	.slick-row-2{
+		max-width: 1166px;
+	}
+
+	.box-3-1 {
+    margin-right: 15px;
+    width: 378px;
+}
+};
+
 @include breakpoint-down(lg){
 	.video-popup{
 		width: 85% !important;
+	}
+
+	.slick-row{
+
+		.outer-card{
+
+			width: calc(100% / 3 - 10	px);
+
+			&:nth-child(3){
+				margin-right: 0;
+			}
+
+			&:last-child{
+				display: none;
+			}
+		}
 	}
 
 	.slick-row-2{
@@ -844,10 +879,18 @@
 	}
 
 	.slick-row{
-		max-width: 620px !important;
+		max-width: 100% !important;
 
 		.outer-card{
-			width: 298px ;
+			width: calc(100% / 2 - 7.25px) ;
+
+			&:nth-child(2){
+				margin-right: 0;
+			}
+
+			&:nth-child(3){
+				display: none;
+			}
 
 		}
 	}
@@ -980,12 +1023,20 @@
 	}
 
 	.slick-row{
-		max-width: 300px !important;
+		max-width: 100% !important;
 		padding-top: 5px;
+		margin-bottom: 20px;
 
 		.outer-card{
-			width: 291px !important;
-			@include margin-x(15px);
+			width: 100% !important;
+			@include margin-x(0);
+			margin-top: 20px;
+			
+
+			&:last-child,
+			&:nth-child(3){
+				display: none;
+			}
 		}
 	}
 

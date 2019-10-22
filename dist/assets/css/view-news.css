@@ -21,48 +21,33 @@
  Fonts Import
 */
 @font-face {
-  font-family: lato-regular;
-  src: url("../fonts/Lato/Lato-Regular.ttf");
+  font-family: lato;
+  src: url("../fonts/roboto-slab/RobotoSlab-Regular.ttf");
 }
 
 @font-face {
   font-family: lato-bold;
-  src: url("../fonts/Lato/Lato-Bold.ttf");
+  src: url("../fonts/roboto-slab/RobotoSlab-Bold.ttf");
 }
 
 @font-face {
   font-family: lato-light;
-  src: url("../fonts/Lato/Lato-light.ttf");
+  src: url("../fonts/roboto-slab/RobotoSlab-light.ttf");
 }
 
 @font-face {
   font-family: lato-italic;
-  src: url("../fonts/Lato/Lato-italic.ttf");
-}
-
-@font-face {
-  font-family: playfair-black;
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-Black.ttf");
-}
-
-@font-face {
-  font-family: playfair-blackitalic;
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf");
-}
-
-@font-face {
-  font-family: playfair-bold;
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf");
-}
-
-@font-face {
-  font-family: playfair-BoldItalic;
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf");
+  src: url("../fonts/roboto-slab/RobotoSlab-italic.ttf");
 }
 
 @font-face {
   font-family: playfair-regular;
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+  src: url("../fonts/rufina/Rufina-Regular.ttf");
+}
+
+@font-face {
+  font-family: playfair-bold;
+  src: url("../fonts/rufina/Rufina-Bold.ttf");
 }
 
 .news-text {
@@ -133,8 +118,8 @@
 
 .random-news .list-wrapper .list-item .line {
   width: 100%;
-  height: 3px;
-  background: #c5c5c5;
+  height: 1px;
+  background: #e8e8e8;
   margin-top: 8px;
   margin-bottom: 8px;
 }

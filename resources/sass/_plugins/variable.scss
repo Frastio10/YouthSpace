@@ -18,52 +18,84 @@
  Fonts Import
 */
 
-//Lato
+//Roboto Slab
 @font-face{
-	font-family: lato-regular;
-	src:url('../fonts/Lato/Lato-Regular.ttf');
+	font-family: lato;
+	src:url('../fonts/roboto-slab/RobotoSlab-Regular.ttf');
 }
 
 @font-face{
 	font-family: lato-bold;
-	src:url('../fonts/Lato/Lato-Bold.ttf');
+	src:url('../fonts/roboto-slab/RobotoSlab-Bold.ttf');
 }
 
 @font-face{
 	font-family: lato-light;
-	src:url('../fonts/Lato/Lato-light.ttf');
+	src:url('../fonts/roboto-slab/RobotoSlab-light.ttf');
 }
 
 @font-face{
 	font-family: lato-italic;
-	src:url('../fonts/Lato/Lato-italic.ttf');
+	src:url('../fonts/roboto-slab/RobotoSlab-italic.ttf');
 }
 
-
-//Playfair Display
-
+//Rufina
 @font-face{
-	font-family: playfair-black;
-	src:url('../fonts/Playfair_Display/PlayfairDisplay-Black.ttf');
-}
-
-@font-face{
-	font-family: playfair-blackitalic;
-	src:url('../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf');
+	font-family: playfair-regular;
+	src:url('../fonts/rufina/Rufina-Regular.ttf');
 }
 
 @font-face{
 	font-family: playfair-bold;
-	src:url('../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf');
+	src:url('../fonts/rufina/Rufina-Bold.ttf');
 }
 
-@font-face{
-	font-family: playfair-BoldItalic;
-	src:url('../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf');
-}
+// //Lato
+// @font-face{
+// 	font-family: lato-regular;
+// 	src:url('../fonts/Lato/Lato-Regular.ttf');
+// }
 
-@font-face{
-	font-family: playfair-regular;
-	src:url('../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf');
-}
+// @font-face{
+// 	font-family: lato-bold;
+// 	src:url('../fonts/Lato/Lato-Bold.ttf');
+// }
+
+// @font-face{
+// 	font-family: lato-light;
+// 	src:url('../fonts/Lato/Lato-light.ttf');
+// }
+
+// @font-face{
+// 	font-family: lato-italic;
+// 	src:url('../fonts/Lato/Lato-italic.ttf');
+// }
+
+
+// //Playfair Display
+
+// @font-face{
+// 	font-family: playfair-black;
+// 	src:url('../fonts/Playfair_Display/PlayfairDisplay-Black.ttf');
+// }
+
+// @font-face{
+// 	font-family: playfair-blackitalic;
+// 	src:url('../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf');
+// }
+
+// @font-face{
+// 	font-family: playfair-bold;
+// 	src:url('../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf');
+// }
+
+// @font-face{
+// 	font-family: playfair-BoldItalic;
+// 	src:url('../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf');
+// }
+
+// @font-face{
+// 	font-family: playfair-regular;
+// 	src:url('../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf');
+// }
 

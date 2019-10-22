@@ -29,7 +29,7 @@
 		  prevArrow:$('.slick-prev-2'),
 		  variableWidth:true,
 		  infinite:true,
-		  autoplay:true,
+		  autoplay:false,
 		  rtl:true,
 
 		  responsive: [
@@ -39,14 +39,14 @@
 		        slidesToShow: 2,
 		        slidesToScroll: 2,
 		        infinite:true,
-		        autoplay:true
+		        autoplay:false
 		      }
 		    },{
 		      breakpoint: 768,
 		      settings: {
 		        slidesToShow: 2,
 		        slidesToScroll: 2,
-		        infinite: true,
+		        infinite: false,
 		        
 		      }
 		    },
@@ -66,7 +66,7 @@
 		        slidesToShow: 1,
 		        slidesToScroll: 1,
 		        infinite:true,
-		        autoplay: true,
+		        autoplay: false,
 		      }
 		    }
 		  ]
@@ -82,7 +82,7 @@
 		  prevArrow:$('.slick-prev-3'),
 		  variableWidth:true,
 		  infinite:true,
-		  autoplay:true,
+		  autoplay:false,
 
 		  responsive: [
 		    {
@@ -91,7 +91,7 @@
 		        slidesToShow: 2,
 		        slidesToScroll: 2,
 		        infinite:true,
-		        autoplay:true
+		        autoplay:false
 		      }
 		    },{
 		      breakpoint: 768,
@@ -118,14 +118,14 @@
 		        slidesToShow: 1,
 		        slidesToScroll: 1,
 		        infinite:true,
-		        autoplay: true,
+		        autoplay: false,
 		      }
 		    }
 		  ]
 		  
 		});
 
-		$('.slick-row').slick({	
+		$('.slick-ro').slick({	
 		  infinite: false,
 		  speed: 300,
 		  slidesToShow: 4,
@@ -194,6 +194,7 @@
 @section('nav-list')
 <li><a href="news.html">Berita</a></li>
 <li><a href="diskusi.html">Diskusi</a></li>
+<li><a href="startup.html">Startup</a></li>
 <li><a href="inspirasi.html">Inspirasi</a></li>
 <li><a href="about.html">Tentang Kami</a></li>
 <li><a href="gallery.html">Galeri</a></li>
@@ -218,7 +219,7 @@
 			<img src="" alt="" class="w-100" id="image-modal">
 		</div>
 	</div>
-
+ 
 	<div class="video-modalview-backdrop pos-f d-flex flex-center">
 		<div class="video-modalview pos-r">
 			<div class="close-popup d-flex flex-center pos-a">
@@ -254,11 +255,11 @@
 				<div class="clearfix"></div>
 				<p class="secondary-text f-15 f-grey f-lato">Tambah wawasan dan pengetahuan mu dengan membaca berita terbaru dan terkini di YouthSpace</p>
 
-				<div class="slick-row">
-					<div class="outer-card">
+				<div class="slick-row pb-0">
+					<div class="outer-card col three">
 						<div class="card">
 							<div class="thumb-card d-flex">
-								<img data-lazy="./assets/images/news-thumb-2-261x138.jpg" alt="" class="lazy w-100">
+								<img data-src="./assets/images/news-thumb-2-261x138.jpg" alt="" class="lazy w-100">
 							</div>
 							<div class="text-card">
 								<b class="f-15 f-playfair-bold">Google Assistant Bisa Sulap Perangkat Android</b>
@@ -272,10 +273,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="outer-card">
+					<div class="outer-card col three">
 						<div class="card">
 							<div class="thumb-card d-flex">
-								<img data-lazy="./assets/images/news-thumb-6-261x138.jpg" alt="" class="lazy w-100">
+								<img data-src="./assets/images/news-thumb-6-261x138.jpg" alt="" class="lazy w-100">
 							</div>
 							<div class="text-card">
 								<b class="f-15 f-playfair-bold">Peran Generasi Petani Milenial di Era Pertanian 4.0</b>
@@ -289,10 +290,10 @@
 							</div>
 						</div>
 					</div>	
-					<div class="outer-card">
+					<div class="outer-card col three">
 						<div class="card">
 							<div class="thumb-card d-flex">
-								<img data-lazy="./assets/images/news-thumb-11-261x138.jpg" alt="" class="lazy w-100">
+								<img data-src="./assets/images/news-thumb-11-261x138.jpg" alt="" class="lazy w-100">
 							</div>
 							<div class="text-card">
 								<b class="f-15 f-playfair-bold">Membentengi Generasi Milenial dari Pengaruh Paham Radikal</b>
@@ -306,10 +307,10 @@
 							</div>
 						</div>
 					</div>	
-					<div class="outer-card">
+					<div class="outer-card col three">
 						<div class="card">
 							<div class="thumb-card d-flex">
-								<img data-lazy="./assets/images/news-thumb-10-261x138.jpg" alt="" class="lazy w-100">
+								<img data-src="./assets/images/news-thumb-10-261x138.jpg" alt="" class="lazy w-100">
 							</div>
 							<div class="text-card">
 								<b class="f-15 f-playfair-bold">Milenial Dominasi Kompetisi Kewirausahaan</b>
@@ -323,80 +324,16 @@
 							</div>
 						</div>
 					</div>
-					<div class="outer-card">
-						<div class="card">
-							<div class="thumb-card d-flex">
-								<img data-lazy="./assets/images/news-thumb-4-261x138.jpg" alt="" class="lazy w-100">
-							</div>
-							<div class="text-card">
-								<b class="f-15 f-playfair-bold">Qualcomm Perluas 5G ke Ponsel Menengah</b>
-								<div class="clearfix"></div>
-								<div class="date-wrapper d-flex">
-									<img src="./assets/images/clock.svg" alt="">
-									<span class="f-lato f-12 f-grey">18 agustus 2019</span>
-								</div>
-								<p class="f-lato f-14 f-grey">Qualcomm mengumumkan rencana untuk memperluas penetrasi 5G di ponsel kelas menengah.</p>
-								<a href="view-news.html?news_id=2&category=technology" class="btn btn-blue-sm">Baca Selengkapnya</a>
-							</div>
-						</div>
-					</div>
-					<div class="outer-card">
-						<div class="card">
-							<div class="thumb-card d-flex">
-								<img data-lazy="./assets/images/news-thumb-5-261x138.jpg" alt="" class="lazy w-100">
-							</div>
-							<div class="text-card">
-								<b class="f-15 f-playfair-bold">Pesawat Antariksa India Hilang Kontak</b>
-								<div class="clearfix"></div>
-								<div class="date-wrapper d-flex">
-									<img src="./assets/images/clock.svg" alt="">
-									<span class="f-lato f-12 f-grey">18 agustus 2019</span>
-								</div>
-								<p class="f-lato f-14 f-grey">Upaya India mendaratkan rover penjelajah di kutub selatan Bulan mungkin menemui kegagalan.</p>
-								<a href="view-news.html?news_id=3&category=technology" class="btn btn-blue-sm">Baca Selengkapnya</a>
-							</div>
-						</div>
-					</div>	
-					<div class="outer-card">
-						<div class="card">
-							<div class="thumb-card d-flex">
-								<img data-lazy="./assets/images/news-thumb-1-261x138.png" alt="" class="lazy w-100">
-							</div>
-							<div class="text-card">
-								<b class="f-15 f-playfair-bold">Program Kekinian Yang Membuat Milenial Ikut Bertani</b>
-								<div class="clearfix"></div>
-								<div class="date-wrapper d-flex">
-									<img src="./assets/images/clock.svg" alt="">
-									<span class="f-lato f-12 f-grey">18 agustus 2019</span>
-								</div>
-								<p class="f-lato f-14 f-grey">Sektor pertanian adalah penyumbang terbesar kedua terhadap perekonomian Indonesia</p>
-								<a href="view-news.html?news_id=4&category=nature" class="btn btn-blue-sm">Baca Selengkapnya</a>
-							</div>
-						</div>
-					</div>	
-					<div class="outer-card">
-						<div class="card">
-							<div class="thumb-card d-flex">
-								<img data-lazy="./assets/images/news-thumb-3-261x138.jpg" alt="" class="lazy w-100">
-							</div>
-							<div class="text-card">
-								<b class="f-15 f-playfair-bold">Apple Tuding Google Sebarkan Ketakutan Malware iPhone</b>
-								<div class="clearfix"></div>
-								<div class="date-wrapper d-flex">
-									<img src="./assets/images/clock.svg" alt="">
-									<span class="f-lato f-12 f-grey">18 agustus 2019</span>
-								</div>
-								<p class="f-lato f-14 f-grey">Apple menanggapi laporan Google mengenai situs yang menyusupkan malware ke dalam iPhone.</p>
-								<a href="view-news.html?news_id=0&category=technology" class="btn btn-blue-sm">Baca Selengkapnya</a>
-							</div>
-						</div>
-					</div>		
+						
 				</div>
 				<div class="cf"></div>
-				<div class="f-right">
+				<div class="w-100 ov-h d-flex">
+							<a href="news.html" class="btn btn-blue btn-more">Berita lainnya</a>
+						</div>
+				<!--<div class="f-right">
 					<img src="./assets/images/arrow-right.svg" alt="" class="slick-prev cs-p" style="margin-right: 15px;">
 					<img src="./assets/images/arrow-left.svg" alt="" class="slick-next cs-p">
-				</div>
+				</div>-->
 				
 			</div>
 
@@ -490,7 +427,7 @@
 									</div>
 								</div>
 								<div class="f-left f-grey f-lato f-15 text">
-									<p>Perkembangan teknologi dari tahun ke tahun selalu mengalami peningkatan. Hal ini dibuktikan dengan mulai bermunculannya alat elektronik seperti smartphone, tablet, hingga music player. Di Indonesia sendiri perkembangan teknologi tidak dapat dibendung lagi karena ...</p>
+									<p>Kami terobsesi dengan kata-kata. Jadi kami merancang editor yang memungkinkan Anda fokus pada penulisan, tidak memilih font dan melawan spasi paragraf. Tidak ada kejutan: Cerita yang Anda terbitkan akan terlihat sama indahnya dengan ketika Anda menulisnya. Kami ingin ...</p>
 								</div>
 							</div>
 						</a>
@@ -509,7 +446,7 @@
 									</div>
 								</div>
 								<div class="f-left f-grey f-lato f-15 text">
-									<p>Perkembangan teknologi dari tahun ke tahun selalu mengalami peningkatan. Hal ini dibuktikan dengan mulai bermunculannya alat elektronik seperti smartphone, tablet, hingga music player. Di Indonesia sendiri perkembangan teknologi tidak dapat dibendung lagi ...</p>
+									<p>Kami terobsesi dengan kata-kata. Jadi kami merancang editor yang memungkinkan Anda fokus pada penulisan, tidak memilih font dan melawan spasi paragraf. Tidak ada kejutan: Cerita yang Anda terbitkan akan terlihat sama indahnya dengan ketika Anda menulisnya. Kami ingin ...</p>
 								</div>
 							</div>
 						</a>

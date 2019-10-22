@@ -21,48 +21,33 @@
  Fonts Import
 */
 @font-face {
-  font-family: lato-regular;
-  src: url("../fonts/Lato/Lato-Regular.ttf");
+  font-family: lato;
+  src: url("../fonts/roboto-slab/RobotoSlab-Regular.ttf");
 }
 
 @font-face {
   font-family: lato-bold;
-  src: url("../fonts/Lato/Lato-Bold.ttf");
+  src: url("../fonts/roboto-slab/RobotoSlab-Bold.ttf");
 }
 
 @font-face {
   font-family: lato-light;
-  src: url("../fonts/Lato/Lato-light.ttf");
+  src: url("../fonts/roboto-slab/RobotoSlab-light.ttf");
 }
 
 @font-face {
   font-family: lato-italic;
-  src: url("../fonts/Lato/Lato-italic.ttf");
-}
-
-@font-face {
-  font-family: playfair-black;
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-Black.ttf");
-}
-
-@font-face {
-  font-family: playfair-blackitalic;
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf");
-}
-
-@font-face {
-  font-family: playfair-bold;
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf");
-}
-
-@font-face {
-  font-family: playfair-BoldItalic;
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf");
+  src: url("../fonts/roboto-slab/RobotoSlab-italic.ttf");
 }
 
 @font-face {
   font-family: playfair-regular;
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+  src: url("../fonts/rufina/Rufina-Regular.ttf");
+}
+
+@font-face {
+  font-family: playfair-bold;
+  src: url("../fonts/rufina/Rufina-Bold.ttf");
 }
 
 .playbutton {
@@ -696,12 +681,11 @@
 .slick-row {
   padding-top: 20px;
   padding-bottom: 20px;
-  max-width: 1094px;
+  max-width: 100%;
   float: left;
 }
 
 .slick-row .outer-card {
-  width: 261px;
   float: left;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -882,9 +866,32 @@
   margin-left: 15px;
 }
 
+@media screen and (min-width: 1440px) {
+  .slick-row-3 .video-wrapper {
+    width: calc(570px);
+    margin-left: 20px;
+  }
+  .slick-row-2 {
+    max-width: 1166px;
+  }
+  .box-3-1 {
+    margin-right: 15px;
+    width: 378px;
+  }
+}
+
 @media screen and (max-width: 1020px) {
   .video-popup {
     width: 85% !important;
+  }
+  .slick-row .outer-card {
+    width: calc(100% / 3 - 10	px);
+  }
+  .slick-row .outer-card:nth-child(3) {
+    margin-right: 0;
+  }
+  .slick-row .outer-card:last-child {
+    display: none;
   }
   .slick-row-2 {
     max-width: 826px;
@@ -936,10 +943,16 @@
     width: 305px;
   }
   .slick-row {
-    max-width: 620px !important;
+    max-width: 100% !important;
   }
   .slick-row .outer-card {
-    width: 298px;
+    width: calc(100% / 2 - 7.25px);
+  }
+  .slick-row .outer-card:nth-child(2) {
+    margin-right: 0;
+  }
+  .slick-row .outer-card:nth-child(3) {
+    display: none;
   }
   .diskusi-2 {
     display: block;
@@ -1023,13 +1036,18 @@
     margin-top: 15px;
   }
   .slick-row {
-    max-width: 300px !important;
+    max-width: 100% !important;
     padding-top: 5px;
+    margin-bottom: 20px;
   }
   .slick-row .outer-card {
-    width: 291px !important;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .slick-row .outer-card:last-child, .slick-row .outer-card:nth-child(3) {
+    display: none;
   }
   .row-1 .inner-row {
     padding-top: 60px !important;
