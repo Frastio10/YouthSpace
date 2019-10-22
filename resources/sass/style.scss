@@ -374,6 +374,10 @@ html , body {
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,.05);
 }
 
+.box-shadow-soft{
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
 .text-decoration-n{
 	text-decoration: none;
  
@@ -630,8 +634,11 @@ a {
 
 	  .f-#{$i} {
 	    font-size: #{$i}px;
+	   // line-height: 1.5;
 	  }
 }
+
+
 
 ul.horizontal-list{
 	list-style-type: none;

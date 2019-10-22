@@ -496,6 +496,11 @@ html, body {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
 }
 
+.box-shadow-soft {
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
 .text-decoration-n {
   text-decoration: none;
 }
