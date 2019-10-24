@@ -50,6 +50,73 @@
   src: url("../fonts/rufina/Rufina-Bold.ttf");
 }
 
+.hide {
+  display: none;
+}
+
+.card.card-flex {
+  background: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.card.card-flex .date {
+  float: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  color: #999999;
+  margin-left: 10px;
+}
+
+.card.card-flex .date span {
+  margin-left: 7px;
+}
+
+.card.card-flex .card-detail {
+  margin-left: 15px;
+  display: block;
+}
+
+.card.card-flex .card-detail .card-info {
+  margin-top: 6px;
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  font-size: 12px;
+  font-family: lato;
+}
+
+.card.card-flex .card-detail .card-info .location {
+  float: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  color: #a5a5a5;
+}
+
+.card.card-flex .card-detail .card-text p {
+  font-family: lato;
+  color: #707070;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
 .card.card-rate {
   background: #fff;
   -webkit-box-sizing: border-box;
@@ -58,10 +125,12 @@
   transition: .3s all;
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+  top: 0;
 }
 
 .card.card-rate:hover {
-  margin-top: -10px;
+  position: relative;
+  top: -10px;
   -webkit-box-shadow: 0 8px 20px 8px rgba(0, 0, 0, 0.08);
   box-shadow: 0 8px 20px 8px rgba(0, 0, 0, 0.08);
 }
@@ -129,6 +198,10 @@
   list-style-type: none;
   margin-right: 3px;
   float: left;
+}
+
+.card.card-rate .card-detail .card-rating ul li svg path {
+  stroke: #fbb72b;
 }
 
 .card.card-rate .card-detail .card-rating span {
@@ -200,6 +273,10 @@
 
 .btn-sharer {
   cursor: pointer;
+}
+
+.url-handle {
+  opacity: 0;
 }
 
 .url-notify.active {
@@ -603,6 +680,8 @@ html, body {
 .box-shadow-hover {
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 .box-shadow-hover:hover {
@@ -1269,6 +1348,14 @@ ul.horizontal-list li {
   padding-bottom: 0 !important;
 }
 
+.pl-0-i {
+  padding-left: 0 !important;
+}
+
+.pr-0-i {
+  padding-right: 0 !important;
+}
+
 .pb-0 {
   padding-bottom: 0;
 }
@@ -1635,6 +1722,14 @@ ul.horizontal-list li {
 
 .row {
   width: 100%;
+}
+
+.row-right {
+  background-image: url("../images/pr2.svg");
+  background-size: 215px 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  float: left;
 }
 
 .hamburger .line {

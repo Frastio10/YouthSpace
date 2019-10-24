@@ -1,0 +1,164 @@
+@import "./header";
+
+.startup-info{
+
+	.startup-icon{
+		object-fit: cover;
+		min-width: 82px;
+	}
+
+	.startup-medal{
+		max-height: 52px;
+		box-sizing: border-box;
+		border: 1px solid #e1e1e1;
+		@include padding-x(12px);
+		@include padding-y(12px);
+
+		span{
+			font-size: 14px;
+			font-family: lato;
+		}
+	}
+
+	.startup-detail{
+		margin-left: 20px;
+
+		.startup-tag{
+			margin-top: 8px;
+
+			li{
+				list-style: none;
+				float: left;
+				font-size: 12px;
+				font-family: lato;
+				min-width: 50px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				@include padding-x(10px);
+				@include padding-y(3px);
+				background: #fafafa;
+				border: 0.2px solid #999999;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+
+.top-info{
+	float: left;
+	border: 1px solid #e1e1e1;
+	@include padding-y(20px);
+	@include padding-x(16px);
+	box-sizing: border-box;
+
+	.top-desc{
+
+		p{
+			font-size: 15px;
+			font-family: lato;
+			color: #999999;
+		}
+	}
+
+	.social-media{
+		float: left;
+
+		.media{
+			text-decoration: none;
+			margin-right: 8px;
+			box-sizing: border-box;
+			max-height: 35px;
+			float: left;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@include padding-x(7px);
+			@include padding-y(8px);
+			border: 1px solid #999999;
+			background: #fff;
+
+			span{
+				margin-left: 5px;
+				color: var(--primary);
+				font-family: lato;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+.preview-thumbnail{
+	min-height: 390px;
+	width: 100%;
+	box-sizing: border-box;
+	background-size: cover;
+	background-image: url('./assets/images/previewer-.png') ;
+}
+
+.previewer-list{
+	margin-top: 15px;
+	
+	.previewer{
+
+		opacity: .7;
+
+		width: 52px;
+		height: 50px;
+		float: left;
+		list-style: none;
+		margin-right: 10px;
+		border: 2px solid transparent;
+		transition: .2s ease;
+
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+
+		}
+
+		&:hover{
+			opacity: 1;
+			border: 2px solid #333;
+		}
+
+		&.active{
+			opacity: 1;
+			border: 2px solid #333;
+			transition: .2s ease;
+
+		}
+	}
+}
+
+.startup-website{
+	@include padding-y(9px);
+	@include padding-x(15px);
+	box-sizing: border-box;
+	cursor: pointer;
+	border: 1px solid #e1e1e1;
+
+	.move-arr{
+		position: relative;
+		transition: .2s ease;
+		right: 0;
+	}
+
+	span{
+		font-size: 13px;
+		margin-left: 5px;
+		color: #333333;
+		font-family: lato;
+	}
+
+	&:hover{
+
+		.move-arr{
+			right: -5px;
+		}
+
+
+	}
+}

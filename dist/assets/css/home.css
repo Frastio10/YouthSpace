@@ -520,8 +520,8 @@
 }
 
 .dots-mc {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .slick-row-3 .video-wrapper {
@@ -636,6 +636,15 @@
 
 .video-backdrop.active .video-popup video {
   width: 100%;
+}
+
+.slick-row-4 .slick-track {
+  padding-bottom: 20px;
+}
+
+.slick-row-4 .four {
+  width: 352.5px;
+  margin-left: 16px;
 }
 
 .banner .banner-image-1 {
@@ -884,6 +893,9 @@
   .video-popup {
     width: 85% !important;
   }
+  .slick-row-4 .four {
+    width: 400px;
+  }
   .slick-row .outer-card {
     width: calc(100% / 3 - 10	px);
   }
@@ -938,6 +950,15 @@
   }
   .banner .banner-right {
     width: 70%;
+  }
+  .slick-row-4 .four {
+    width: 300px;
+  }
+  .slick-row-4 .four .card .card-detail .card-tag span {
+    min-width: 35px;
+    padding-left: 3.5px;
+    padding-right: 4.5px;
+    margin-right: 3px;
   }
   .slick-row-3 .video-wrapper {
     width: 305px;

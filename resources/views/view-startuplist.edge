@@ -1,0 +1,128 @@
+@layout('layouts.app')
+
+
+ 
+@section('title')
+
+<title>Detail Startup | YouthSpace</title>
+
+@endsection
+
+
+
+@section('meta')
+
+
+@endsection
+
+ 
+
+
+@section('js')
+
+<script src="./assets/js/startuplist.js"></script>
+
+@endsection
+
+
+
+@section('css')
+
+<link rel="stylesheet" href="./assets/css/view-startuplist.css">
+
+@endsection
+
+
+
+@section('nav-list')
+<li><a href="news.html">Berita</a></li>
+<li><a href="diskusi.html">Diskusi</a></li>
+<li><a href="startup.html" class="current-page">Startup</a></li>
+<li><a href="inspirasi.html">Inspirasi</a></li>
+<li><a href="about.html">Tentang Kami</a></li>
+<li><a href="gallery.html" >Galeri</a></li>
+@endsection
+
+
+
+@section('content')
+
+<div class="row row-1 pt-60 mt-60">
+	<div class="container">
+		<div class="d-flex startup-info">
+			<img src="./assets/images/startup/stadium-rect.png" alt="" class="startup-icon">
+			<div class="startup-detail">
+				<h4 class="f-playfiar f-25">Stadium</h4>
+				<p class="f-lato f-15">Perusahaan website terbaik di indonesia</p>
+				<ul class="startup-tag">
+					<li><span>Design</span></li>
+					<li><span>Productivity</span></li>
+					<li><span>Web Development</span></li>
+				</ul>
+			</div>
+			<div class="ml-auto startup-medal d-flex bg-white align-items-center">
+				<img src="./assets/images/medal.svg" alt="">
+				<span>Startup terbaik bulan ini</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row row-2">
+	<div class="container">
+		<div class="eight col">
+			<div class="bg-white top-info">
+				<div class="preview-thumbnail" style="background-image: url('./assets/images/previewer-1.png');"></div>
+				<ul class="previewer-list">
+					<li class="previewer">
+						<img src="./assets/images/previewer-1.png" alt="">
+					</li>
+					<li class="previewer">
+						<img src="./assets/images/ter.png" alt="">
+					</li>
+					<li class="previewer">
+						<img src="./assets/images/slideimg-4.png" alt="">
+					</li>
+					<li class="previewer">
+						<img src="./assets/images/thumb-3.png" alt="">
+					</li>
+					<li class="previewer">
+						<img src="./assets/images/slideimg-3.png" alt="">
+					</li>
+				</ul>
+				<span class="line-h mt-15 mb-15"></span>
+				<div class="cf"></div>
+				<div class="top-desc">
+					<p>Memperkenalkan Stadium perusahan di bidang web development, memebuat website , aplikasi iOS, integrasi Zapier, dan tampilan baru 🙌</p>
+					-<br>
+					<p>Untuk undangan Aplikasi, silakan tinggalkan tautan BMC Anda di komentar dan saya akan mengirim email kepada Anda Testflight (dan akan menggunakan jasa berikutnya 🎉</p>
+					<div class="social-media">
+						<a href="https://twitter.com" class="media">
+							<img src="./assets/images/twitter.svg" alt="">
+							<span>Twitter</span>
+						</a>
+						<a href="https://facebook.com" class="media">
+							<img src="./assets/images/facebook.svg" alt="">
+							<span>Facebook</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="four col">
+			<div class="startup-website d-flex align-items-center bg-white">
+				<div class="d-flex flex-column">
+					<span>Situs web</span>	
+					<div class="d-flex align-items-center">
+						<img src="./assets/images/web.svg" alt="">
+						<span>https://medium.com</span>
+					</div>
+				</div>
+				<img src="./assets/images/chevron-left-grey.svg" class="ml-auto move-arr" alt="">
+			</div>
+
+		</div>
+	</div>
+</div>
+
+@endsection

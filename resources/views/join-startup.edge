@@ -1,0 +1,516 @@
+@layout('layouts.default')
+
+
+@section('title')
+
+<title>Gabung Startup | YouthSpace</title>
+
+@endsection
+
+
+@section('meta')
+
+@endsection
+
+
+
+@section('js')
+
+<script src="./assets/js/join-startup.js"></script>
+<script src="./assets/js/startup-list.js"></script>
+
+@endsection
+ 
+@section('css')
+
+<link rel="stylesheet" href="./assets/css/join-startup.css">
+@endsection
+
+@section('content')
+	<header class="header " id="header">
+			<div class="container">
+				<a href="index.html" class="f-left logo-top logo d-flex flex-center text-decoration-n  text-primary">
+					<img src="./assets/images/logo-only.svg" alt="" class="f-left">
+					<span class="f-17 f-playfair" id="logo-text">YouthSpace</span>
+				</a>
+				<ul class="nav f-left">
+<li><a href="news.html">Berita</a></li>
+  <li><a href="diskusi.html">Diskusi</a></li>
+  <li><a href="startup.html" class="current-page">Startup</a></li>
+  <li><a href="inspirasi.html">Inspirasi</a></li>
+  <li><a href="about.html">Tentang Kami</a></li>
+  <li><a href="gallery.html">Galeri</a></li>
+				</ul>
+				<ul class="nav-right f-right">
+					<li class="popup-trigger pos-r language">
+						<img src="./assets/images/indo-flag.svg" class="flag-lang" alt="">
+						<img src="./assets/images/chevron-right.svg" alt="">
+						<div class="popup-content d-none pos-a bring-front">
+							<div class="bg-white flags">
+								<a href="en/">
+									<img src="./assets/images/en.svg" alt="">
+									EN
+								</a>
+								<a href="">
+									<img src="./assets/images/indo-flag.svg" alt="">
+									ID
+								</a>
+								
+							</div>
+						</div>
+					</li>
+					<li class="popup-trigger" id="profile-picture">
+						<img src="./assets/images/userprofile-2.jpg" alt="" class="user-image">
+						<div class="popup-content d-none pos-a bring-front popup-profile">
+							<div class="bg-white list">
+								<ul>
+									<li>
+										<a href="/settings.html" class="text-white-i">Amanda Aprilia</a>
+									</li>
+									<li>
+										<a href="/settings.html">Akun</a>
+									</li>
+									<li>
+										<a href="/chat.html">Pesan</a>
+									</li>
+									<li>
+										<a href="/settings.html">Pengaturan</a>
+									</li>
+									<li class="d-flex"> 
+										<a href="/login.html" class="w-100">Keluar</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+				 <div class="hamburger f-left" id="hamburger-11">
+		          <span class="line"></span>
+		          <span class="line"></span>
+		          <span class="line"></span>
+		        </div>
+			</div>
+			<div class="cf"></div>
+			<div class="scroll-nav active">
+				<div class="container">
+					<div class="inner-nav">
+						<div class="five col">
+							<div class="input-wrapper w-100	">
+								<img src="./assets/images/search-grey.svg" alt="" class="input-icon">
+								<input type="text" class="w-100" id="search_by_name" placeholder="Cari startup">
+							</div>
+						</div>
+						<div class="five col">
+							<div class="input-wrapper w-100">
+								<img src="./assets/images/map-pin-grey.svg" alt="" class="input-icon">
+								<input type="text" class="w-100"  id="search_by_location" placeholder="Lokasi pekerjaan">
+							</div>
+						</div>
+						<div class="two col">
+							<div class="input-wrapper">
+								<button class="btn btn-blue bd-n w-100">Cari sekarang</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="row row-1 ">
+			<div class="container">
+				<div class="one col"></div>
+				<div class="ten col bg-white box-shadow-soft list-parent">
+					<a href="view-join.html" class="startup-list">
+						<div class="card card-flex box-shadow-hover">
+							<img src="./assets/images/startup/medium.png" alt="" class="card-thumb">
+							
+							<div class="card-detail">
+								<h3>Front-end Developer</h3>
+								<div class="card-info">	
+									<div class="location">
+										<span>Kebumen, Indonesia</span>
+									</div>
+									
+								</div>
+								<div class="card-text">
+									<p>Ada begitu banyak bisnis vape online e-commerce online yang semuanya tampak sama.</p>
+								</div>
+							</div>
+							<div class="right-side">
+								<div class="date">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+										  <defs>
+										    <clipPath id="clip-path">
+										      <rect id="Rectangle_103" data-name="Rectangle 103" width="18" height="18" transform="translate(836 297)" fill="#999" stroke="#999" stroke-width="1"/>
+										    </clipPath>
+										  </defs>
+										  <g id="Mask_Group_21" data-name="Mask Group 21" transform="translate(-836 -297)" clip-path="url(#clip-path)">
+										    <g id="diet" transform="translate(836.205 297)">
+										      <path id="Path_144" data-name="Path 144" d="M16.255,1.781h-.53V1.635a1.635,1.635,0,0,0-3.27,0v.146H5.59V1.635a1.635,1.635,0,1,0-3.27,0v.146H1.79A1.564,1.564,0,0,0,.227,3.344V16.438A1.564,1.564,0,0,0,1.79,18H16.255a1.564,1.564,0,0,0,1.563-1.562V3.344A1.564,1.564,0,0,0,16.255,1.781Zm.5,14.656a.5.5,0,0,1-.5.5H1.79a.5.5,0,0,1-.5-.5v-9.8H16.759ZM1.286,3.344a.5.5,0,0,1,.5-.5h.53a2.739,2.739,0,0,0,.008.313A1.635,1.635,0,0,0,5.59,2.986V2.84h6.865v.146a1.635,1.635,0,0,0,3.27,0V2.84h.53a.5.5,0,0,1,.5.5v2.23H1.286V3.344ZM3.379,1.635a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Zm10.135,0a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Z" transform="translate(-0.227)" fill="#999"/>
+										    </g>
+										  </g>
+										</svg>
+
+										<span>8 hari yang lalu</span>
+									</div>
+							</div>
+						</div>
+					</a>
+					<a href="view-join.html" class="startup-list">
+						<div class="card card-flex box-shadow-hover">
+							<img src="./assets/images/startup/medium.png" alt="" class="card-thumb">
+							
+							<div class="card-detail">
+								<h3>Fullstack Developer</h3>
+								<div class="card-info">	
+									<div class="location">
+										<span>Sukabumi, Indonesia</span>
+									</div>
+									
+								</div>
+								<div class="card-text">
+									<p>Ada begitu banyak bisnis vape online e-commerce online yang semuanya tampak sama.</p>
+								</div>
+							</div>
+							<div class="right-side">
+								<div class="date">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+										  <defs>
+										    <clipPath id="clip-path">
+										      <rect id="Rectangle_103" data-name="Rectangle 103" width="18" height="18" transform="translate(836 297)" fill="#999" stroke="#999" stroke-width="1"/>
+										    </clipPath>
+										  </defs>
+										  <g id="Mask_Group_21" data-name="Mask Group 21" transform="translate(-836 -297)" clip-path="url(#clip-path)">
+										    <g id="diet" transform="translate(836.205 297)">
+										      <path id="Path_144" data-name="Path 144" d="M16.255,1.781h-.53V1.635a1.635,1.635,0,0,0-3.27,0v.146H5.59V1.635a1.635,1.635,0,1,0-3.27,0v.146H1.79A1.564,1.564,0,0,0,.227,3.344V16.438A1.564,1.564,0,0,0,1.79,18H16.255a1.564,1.564,0,0,0,1.563-1.562V3.344A1.564,1.564,0,0,0,16.255,1.781Zm.5,14.656a.5.5,0,0,1-.5.5H1.79a.5.5,0,0,1-.5-.5v-9.8H16.759ZM1.286,3.344a.5.5,0,0,1,.5-.5h.53a2.739,2.739,0,0,0,.008.313A1.635,1.635,0,0,0,5.59,2.986V2.84h6.865v.146a1.635,1.635,0,0,0,3.27,0V2.84h.53a.5.5,0,0,1,.5.5v2.23H1.286V3.344ZM3.379,1.635a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Zm10.135,0a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Z" transform="translate(-0.227)" fill="#999"/>
+										    </g>
+										  </g>
+										</svg>
+
+										<span>8 hari yang lalu</span>
+									</div>
+							</div>
+						</div>
+					</a>
+					<a href="view-join.html" class="startup-list">
+						<div class="card card-flex box-shadow-hover">
+							<img src="./assets/images/startup/medium.png" alt="" class="card-thumb">
+							
+							<div class="card-detail">
+								<h3>Graphic Designer</h3>
+								<div class="card-info">	
+									<div class="location">
+										<span>Bogor, Indonesia</span>
+									</div>
+									
+								</div>
+								<div class="card-text">
+									<p>Ada begitu banyak bisnis vape online e-commerce online yang semuanya tampak sama.</p>
+								</div>
+							</div>
+							<div class="right-side">
+								<div class="date">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+										  <defs>
+										    <clipPath id="clip-path">
+										      <rect id="Rectangle_103" data-name="Rectangle 103" width="18" height="18" transform="translate(836 297)" fill="#999" stroke="#999" stroke-width="1"/>
+										    </clipPath>
+										  </defs>
+										  <g id="Mask_Group_21" data-name="Mask Group 21" transform="translate(-836 -297)" clip-path="url(#clip-path)">
+										    <g id="diet" transform="translate(836.205 297)">
+										      <path id="Path_144" data-name="Path 144" d="M16.255,1.781h-.53V1.635a1.635,1.635,0,0,0-3.27,0v.146H5.59V1.635a1.635,1.635,0,1,0-3.27,0v.146H1.79A1.564,1.564,0,0,0,.227,3.344V16.438A1.564,1.564,0,0,0,1.79,18H16.255a1.564,1.564,0,0,0,1.563-1.562V3.344A1.564,1.564,0,0,0,16.255,1.781Zm.5,14.656a.5.5,0,0,1-.5.5H1.79a.5.5,0,0,1-.5-.5v-9.8H16.759ZM1.286,3.344a.5.5,0,0,1,.5-.5h.53a2.739,2.739,0,0,0,.008.313A1.635,1.635,0,0,0,5.59,2.986V2.84h6.865v.146a1.635,1.635,0,0,0,3.27,0V2.84h.53a.5.5,0,0,1,.5.5v2.23H1.286V3.344ZM3.379,1.635a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Zm10.135,0a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Z" transform="translate(-0.227)" fill="#999"/>
+										    </g>
+										  </g>
+										</svg>
+
+										<span>8 hari yang lalu</span>
+									</div>
+							</div>
+						</div>
+					</a>
+					<a href="view-join.html" class="startup-list">
+						<div class="card card-flex box-shadow-hover">
+							<img src="./assets/images/startup/medium.png" alt="" class="card-thumb">
+							
+							<div class="card-detail">
+								<h3>Fullstack Developer</h3>
+								<div class="card-info">	
+									<div class="location">
+										<span>Jakarta, Indonesia</span>
+									</div>
+									
+								</div>
+								<div class="card-text">
+									<p>Ada begitu banyak bisnis vape online e-commerce online yang semuanya tampak sama.</p>
+								</div>
+							</div>
+							<div class="right-side">
+								<div class="date">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+										  <defs>
+										    <clipPath id="clip-path">
+										      <rect id="Rectangle_103" data-name="Rectangle 103" width="18" height="18" transform="translate(836 297)" fill="#999" stroke="#999" stroke-width="1"/>
+										    </clipPath>
+										  </defs>
+										  <g id="Mask_Group_21" data-name="Mask Group 21" transform="translate(-836 -297)" clip-path="url(#clip-path)">
+										    <g id="diet" transform="translate(836.205 297)">
+										      <path id="Path_144" data-name="Path 144" d="M16.255,1.781h-.53V1.635a1.635,1.635,0,0,0-3.27,0v.146H5.59V1.635a1.635,1.635,0,1,0-3.27,0v.146H1.79A1.564,1.564,0,0,0,.227,3.344V16.438A1.564,1.564,0,0,0,1.79,18H16.255a1.564,1.564,0,0,0,1.563-1.562V3.344A1.564,1.564,0,0,0,16.255,1.781Zm.5,14.656a.5.5,0,0,1-.5.5H1.79a.5.5,0,0,1-.5-.5v-9.8H16.759ZM1.286,3.344a.5.5,0,0,1,.5-.5h.53a2.739,2.739,0,0,0,.008.313A1.635,1.635,0,0,0,5.59,2.986V2.84h6.865v.146a1.635,1.635,0,0,0,3.27,0V2.84h.53a.5.5,0,0,1,.5.5v2.23H1.286V3.344ZM3.379,1.635a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Zm10.135,0a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Z" transform="translate(-0.227)" fill="#999"/>
+										    </g>
+										  </g>
+										</svg>
+
+										<span>8 hari yang lalu</span>
+									</div>
+							</div>
+						</div>
+					</a>
+					<a href="view-join.html" class="startup-list">
+						<div class="card card-flex box-shadow-hover">
+							<img src="./assets/images/startup/medium.png" alt="" class="card-thumb">
+							
+							<div class="card-detail">
+								<h3>Fullstack Developer</h3>
+								<div class="card-info">	
+									<div class="location">
+										<span>Sukabumi, Indonesia</span>
+									</div>
+									
+								</div>
+								<div class="card-text">
+									<p>Ada begitu banyak bisnis vape online e-commerce online yang semuanya tampak sama.</p>
+								</div>
+							</div>
+							<div class="right-side">
+								<div class="date">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+										  <defs>
+										    <clipPath id="clip-path">
+										      <rect id="Rectangle_103" data-name="Rectangle 103" width="18" height="18" transform="translate(836 297)" fill="#999" stroke="#999" stroke-width="1"/>
+										    </clipPath>
+										  </defs>
+										  <g id="Mask_Group_21" data-name="Mask Group 21" transform="translate(-836 -297)" clip-path="url(#clip-path)">
+										    <g id="diet" transform="translate(836.205 297)">
+										      <path id="Path_144" data-name="Path 144" d="M16.255,1.781h-.53V1.635a1.635,1.635,0,0,0-3.27,0v.146H5.59V1.635a1.635,1.635,0,1,0-3.27,0v.146H1.79A1.564,1.564,0,0,0,.227,3.344V16.438A1.564,1.564,0,0,0,1.79,18H16.255a1.564,1.564,0,0,0,1.563-1.562V3.344A1.564,1.564,0,0,0,16.255,1.781Zm.5,14.656a.5.5,0,0,1-.5.5H1.79a.5.5,0,0,1-.5-.5v-9.8H16.759ZM1.286,3.344a.5.5,0,0,1,.5-.5h.53a2.739,2.739,0,0,0,.008.313A1.635,1.635,0,0,0,5.59,2.986V2.84h6.865v.146a1.635,1.635,0,0,0,3.27,0V2.84h.53a.5.5,0,0,1,.5.5v2.23H1.286V3.344ZM3.379,1.635a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Zm10.135,0a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Z" transform="translate(-0.227)" fill="#999"/>
+										    </g>
+										  </g>
+										</svg>
+
+										<span>8 hari yang lalu</span>
+									</div>
+							</div>
+						</div>
+					</a>
+					<a href="view-join.html" class="startup-list">
+						<div class="card card-flex box-shadow-hover">
+							<img src="./assets/images/startup/medium.png" alt="" class="card-thumb">
+							
+							<div class="card-detail">
+								<h3>Fullstack Developer</h3>
+								<div class="card-info">	
+									<div class="location">
+										<span>Sukabumi, Indonesia</span>
+									</div>
+									
+								</div>
+								<div class="card-text">
+									<p>Ada begitu banyak bisnis vape online e-commerce online yang semuanya tampak sama.</p>
+								</div>
+							</div>
+							<div class="right-side">
+								<div class="date">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+										  <defs>
+										    <clipPath id="clip-path">
+										      <rect id="Rectangle_103" data-name="Rectangle 103" width="18" height="18" transform="translate(836 297)" fill="#999" stroke="#999" stroke-width="1"/>
+										    </clipPath>
+										  </defs>
+										  <g id="Mask_Group_21" data-name="Mask Group 21" transform="translate(-836 -297)" clip-path="url(#clip-path)">
+										    <g id="diet" transform="translate(836.205 297)">
+										      <path id="Path_144" data-name="Path 144" d="M16.255,1.781h-.53V1.635a1.635,1.635,0,0,0-3.27,0v.146H5.59V1.635a1.635,1.635,0,1,0-3.27,0v.146H1.79A1.564,1.564,0,0,0,.227,3.344V16.438A1.564,1.564,0,0,0,1.79,18H16.255a1.564,1.564,0,0,0,1.563-1.562V3.344A1.564,1.564,0,0,0,16.255,1.781Zm.5,14.656a.5.5,0,0,1-.5.5H1.79a.5.5,0,0,1-.5-.5v-9.8H16.759ZM1.286,3.344a.5.5,0,0,1,.5-.5h.53a2.739,2.739,0,0,0,.008.313A1.635,1.635,0,0,0,5.59,2.986V2.84h6.865v.146a1.635,1.635,0,0,0,3.27,0V2.84h.53a.5.5,0,0,1,.5.5v2.23H1.286V3.344ZM3.379,1.635a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Zm10.135,0a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Z" transform="translate(-0.227)" fill="#999"/>
+										    </g>
+										  </g>
+										</svg>
+
+										<span>8 hari yang lalu</span>
+									</div>
+							</div>
+						</div>
+					</a>
+					<a href="view-join.html" class="startup-list">
+						<div class="card card-flex box-shadow-hover">
+							<img src="./assets/images/startup/medium.png" alt="" class="card-thumb">
+							
+							<div class="card-detail">
+								<h3>Fullstack Developer</h3>
+								<div class="card-info">	
+									<div class="location">
+										<span>Sukabumi, Indonesia</span>
+									</div>
+									
+								</div>
+								<div class="card-text">
+									<p>Ada begitu banyak bisnis vape online e-commerce online yang semuanya tampak sama.</p>
+								</div>
+							</div>
+							<div class="right-side">
+								<div class="date">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+										  <defs>
+										    <clipPath id="clip-path">
+										      <rect id="Rectangle_103" data-name="Rectangle 103" width="18" height="18" transform="translate(836 297)" fill="#999" stroke="#999" stroke-width="1"/>
+										    </clipPath>
+										  </defs>
+										  <g id="Mask_Group_21" data-name="Mask Group 21" transform="translate(-836 -297)" clip-path="url(#clip-path)">
+										    <g id="diet" transform="translate(836.205 297)">
+										      <path id="Path_144" data-name="Path 144" d="M16.255,1.781h-.53V1.635a1.635,1.635,0,0,0-3.27,0v.146H5.59V1.635a1.635,1.635,0,1,0-3.27,0v.146H1.79A1.564,1.564,0,0,0,.227,3.344V16.438A1.564,1.564,0,0,0,1.79,18H16.255a1.564,1.564,0,0,0,1.563-1.562V3.344A1.564,1.564,0,0,0,16.255,1.781Zm.5,14.656a.5.5,0,0,1-.5.5H1.79a.5.5,0,0,1-.5-.5v-9.8H16.759ZM1.286,3.344a.5.5,0,0,1,.5-.5h.53a2.739,2.739,0,0,0,.008.313A1.635,1.635,0,0,0,5.59,2.986V2.84h6.865v.146a1.635,1.635,0,0,0,3.27,0V2.84h.53a.5.5,0,0,1,.5.5v2.23H1.286V3.344ZM3.379,1.635a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Zm10.135,0a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Z" transform="translate(-0.227)" fill="#999"/>
+										    </g>
+										  </g>
+										</svg>
+
+										<span>8 hari yang lalu</span>
+									</div>
+							</div>
+						</div>
+					</a>
+					<a href="view-join.html" class="startup-list">
+						<div class="card card-flex box-shadow-hover">
+							<img src="./assets/images/startup/medium.png" alt="" class="card-thumb">
+							
+							<div class="card-detail">
+								<h3>Fullstack Developer</h3>
+								<div class="card-info">	
+									<div class="location">
+										<span>Sukabumi, Indonesia</span>
+									</div>
+									
+								</div>
+								<div class="card-text">
+									<p>Ada begitu banyak bisnis vape online e-commerce online yang semuanya tampak sama.</p>
+								</div>
+							</div>
+							<div class="right-side">
+								<div class="date">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+										  <defs>
+										    <clipPath id="clip-path">
+										      <rect id="Rectangle_103" data-name="Rectangle 103" width="18" height="18" transform="translate(836 297)" fill="#999" stroke="#999" stroke-width="1"/>
+										    </clipPath>
+										  </defs>
+										  <g id="Mask_Group_21" data-name="Mask Group 21" transform="translate(-836 -297)" clip-path="url(#clip-path)">
+										    <g id="diet" transform="translate(836.205 297)">
+										      <path id="Path_144" data-name="Path 144" d="M16.255,1.781h-.53V1.635a1.635,1.635,0,0,0-3.27,0v.146H5.59V1.635a1.635,1.635,0,1,0-3.27,0v.146H1.79A1.564,1.564,0,0,0,.227,3.344V16.438A1.564,1.564,0,0,0,1.79,18H16.255a1.564,1.564,0,0,0,1.563-1.562V3.344A1.564,1.564,0,0,0,16.255,1.781Zm.5,14.656a.5.5,0,0,1-.5.5H1.79a.5.5,0,0,1-.5-.5v-9.8H16.759ZM1.286,3.344a.5.5,0,0,1,.5-.5h.53a2.739,2.739,0,0,0,.008.313A1.635,1.635,0,0,0,5.59,2.986V2.84h6.865v.146a1.635,1.635,0,0,0,3.27,0V2.84h.53a.5.5,0,0,1,.5.5v2.23H1.286V3.344ZM3.379,1.635a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Zm10.135,0a.576.576,0,1,1,1.153,0V2.986a.576.576,0,1,1-1.153,0Z" transform="translate(-0.227)" fill="#999"/>
+										    </g>
+										  </g>
+										</svg>
+
+										<span>8 hari yang lalu</span>
+									</div>
+							</div>
+						</div>
+					</a>
+
+
+	
+					
+				</div>
+				<div class="clearfix"></div>
+				<div class="row row-2">
+					<div class="one col"></div>
+					<div class="ten col mt-0">
+						<div class="pagination mt-60 mb-30 f-lato text-grey">
+									<ul class="">
+										<li>
+											<a href="?page=1" class="">
+												<div class="paginate-item">
+													<img src="./assets/images/arr-left.svg" alt="">
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="?page=1" class="paginate-item paginate-number page-1">
+												<div class="paginate-item">1</div>
+											</a>
+										</li>
+										<li>
+											<a href="?page=2" class=" paginate-number page-2">
+												<div class="paginate-item">2</div>
+											</a>
+										</li>
+										<li>
+											<a href="?page=3" class=" paginate-number page-3">
+												<div class="paginate-item">3</div>
+											</a>
+										</li>
+										<li><a href="?page=3" class=" ">
+												<div class="paginate-item">
+													<img src="./assets/images/arr-right.svg" alt="">
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+					</div>
+				</div>
+				<div class="one col"></div>
+
+			</div>
+		</div>
+		<footer class="footer w-100 d-flex">
+			<div class="box-blue last-box"></div>
+			<div class="container">
+				<div class="inner-footer">
+					<div class="f-left footer-desc">
+						<div class="logo">
+							<a href="index.html" class="text-decoration-n d-flex">
+								<div class="d-flex flex-center">
+									<img src="./assets/images/logo-only.svg" alt="">
+									<span class="f-17 f-playfair mt-0 text-primary" id="logo-text">YouthSpace</span>
+								</div>
+							</a>
+						</div>
+						<p>Untuk membantu menghadapi tantangan dengan cara berdiskusi dan juga mendapatkan inspirasi beserta berita berita terbaru seputar generasi milenial di masa kini</p>
+						
+					</div>
+					<div class="f-left footer-list">
+						<b class="f-lato">Navbar</b>
+						<ul class="no-decoration list-style-none">
+							
+							<li><a href="news.html">Berita</a></li>
+							<li><a href="diskusi.html">Diskusi</a></li>
+							<li><a href="startup.html">Startup</a></li>
+							<li><a href="inspirasi.html">Inspirasi</a></li>
+							<li><a href="gallery.html">Galeri</a></li>
+						</ul>
+					</div>
+					<div class="f-left footer-list">
+						<b class="f-lato">Lainnya</b>
+						<ul class="no-decoration list-style-none">
+							
+							<li><a href="settings.html">Akun</a></li>
+							<li><a href="">Bahasa</a></li>
+							<li><a href="about.html">Tentang</a></li>
+							<li><a href="">App</a></li>
+							
+						</ul>
+					</div>
+					<div class="f-left footer-desc footer-desc-left">
+						
+							<span class="f-lato">Untuk tetap terhubung</span>
+							<div class="mt-10">
+								<p class="">admin@youthspace.id </p>
+							<p class="">+62 812-0000-0000</p>
+							</div>
+							<ul class="horizontal-list social-media">
+							<li><a href=""><img src="./assets/images/facebook.svg" alt=""></a></li>
+							<li><a href="https://instagram.com/frastio10" target="_blank"><img src="./assets/images/instagram.svg" alt=""></a></li>
+							<li><a href=""><img src="./assets/images/twitter.svg" alt=""></a></li>
+							<li><a href=""><img src="./assets/images/youtube.svg" alt=""></a></li>
+						</ul>
+							
+					</div>
+					<span class="line-h"></span>
+					<span class="f-13 f-lato f-left made-by">&#169; 2019 Youthspace By Bernice Team</span>
+				</div>
+
+			</div>
+		</footer>
+@endsection

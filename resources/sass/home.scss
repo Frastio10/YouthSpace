@@ -387,8 +387,8 @@
 
 
 .dots-mc{
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 0px;
+	margin-bottom: 10px;
 }
 
 .slick-row-3{
@@ -486,6 +486,18 @@
 	}
 }
 
+.slick-row-4{
+
+	.slick-track{
+		padding-bottom: 20px;
+
+	}
+
+	.four{
+		width: 352.5px;
+		margin-left: 16px;
+	}
+}
 
 .banner{
 	
@@ -512,11 +524,22 @@
 
 }
 
+// .row-2{
+	
+// 	.inner-row{
+// 	padding-bottom: 15px !important;
+
+// 	}
+// }
+
 .inner-row{
 	@include padding-y(60px);
+	//padding-bottom: 60px;
 	float: left;	
 	position: relative;	
 	width: 100%;
+
+
 }
 
 .date-wrapper{
@@ -761,6 +784,13 @@
 		width: 85% !important;
 	}
 
+	.slick-row-4{
+
+		.four{
+			width: 400px;
+		}
+	}
+
 	.slick-row{
 
 		.outer-card{
@@ -848,13 +878,38 @@
 
 @include breakpoint-down(md){
 	.banner{
-		
+		 
 		.banner-image-1{
 				background-size: 70%;
 		}
 
 		.banner-right{
 			width: 70%;
+		}
+	}
+
+	.slick-row-4{
+
+		.four{
+			width: 300px;
+			
+   				
+   			.card{
+
+   				.card-detail{
+
+   					.card-tag{
+
+		   				 span{
+		   				 	min-width: 35px;
+						    padding-left: 3.5px;
+						    padding-right: 4.5px;
+						    margin-right: 3px;
+		   				 }
+   					}
+   				}
+   			}
+
 		}
 	}
 	

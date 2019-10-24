@@ -25,6 +25,9 @@ mix.sass('resources/sass/style.scss', 'dist/assets/css')
    .sass('resources/sass/404.scss', 'dist/assets/css')
    .sass('resources/sass/startup.scss', 'dist/assets/css')
    .sass('resources/sass/view-startup.scss', 'dist/assets/css')
+   .sass('resources/sass/view-join.scss', 'dist/assets/css')
+   .sass('resources/sass/join-startup.scss', 'dist/assets/css')
+   .sass('resources/sass/view-startuplist.scss', 'dist/assets/css')
    .options({
     processCssUrls: false, 
     postCss: [

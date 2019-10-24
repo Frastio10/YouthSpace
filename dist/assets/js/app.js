@@ -4,6 +4,39 @@ const showShare = ()=>{
 	$('#roots').hide()
 }
 
+
+$(".liked-text").click(function(event) {
+		$(this).toggleClass('active');
+	
+	if ($(this).hasClass('active')){
+		$(this).children('span').text("Disukai!");
+	} else {
+		$(this).children('span').text("Sukai");
+
+	}	
+	
+});
+
+ $(function(){
+      //Keep track of last scroll
+      var lastScroll = 0;
+      $(window).scroll(function(event){
+          //Sets the current scroll position
+          var st = $(this).scrollTop();
+          //Determines up-or-down scrolling
+          if (st > lastScroll){
+             //Replace this with your function call for downward-scrolling
+              $('.scroll-nav').slideUp(200);
+          }
+          else {
+             //Replace this with your function call for upward-scrolling
+            $('.scroll-nav').slideDown(200);
+          }
+          //Updates scroll position
+          lastScroll = st;
+      });
+    });
+
 const scrollBottom = ()=>{
     $(".customscrollbar").scrollTop($(".customscrollbar").height() ** 2 );
 };

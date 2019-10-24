@@ -1,9 +1,9 @@
 @import "./header";
 
-p{
-	//color: #555555;
-	line-height: 1.85;
-}
+// p{
+// 	//color: #555555;
+// 	line-height: 1.85;
+// }
 
 .banner{
 	
@@ -143,9 +143,10 @@ p{
 .row-2{
 	display: flex;
 	flex-direction: column;
+	margin-top: 50px;
 
 	.four{
-		background: #fff;
+		//background: #fff;
 		// display: flex;
 		// justify-content: center;
 		// align-items: center;
@@ -169,23 +170,42 @@ p{
 			margin: 0 auto;
 			width: 100%;
 			display: block;
+			color: #fff;
 		}
 
-		svg{
+		img{
 			overflow: hidden;
 			clear: both;
 			width: 100%;
-			margin-bottom: 30px;
+			margin-bottom: 10px;
 			height: 100px;
 		}
 
 		.hidden-text{
+
 			text-align: center;
 			font-family: lato;
 			font-size:14px;
-			margin-top: 5px;
+			margin-top: 15px;
+			color: #fff;
 			//margin-bottom: 35px;
 			opacity: 1;
+
+			a{
+				min-width: 150px;
+				border: 1px solid #fff;
+				text-decoration: none;
+				@include padding-y(8px);
+				color: #fff;
+				font-family:lato;
+				margin-top: 12px;
+				transition: .3s all;
+
+				&:hover{
+					background: #fff;
+					color: var(--primary);
+				}
+			}
 		}
 
 			
@@ -197,7 +217,47 @@ p{
 
 		
 		}
-	}
+	}	
+}
 
+.row-3{
+	margin-top: 60px;
+	margin-bottom: 60px;
+
+	.btn{
+
+	}
+}
+
+.dots-mc{
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+
+.inner-row{
+	float: left;
+	width: 100%;
+}
+
+.row{
+	float: left;
+	overflow: hidden;
+}
+
+.row-5{
 	
+	.slick-row-3{
+		margin-bottom: 35px;
+
+	.video-wrapper{
+		width: calc(535px);
+		margin-left: 20px;
+
+			.video-thumb{
+				width: 100%;
+			}
+		}
+	}
 }

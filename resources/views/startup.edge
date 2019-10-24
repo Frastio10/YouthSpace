@@ -18,6 +18,59 @@
 
 @section('js')
 <script src="./assets/js/startup.js"></script>
+<script>
+	$('.slick-row-3').slick({	
+		  infinite: false,
+		  speed: 300,
+		  slidesToShow: 2,
+		  slidesToScroll: 2,
+		  nextArrow:$('.slick-next-3'),
+		  prevArrow:$('.slick-prev-3'),
+		  variableWidth:true,
+		  infinite:true,
+		  autoplay:false,
+
+		  responsive: [
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2,
+		        infinite:true,
+		        autoplay:false
+		      }
+		    },{
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2,
+		        infinite: true,
+		        
+		      }
+		    },
+		    {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2,
+		        infinite: true,
+		        
+		      }
+		    },
+
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        infinite:true,
+		        autoplay: false,
+		      }
+		    }
+		  ]
+		  
+		});
+</script>
 @endsection
  
 
@@ -58,205 +111,38 @@
 		</div>
 </div>
 
-<div class="row row-1">
-	<div class="container">
-		<div class="four col">
-			<div class="select-opt select-1">
-				<div class="select-title f-left">
-					<span>Kategori</span>
-				</div>
-				<div class="select-button bg-primary f-left">
-					<img src="./assets/images/chevron-down.svg" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="four col">
-			<div class="select-opt select-2">
-				<div class="select-title f-left">
-					<span>Keahlian</span>
-				</div>
-				<div class="select-button bg-primary f-left">
-					<img src="./assets/images/chevron-down.svg" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="two col">
-			<div class="search-location">
-				<input type="text" placeholder="Lokasi">
-			</div>
-		</div>
-		<div class="two col">
-			<button type="submit" class="btn btn-location bg-primary w-100 bd-n">Cari sekarang</button>
-		</div>
-	</div>
-</div>
 
 <div class="row row-2">
 	<div class="container">
-		<div class="four col box-shadow-hover">
-			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="94.592" viewBox="0 0 100 94.592">
-			  <defs>
-			    <clipPath id="clip-path">
-			      <rect id="Rectangle_37" data-name="Rectangle 37" width="100" height="70" transform="translate(276 482)" fill="#fff"/>
-			    </clipPath>
-			    <clipPath id="clip-path-2">
-			      <rect id="Rectangle_44" data-name="Rectangle 44" width="30" height="30" transform="translate(366 644)" fill="#1592e6" opacity="0.25"/>
-			    </clipPath>
-			  </defs>
-			  <g id="Group_396" data-name="Group 396" transform="translate(-265 -1172.408)">
-			    <g id="Group_393" data-name="Group 393" transform="translate(-11 715)">
-			      <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
-			        <g id="lightbulb" transform="translate(291 482)">
-			          <g id="Group_356" data-name="Group 356" transform="translate(0 -12.634)">
-			            <g id="Group_355" data-name="Group 355" transform="translate(17.051 15.088)">
-			              <path id="Path_42" data-name="Path 42" d="M39.2,15.088A22.177,22.177,0,0,0,24.539,53.879c3.5,3.5,3.186,10.992,3.106,11.072a1.319,1.319,0,0,0,.4,1.035,1.47,1.47,0,0,0,.956.4H49.311a1.319,1.319,0,0,0,.956-.4,1.514,1.514,0,0,0,.4-1.035c0-.08-.4-7.567,3.106-11.072l.239-.239A22.11,22.11,0,0,0,39.2,15.088ZM51.94,51.808c-.08.08-.239.239-.239.319-3.106,3.345-3.664,8.842-3.744,11.47h-17.6c-.08-2.629-.637-8.364-3.983-11.789a19.4,19.4,0,1,1,25.569,0Z" transform="translate(-17.051 -15.088)" fill="#231f20"/>
-			              <path id="Path_44" data-name="Path 44" d="M46.11,58.02H28.426a3.345,3.345,0,1,0,0,6.691h17.6a3.435,3.435,0,0,0,3.425-3.345A3.366,3.366,0,0,0,46.11,58.02Zm0,3.9H28.426a.628.628,0,0,1-.637-.637.586.586,0,0,1,.637-.637h17.6a.628.628,0,0,1,.637.637A.568.568,0,0,1,46.11,61.923Z" transform="translate(-15.204 -5.21)" fill="#231f20"/>
-			              <path id="Path_45" data-name="Path 45" d="M42.989,64.561H30.563a3.345,3.345,0,0,0,0,6.691H42.989a3.366,3.366,0,0,0,3.345-3.345A3.315,3.315,0,0,0,42.989,64.561Zm0,3.9H30.563a.628.628,0,0,1-.637-.637.586.586,0,0,1,.637-.637H42.989a.637.637,0,0,1,0,1.274Z" transform="translate(-14.712 -3.705)" fill="#231f20"/>
-			            </g>
-			          </g>
-			        </g>
-			      </g>
-			      <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-51 -143)" clip-path="url(#clip-path-2)">
-			        <g id="rocket-launch" transform="translate(365.324 643.322)">
-			          <g id="Group_385" data-name="Group 385">
-			            <path id="Path_61" data-name="Path 61" d="M21.446,15.618A18.56,18.56,0,0,0,16.126.857a.655.655,0,0,0-.9,0,18.553,18.553,0,0,0-5.32,14.76A7.861,7.861,0,0,0,9.973,26.4a.64.64,0,0,0,1.077-.6,7.175,7.175,0,0,1-.165-1.218,4.736,4.736,0,0,1,.857-2.73.651.651,0,0,0,.306.08H19.3a.651.651,0,0,0,.306-.08,4.736,4.736,0,0,1,.857,2.73A8.789,8.789,0,0,1,20.3,25.8a.639.639,0,0,0,1.077.6,7.861,7.861,0,0,0,.067-10.781ZM15.673,2.228a17.036,17.036,0,0,1,2.792,4.065H12.887a16.716,16.716,0,0,1,2.786-4.065Zm-6,21.489a6.615,6.615,0,0,1,.478-6.349c.006.049.673,2.6.931,3.257a5.947,5.947,0,0,0-1.408,3.092Zm9.208-3.067H12.465a17.278,17.278,0,0,1-.147-13.089h6.71A17.278,17.278,0,0,1,18.881,20.65Zm1.39-.024c.355-.912.924-3.22.931-3.257a6.523,6.523,0,0,1,1.071,3.606,6.633,6.633,0,0,1-.594,2.743,6.044,6.044,0,0,0-1.408-3.092Z" fill="#1592e6"/>
-			            <path id="Path_62" data-name="Path 62" d="M13.1,22.995a.636.636,0,0,0-.637.637v3.2a.637.637,0,1,0,1.273,0v-3.2A.636.636,0,0,0,13.1,22.995Z" fill="#1592e6"/>
-			            <path id="Path_63" data-name="Path 63" d="M15.673,22.995a.639.639,0,0,0-.453.19l-.006.006a.64.64,0,0,0-.159.282.772.772,0,0,0-.024.171v6.4a.6.6,0,0,0,.018.147.635.635,0,0,0,1.237,0,.6.6,0,0,0,.018-.147v-6.41a.528.528,0,0,0-.024-.171A.619.619,0,0,0,15.673,22.995Z" fill="#1592e6"/>
-			            <path id="Path_64" data-name="Path 64" d="M18.25,22.995a.636.636,0,0,0-.637.637v3.2a.637.637,0,1,0,1.273,0v-3.2A.629.629,0,0,0,18.25,22.995Z" fill="#1592e6"/>
-			          </g>
-			        </g>
-			      </g>
-			    </g>
-			    <g id="Group_395" data-name="Group 395" transform="translate(0 -4)">
-			      <path id="Path_80" data-name="Path 80" d="M4650.021,1218.534l19.082-9.521" transform="translate(-4420.19 574.383) rotate(-7)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3" stroke-dasharray="4"/>
-			      <path id="Path_81" data-name="Path 81" d="M0,0,19.082,9.521" transform="translate(294.451 1217.139) rotate(-173)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3" stroke-dasharray="4"/>
-			      <path id="Path_83" data-name="Path 83" d="M0,0,15.878,7.478" transform="matrix(-0.914, -0.407, 0.407, -0.914, 303.332, 1202.481)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3" stroke-dasharray="4"/>
-			      <path id="Path_84" data-name="Path 84" d="M0,7.478,15.878,0" transform="matrix(0.914, -0.407, 0.407, 0.914, 330.826, 1195.65)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3" stroke-dasharray="4"/>
-			      <path id="Path_85" data-name="Path 85" d="M0,7.478,15.878,0" transform="translate(311.856 1193.451) rotate(-65)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3" stroke-dasharray="4"/>
-			    </g>
-			  </g>
-			</svg>
+		<div class="four col box-shadow-hover bg-primary">
+			<img src="./assets/images/create-white.svg" alt="">
 
 
-			<span class="f-playfair f-20">Tips membuat startup</span>
+			<span class="f-playfair f-20">Buat startup dan cari tim</span>
 			<div class="hidden-text">
-				<p>Youthspace menyediakn video video yang berisiskan tips tips untuk membantu generasi milenial membangun sebuah startup</p>
+				<p>Tuangkan ide kreatif inovatif mu untuk membangun sebuah startup dan mencari tim untuk membuat idemu terwujud</p>
+				<a href="create-startup.html">Buat startup</a>
+
 			</div>
 		</div>
-		<div class="four col box-shadow-hover">
-			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99" height="100.097" viewBox="0 0 99 100.097">
-			  <defs>
-			    <clipPath id="clip-path">
-			      <rect id="Rectangle_46" data-name="Rectangle 46" width="99" height="65" transform="translate(276 482.143)" fill="#fff" stroke="#707070" stroke-width="1"/>
-			    </clipPath>
-			    <clipPath id="clip-path-2">
-			      <rect id="Rectangle_45" data-name="Rectangle 45" width="30" height="30" transform="translate(366 644)" fill="#1592e6" stroke="#707070" stroke-width="1" opacity="0.25"/>
-			    </clipPath>
-				  </defs>
-				  <g id="Group_392" data-name="Group 392" transform="translate(-368 -451.903)">
-			    <g id="Group_389" data-name="Group 389">
-			      <g id="Mask_Group_6" data-name="Mask Group 6" transform="translate(92 4.857)" clip-path="url(#clip-path)">
-			        <g id="lightbulb" transform="translate(307.791 484.283)">
-			          <g id="Group_388" data-name="Group 388" transform="translate(0 0)">
-			            <g id="Group_387" data-name="Group 387" transform="translate(0 0)">
-			              <path id="Path_69" data-name="Path 69" d="M39.015,15.088c-12.088,0-21.964,9.266-21.964,20.607a20.246,20.246,0,0,0,7.427,15.493c3.476,3.262,3.16,10.23,3.081,10.3a1.187,1.187,0,0,0,.4.964,1.509,1.509,0,0,0,.948.371H49.049a1.308,1.308,0,0,0,1.343-1.334c0-.074-.4-7.042,3.081-10.3l.237-.222A20.244,20.244,0,0,0,60.979,35.7C60.979,24.354,51.1,15.088,39.015,15.088ZM51.657,49.261c-.079.074-.237.222-.237.3-3.081,3.113-3.634,8.228-3.713,10.674H30.246c-.079-2.446-.632-7.783-3.95-10.971a17.616,17.616,0,0,1-6.637-13.639c0-10.007,8.612-18.087,19.278-18.087s19.278,8.08,19.278,18.087A17.538,17.538,0,0,1,51.657,49.261Z" transform="translate(-17.051 -15.088)" fill="#231f20" stroke="#707070" stroke-width="0.162"/>
-			              <path id="Path_70" data-name="Path 70" d="M45.939,58.02H28.4a3.12,3.12,0,1,0,0,6.227H45.86a3.311,3.311,0,0,0,3.4-3.113A3.24,3.24,0,0,0,45.939,58.02Zm0,3.632H28.4a.606.606,0,0,1-.632-.593.564.564,0,0,1,.632-.593H45.86a.606.606,0,0,1,.632.593A.543.543,0,0,1,45.939,61.653Z" transform="translate(-15.284 -8.874)" fill="#231f20" stroke="#707070" stroke-width="0.162"/>
-			            </g>
-			          </g>
-			        </g>
-			      </g>
-			      <g id="Mask_Group_5" data-name="Mask Group 5" transform="matrix(0.629, 0.777, -0.777, 0.629, 691.368, -237.815)" clip-path="url(#clip-path-2)">
-			        <g id="rocket-launch" transform="translate(365.324 643.322)">
-			          <g id="Group_386" data-name="Group 386">
-			            <path id="Path_65" data-name="Path 65" d="M21.446,15.618A18.56,18.56,0,0,0,16.126.857a.655.655,0,0,0-.9,0,18.553,18.553,0,0,0-5.32,14.76A7.861,7.861,0,0,0,9.973,26.4a.64.64,0,0,0,1.077-.6,7.175,7.175,0,0,1-.165-1.218,4.736,4.736,0,0,1,.857-2.73.651.651,0,0,0,.306.08H19.3a.651.651,0,0,0,.306-.08,4.736,4.736,0,0,1,.857,2.73A8.789,8.789,0,0,1,20.3,25.8a.639.639,0,0,0,1.077.6,7.861,7.861,0,0,0,.067-10.781ZM15.673,2.228a17.036,17.036,0,0,1,2.792,4.065H12.887a16.716,16.716,0,0,1,2.786-4.065Zm-6,21.489a6.615,6.615,0,0,1,.478-6.349c.006.049.673,2.6.931,3.257a5.947,5.947,0,0,0-1.408,3.092Zm9.208-3.067H12.465a17.278,17.278,0,0,1-.147-13.089h6.71A17.278,17.278,0,0,1,18.881,20.65Zm1.39-.024c.355-.912.924-3.22.931-3.257a6.523,6.523,0,0,1,1.071,3.606,6.633,6.633,0,0,1-.594,2.743,6.044,6.044,0,0,0-1.408-3.092Z" fill="#1592e6"/>
-			            <path id="Path_66" data-name="Path 66" d="M13.1,22.995a.636.636,0,0,0-.637.637v3.2a.637.637,0,1,0,1.273,0v-3.2A.636.636,0,0,0,13.1,22.995Z" fill="#1592e6"/>
-			            <path id="Path_67" data-name="Path 67" d="M15.673,22.995a.639.639,0,0,0-.453.19l-.006.006a.64.64,0,0,0-.159.282.772.772,0,0,0-.024.171v6.4a.6.6,0,0,0,.018.147.635.635,0,0,0,1.237,0,.6.6,0,0,0,.018-.147v-6.41a.528.528,0,0,0-.024-.171A.619.619,0,0,0,15.673,22.995Z" fill="#1592e6"/>
-			            <path id="Path_68" data-name="Path 68" d="M18.25,22.995a.636.636,0,0,0-.637.637v3.2a.637.637,0,1,0,1.273,0v-3.2A.629.629,0,0,0,18.25,22.995Z" fill="#1592e6"/>
-			          </g>
-			        </g>
-			      </g>
-			      <path id="Path_71" data-name="Path 71" d="M6164.936,543.973v4s0,4-10.291,0-3.864-15.22-11.868-24.939-5.262-21.679-4.841-23.573,4.841-11.576,8.84-14.1" transform="translate(-5742)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2" stroke-dasharray="3"/>
-			      <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(415 514)" fill="none" stroke="#000" stroke-width="2">
-			        <circle cx="6" cy="6" r="6" stroke="none"/>
-			        <circle cx="6" cy="6" r="5" fill="none"/>
-			      </g>
-			      <path id="Path_72" data-name="Path 72" d="M6163,534.775v-9.189" transform="translate(-5742)" fill="none" stroke="#000" stroke-width="2"/>
-			    </g>
-			  </g>
-			</svg>
-			<span class="f-playfair f-20">Ide membangun startup</span>
+		<div class="four col box-shadow-hover bg-primary">
+			<img src="./assets/images/startuplist-white.svg" alt="">
+
+
+			<span class="f-playfair f-20">Database startup</span>
 			<div class="hidden-text">
-				<p>Anda bisa mencari ide startup di youthspace atau membuat ide dan mengajak orang untuk bergabung denagn ide anda</p>
+				<p>Anda dapat menemukan startup yang anda impikan dan ikut bergabung sebagai anggota di startup </p>
+				<a href="startup-list.html">Kunjungi database</a>
 			</div>
 		</div>
-		<div class="four col box-shadow-hover">
-			
-			<svg xmlns="http://www.w3.org/2000/svg" width="90" height="" viewBox="0 0 72 69.949">
-			  <g id="Group_531" data-name="Group 531" transform="translate(-153 -290)">
-			    <g id="orang" transform="translate(53 -5.529)">
-			      <g id="Group_505" data-name="Group 505" transform="translate(148.913 338.997)">
-			        <g id="Group_504" data-name="Group 504">
-			          <path id="Path_123" data-name="Path 123" d="M364.074,329.85a8.1,8.1,0,1,0-9.4,0,11.558,11.558,0,0,0-6.844,10.541,1.255,1.255,0,0,0,2.511,0,9.033,9.033,0,1,1,18.065,0,1.255,1.255,0,0,0,2.511,0A11.56,11.56,0,0,0,364.074,329.85Zm-4.7-1a5.586,5.586,0,1,1,5.586-5.586A5.592,5.592,0,0,1,359.373,328.849Z" transform="translate(-347.83 -315.167)"/>
-			        </g>
-			      </g>
-			      <g id="Group_515" data-name="Group 515" transform="translate(156.337 343.023)">
-			        <g id="Group_514" data-name="Group 514">
-			          <circle id="Ellipse_27" data-name="Ellipse 27" cx="1.255" cy="1.255" r="1.255"/>
-			        </g>
-			      </g>
-			      <g id="Group_517" data-name="Group 517" transform="translate(160.939 343.023)">
-			        <g id="Group_516" data-name="Group 516">
-			          <circle id="Ellipse_28" data-name="Ellipse 28" cx="1.255" cy="1.255" r="1.255"/>
-			        </g>
-			      </g>
-			      <g id="Group_519" data-name="Group 519" transform="translate(124.457 338.997)">
-			        <g id="Group_518" data-name="Group 518">
-			          <path id="Path_128" data-name="Path 128" d="M190.159,329.85a8.1,8.1,0,1,0-9.4,0,11.558,11.558,0,0,0-6.844,10.541,1.255,1.255,0,0,0,2.511,0,9.033,9.033,0,1,1,18.065,0,1.255,1.255,0,0,0,2.511,0A11.56,11.56,0,0,0,190.159,329.85Zm-4.7-1a5.586,5.586,0,1,1,5.586-5.586A5.592,5.592,0,0,1,185.458,328.849Z" transform="translate(-173.915 -315.167)"/>
-			        </g>
-			      </g>
-			      <g id="Group_521" data-name="Group 521" transform="translate(132.444 343.023)">
-			        <g id="Group_520" data-name="Group 520">
-			          <circle id="Ellipse_29" data-name="Ellipse 29" cx="1.255" cy="1.255" r="1.255"/>
-			        </g>
-			      </g>
-			      <g id="Group_523" data-name="Group 523" transform="translate(137.047 343.023)">
-			        <g id="Group_522" data-name="Group 522">
-			          <circle id="Ellipse_30" data-name="Ellipse 30" cx="1.255" cy="1.255" r="1.255"/>
-			        </g>
-			      </g>
-			      <g id="Group_525" data-name="Group 525" transform="translate(100 338.997)">
-			        <g id="Group_524" data-name="Group 524">
-			          <path id="Path_129" data-name="Path 129" d="M16.242,329.851a8.1,8.1,0,1,0-9.4,0A11.56,11.56,0,0,0,0,340.391a1.255,1.255,0,1,0,2.511,0,9.033,9.033,0,0,1,18.065,0,1.255,1.255,0,1,0,2.511,0A11.559,11.559,0,0,0,16.242,329.851Zm-4.7-1a5.586,5.586,0,1,1,5.586-5.586A5.592,5.592,0,0,1,11.543,328.848Z" transform="translate(0 -315.166)"/>
-			        </g>
-			      </g>
-			      <g id="Group_527" data-name="Group 527" transform="translate(113.152 343.023)">
-			        <g id="Group_526" data-name="Group 526">
-			          <circle id="Ellipse_31" data-name="Ellipse 31" cx="1.255" cy="1.255" r="1.255"/>
-			        </g>
-			      </g>
-			      <g id="Group_529" data-name="Group 529" transform="translate(108.549 343.023)">
-			        <g id="Group_528" data-name="Group 528">
-			          <circle id="Ellipse_32" data-name="Ellipse 32" cx="1.255" cy="1.255" r="1.255"/>
-			        </g>
-			      </g>
-			    </g>
-			    <path id="garis3" d="M6260.622,522.98l9.045-8.676" transform="translate(-6090 -195)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2" stroke-dasharray="3"/>
-			    <path id="garis2" d="M6269.667,522.98l-9.045-8.676" transform="translate(-6059.622 -194)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2" stroke-dasharray="3"/>
-			    <path id="garis1" d="M6268.246,521.571l-7.624-7.268" transform="translate(-3704.046 -4609.107) rotate(47)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2" stroke-dasharray="3"/>
-			    <g id="rocket-launch" transform="translate(173.324 289.322)">
-			      <g id="Group_390" data-name="Group 390">
-			        <path id="Path_73" data-name="Path 73" d="M21.446,15.618A18.56,18.56,0,0,0,16.126.857a.655.655,0,0,0-.9,0,18.553,18.553,0,0,0-5.32,14.76A7.861,7.861,0,0,0,9.973,26.4a.64.64,0,0,0,1.077-.6,7.175,7.175,0,0,1-.165-1.218,4.736,4.736,0,0,1,.857-2.73.651.651,0,0,0,.306.08H19.3a.651.651,0,0,0,.306-.08,4.736,4.736,0,0,1,.857,2.73A8.789,8.789,0,0,1,20.3,25.8a.639.639,0,0,0,1.077.6,7.861,7.861,0,0,0,.067-10.781ZM15.673,2.228a17.036,17.036,0,0,1,2.792,4.065H12.887a16.716,16.716,0,0,1,2.786-4.065Zm-6,21.489a6.615,6.615,0,0,1,.478-6.349c.006.049.673,2.6.931,3.257a5.947,5.947,0,0,0-1.408,3.092Zm9.208-3.067H12.465a17.278,17.278,0,0,1-.147-13.089h6.71A17.278,17.278,0,0,1,18.881,20.65Zm1.39-.024c.355-.912.924-3.22.931-3.257a6.523,6.523,0,0,1,1.071,3.606,6.633,6.633,0,0,1-.594,2.743,6.044,6.044,0,0,0-1.408-3.092Z" fill="#1592e6"/>
-			        <path id="Path_74" data-name="Path 74" d="M13.1,22.995a.636.636,0,0,0-.637.637v3.2a.637.637,0,1,0,1.273,0v-3.2A.636.636,0,0,0,13.1,22.995Z" fill="#1592e6"/>
-			        <path id="Path_75" data-name="Path 75" d="M15.673,22.995a.639.639,0,0,0-.453.19l-.006.006a.64.64,0,0,0-.159.282.772.772,0,0,0-.024.171v6.4a.6.6,0,0,0,.018.147.635.635,0,0,0,1.237,0,.6.6,0,0,0,.018-.147v-6.41a.528.528,0,0,0-.024-.171A.619.619,0,0,0,15.673,22.995Z" fill="#1592e6"/>
-			        <path id="Path_76" data-name="Path 76" d="M18.25,22.995a.636.636,0,0,0-.637.637v3.2a.637.637,0,1,0,1.273,0v-3.2A.629.629,0,0,0,18.25,22.995Z" fill="#1592e6"/>
-			      </g>
-			    </g>
-			  </g>
-			</svg>
+		<div class="four col box-shadow-hover bg-primary">
+			<img src="./assets/images/gabung-white.svg" alt="">
+
 
 			<span class="f-playfair f-20">Bergabung dengan startup</span>
 			<div class="hidden-text">
-				<p>Bingung membuat startup yang bags dan menarik? mari bergabung dengan startup yang sudah ada dengan ide yg sangat luar biasa</p>
+				<p>Bingung membuat startup yang bagus dan menarik? mari bergabung ide startup yang sudah ada dan menjadi dari bagian tim</p>
+				<a href="join-startup.html">Bergabung</a>
 			</div>
 		</div>
 	</div>
@@ -266,17 +152,267 @@
 	<div class="container">
 		<div class="nine col">
 			<h3 class="f-25 f-playfair">
-				Bergabung dengan startup
+				Startup terbaik di YouthSpace
 			</h3>
-			<p class="f-15 f-lato">
-				Bergabung dengan stratup menjadi sebuah tim adalah peluang pertama untuk generasi milenial untuk menghadapu era globalisasi industry 4.0
-
-			</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="four col ml-0">
+								<div class="card card-rate">
+									<div class="card-thumb">
+										<img src="./assets/images/startup/stadium.png" alt="">
+									</div>
+									<div class="card-detail">
+										<div class="card-tag">
+											<span>Productivity</span>
+											<span>Design</span>
+											<span>Web Development</span>
+										</div>
+										<h4 class="card-title">Stadium</h4>
+										<div class="card-rating">
+											<ul>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="#fbb72b" stroke="#fbb72b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="#fbb72b" stroke="#fbb72b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+											</ul>
+											<span>2/5</span>
+											<span class="text-blue">5 review</span>
+										</div>
+										<div class="card-desc">
+											<p>Stadium adalah perusahaan Enabler Web develover yang didirikan di Singapura pada 2010</p>
+										</div>
+										<span class="card-line"></span>
+										<a href="" class="card-link">Lihat selengkapnya</a>
+									</div>
+								</div>
+		</div>
+		<div class="four col">
+								<div class="card card-rate">
+									<div class="card-thumb">
+										<img src="./assets/images/startup/logo better.png" alt="">
+									</div>
+									<div class="card-detail">
+										<div class="card-tag">
+											<span>Productivity</span>
+											<span>Design</span>
+											<span>Web Development</span>
+										</div>
+										<h4 class="card-title">Cloudbread</h4>
+										<div class="card-rating">
+											<ul>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="#fbb72b" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="#fbb72b" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+											</ul>
+											<span>2/5</span>
+											<span class="text-blue">5 review</span>
+										</div>
+										<div class="card-desc">
+											<p>Stadium adalah perusahaan Enabler Web develover yang didirikan di Singapura pada 2010</p>
+										</div>
+										<span class="card-line"></span>
+										<a href="" class="card-link">Lihat selengkapnya</a>
+									</div>
+								</div>
+		</div>
+		<div class="four col">
+								<div class="card card-rate">
+									<div class="card-thumb">
+										<img src="./assets/images/startup/medium-1.png" alt="">
+									</div>
+									<div class="card-detail">
+										<div class="card-tag">
+											<span>Productivity</span>
+											<span>Design</span>
+											<span>Web Development</span>
+										</div>
+										<h4 class="card-title">Museum</h4>
+										<div class="card-rating">
+											<ul>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="#fbb72b" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="#fbb72b" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+												<li>
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.265" viewBox="0 0 16 15.265">
+												  		<path id="star" d="M9.5,2l2.318,4.695L17,7.452,13.25,11.1l.885,5.16L9.5,13.828,4.865,16.265,5.75,11.1,2,7.452l5.183-.757Z" transform="translate(-1.5 -1.5)" fill="none" stroke="#1592e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+													</svg>
+												</li>
+											</ul>
+											<span>2/5</span>
+											<span class="text-blue">5 review</span>
+										</div>
+										<div class="card-desc">
+											<p>Stadium adalah perusahaan Enabler Web develover yang didirikan di Singapura pada 2010</p>
+										</div>
+										<span class="card-line"></span>
+										<a href="" class="card-link">Lihat selengkapnya</a>
+									</div>
+								</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="d-flex flex-center">
+			<a class="btn btn-more btn-blue">Lihat lebih banyak</a>
 		</div>
 	</div>
 </div>
 
+<div class="row row-4 row-right">
+	<div class="container">
+		<h2 class="f-25 f-playfair">Bergabung dengan startup</h2>
+		<div class="card card-flex six col box-shadow-hover">
+			
+			<img src="./assets/images/startup/medium.png" alt="" class="card-thumb">
+			
+			<div class="card-detail">
+				<h3>Fullstack Developer</h3>
+				<div class="card-info">	
+					<div class="location">
+						<span>Bandung, Indonesia</span>
+					</div>
+					<div class="date">
+						<img src="./assets/images/calendar.svg" alt="">
+						<span>8 hari yang lalu</span>
+					</div>
+				</div>
+				<div class="card-text">
+					<p>Ada begitu banyak bisnis vape online e-commerce online yang semuanya tampak sama.</p>
+				</div>
+			</div>
+		</div>
+		<div class="card card-flex six col box-shadow-hover">
+			
+			<img src="./assets/images/startup/medium.png" alt="" class="card-thumb">
+			
+			<div class="card-detail">
+				<h3>Fullstack Developer</h3>
+				<div class="card-info">	
+					<div class="location">
+						<span>Bandung, Indonesia</span>
+					</div>
+					<div class="date">
+						<img src="./assets/images/calendar.svg" alt="">
+						<span>8 hari yang lalu</span>
+					</div>
+				</div>
+				<div class="card-text">
+					<p>Ada begitu banyak bisnis vape online e-commerce online yang semuanya tampak sama.</p>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="d-flex flex-center">
+			<a href="join-startup.html" class="btn btn-more btn-blue">Lihat lebih banyak</a>
+		</div>
+	</div>
+</div>
 
+<div class="row row-5">
+	<div class="container pt-60 ">
+			<div class="dots-mc">
+				<b class="f-25 f-playfair-bold dots-sm">Video tips membangun startup</b>
+				<div class="clearfix"></div>
+				<div class="eight col ml-0">
+					<p class=" f-15 f-grey f-lato res-block">YouthSpace juga menyediakan beberapa video video yang berisi tips tips  dan cara untuk membangun sebuah startup</p>	
+					<p class=" f-15 f-grey f-lato res-none">YouthSpace juga menyediakan beberapa video video yang berisi tips tips  dan cara untuk membangun sebuah startup</p>
+				</div>	
+				<div class="clearfix"></div>
+
+			</div>
+			<div class="inner-row pt-0-i pb-60">
+				<div class="slick-row-3">
+					<div class="pos-r flex-center video-wrapper">
+						<div class="d-flex w-100 flex-center">
+							<img src="./assets/images/bg_teks.png" class="video-thumb" alt="">
+							<img src="./assets/images/playbutton.svg" class="pos-a playbutton" alt="">
+						</div>
+					</div>
+					<div class="pos-r flex-center video-wrapper">
+						<div class="d-flex w-100 flex-center">
+							<img src="./assets/images/bg_teks.png" class="video-thumb" alt="">
+							<img src="./assets/images/playbutton.svg" class="pos-a playbutton" alt="">
+						</div>
+					</div>
+					<div class="pos-r flex-center video-wrapper">
+						<div class="d-flex w-100 flex-center">
+							<img src="./assets/images/bg_teks.png" class="video-thumb" alt="">
+							<img src="./assets/images/playbutton.svg" class="pos-a playbutton" alt="">
+						</div>
+					</div>
+					<div class="pos-r flex-center video-wrapper">
+						<div class="d-flex w-100 flex-center">
+							<img src="./assets/images/bg_teks.png" class="video-thumb" alt="">
+							<img src="./assets/images/playbutton.svg" class="pos-a playbutton" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="cf"></div>
+						<div class="f-right video-arr">
+							<img src="./assets/images/arrow-right.svg" alt="" class="slick-prev-3 cs-p" style="margin-right: 15px;">
+							<img src="./assets/images/arrow-left.svg" alt="" class="slick-next-3 cs-p">
+						</div>
+				</div>
+			</div>
+	</div>
 
 
 
